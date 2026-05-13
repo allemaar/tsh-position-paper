@@ -12,18 +12,23 @@
     }
   ],
   "keywords": [
-    "large-language-models",
-    "in-context-learning",
-    "linguistic-relativity",
+    "large language models",
+    "in context learning",
+    "linguistic relativity",
     "sapir-whorf",
-    "symbol-grounding",
-    "concept-coinage",
-    "token-substrate-hypothesis",
-    "coinage-probe",
-    "lexical-reachability",
+    "concept coinage",
+    "symbol grounding",
+    "token substrate hypothesis",
+    "coinage probe",
+    "lexical reachability",
     "wittgenstein",
-    "philosophy-of-language",
-    "llm-evaluation"
+    "philosophy of language",
+    "llm evaluation",
+    "off-token route",
+    "token-bound",
+    "token-bound mind",
+    "token-bound cognition",
+    "elastic automator"
   ],
   "license": "CC-BY-4.0",
   "access_right": "open",
@@ -36,9 +41,9 @@
       "resource_type": "software"
     },
     {
-      "identifier": "10.5281/zenodo.19802018",
-      "relation": "isContinuationOf",
-      "resource_type": "publication-article"
+      "identifier": "https://doi.org/10.5281/zenodo.19802018",
+      "relation": "references",
+      "resource_type": "publication-preprint"
     }
   ],
   "version": "1.0.0",

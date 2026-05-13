@@ -40,6 +40,10 @@ keywords:
   - token-substrate-hypothesis
   - coinage-probe
   - lexical-reachability
+  - off-token-route
+  - token-bound
+  - token-bound-cognition
+  - elastic-automator
   - wittgenstein
   - philosophy-of-language
   - llm-evaluation
@@ -56,9 +60,6 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.20157152"
     description: "Concept DOI (all versions)"
-  - type: other
-    value: "arXiv:{{ARXIV_ID}}"
-    description: "arXiv preprint ID (placeholder until submission)"
 preferred-citation:
   type: article
   title: "The Limits of My Tokens: The Token-Substrate Hypothesis and the Coinage Probe"

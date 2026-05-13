@@ -7,7 +7,7 @@ author: "[[../../../Context/Alexandru Mares/Alexandru Mares|Alexandru Mares]]"
 orcid: "0009-0009-6713-9780"
 status: published
 priority: foundational
-venue: "Zenodo (pending); arXiv cs.CL primary, cs.AI cross-list (planned)"
+venue: "Zenodo (10.5281/zenodo.20157153); arXiv planned (cs.CL primary, cs.AI cross-list)"
 doi: "10.5281/zenodo.20157153"
 zenodo-url: "https://zenodo.org/records/20157153"
 zenodo-concept-doi: "10.5281/zenodo.20157152"
