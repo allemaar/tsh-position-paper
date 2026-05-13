@@ -7,14 +7,14 @@
 **Author:** Alexandru Mares — [allemaar.com](https://allemaar.com)
 **ORCID:** [0009-0009-6713-9780](https://orcid.org/0009-0009-6713-9780)
 **Version:** 1.0.0
-**Status:** Release candidate v1.0.0 — Zenodo publish pending. DOI 10.5281/zenodo.20157153 reserved.
+**Status:** Published — 2026-05-13
 **License:** [CC-BY-4.0](LICENSE)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20157153.svg)](https://doi.org/10.5281/zenodo.20157153)
 [![arXiv](https://img.shields.io/badge/arXiv-{{ARXIV_ID}}-b31b1b.svg)](https://arxiv.org/abs/{{ARXIV_ID}})
 
 **Zenodo:** [zenodo.org/records/20157153](https://zenodo.org/records/20157153)
-**Concept DOI** (always resolves to latest version): _pending — minted at Zenodo publish_
+**Concept DOI** (always resolves to latest version): [10.5281/zenodo.20157152](https://doi.org/10.5281/zenodo.20157152)
 
 ---
 

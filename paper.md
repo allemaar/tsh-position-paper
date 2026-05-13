@@ -10,7 +10,7 @@ priority: foundational
 venue: "Zenodo (pending); arXiv cs.CL primary, cs.AI cross-list (planned)"
 doi: "10.5281/zenodo.20157153"
 zenodo-url: "https://zenodo.org/records/20157153"
-zenodo-concept-doi: "{{TBD}}"
+zenodo-concept-doi: "10.5281/zenodo.20157152"
 github-repo: "https://github.com/allemaar/tsh-position-paper"
 version: "1.0.0"
 date: "2026-05-13"
