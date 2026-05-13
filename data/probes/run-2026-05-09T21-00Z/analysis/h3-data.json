@@ -162,7 +162,7 @@
     },
     {
       "cell_id": "claude.eggf",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         0.4444444444444444,
         0.4444444444444444,
@@ -184,7 +184,7 @@
     },
     {
       "cell_id": "claude.elastic-automator",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         1.0,
         1.0,
@@ -316,7 +316,7 @@
     },
     {
       "cell_id": "claude.token-tax",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         0.7777777777777777,
         0.8888888888888888,
@@ -360,7 +360,7 @@
     },
     {
       "cell_id": "claude.yon-notation",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         0.1111111111111111,
         0.1111111111111111,
@@ -426,7 +426,7 @@
     },
     {
       "cell_id": "gemini.eggf",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         0.8888888888888888,
         0.8888888888888888,
@@ -448,7 +448,7 @@
     },
     {
       "cell_id": "gemini.elastic-automator",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         1.0,
         1.0,
@@ -580,7 +580,7 @@
     },
     {
       "cell_id": "gemini.token-tax",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         1.2222222222222223,
         1.111111111111111,
@@ -624,7 +624,7 @@
     },
     {
       "cell_id": "gemini.yon-notation",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         0.7777777777777777,
         1.0,
@@ -690,7 +690,7 @@
     },
     {
       "cell_id": "gpt55.eggf",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         1.4444444444444444,
         1.5555555555555556,
@@ -712,7 +712,7 @@
     },
     {
       "cell_id": "gpt55.elastic-automator",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         1.2222222222222223,
         1.2222222222222223,
@@ -844,7 +844,7 @@
     },
     {
       "cell_id": "gpt55.token-tax",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         1.111111111111111,
         1.4444444444444444,
@@ -888,7 +888,7 @@
     },
     {
       "cell_id": "gpt55.yon-notation",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "cold": [
         1.0,
         1.0,

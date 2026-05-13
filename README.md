@@ -6,12 +6,15 @@
 
 **Author:** Alexandru Mares — [allemaar.com](https://allemaar.com)
 **ORCID:** [0009-0009-6713-9780](https://orcid.org/0009-0009-6713-9780)
-**Version:** 0.4.1
-**Status:** Release candidate v0.4.1 — Zenodo deposit pending. Will publish as v1.0.0 once DOI is minted.
+**Version:** 1.0.0
+**Status:** Release candidate v1.0.0 — Zenodo publish pending. DOI 10.5281/zenodo.20157153 reserved.
 **License:** [CC-BY-4.0](LICENSE)
 
-[![DOI](https://zenodo.org/badge/DOI/{{DOI}}.svg)](https://doi.org/{{DOI}})
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20157153.svg)](https://doi.org/10.5281/zenodo.20157153)
 [![arXiv](https://img.shields.io/badge/arXiv-{{ARXIV_ID}}-b31b1b.svg)](https://arxiv.org/abs/{{ARXIV_ID}})
+
+**Zenodo:** [zenodo.org/records/20157153](https://zenodo.org/records/20157153)
+**Concept DOI** (always resolves to latest version): _pending — minted at Zenodo publish_
 
 ---
 
@@ -38,9 +41,9 @@ We argue that for a large language model (LLM) the **externally writable** in-co
   title        = {The Limits of My Tokens: The Token-Substrate Hypothesis and the Coinage Probe},
   year         = {2026},
   publisher    = {Zenodo},
-  version      = {0.4.0},
-  doi          = {{{DOI}}},
-  url          = {https://doi.org/{{DOI}}}
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.20157153},
+  url          = {https://doi.org/10.5281/zenodo.20157153}
 }
 ```
 

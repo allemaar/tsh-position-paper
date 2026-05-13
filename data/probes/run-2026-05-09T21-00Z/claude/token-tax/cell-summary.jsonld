@@ -4,7 +4,7 @@
   "cell_id": "claude.token-tax",
   "model": "claude",
   "term_id": "token-tax",
-  "stratum": "alex-coinage",
+  "stratum": "author-coinage",
   "trials_completed": 3,
   "judges_ok": 9,
   "judges_total": 9,

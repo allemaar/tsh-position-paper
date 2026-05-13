@@ -105,7 +105,7 @@ Per-stratum mean LR with 95% CI.
 
 | Stratum | n trials | Mean LR | 95% CI | Within-stratum CV |
 |---|---|---|---|---|
-| alex-coinage | 36 | **+6.083** | [+5.598, +6.568] | 0.244 |
+| author-coinage | 36 | **+6.083** | [+5.598, +6.568] | 0.244 |
 | self-ref-paper | 36 | **+4.898** | [+4.465, +5.331] | 0.271 |
 | nonce | 18 | **+5.370** | [+4.410, +6.331] | 0.387 |
 | positive-control | 18 | **+0.000** | [+0.000, +0.000] | nan |

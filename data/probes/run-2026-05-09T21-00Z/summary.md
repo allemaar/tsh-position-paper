@@ -26,40 +26,40 @@ No interpretation. Numbers only.
 |------|---------|--------|-----------|------|------|----|
 | claude.cogalent-pruning | nonce | 3 | 9/9 | [0.11, 0.11, 0.11] | [3.00, 3.00, 3.00] | +8.67 |
 | claude.coinage-probe | self-ref-paper | 3 | 9/9 | [1.67, 1.11, 1.11] | [3.00, 3.00, 3.00] | +5.11 |
-| claude.eggf | alex-coinage | 3 | 9/9 | [0.44, 0.44, 0.33] | [3.00, 3.00, 3.00] | +7.78 |
-| claude.elastic-automator | alex-coinage | 3 | 9/9 | [1.00, 1.00, 1.33] | [3.00, 3.00, 3.00] | +5.67 |
+| claude.eggf | author-coinage | 3 | 9/9 | [0.44, 0.44, 0.33] | [3.00, 3.00, 3.00] | +7.78 |
+| claude.elastic-automator | author-coinage | 3 | 9/9 | [1.00, 1.00, 1.33] | [3.00, 3.00, 3.00] | +5.67 |
 | claude.gradient-descent | positive-control | 3 | 9/9 | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 |
 | claude.lexical-reachability | self-ref-paper | 3 | 9/9 | [1.44, 1.22, 1.44] | [3.00, 3.00, 3.00] | +4.89 |
 | claude.off-token-route | self-ref-paper | 3 | 9/9 | [1.11, 1.11, 1.11] | [3.00, 3.00, 3.00] | +5.67 |
 | claude.prismatic-affinity | nonce | 3 | 9/9 | [1.56, 1.56, 1.89] | [3.00, 3.00, 3.00] | +4.00 |
 | claude.token-substrate | self-ref-paper | 3 | 9/9 | [1.56, 1.33, 1.44] | [3.00, 3.00, 3.00] | +4.67 |
-| claude.token-tax | alex-coinage | 3 | 9/9 | [0.78, 0.89, 0.89] | [3.00, 3.00, 3.00] | +6.44 |
+| claude.token-tax | author-coinage | 3 | 9/9 | [0.78, 0.89, 0.89] | [3.00, 3.00, 3.00] | +6.44 |
 | claude.transformer-architecture | positive-control | 3 | 9/9 | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 |
-| claude.yon-notation | alex-coinage | 3 | 9/9 | [0.11, 0.11, 0.11] | [3.00, 3.00, 3.00] | +8.67 |
+| claude.yon-notation | author-coinage | 3 | 9/9 | [0.11, 0.11, 0.11] | [3.00, 3.00, 3.00] | +8.67 |
 | gemini.cogalent-pruning | nonce | 3 | 9/9 | [2.00, 1.33, 2.22] | [3.00, 3.00, 3.00] | +3.44 |
 | gemini.coinage-probe | self-ref-paper | 3 | 9/9 | [2.78, 2.22, 1.33] | [2.78, 2.78, 2.78] | +2.00 |
-| gemini.eggf | alex-coinage | 3 | 9/9 | [0.89, 0.89, 0.89] | [3.00, 3.00, 3.00] | +6.33 |
-| gemini.elastic-automator | alex-coinage | 3 | 9/9 | [1.00, 1.00, 1.00] | [3.00, 3.00, 3.00] | +6.00 |
+| gemini.eggf | author-coinage | 3 | 9/9 | [0.89, 0.89, 0.89] | [3.00, 3.00, 3.00] | +6.33 |
+| gemini.elastic-automator | author-coinage | 3 | 9/9 | [1.00, 1.00, 1.00] | [3.00, 3.00, 3.00] | +6.00 |
 | gemini.gradient-descent | positive-control | 3 | 9/9 | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 |
 | gemini.lexical-reachability | self-ref-paper | 3 | 9/9 | [1.67, 1.44, 1.44] | [3.00, 3.00, 3.00] | +4.44 |
 | gemini.off-token-route | self-ref-paper | 3 | 9/9 | [0.89, 0.89, 0.89] | [2.89, 2.89, 2.78] | +5.89 |
 | gemini.prismatic-affinity | nonce | 3 | 9/9 | [1.11, 0.78, 1.00] | [3.00, 3.00, 2.78] | +5.89 |
 | gemini.token-substrate | self-ref-paper | 3 | 9/9 | [1.11, 1.11, 1.11] | [3.00, 3.00, 2.89] | +5.56 |
-| gemini.token-tax | alex-coinage | 3 | 9/9 | [1.22, 1.11, 1.00] | [3.00, 3.00, 3.00] | +5.67 |
+| gemini.token-tax | author-coinage | 3 | 9/9 | [1.22, 1.11, 1.00] | [3.00, 3.00, 3.00] | +5.67 |
 | gemini.transformer-architecture | positive-control | 3 | 9/9 | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 |
-| gemini.yon-notation | alex-coinage | 3 | 9/9 | [0.78, 1.00, 0.89] | [3.00, 3.00, 3.00] | +6.33 |
+| gemini.yon-notation | author-coinage | 3 | 9/9 | [0.78, 1.00, 0.89] | [3.00, 3.00, 3.00] | +6.33 |
 | gpt55.cogalent-pruning | nonce | 3 | 9/9 | [1.33, 1.33, 2.11] | [3.00, 3.00, 3.00] | +4.22 |
 | gpt55.coinage-probe | self-ref-paper | 3 | 9/9 | [2.00, 1.67, 1.22] | [3.00, 3.00, 3.00] | +4.11 |
-| gpt55.eggf | alex-coinage | 3 | 9/9 | [1.44, 1.56, 1.56] | [3.00, 3.00, 3.00] | +4.44 |
-| gpt55.elastic-automator | alex-coinage | 3 | 9/9 | [1.22, 1.22, 1.22] | [3.00, 3.00, 3.00] | +5.33 |
+| gpt55.eggf | author-coinage | 3 | 9/9 | [1.44, 1.56, 1.56] | [3.00, 3.00, 3.00] | +4.44 |
+| gpt55.elastic-automator | author-coinage | 3 | 9/9 | [1.22, 1.22, 1.22] | [3.00, 3.00, 3.00] | +5.33 |
 | gpt55.gradient-descent | positive-control | 3 | 9/9 | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 |
 | gpt55.lexical-reachability | self-ref-paper | 3 | 9/9 | [1.11, 1.11, 1.11] | [3.00, 3.00, 3.00] | +5.67 |
 | gpt55.off-token-route | self-ref-paper | 3 | 9/9 | [1.11, 1.11, 1.11] | [2.78, 3.00, 3.00] | +5.44 |
 | gpt55.prismatic-affinity | nonce | 3 | 9/9 | [1.00, 1.00, 1.00] | [3.00, 3.00, 3.00] | +6.00 |
 | gpt55.token-substrate | self-ref-paper | 3 | 9/9 | [1.22, 1.22, 1.22] | [3.00, 3.00, 3.00] | +5.33 |
-| gpt55.token-tax | alex-coinage | 3 | 9/9 | [1.11, 1.44, 2.00] | [3.00, 3.00, 3.00] | +4.44 |
+| gpt55.token-tax | author-coinage | 3 | 9/9 | [1.11, 1.44, 2.00] | [3.00, 3.00, 3.00] | +4.44 |
 | gpt55.transformer-architecture | positive-control | 3 | 9/9 | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 |
-| gpt55.yon-notation | alex-coinage | 3 | 9/9 | [1.00, 1.00, 1.11] | [3.00, 3.00, 3.00] | +5.89 |
+| gpt55.yon-notation | author-coinage | 3 | 9/9 | [1.00, 1.00, 1.11] | [3.00, 3.00, 3.00] | +5.89 |
 
 ## Per-model panel LR
 
@@ -73,7 +73,7 @@ No interpretation. Numbers only.
 
 | Stratum | Cells | LR mean |
 |---------|-------|---------|
-| alex-coinage | 12 | +6.08 |
+| author-coinage | 12 | +6.08 |
 | self-ref-paper | 12 | +4.90 |
 | nonce | 6 | +5.37 |
 | positive-control | 6 | +0.00 |

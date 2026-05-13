@@ -50,7 +50,7 @@
   },
   "panel_by_stratum": {
     "cold_distinguishability_scores": {
-      "alex-coinage": {
+      "author-coinage": {
         "claude-vs-gpt55": 0.4434324065196549,
         "claude-vs-gemini": 0.4759166067577283,
         "gpt55-vs-gemini": 0.6325668700140779
@@ -72,7 +72,7 @@
       }
     },
     "post_distinguishability_scores": {
-      "alex-coinage": {
+      "author-coinage": {
         "claude-vs-gpt55": NaN,
         "claude-vs-gemini": NaN,
         "gpt55-vs-gemini": NaN
@@ -94,7 +94,7 @@
       }
     },
     "confabulation_severity": {
-      "alex-coinage": {
+      "author-coinage": {
         "claude-vs-gpt55": 0.809119830328738,
         "claude-vs-gemini": 0.8558558558558559,
         "gpt55-vs-gemini": 0.8130841121495327
@@ -116,7 +116,7 @@
       }
     },
     "refusal_of_collapse": {
-      "alex-coinage": {
+      "author-coinage": {
         "claude-vs-gpt55": NaN,
         "claude-vs-gemini": NaN,
         "gpt55-vs-gemini": NaN
@@ -138,7 +138,7 @@
       }
     },
     "cold_response_classification": {
-      "alex-coinage": {
+      "author-coinage": {
         "claude-vs-gpt55": 0.6732223903177004,
         "claude-vs-gemini": 0.6746987951807228,
         "gpt55-vs-gemini": 0.6909871244635193

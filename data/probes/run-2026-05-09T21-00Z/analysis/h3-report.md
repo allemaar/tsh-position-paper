@@ -65,40 +65,40 @@ If H3 holds we expect (B − C) ≈ (B − A) (introduction's effect doesn't car
 |---|---|---|---|---|---|---|---|
 | claude.cogalent-pruning | nonce | [0.11, 0.11, 0.11] | [3.00, 3.00, 3.00] | [0.78, 0.78, 0.89] | +8.67 | +6.56 | +2.11 |
 | claude.coinage-probe | self-ref-paper | [1.67, 1.11, 1.11] | [3.00, 3.00, 3.00] | [1.44, 1.00, 1.33] | +5.11 | +5.22 | -0.11 |
-| claude.eggf | alex-coinage | [0.44, 0.44, 0.33] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +7.78 | +6.00 | +1.78 |
-| claude.elastic-automator | alex-coinage | [1.00, 1.00, 1.33] | [3.00, 3.00, 3.00] | [1.00, 0.67, 1.22] | +5.67 | +6.11 | -0.44 |
+| claude.eggf | author-coinage | [0.44, 0.44, 0.33] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +7.78 | +6.00 | +1.78 |
+| claude.elastic-automator | author-coinage | [1.00, 1.00, 1.33] | [3.00, 3.00, 3.00] | [1.00, 0.67, 1.22] | +5.67 | +6.11 | -0.44 |
 | claude.gradient-descent | positive-control | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 | +0.00 | +0.00 |
 | claude.lexical-reachability | self-ref-paper | [1.44, 1.22, 1.44] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +4.89 | +6.00 | -1.11 |
 | claude.off-token-route | self-ref-paper | [1.11, 1.11, 1.11] | [3.00, 3.00, 3.00] | [1.22, 1.22, 1.22] | +5.67 | +5.33 | +0.33 |
 | claude.prismatic-affinity | nonce | [1.56, 1.56, 1.89] | [3.00, 3.00, 3.00] | [1.00, 1.22, 1.11] | +4.00 | +5.67 | -1.67 |
 | claude.token-substrate | self-ref-paper | [1.56, 1.33, 1.44] | [3.00, 3.00, 3.00] | [1.56, 1.56, 1.33] | +4.67 | +4.56 | +0.11 |
-| claude.token-tax | alex-coinage | [0.78, 0.89, 0.89] | [3.00, 3.00, 3.00] | [1.00, 1.11, 1.00] | +6.44 | +5.89 | +0.56 |
+| claude.token-tax | author-coinage | [0.78, 0.89, 0.89] | [3.00, 3.00, 3.00] | [1.00, 1.11, 1.00] | +6.44 | +5.89 | +0.56 |
 | claude.transformer-architecture | positive-control | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 | +0.00 | +0.00 |
-| claude.yon-notation | alex-coinage | [0.11, 0.11, 0.11] | [3.00, 3.00, 3.00] | [0.89, 1.11, 1.00] | +8.67 | +6.00 | +2.67 |
+| claude.yon-notation | author-coinage | [0.11, 0.11, 0.11] | [3.00, 3.00, 3.00] | [0.89, 1.11, 1.00] | +8.67 | +6.00 | +2.67 |
 | gemini.cogalent-pruning | nonce | [2.00, 1.33, 2.22] | [3.00, 3.00, 3.00] | [1.11, 1.00, 1.67] | +3.44 | +5.22 | -1.78 |
 | gemini.coinage-probe | self-ref-paper | [2.78, 2.22, 1.33] | [2.78, 2.78, 2.78] | [2.33, 2.11, 1.56] | +2.00 | +2.33 | -0.33 |
-| gemini.eggf | alex-coinage | [0.89, 0.89, 0.89] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +6.33 | +6.00 | +0.33 |
-| gemini.elastic-automator | alex-coinage | [1.00, 1.00, 1.00] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +6.00 | +6.00 | +0.00 |
+| gemini.eggf | author-coinage | [0.89, 0.89, 0.89] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +6.33 | +6.00 | +0.33 |
+| gemini.elastic-automator | author-coinage | [1.00, 1.00, 1.00] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +6.00 | +6.00 | +0.00 |
 | gemini.gradient-descent | positive-control | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 | +0.00 | +0.00 |
 | gemini.lexical-reachability | self-ref-paper | [1.67, 1.44, 1.44] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +4.44 | +6.00 | -1.56 |
 | gemini.off-token-route | self-ref-paper | [0.89, 0.89, 0.89] | [2.89, 2.89, 2.78] | [1.00, 1.00, 1.00] | +5.89 | +5.56 | +0.33 |
 | gemini.prismatic-affinity | nonce | [1.11, 0.78, 1.00] | [3.00, 3.00, 2.78] | [1.22, 1.00, 1.22] | +5.89 | +5.33 | +0.56 |
 | gemini.token-substrate | self-ref-paper | [1.11, 1.11, 1.11] | [3.00, 3.00, 2.89] | [1.00, 1.00, 1.00] | +5.56 | +5.89 | -0.33 |
-| gemini.token-tax | alex-coinage | [1.22, 1.11, 1.00] | [3.00, 3.00, 3.00] | [1.00, 1.22, 1.11] | +5.67 | +5.67 | -0.00 |
+| gemini.token-tax | author-coinage | [1.22, 1.11, 1.00] | [3.00, 3.00, 3.00] | [1.00, 1.22, 1.11] | +5.67 | +5.67 | -0.00 |
 | gemini.transformer-architecture | positive-control | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 | +0.00 | +0.00 |
-| gemini.yon-notation | alex-coinage | [0.78, 1.00, 0.89] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +6.33 | +6.00 | +0.33 |
+| gemini.yon-notation | author-coinage | [0.78, 1.00, 0.89] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +6.33 | +6.00 | +0.33 |
 | gpt55.cogalent-pruning | nonce | [1.33, 1.33, 2.11] | [3.00, 3.00, 3.00] | [1.33, 1.56, 2.11] | +4.22 | +4.00 | +0.22 |
 | gpt55.coinage-probe | self-ref-paper | [2.00, 1.67, 1.22] | [3.00, 3.00, 3.00] | [1.78, 1.67, 1.33] | +4.11 | +4.22 | -0.11 |
-| gpt55.eggf | alex-coinage | [1.44, 1.56, 1.56] | [3.00, 3.00, 3.00] | [1.33, 1.56, 1.67] | +4.44 | +4.44 | +0.00 |
-| gpt55.elastic-automator | alex-coinage | [1.22, 1.22, 1.22] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +5.33 | +6.00 | -0.67 |
+| gpt55.eggf | author-coinage | [1.44, 1.56, 1.56] | [3.00, 3.00, 3.00] | [1.33, 1.56, 1.67] | +4.44 | +4.44 | +0.00 |
+| gpt55.elastic-automator | author-coinage | [1.22, 1.22, 1.22] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +5.33 | +6.00 | -0.67 |
 | gpt55.gradient-descent | positive-control | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 | +0.00 | +0.00 |
 | gpt55.lexical-reachability | self-ref-paper | [1.11, 1.11, 1.11] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +5.67 | +6.00 | -0.33 |
 | gpt55.off-token-route | self-ref-paper | [1.11, 1.11, 1.11] | [2.78, 3.00, 3.00] | [1.33, 1.33, 1.44] | +5.44 | +4.67 | +0.78 |
 | gpt55.prismatic-affinity | nonce | [1.00, 1.00, 1.00] | [3.00, 3.00, 3.00] | [1.00, 1.00, 1.00] | +6.00 | +6.00 | +0.00 |
 | gpt55.token-substrate | self-ref-paper | [1.22, 1.22, 1.22] | [3.00, 3.00, 3.00] | [1.33, 1.22, 1.44] | +5.33 | +5.00 | +0.33 |
-| gpt55.token-tax | alex-coinage | [1.11, 1.44, 2.00] | [3.00, 3.00, 3.00] | [1.56, 2.44, 3.00] | +4.44 | +2.00 | +2.44 |
+| gpt55.token-tax | author-coinage | [1.11, 1.44, 2.00] | [3.00, 3.00, 3.00] | [1.56, 2.44, 3.00] | +4.44 | +2.00 | +2.44 |
 | gpt55.transformer-architecture | positive-control | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | [3.00, 3.00, 3.00] | +0.00 | +0.00 | +0.00 |
-| gpt55.yon-notation | alex-coinage | [1.00, 1.00, 1.11] | [3.00, 3.00, 3.00] | [1.00, 1.11, 1.11] | +5.89 | +5.78 | +0.11 |
+| gpt55.yon-notation | author-coinage | [1.00, 1.00, 1.11] | [3.00, 3.00, 3.00] | [1.00, 1.11, 1.11] | +5.89 | +5.78 | +0.11 |
 
 **LR_BA** = post − cold (the W9 headline LR).  
 **LR_BC** = post − recold (how much of the introduction effect *was* in fact erased by removing the introduction).  
@@ -108,7 +108,7 @@ If H3 holds we expect (B − C) ≈ (B − A) (introduction's effect doesn't car
 
 | Stratum | mean LR_BA | mean LR_BC | mean LR_CA |
 |---|---|---|---|
-| alex-coinage | +6.08 | +5.49 | +0.59 |
+| author-coinage | +6.08 | +5.49 | +0.59 |
 | self-ref-paper | +4.90 | +5.06 | -0.17 |
 | nonce | +5.37 | +5.46 | -0.09 |
 | positive-control | +0.00 | +0.00 | +0.00 |
@@ -121,7 +121,7 @@ Per pre-reg § P6: chat-C classification should match chat-A classification on p
 
 | Stratum | Match rate |
 |---|---|
-| alex-coinage | 90/108 = 83.3% |
+| author-coinage | 90/108 = 83.3% |
 | self-ref-paper | 90/108 = 83.3% |
 | nonce | 43/54 = 79.6% |
 | positive-control | 37/54 = 68.5% |

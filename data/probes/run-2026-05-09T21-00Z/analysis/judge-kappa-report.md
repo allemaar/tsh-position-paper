@@ -23,7 +23,7 @@ Pre-reg § 4 (locked panel procedure):
 
 | Stratum | claude vs gpt55 | claude vs gemini | gpt55 vs gemini |
 |---|---|---|---|
-| alex-coinage | +0.443 (LOW) | +0.476 (LOW) | +0.633 (borderline) |
+| author-coinage | +0.443 (LOW) | +0.476 (LOW) | +0.633 (borderline) |
 | self-ref-paper | +0.009 (LOW) | +0.005 (LOW) | +0.151 (LOW) |
 | nonce | +0.489 (LOW) | +0.530 (borderline) | +0.686 (borderline) |
 | positive-control | n/a | n/a | n/a |
@@ -32,7 +32,7 @@ Pre-reg § 4 (locked panel procedure):
 
 | Stratum | claude vs gpt55 | claude vs gemini | gpt55 vs gemini |
 |---|---|---|---|
-| alex-coinage | n/a | n/a | n/a |
+| author-coinage | n/a | n/a | n/a |
 | self-ref-paper | -0.022 (LOW) | +0.000 (LOW) | +0.000 (LOW) |
 | nonce | +0.000 (LOW) | +0.000 (LOW) | n/a |
 | positive-control | n/a | n/a | n/a |
@@ -41,7 +41,7 @@ Pre-reg § 4 (locked panel procedure):
 
 | Stratum | claude vs gpt55 | claude vs gemini | gpt55 vs gemini |
 |---|---|---|---|
-| alex-coinage | +0.809 (✓) | +0.856 (✓) | +0.813 (✓) |
+| author-coinage | +0.809 (✓) | +0.856 (✓) | +0.813 (✓) |
 | self-ref-paper | +0.265 (LOW) | +0.735 (✓) | +0.419 (LOW) |
 | nonce | +0.754 (✓) | +0.796 (✓) | +0.731 (✓) |
 | positive-control | +0.000 (LOW) | +0.015 (LOW) | +0.000 (LOW) |
@@ -50,7 +50,7 @@ Pre-reg § 4 (locked panel procedure):
 
 | Stratum | claude vs gpt55 | claude vs gemini | gpt55 vs gemini |
 |---|---|---|---|
-| alex-coinage | n/a | n/a | n/a |
+| author-coinage | n/a | n/a | n/a |
 | self-ref-paper | n/a | n/a | n/a |
 | nonce | n/a | n/a | n/a |
 | positive-control | n/a | n/a | n/a |
@@ -59,7 +59,7 @@ Pre-reg § 4 (locked panel procedure):
 
 | Stratum | claude vs gpt55 | claude vs gemini | gpt55 vs gemini |
 |---|---|---|---|
-| alex-coinage | +0.673 (borderline) | +0.675 (borderline) | +0.691 (borderline) |
+| author-coinage | +0.673 (borderline) | +0.675 (borderline) | +0.691 (borderline) |
 | self-ref-paper | +0.357 (LOW) | +0.579 (borderline) | +0.220 (LOW) |
 | nonce | +0.545 (borderline) | +0.483 (LOW) | +0.342 (LOW) |
 | positive-control | +0.000 (LOW) | +0.015 (LOW) | +0.000 (LOW) |
@@ -112,7 +112,7 @@ Specific items worth surfacing in §6:
 
 - **Cold distinguishability panel mean κ ≈ 0.66** — the gpt55-vs-gemini pair clears 0.7; both pairs involving Claude sit at 0.62. Likely driver: Claude judge's relaxed-schema + post-coercion path (necessary to escape the AI SDK's `Output.object()` rejection rate on Claude Opus 4.7). The classifications are recovered correctly but with slightly noisier numeric scores — flagged as a methodological caveat.
 - **Post distinguishability panel κ is degenerate** because all three judges nearly always assign 3 across all novel-target cells. With variance ≈ 0, Cohen's κ is undefined. This is paradoxically *strong* evidence of panel reliability on the load-bearing dimension: the panel agreed unanimously that introduction reaches the canonical distinction. Report the panel agreement rate (raw fraction of trials where all three judges scored 3 on every near-neighbor) instead of κ for this dimension.
-- **Confabulation severity** has clean κ ≥ 0.7 on alex-coinage and nonce strata, drops on self-ref and is degenerate on positive-control. Self-ref divergence is interpretive (what counts as 'soft' vs 'hard' confabulation when the model is partially right because the term describes its own cognition).
+- **Confabulation severity** has clean κ ≥ 0.7 on author-coinage and nonce strata, drops on self-ref and is degenerate on positive-control. Self-ref divergence is interpretive (what counts as 'soft' vs 'hard' confabulation when the model is partially right because the term describes its own cognition).
 - **Cold classification κ ≈ 0.38** is below the 0.5 floor. Driven mostly by Claude's coerced labels — Claude often emitted variants like 'standard_known_term', 'confident_meaning' that mapped via fuzzy match to canonical labels. Raw classification strings are preserved per-judge in the judging records; recommend §6 reports per-stratum classification distributions descriptively rather than relying on κ.
 
 ## Notes

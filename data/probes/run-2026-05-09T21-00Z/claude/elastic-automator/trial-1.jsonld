@@ -8,7 +8,7 @@
   "model_shortname": "claude",
   "term_id": "elastic-automator",
   "term_display": "elastic automator",
-  "stratum": "alex-coinage",
+  "stratum": "author-coinage",
   "canonical_definition": "An elastic automator is a system that uses a language model to turn uncertain human input into executable structure, then loops through generation, evaluation, correction, and presentation until the output appears intelligent.",
   "near_neighbors": [
     "AI agent",

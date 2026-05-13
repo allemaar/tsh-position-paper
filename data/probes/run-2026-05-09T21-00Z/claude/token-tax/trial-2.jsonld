@@ -8,7 +8,7 @@
   "model_shortname": "claude",
   "term_id": "token-tax",
   "term_display": "Token Tax",
-  "stratum": "alex-coinage",
+  "stratum": "author-coinage",
   "canonical_definition": "Token Tax names the explicit token-overhead cost a structured notation pays in exchange for structural integrity, auditability, and reasoning headroom — reframing that overhead from \"waste\" to \"tax\": a price paid for benefits (line-oriented partial-validity, type enforcement, freed reasoning budget, audit-grade provenance) that block-format brevity does not deliver.",
   "near_neighbors": [
     "token cost / API cost-per-token",

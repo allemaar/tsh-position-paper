@@ -8,7 +8,7 @@
   "model_shortname": "claude",
   "term_id": "eggf",
   "term_display": "EGGF",
-  "stratum": "alex-coinage",
+  "stratum": "author-coinage",
   "canonical_definition": "EGGF (Entity Gravity Graph Framework) is a portable publishing-and-credibility architecture that organizes intellectual work around a central Entity exhibiting gravity, where every authored Body has one canonical URL, every Pathway between Bodies is typed, and the resulting graph is exposed at a manifest endpoint so AI assistants and search systems can traverse a creator's authorship as infrastructure rather than reconstructing it from scattered HTML.",
   "near_neighbors": [
     "a knowledge graph (RDF, schema.org, Wikidata)",

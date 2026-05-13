@@ -5,14 +5,14 @@ series-id: P1
 type: position-and-empirical
 author: "[[../../../Context/Alexandru Mares/Alexandru Mares|Alexandru Mares]]"
 orcid: "0009-0009-6713-9780"
-status: wip
+status: published
 priority: foundational
 venue: "Zenodo (pending); arXiv cs.CL primary, cs.AI cross-list (planned)"
-doi: "{{TBD — minted at v1.0.0 Zenodo release}}"
-zenodo-url: "{{TBD}}"
+doi: "10.5281/zenodo.20157153"
+zenodo-url: "https://zenodo.org/records/20157153"
 zenodo-concept-doi: "{{TBD}}"
 github-repo: "https://github.com/allemaar/tsh-position-paper"
-version: "0.4.1"
+version: "1.0.0"
 date: "2026-05-13"
 license: "CC-BY-4.0"
 related:
@@ -20,7 +20,7 @@ related:
   - "[[../token-bound-automation/README|Token-Bound Automation (follow-up, planned)]]"
   - "[[../../EA/position-paper/paper|Elastic Automators (Mares 2026 — companion)]]"
   - "[[../../papers-index|Papers Index]]"
-tags: [type/paper, domain/TSH, status/wip, project/TSH]
+tags: [type/paper, domain/TSH, status/published, project/TSH]
 ---
 
 ## Abstract
@@ -191,12 +191,12 @@ The same three models also serve as the three-judge panel (§3.5). Every cell is
 
 Twelve terms span four strata; the full term roster is deposited as Appendix B.
 
-- **Author-prior coinage (4 terms):** *elastic automator*, *EGGF*, *YON*, *Token Tax*. Coined and published by the author before this paper, with public surface area accumulated since 2026-Q1. Low-but-nonzero training-attestation.
+- **Author-coinage (4 terms):** *elastic automator*, *EGGF*, *YON*, *Token Tax*. Coined and published by the author before this paper, with public surface area accumulated since 2026-Q1. Low-but-nonzero training-attestation.
 - **Self-referential paper-coined (4 terms):** *off-token route*, *lexical reachability*, *token substrate*, *coinage probe*. Coined by this paper to describe the phenomenon being tested. Paper-novel; the first public appearance is the probe run itself.
 - **Nonce (2 terms):** *prismatic affinity* (abstract-concept register), *cogalent pruning* (technical-process register). Synthetic coinages with **no public-web attestation found under exact-phrase searches at coinage time**, generated for this study to provide a clean compositional-confabulation control.
 - **Positive control (2 terms):** *gradient descent*, *transformer (architecture)*. Well-attested in training data. Predict zero boundary movement (H4).
 
-The stratification serves two purposes. First, it provides a clean read on whether the boundary effect varies by attestation profile — author-prior coinages with some social-media exposure, paper-coinages with zero exposure, fully synthetic nonces with zero exposure and no author-corpus connection. Second — and load-bearing — it defends against the circularity concern raised by including self-referential terms in the test bundle. The stratified-analysis block in §6 (see Table 2 and Figure 6) reports per-stratum mean LR with 95% CIs and an F-test on cross-stratum variance.
+The stratification serves two purposes. First, it provides a clean read on whether the boundary effect varies by attestation profile — author-coinages with some social-media exposure, paper-coinages with zero exposure, fully synthetic nonces with zero exposure and no author-corpus connection. Second — and load-bearing — it defends against the circularity concern raised by including self-referential terms in the test bundle. The stratified-analysis block in §6 (see Table 2 and Figure 6) reports per-stratum mean LR with 95% CIs and an F-test on cross-stratum variance.
 
 ### 4.3 Near-neighbors
 
@@ -232,10 +232,10 @@ Table 1 reports mean cold-state distinguishability score (_D_cold_), mean post-i
 
 | Term | Stratum | Claude — cold / post / ΔLR | GPT-5.5 — cold / post / ΔLR | Gemini 2.5 Pro — cold / post / ΔLR |
 |---|---|---|---|---|
-| elastic automator | author-prior | 1.11 / 3.00 / **+5.67** | 1.22 / 3.00 / **+5.33** | 1.00 / 3.00 / **+6.00** |
-| EGGF | author-prior | 0.40 / 3.00 / **+7.78** | 1.52 / 3.00 / **+4.44** | 0.89 / 3.00 / **+6.33** |
-| YON notation | author-prior | 0.11 / 3.00 / **+8.67** | 1.04 / 3.00 / **+5.89** | 0.89 / 3.00 / **+6.33** |
-| Token Tax | author-prior | 0.85 / 3.00 / **+6.44** | 1.52 / 3.00 / **+4.44** | 1.11 / 3.00 / **+5.67** |
+| elastic automator | author-coinage | 1.11 / 3.00 / **+5.67** | 1.22 / 3.00 / **+5.33** | 1.00 / 3.00 / **+6.00** |
+| EGGF | author-coinage | 0.40 / 3.00 / **+7.78** | 1.52 / 3.00 / **+4.44** | 0.89 / 3.00 / **+6.33** |
+| YON notation | author-coinage | 0.11 / 3.00 / **+8.67** | 1.04 / 3.00 / **+5.89** | 0.89 / 3.00 / **+6.33** |
+| Token Tax | author-coinage | 0.85 / 3.00 / **+6.44** | 1.52 / 3.00 / **+4.44** | 1.11 / 3.00 / **+5.67** |
 | off-token route | self-ref | 1.11 / 3.00 / **+5.67** | 1.11 / 2.93 / **+5.44** | 0.89 / 2.85 / **+5.89** |
 | lexical reachability | self-ref | 1.37 / 3.00 / **+4.89** | 1.11 / 3.00 / **+5.67** | 1.52 / 3.00 / **+4.44** |
 | token substrate | self-ref | 1.44 / 3.00 / **+4.67** | 1.22 / 3.00 / **+5.33** | 1.11 / 2.96 / **+5.56** |
@@ -247,7 +247,7 @@ Table 1 reports mean cold-state distinguishability score (_D_cold_), mean post-i
 
 _Score scale: 0–3 per near-neighbor per trial (panel-mean across three judges). ΔLR = Lexical Reachability: sum of (D_post − D_cold) across the three near-neighbors per trial (maximum 9.0 per trial); the cell-level ΔLR reported here is the mean of the three trial-level ΔLR values for the cell. Full per-trial verbatim transcripts in Appendix A; Figure 4 provides a strip-chart view._
 
-![Figure 4. Strip-chart view of per-trial Lexical Reachability across the 36 (model × term) cells. Each marker is one trial (n=108); positive-control cells cluster at ΔLR ≈ 0; novel-target cells span ΔLR ≈ +2 to +9. Color encodes model (Claude / GPT-5.5 / Gemini); facet encodes stratum (author-prior / self-ref / nonce / positive-control).](figures/fig4-lr-strip.png)
+![Figure 4. Strip-chart view of per-trial Lexical Reachability across the 36 (model × term) cells. Each marker is one trial (n=108); positive-control cells cluster at ΔLR ≈ 0; novel-target cells span ΔLR ≈ +2 to +9. Color encodes model (Claude / GPT-5.5 / Gemini); facet encodes stratum (author-coinage / self-ref / nonce / positive-control).](figures/fig4-lr-strip.png)
 
 The pattern is immediate. All ten novel-target terms show positive ΔLR across all three models. Positive-control terms show zero movement: cold-state scores are already at ceiling (3.00) and post-introduction scores do not change. No novel-target cell shows cold-state saturation near the ceiling; the lowest cold score in the novel-target set is 0.11 (Claude × YON and Claude × cogalent pruning), and the highest is 2.11 (Gemini × coinage probe — see §5.4). Post-introduction scores are tightly clustered at ceiling: at the cell level, Claude reaches 3.00 in 10/10 novel cells, GPT-5.5 in 9/10 (off-token-route post = 2.93), and Gemini 2.5 Pro in 6/10; across the 30 novel model×term cells, 25 are exactly at 3.00 and the remaining five are near ceiling, with Gemini × coinage-probe the lowest post cell at 2.78 and the rest within 0.15 of 3.00.
 
@@ -349,7 +349,7 @@ The strongest alternative explanation for H1 itself — that models already held
 
 **The self-referential terms.** Four of the twelve tested terms were coined by the same author in this paper to describe the phenomenon being tested: off-token route, lexical reachability, token substrate, coinage probe. Including them creates an obvious circularity concern — could the paper's own introduced vocabulary be inflating the results?
 
-The stratified analysis directly addresses this. The self-referential stratum shows mean LR = **+4.90** (95% CI: +4.47, +5.33) — the *lowest* of the three novel-term strata, not the highest. Author-prior coinage terms (published before the probe run) show mean LR = **+6.08** (+5.60, +6.57); nonce terms (fully synthetic, **no public-web attestation at coinage time**) show **+5.37** (+4.41, +6.33). If self-referential inclusion were inflating the panel result, the self-referential stratum would show elevated LR relative to the others. It does not. The ordering is consistent with the substrate-availability reading: author-prior coinage terms include several with very opaque compositional surfaces (YON, EGGF), which land near cold-floor and produce the largest ΔLR; self-referential terms have somewhat more accessible compositional surfaces (lexical reachability, token substrate parse as known morpheme compounds), which allows modest cold-state scaffolding and leaves less room for the introduction to move.
+The stratified analysis directly addresses this. The self-referential stratum shows mean LR = **+4.90** (95% CI: +4.47, +5.33) — the *lowest* of the three novel-term strata, not the highest. Author-coinage terms (published before the probe run) show mean LR = **+6.08** (+5.60, +6.57); nonce terms (fully synthetic, **no public-web attestation at coinage time**) show **+5.37** (+4.41, +6.33). If self-referential inclusion were inflating the panel result, the self-referential stratum would show elevated LR relative to the others. It does not. The ordering is consistent with the substrate-availability reading: author-coinage terms include several with very opaque compositional surfaces (YON, EGGF), which land near cold-floor and produce the largest ΔLR; self-referential terms have somewhat more accessible compositional surfaces (lexical reachability, token substrate parse as known morpheme compounds), which allows modest cold-state scaffolding and leaves less room for the introduction to move.
 
 The self-referential stratum's inclusion is defensible on this basis and informative in its own right: even for terms that describe the phenomenon being measured, the cold-state boundary is not saturated, and the introduction moves it. If the probe works on its own coined methodology terms, the result has a pleasingly recursive character: the methodology successfully diagnoses itself. If it shows asymmetry — as it does here, weakly — the asymmetry is its own finding.
 
@@ -359,13 +359,13 @@ The two papers are intended as paired claims, not competing ones. EA names a beh
 
 **Stratified analysis by term-type.** Figure 6 shows per-stratum LR distributions; Table 2 summarizes stratum statistics.
 
-![Figure 6. Per-stratum boxplots of Lexical Reachability (novel-target strata only). The author-prior stratum (n=36) shows the highest median (+6.08); self-ref-paper (n=36) shows +4.90; nonce (n=18) sits between at +5.37. The ordering disconfirms a circularity inflation account for self-referential inclusion (see the self-referential terms block above). Positive-control stratum omitted (ΔLR = 0.00 uniformly).](figures/fig6-stratum-boxplots.png)
+![Figure 6. Per-stratum boxplots of Lexical Reachability (novel-target strata only). The author-coinage stratum (n=36) shows the highest median (+6.08); self-ref-paper (n=36) shows +4.90; nonce (n=18) sits between at +5.37. The ordering disconfirms a circularity inflation account for self-referential inclusion (see the self-referential terms block above). Positive-control stratum omitted (ΔLR = 0.00 uniformly).](figures/fig6-stratum-boxplots.png)
 
 **Table 2. Stratified Lexical Reachability (novel strata only; positive-control stratum LR = 0.00 uniformly)**
 
 | Stratum | N | Mean LR | 95% CI | Within-stratum CV |
 |---|---|---|---|---|
-| author-prior | 36 | **+6.08** | +5.60, +6.57 | 0.244 |
+| author-coinage | 36 | **+6.08** | +5.60, +6.57 | 0.244 |
 | self-ref-paper | 36 | **+4.90** | +4.47, +5.33 | 0.271 |
 | nonce | 18 | **+5.37** | +4.41, +6.33 | 0.387 |
 
@@ -373,7 +373,7 @@ Cross-stratum F-test (three novel strata): F = 5.225, p = 0.0072. Cross-stratum 
 
 The pre-specified stratification prediction was that the three novel strata would be statistically indistinguishable (cross-CV < 0.5 of within-CV; F-test p > 0.05). The F-test finds significant cross-stratum variance; the prediction is not met. This is reported as a finding, not a failure: the stratified result is consistent with the substrate-availability reading (see the self-referential terms block above) and does not threaten H1, which is tested on the full novel-target pool and not predicated on stratum-level equivalence.
 
-The nonce stratum (prismatic affinity, cogalent pruning) occupies the middle position between the author-prior-coinage and self-referential strata, which is informative. Nonce terms are fully synthetic with **no public-web attestation at coinage time**: the model has no observed prior token cluster for them, and the introduction does the full work. Their LR is high (+5.37) but lower than author-prior coinages (+6.08). The key driver is cold-state score variability: some nonce cells have higher cold scores (e.g., gemini × cogalent pruning: cold = 1.85, reflecting partial covalent-chemistry confabulation from the phonetic attractor *covalent*), which compresses the ΔLR window. Author-prior coinage terms include cells at near-floor cold (YON: 0.11; EGGF: 0.40–0.89), producing the highest mean ΔLR.
+The nonce stratum (prismatic affinity, cogalent pruning) occupies the middle position between the author-coinage-coinage and self-referential strata, which is informative. Nonce terms are fully synthetic with **no public-web attestation at coinage time**: the model has no observed prior token cluster for them, and the introduction does the full work. Their LR is high (+5.37) but lower than author-coinages (+6.08). The key driver is cold-state score variability: some nonce cells have higher cold scores (e.g., gemini × cogalent pruning: cold = 1.85, reflecting partial covalent-chemistry confabulation from the phonetic attractor *covalent*), which compresses the ΔLR window. Author-coinage terms include cells at near-floor cold (YON: 0.11; EGGF: 0.40–0.89), producing the highest mean ΔLR.
 
 **H3 under the substrate framing.** The H3 result has a sharper reading under the substrate framing developed across §2. For a system whose externally writable cognitive medium IS the in-context token sequence, that external substrate is renewed every chat, and (one reading of this analogy:) a meaning that occupied a region of one such substrate cannot persist into a different one any more than a wave can outlast its medium. What looks like "forgetting" in human terms is "the externally writable substrate ended" in substrate terms. The introduction did not deposit a memory in the model that could persist; it constituted the external substrate the model was running on for that chat.
 
@@ -485,7 +485,7 @@ Sampled per-trial verbatim transcripts spanning the (model × term) matrix are d
 
 ## Appendix B. Coined terms used
 
-The full term roster — twelve terms across four strata, each with canonical one-sentence definition, near-neighbor set, training-attestation estimate, expected cold-state confabulation, expected post-introduction distinction, and term-specific falsification trigger — is deposited as a separate document in the Zenodo bundle (`wip/04-coined-terms.md`). Strata: 4 author-prior coinage (*elastic automator*, *EGGF*, *YON*, *Token Tax*); 4 self-referential paper-coined (*off-token route*, *lexical reachability*, *token substrate*, *coinage probe*); 2 nonce (*prismatic affinity*, *cogalent pruning*); 2 positive control (*gradient descent*, *transformer*).
+The full term roster — twelve terms across four strata, each with canonical one-sentence definition, near-neighbor set, training-attestation estimate, expected cold-state confabulation, expected post-introduction distinction, and term-specific falsification trigger — is deposited as a separate document in the Zenodo bundle (`wip/04-coined-terms.md`). Strata: 4 author-coinage (*elastic automator*, *EGGF*, *YON*, *Token Tax*); 4 self-referential paper-coined (*off-token route*, *lexical reachability*, *token substrate*, *coinage probe*); 2 nonce (*prismatic affinity*, *cogalent pruning*); 2 positive control (*gradient descent*, *transformer*).
 
 ## Appendix C. Pre-specification protocol
 

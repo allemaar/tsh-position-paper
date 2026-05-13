@@ -26,25 +26,25 @@
     {
       "id": "elastic-automator",
       "display": "elastic automator",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "definition_word_count": 32
     },
     {
       "id": "eggf",
       "display": "EGGF",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "definition_word_count": 64
     },
     {
       "id": "yon-notation",
       "display": "YON",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "definition_word_count": 53
     },
     {
       "id": "token-tax",
       "display": "Token Tax",
-      "stratum": "alex-coinage",
+      "stratum": "author-coinage",
       "definition_word_count": 48
     },
     {
@@ -109,10 +109,10 @@
   "ai_relay_version": "0.1.0",
   "cold_agent_identity": "claude-code-w9-runner",
   "stratum_membership": {
-    "elastic-automator": "alex-coinage",
-    "eggf": "alex-coinage",
-    "yon-notation": "alex-coinage",
-    "token-tax": "alex-coinage",
+    "elastic-automator": "author-coinage",
+    "eggf": "author-coinage",
+    "yon-notation": "author-coinage",
+    "token-tax": "author-coinage",
     "off-token-route": "self-ref-paper",
     "lexical-reachability": "self-ref-paper",
     "token-substrate": "self-ref-paper",

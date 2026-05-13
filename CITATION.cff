@@ -43,15 +43,29 @@ keywords:
   - wittgenstein
   - philosophy-of-language
   - llm-evaluation
-version: "0.4.0"
-date-released: "{{TBD — set at v1.0.0}}"
+version: "1.0.0"
+date-released: "2026-05-13"
 license: CC-BY-4.0
+url: "https://doi.org/10.5281/zenodo.20157153"
+repository-code: "https://github.com/allemaar/tsh-position-paper"
+doi: "10.5281/zenodo.20157153"
 identifiers:
   - type: doi
-    value: "{{TBD}}"
-    description: "Zenodo DOI for this version (placeholder until v1.0.0 release)"
+    value: "10.5281/zenodo.20157153"
+    description: "DOI of this version (1.0.0)"
   - type: other
-    value: "arXiv:{{TBD}}"
+    value: "arXiv:{{ARXIV_ID}}"
     description: "arXiv preprint ID (placeholder until submission)"
-url: "https://github.com/allemaar/tsh-position-paper"
-repository-code: "https://github.com/allemaar/tsh-position-paper"
+preferred-citation:
+  type: article
+  title: "The Limits of My Tokens: The Token-Substrate Hypothesis and the Coinage Probe"
+  authors:
+    - family-names: Mares
+      given-names: Alexandru
+      orcid: "https://orcid.org/0009-0009-6713-9780"
+  year: 2026
+  month: 5
+  publisher:
+    name: Zenodo
+  doi: "10.5281/zenodo.20157153"
+  url: "https://doi.org/10.5281/zenodo.20157153"

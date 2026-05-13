@@ -8,7 +8,7 @@
   "model_shortname": "gpt55",
   "term_id": "yon-notation",
   "term_display": "YON",
-  "stratum": "alex-coinage",
+  "stratum": "author-coinage",
   "canonical_definition": "YON is a constructed notation for AI cognition that separates a fixed minimal grammar from pluggable per-domain vocabularies, designed stream-first so each line is a self-contained record that can be parsed, validated, or acted upon as it arrives, removing a class of failure modes that block formats (essays, JSON, XML) inherit by design.",
   "near_neighbors": [
     "JSON / XML / YAML",

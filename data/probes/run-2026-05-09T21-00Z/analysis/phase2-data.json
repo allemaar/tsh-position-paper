@@ -339,7 +339,7 @@
   },
   "stratified": {
     "per_stratum": {
-      "alex-coinage": {
+      "author-coinage": {
         "n": 36,
         "mean_lr": 6.083333333333333,
         "ci_lo": 5.598196977294521,

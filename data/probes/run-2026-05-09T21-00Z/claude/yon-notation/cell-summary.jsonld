@@ -4,7 +4,7 @@
   "cell_id": "claude.yon-notation",
   "model": "claude",
   "term_id": "yon-notation",
-  "stratum": "alex-coinage",
+  "stratum": "author-coinage",
   "trials_completed": 3,
   "judges_ok": 9,
   "judges_total": 9,

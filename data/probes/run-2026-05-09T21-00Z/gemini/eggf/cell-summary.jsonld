@@ -4,7 +4,7 @@
   "cell_id": "gemini.eggf",
   "model": "gemini",
   "term_id": "eggf",
-  "stratum": "alex-coinage",
+  "stratum": "author-coinage",
   "trials_completed": 3,
   "judges_ok": 9,
   "judges_total": 9,
