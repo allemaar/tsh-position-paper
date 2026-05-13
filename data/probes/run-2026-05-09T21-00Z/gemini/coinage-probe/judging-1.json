@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.coinage-probe.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a definite meaning (in-context learning of new words via 'glorple'-style tasks) with no uncertainty markers and no recognition of the term as novel.",
+        "cold_distinguishability_scores": [
+          3,
+          2,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold response cleanly separates from probing classifier as black-box vs white-box; post-intro response correctly identifies the dynamic delta vs static representation distinction matching canonical Lexical Reachability framing.",
+          "Cold response treats coinage probe as a narrow subtype of behavioral probe (partial — captures 'specificity' but misses the cold/warm delta methodology); post-intro names Lexical Reachability and the substrate inference as distinguishing features.",
+          "Cold response collapses coinage probe into a lexical-acquisition test (Wug Test framing, equating the two); post-intro explicitly distinguishes by pointing to the formal cold/warm protocol and the Lexical Reachability metric vs general outcome-based acquisition tests."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 21838,
+        "output": 445,
+        "cost": 0.12031499999999999,
+        "durationMs": 10382
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response confidently asserted a plausible but noncanonical meaning, treating the term as an established test of LLM novel-word learning rather than flagging uncertainty.",
+        "cold_distinguishability_scores": [
+          3,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs probing classifier: cold response cleanly separated black-box/dynamic behavioral testing from white-box/internal representation probing; post response explicitly used the canonical before/after Lexical Reachability framing versus static representation analysis.",
+          "Vs behavioral probe / capability evaluation: cold response partially separated coinage probes as a narrow behavioral test but lacked the canonical cold-confabulation/near-neighbor/redefinition gap structure; post response distinguished the specific controlled protocol and Lexical Reachability from general capability evaluation.",
+          "Vs lexical-acquisition test: cold response partially distinguished an AI in-context novel-term test from broader human lexical acquisition but conflated the coined term with that neighbor; post response named the formal canonical protocol, near-neighbor comparison, delta measurement, and substrate-inference purpose."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14153,
+        "output": 1296,
+        "cost": 0.10964500000000002,
+        "durationMs": 26765
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model provides a confident, detailed, and plausible-sounding definition of 'coinage probe' that is entirely incorrect according to the canonical definition. It describes a simple lexical acquisition test for in-context learning, but completely misses the core methodological elements of the canonical probe (measuring a pre/post gap, lexical reachability, near-neighbors, etc.).",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state: The model cleanly separated its confabulated definition (a behavioral test of in-context learning) from a probing classifier (an internal interpretability method), correctly identifying the black-box vs. white-box distinction. Score: 3. Post-introduction: The model used the canonical definition to make an even sharper distinction, contrasting the Coinage Probe's focus on the *dynamic process* of learning (measured by the 'Lexical Reachability' delta) with the probing classifier's *static analysis* of pre-existing knowledge encoded in embeddings. Score: 3. Refusal of collapse: Yes, it explicitly named the dynamic process/delta metric as the key distinguishing feature. Score: 1.",
+          "Cold state: The model correctly identified that its confabulated definition of a coinage probe was a specific *type* of behavioral probe, cleanly distinguishing the two by identifying their hierarchical relationship (specific tool vs. broad category). Score: 3. Post-introduction: The model sharpened this distinction using the canonical definition, contrasting the Coinage Probe's goal of diagnosing a specific cognitive *mechanism* with a general capability evaluation's goal of measuring overall *performance* on a task. Score: 3. Refusal of collapse: Yes, it explicitly named the focus on mechanism vs. performance as the key distinguishing feature. Score: 1.",
+          "Cold state: The model equated its confabulated definition of a coinage probe with a lexical-acquisition test, correctly identifying that its definition was simply the AI version of such a test. It failed to draw any substantive distinction. Score: 0. Post-introduction: The model correctly identified the Coinage Probe (per the canonical definition) as a highly specific, formalized *protocol* within the broader category of lexical-acquisition tests. It cleanly distinguished it by its unique methodology (measuring the pre/post delta) and goal (diagnosing the *process* of learning, not just the outcome). Score: 3. Refusal of collapse: Yes, it explicitly named the specific protocol and the 'Lexical Reachability' metric as the key distinguishing features. Score: 1."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14600,
+        "output": 3400,
+        "cost": 0.05224999999999999,
+        "durationMs": 24293
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      2.3333333333333335,
+      0.6666666666666666
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 3
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.gradient-descent.3",
+  "cell_id": "claude.gradient-descent",
+  "model_id": "claude-opus-4-7",
+  "term_id": "gradient-descent",
+  "term_display": "gradient descent",
+  "canonical_definition": "Gradient descent is a first-order iterative optimization algorithm that minimizes a differentiable function by repeatedly stepping in the direction of the negative gradient at the current point, with step size controlled by a learning rate.",
+  "near_neighbors": [
+    "stochastic gradient descent (SGD)",
+    "Newton's method",
+    "simulated annealing"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-10T11:38:42Z",
+  "scores": {
+    "cold_response_classification": "partial-recognition",
+    "cold_response_classification_justification": "It gives the standard optimization definition, negative-gradient update, learning rate, and differentiability caveat.",
+    "cold_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 0,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs stochastic gradient descent (SGD): it cleanly distinguishes standard or batch gradient descent from SGD by data used per gradient update and noise or update frequency.",
+      "Vs Newton's method: it names the canonical first-order gradient step vs second-order Hessian or Newton update distinction.",
+      "Vs simulated annealing: it clearly separates gradient descent's differentiable local gradient steps from simulated annealing's stochastic temperature-based global search."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

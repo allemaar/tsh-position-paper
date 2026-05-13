@@ -1,0 +1,224 @@
+[2026-05-09T21:20:50.943Z] run-start run_id=run-2026-05-09T21-00Z subset=full-matrix
+[2026-05-09T21:20:50.945Z] probe-phase-start models=3 terms=12 trials_per_cell=3
+[2026-05-09T21:20:50.945Z] probe-start cell=claude.elastic-automator trial=1
+[2026-05-09T21:20:50.956Z] probe-start cell=gpt55.elastic-automator trial=1
+[2026-05-09T21:20:50.957Z] probe-start cell=gemini.elastic-automator trial=1
+[2026-05-09T21:22:50.885Z] probe-end cell=gpt55.elastic-automator trial=1 in=6436 out=5068 cost=$0.1842 dur=119929ms
+[2026-05-09T21:22:50.888Z] probe-start cell=gpt55.elastic-automator trial=2
+[2026-05-09T21:24:11.930Z] probe-end cell=claude.elastic-automator trial=1 in=16968 out=12146 cost=$0.3885 dur=200985ms
+[2026-05-09T21:24:11.932Z] probe-start cell=claude.elastic-automator trial=2
+[2026-05-09T21:24:47.231Z] probe-end cell=gpt55.elastic-automator trial=2 in=6458 out=5000 cost=$0.1823 dur=116343ms
+[2026-05-09T21:24:47.232Z] probe-start cell=gpt55.elastic-automator trial=3
+[2026-05-09T21:25:30.363Z] probe-end cell=gemini.elastic-automator trial=1 in=22680 out=32320 cost=$0.3516 dur=279406ms
+[2026-05-09T21:25:30.365Z] probe-start cell=gemini.elastic-automator trial=2
+[2026-05-09T21:26:39.904Z] probe-end cell=gpt55.elastic-automator trial=3 in=6157 out=5193 cost=$0.1866 dur=112671ms
+[2026-05-09T21:26:39.910Z] probe-start cell=gpt55.eggf trial=1
+[2026-05-09T21:27:22.087Z] probe-end cell=claude.elastic-automator trial=2 in=15447 out=11062 cost=$0.3538 dur=190152ms
+[2026-05-09T21:27:22.089Z] probe-start cell=claude.elastic-automator trial=3
+[2026-05-09T21:30:21.719Z] probe-end cell=gemini.elastic-automator trial=2 in=21627 out=32728 cost=$0.3543 dur=291354ms
+[2026-05-09T21:30:21.721Z] probe-start cell=gemini.elastic-automator trial=3
+[2026-05-09T21:30:29.582Z] probe-end cell=gpt55.eggf trial=1 in=7644 out=8657 cost=$0.2979 dur=229672ms
+[2026-05-09T21:30:29.583Z] probe-start cell=gpt55.eggf trial=2
+[2026-05-09T21:30:53.721Z] probe-end cell=claude.elastic-automator trial=3 in=17197 out=12916 cost=$0.4089 dur=211632ms
+[2026-05-09T21:30:53.726Z] probe-start cell=claude.eggf trial=1
+[2026-05-09T21:33:20.936Z] probe-end cell=claude.eggf trial=1 in=11975 out=8128 cost=$0.2631 dur=147210ms
+[2026-05-09T21:33:20.937Z] probe-start cell=claude.eggf trial=2
+[2026-05-09T21:34:04.538Z] probe-end cell=gpt55.eggf trial=2 in=8326 out=10063 cost=$0.3435 dur=214954ms
+[2026-05-09T21:34:04.540Z] probe-start cell=gpt55.eggf trial=3
+[2026-05-09T21:35:04.408Z] probe-end cell=gemini.elastic-automator trial=3 in=21573 out=31671 cost=$0.3437 dur=282687ms
+[2026-05-09T21:35:04.410Z] probe-start cell=gemini.eggf trial=1
+[2026-05-09T21:35:52.091Z] probe-end cell=claude.eggf trial=2 in=12355 out=8685 cost=$0.2789 dur=151153ms
+[2026-05-09T21:35:52.092Z] probe-start cell=claude.eggf trial=3
+[2026-05-09T21:38:04.773Z] probe-end cell=gpt55.eggf trial=3 in=8770 out=10328 cost=$0.3537 dur=240233ms
+[2026-05-09T21:38:04.775Z] probe-start cell=gpt55.yon-notation trial=1
+[2026-05-09T21:38:20.554Z] probe-end cell=claude.eggf trial=3 in=11737 out=8087 cost=$0.2609 dur=148462ms
+[2026-05-09T21:38:20.555Z] probe-start cell=claude.yon-notation trial=1
+[2026-05-09T21:39:03.439Z] probe-end cell=gemini.eggf trial=1 in=14413 out=27621 cost=$0.2942 dur=239029ms
+[2026-05-09T21:39:03.441Z] probe-start cell=gemini.eggf trial=2
+[2026-05-09T21:40:24.232Z] probe-end cell=claude.yon-notation trial=1 in=10316 out=6699 cost=$0.2191 dur=123677ms
+[2026-05-09T21:40:24.233Z] probe-start cell=claude.yon-notation trial=2
+[2026-05-09T21:40:58.346Z] probe-end cell=gpt55.yon-notation trial=1 in=5545 out=5857 cost=$0.2034 dur=173571ms
+[2026-05-09T21:40:58.347Z] probe-start cell=gpt55.yon-notation trial=2
+[2026-05-09T21:42:57.126Z] probe-end cell=claude.yon-notation trial=2 in=11862 out=8127 cost=$0.2625 dur=152892ms
+[2026-05-09T21:42:57.127Z] probe-start cell=claude.yon-notation trial=3
+[2026-05-09T21:43:20.128Z] probe-end cell=gemini.eggf trial=2 in=16700 out=28988 cost=$0.3108 dur=256687ms
+[2026-05-09T21:43:20.130Z] probe-start cell=gemini.eggf trial=3
+[2026-05-09T21:43:25.223Z] probe-end cell=gpt55.yon-notation trial=2 in=5250 out=5817 cost=$0.2008 dur=146876ms
+[2026-05-09T21:43:25.224Z] probe-start cell=gpt55.yon-notation trial=3
+[2026-05-09T21:45:29.924Z] probe-end cell=claude.yon-notation trial=3 in=12294 out=8450 cost=$0.2727 dur=152797ms
+[2026-05-09T21:45:29.928Z] probe-start cell=claude.token-tax trial=1
+[2026-05-09T21:45:36.766Z] probe-end cell=gpt55.yon-notation trial=3 in=5409 out=5343 cost=$0.1873 dur=131542ms
+[2026-05-09T21:45:36.767Z] probe-start cell=gpt55.token-tax trial=1
+[2026-05-09T21:47:27.699Z] probe-end cell=gemini.eggf trial=3 in=17180 out=28415 cost=$0.3056 dur=247569ms
+[2026-05-09T21:47:27.703Z] probe-start cell=gemini.yon-notation trial=1
+[2026-05-09T21:47:38.794Z] probe-end cell=gpt55.token-tax trial=1 in=7737 out=6676 cost=$0.2390 dur=122026ms
+[2026-05-09T21:47:38.795Z] probe-start cell=gpt55.token-tax trial=2
+[2026-05-09T21:49:33.747Z] probe-end cell=claude.token-tax trial=1 in=18399 out=13992 cost=$0.4418 dur=243819ms
+[2026-05-09T21:49:33.752Z] probe-start cell=claude.token-tax trial=2
+[2026-05-09T21:50:43.445Z] probe-end cell=gpt55.token-tax trial=2 in=7874 out=6807 cost=$0.2436 dur=184649ms
+[2026-05-09T21:50:43.446Z] probe-start cell=gpt55.token-tax trial=3
+[2026-05-09T21:51:29.073Z] probe-end cell=gemini.yon-notation trial=1 in=16750 out=27948 cost=$0.3004 dur=241370ms
+[2026-05-09T21:51:29.075Z] probe-start cell=gemini.yon-notation trial=2
+[2026-05-09T21:53:00.057Z] probe-end cell=gpt55.token-tax trial=3 in=7091 out=5906 cost=$0.2126 dur=136611ms
+[2026-05-09T21:53:00.058Z] probe-start cell=gpt55.off-token-route trial=1
+[2026-05-09T21:53:53.353Z] probe-end cell=claude.token-tax trial=2 in=19632 out=15698 cost=$0.4906 dur=259601ms
+[2026-05-09T21:53:53.355Z] probe-start cell=claude.token-tax trial=3
+[2026-05-09T21:54:49.320Z] probe-end cell=gpt55.off-token-route trial=1 in=5991 out=5207 cost=$0.1862 dur=109262ms
+[2026-05-09T21:54:49.321Z] probe-start cell=gpt55.off-token-route trial=2
+[2026-05-09T21:55:51.912Z] probe-end cell=gemini.yon-notation trial=2 in=16712 out=29493 cost=$0.3158 dur=262837ms
+[2026-05-09T21:55:51.913Z] probe-start cell=gemini.yon-notation trial=3
+[2026-05-09T21:57:13.696Z] probe-end cell=gpt55.off-token-route trial=2 in=6215 out=5872 cost=$0.2072 dur=144375ms
+[2026-05-09T21:57:13.697Z] probe-start cell=gpt55.off-token-route trial=3
+[2026-05-09T21:57:51.815Z] probe-end cell=claude.token-tax trial=3 in=18451 out=14102 cost=$0.4448 dur=238460ms
+[2026-05-09T21:57:51.819Z] probe-start cell=claude.off-token-route trial=1
+[2026-05-09T21:59:37.741Z] probe-end cell=gemini.yon-notation trial=3 in=15859 out=27022 cost=$0.2900 dur=225828ms
+[2026-05-09T21:59:37.742Z] probe-start cell=gemini.token-tax trial=1
+[2026-05-09T21:59:46.154Z] probe-end cell=gpt55.off-token-route trial=3 in=6434 out=6459 cost=$0.2259 dur=152457ms
+[2026-05-09T21:59:46.158Z] probe-start cell=gpt55.lexical-reachability trial=1
+[2026-05-09T22:00:57.819Z] probe-end cell=claude.off-token-route trial=1 in=14390 out=9802 cost=$0.3170 dur=186000ms
+[2026-05-09T22:00:57.820Z] probe-start cell=claude.off-token-route trial=2
+[2026-05-09T22:02:07.135Z] probe-end cell=gpt55.lexical-reachability trial=1 in=6893 out=5730 cost=$0.2064 dur=140976ms
+[2026-05-09T22:02:07.137Z] probe-start cell=gpt55.lexical-reachability trial=2
+[2026-05-09T22:03:48.965Z] probe-end cell=claude.off-token-route trial=2 in=13456 out=9023 cost=$0.2929 dur=171145ms
+[2026-05-09T22:03:48.966Z] probe-start cell=claude.off-token-route trial=3
+[2026-05-09T22:04:00.134Z] probe-end cell=gemini.token-tax trial=1 in=22582 out=29784 cost=$0.3261 dur=262392ms
+[2026-05-09T22:04:00.136Z] probe-start cell=gemini.token-tax trial=2
+[2026-05-09T22:04:36.870Z] probe-end cell=gpt55.lexical-reachability trial=2 in=7048 out=6496 cost=$0.2301 dur=149733ms
+[2026-05-09T22:04:36.871Z] probe-start cell=gpt55.lexical-reachability trial=3
+[2026-05-09T22:06:46.711Z] probe-end cell=claude.off-token-route trial=3 in=13684 out=8875 cost=$0.2903 dur=177745ms
+[2026-05-09T22:06:46.712Z] probe-start cell=claude.lexical-reachability trial=1
+[2026-05-09T22:06:52.790Z] probe-end cell=gpt55.lexical-reachability trial=3 in=7395 out=6077 cost=$0.2193 dur=135919ms
+[2026-05-09T22:06:52.794Z] probe-start cell=gpt55.token-substrate trial=1
+[2026-05-09T22:08:21.041Z] probe-end cell=gemini.token-tax trial=2 in=22186 out=29683 cost=$0.3246 dur=260905ms
+[2026-05-09T22:08:21.042Z] probe-start cell=gemini.token-tax trial=3
+[2026-05-09T22:09:51.185Z] probe-end cell=gpt55.token-substrate trial=1 in=8795 out=7555 cost=$0.2706 dur=178390ms
+[2026-05-09T22:09:51.186Z] probe-start cell=gpt55.token-substrate trial=2
+[2026-05-09T22:10:52.010Z] probe-end cell=claude.lexical-reachability trial=1 in=21270 out=14706 cost=$0.4740 dur=245298ms
+[2026-05-09T22:10:52.011Z] probe-start cell=claude.lexical-reachability trial=2
+[2026-05-09T22:12:29.003Z] probe-end cell=gemini.token-tax trial=3 in=23038 out=29391 cost=$0.3227 dur=247961ms
+[2026-05-09T22:12:29.005Z] probe-start cell=gemini.off-token-route trial=1
+[2026-05-09T22:12:30.411Z] probe-end cell=gpt55.token-substrate trial=2 in=7508 out=6243 cost=$0.2248 dur=159225ms
+[2026-05-09T22:12:30.412Z] probe-start cell=gpt55.token-substrate trial=3
+[2026-05-09T22:15:08.328Z] probe-end cell=gpt55.token-substrate trial=3 in=7756 out=6762 cost=$0.2416 dur=157916ms
+[2026-05-09T22:15:08.330Z] probe-start cell=gpt55.coinage-probe trial=1
+[2026-05-09T22:15:22.973Z] probe-end cell=claude.lexical-reachability trial=2 in=21880 out=15868 cost=$0.5061 dur=270961ms
+[2026-05-09T22:15:22.975Z] probe-start cell=claude.lexical-reachability trial=3
+[2026-05-09T22:17:05.357Z] probe-end cell=gemini.off-token-route trial=1 in=22183 out=32284 cost=$0.3506 dur=276352ms
+[2026-05-09T22:17:05.359Z] probe-start cell=gemini.off-token-route trial=2
+[2026-05-09T22:19:15.680Z] probe-end cell=claude.lexical-reachability trial=3 in=19624 out=13348 cost=$0.4318 dur=232705ms
+[2026-05-09T22:19:15.684Z] probe-start cell=claude.token-substrate trial=1
+[2026-05-09T22:19:26.751Z] probe-end cell=gpt55.coinage-probe trial=1 in=9932 out=11183 cost=$0.3851 dur=258421ms
+[2026-05-09T22:19:26.753Z] probe-start cell=gpt55.coinage-probe trial=2
+[2026-05-09T22:21:20.803Z] probe-end cell=gemini.off-token-route trial=2 in=19586 out=30172 cost=$0.3262 dur=255444ms
+[2026-05-09T22:21:20.804Z] probe-start cell=gemini.off-token-route trial=3
+[2026-05-09T22:22:33.642Z] probe-end cell=claude.token-substrate trial=1 in=14652 out=10669 cost=$0.3400 dur=197957ms
+[2026-05-09T22:22:33.643Z] probe-start cell=claude.token-substrate trial=2
+[2026-05-09T22:23:53.145Z] probe-end cell=gpt55.coinage-probe trial=2 in=9163 out=10755 cost=$0.3685 dur=266392ms
+[2026-05-09T22:23:53.146Z] probe-start cell=gpt55.coinage-probe trial=3
+[2026-05-09T22:25:25.539Z] probe-end cell=gemini.off-token-route trial=3 in=19722 out=28962 cost=$0.3143 dur=244735ms
+[2026-05-09T22:25:25.544Z] probe-start cell=gemini.lexical-reachability trial=1
+[2026-05-09T22:25:41.507Z] probe-end cell=claude.token-substrate trial=2 in=14846 out=10894 cost=$0.3466 dur=187864ms
+[2026-05-09T22:25:41.508Z] probe-start cell=claude.token-substrate trial=3
+[2026-05-09T22:28:10.405Z] probe-end cell=gpt55.coinage-probe trial=3 in=9520 out=10184 cost=$0.3531 dur=257259ms
+[2026-05-09T22:28:10.407Z] probe-start cell=gpt55.prismatic-affinity trial=1
+[2026-05-09T22:29:00.209Z] probe-end cell=claude.token-substrate trial=3 in=14981 out=11064 cost=$0.3515 dur=198701ms
+[2026-05-09T22:29:00.210Z] probe-start cell=claude.coinage-probe trial=1
+[2026-05-09T22:30:01.038Z] probe-end cell=gemini.lexical-reachability trial=1 in=25851 out=33446 cost=$0.3668 dur=275494ms
+[2026-05-09T22:30:01.040Z] probe-start cell=gemini.lexical-reachability trial=2
+[2026-05-09T22:31:12.403Z] probe-end cell=gpt55.prismatic-affinity trial=1 in=5312 out=5463 cost=$0.1905 dur=181996ms
+[2026-05-09T22:31:12.404Z] probe-start cell=gpt55.prismatic-affinity trial=2
+[2026-05-09T22:32:29.085Z] probe-end cell=claude.coinage-probe trial=1 in=16830 out=11067 cost=$0.3608 dur=208875ms
+[2026-05-09T22:32:29.086Z] probe-start cell=claude.coinage-probe trial=2
+[2026-05-09T22:33:38.329Z] probe-end cell=gpt55.prismatic-affinity trial=2 in=5950 out=5961 cost=$0.2086 dur=145925ms
+[2026-05-09T22:33:38.330Z] probe-start cell=gpt55.prismatic-affinity trial=3
+[2026-05-09T22:34:14.763Z] probe-end cell=gemini.lexical-reachability trial=2 in=20472 out=30950 cost=$0.3351 dur=253723ms
+[2026-05-09T22:34:14.765Z] probe-start cell=gemini.lexical-reachability trial=3
+[2026-05-09T22:36:15.410Z] probe-end cell=gpt55.prismatic-affinity trial=3 in=5508 out=5705 cost=$0.1987 dur=157080ms
+[2026-05-09T22:36:15.412Z] probe-start cell=gpt55.cogalent-pruning trial=1
+[2026-05-09T22:36:24.580Z] probe-end cell=claude.coinage-probe trial=2 in=17921 out=12515 cost=$0.4025 dur=235494ms
+[2026-05-09T22:36:24.581Z] probe-start cell=claude.coinage-probe trial=3
+[2026-05-09T22:38:31.987Z] probe-end cell=gemini.lexical-reachability trial=3 in=21456 out=31433 cost=$0.3412 dur=257222ms
+[2026-05-09T22:38:31.988Z] probe-start cell=gemini.token-substrate trial=1
+[2026-05-09T22:38:43.271Z] probe-end cell=gpt55.cogalent-pruning trial=1 in=5699 out=6187 cost=$0.2141 dur=147859ms
+[2026-05-09T22:38:43.273Z] probe-start cell=gpt55.cogalent-pruning trial=2
+[2026-05-09T22:39:44.493Z] probe-end cell=claude.coinage-probe trial=3 in=15760 out=10759 cost=$0.3478 dur=199912ms
+[2026-05-09T22:39:44.495Z] probe-start cell=claude.prismatic-affinity trial=1
+[2026-05-09T22:42:07.707Z] probe-end cell=gpt55.cogalent-pruning trial=2 in=5931 out=7144 cost=$0.2440 dur=204434ms
+[2026-05-09T22:42:07.708Z] probe-start cell=gpt55.cogalent-pruning trial=3
+[2026-05-09T22:42:53.521Z] probe-end cell=gemini.token-substrate trial=1 in=21596 out=30949 cost=$0.3365 dur=261533ms
+[2026-05-09T22:42:53.523Z] probe-start cell=gemini.token-substrate trial=2
+[2026-05-09T22:43:12.358Z] probe-end cell=claude.prismatic-affinity trial=1 in=15746 out=11364 cost=$0.3628 dur=207863ms
+[2026-05-09T22:43:12.359Z] probe-start cell=claude.prismatic-affinity trial=2
+[2026-05-09T22:45:22.998Z] probe-end cell=gpt55.cogalent-pruning trial=3 in=6008 out=6077 cost=$0.2124 dur=195290ms
+[2026-05-09T22:45:23.000Z] probe-start cell=gpt55.gradient-descent trial=1
+[2026-05-09T22:47:02.786Z] probe-end cell=gemini.token-substrate trial=2 in=20254 out=30001 cost=$0.3253 dur=249263ms
+[2026-05-09T22:47:02.788Z] probe-start cell=gemini.token-substrate trial=3
+[2026-05-09T22:47:16.006Z] probe-end cell=gpt55.gradient-descent trial=1 in=6651 out=4973 cost=$0.1824 dur=113006ms
+[2026-05-09T22:47:16.008Z] probe-start cell=gpt55.gradient-descent trial=2
+[2026-05-09T22:47:18.208Z] probe-end cell=claude.prismatic-affinity trial=2 in=17325 out=13145 cost=$0.4153 dur=245849ms
+[2026-05-09T22:47:18.210Z] probe-start cell=claude.prismatic-affinity trial=3
+[2026-05-09T22:49:42.246Z] probe-end cell=gpt55.gradient-descent trial=2 in=7588 out=5963 cost=$0.2168 dur=146238ms
+[2026-05-09T22:49:42.247Z] probe-start cell=gpt55.gradient-descent trial=3
+[2026-05-09T22:50:52.867Z] probe-end cell=claude.prismatic-affinity trial=3 in=16515 out=11651 cost=$0.3739 dur=214657ms
+[2026-05-09T22:50:52.869Z] probe-start cell=claude.cogalent-pruning trial=1
+[2026-05-09T22:51:14.893Z] probe-end cell=gemini.token-substrate trial=3 in=21212 out=30648 cost=$0.3330 dur=252104ms
+[2026-05-09T22:51:14.894Z] probe-start cell=gemini.coinage-probe trial=1
+[2026-05-09T22:51:34.680Z] probe-end cell=gpt55.gradient-descent trial=3 in=7403 out=5443 cost=$0.2003 dur=112433ms
+[2026-05-09T22:51:34.681Z] probe-start cell=gpt55.transformer-architecture trial=1
+[2026-05-09T22:52:39.648Z] probe-end cell=claude.cogalent-pruning trial=1 in=9514 out=5580 cost=$0.1871 dur=106779ms
+[2026-05-09T22:52:39.649Z] probe-start cell=claude.cogalent-pruning trial=2
+[2026-05-09T22:54:30.310Z] probe-end cell=claude.cogalent-pruning trial=2 in=10161 out=5797 cost=$0.1957 dur=110661ms
+[2026-05-09T22:54:30.311Z] probe-start cell=claude.cogalent-pruning trial=3
+[2026-05-09T22:55:05.997Z] probe-end cell=gpt55.transformer-architecture trial=1 in=15017 out=9848 cost=$0.3705 dur=211316ms
+[2026-05-09T22:55:05.998Z] probe-start cell=gpt55.transformer-architecture trial=2
+[2026-05-09T22:55:41.509Z] probe-end cell=gemini.coinage-probe trial=1 in=20399 out=31819 cost=$0.3437 dur=266614ms
+[2026-05-09T22:55:41.510Z] probe-start cell=gemini.coinage-probe trial=2
+[2026-05-09T22:56:27.784Z] probe-end cell=claude.cogalent-pruning trial=3 in=10706 out=6239 cost=$0.2095 dur=117473ms
+[2026-05-09T22:56:27.785Z] probe-start cell=claude.gradient-descent trial=1
+[2026-05-09T22:58:36.551Z] probe-end cell=gpt55.transformer-architecture trial=2 in=15924 out=10523 cost=$0.3953 dur=210553ms
+[2026-05-09T22:58:36.552Z] probe-start cell=gpt55.transformer-architecture trial=3
+[2026-05-09T23:00:00.654Z] probe-end cell=gemini.coinage-probe trial=2 in=21221 out=31034 cost=$0.3369 dur=259143ms
+[2026-05-09T23:00:00.655Z] probe-start cell=gemini.coinage-probe trial=3
+[2026-05-09T23:00:44.846Z] probe-end cell=claude.gradient-descent trial=1 in=21049 out=17786 cost=$0.5499 dur=257061ms
+[2026-05-09T23:00:44.847Z] probe-start cell=claude.gradient-descent trial=2
+[2026-05-09T23:02:33.146Z] probe-end cell=gpt55.transformer-architecture trial=3 in=15635 out=10925 cost=$0.4059 dur=236594ms
+[2026-05-09T23:04:38.595Z] probe-end cell=gemini.coinage-probe trial=3 in=21902 out=32454 cost=$0.3519 dur=277940ms
+[2026-05-09T23:04:38.597Z] probe-start cell=gemini.prismatic-affinity trial=1
+[2026-05-09T23:05:13.852Z] probe-end cell=claude.gradient-descent trial=2 in=22182 out=19242 cost=$0.5920 dur=269005ms
+[2026-05-09T23:05:13.853Z] probe-start cell=claude.gradient-descent trial=3
+[2026-05-09T23:08:31.105Z] probe-end cell=gemini.prismatic-affinity trial=1 in=17189 out=28254 cost=$0.3040 dur=232508ms
+[2026-05-09T23:08:31.106Z] probe-start cell=gemini.prismatic-affinity trial=2
+[2026-05-09T23:09:26.421Z] probe-end cell=claude.gradient-descent trial=3 in=21150 out=17875 cost=$0.5526 dur=252568ms
+[2026-05-09T23:09:26.426Z] probe-start cell=claude.transformer-architecture trial=1
+[2026-05-09T23:12:48.758Z] probe-end cell=gemini.prismatic-affinity trial=2 in=17870 out=30227 cost=$0.3246 dur=257652ms
+[2026-05-09T23:12:48.759Z] probe-start cell=gemini.prismatic-affinity trial=3
+[2026-05-09T23:14:01.940Z] probe-end cell=claude.transformer-architecture trial=1 in=23123 out=18376 cost=$0.5750 dur=275514ms
+[2026-05-09T23:14:01.941Z] probe-start cell=claude.transformer-architecture trial=2
+[2026-05-09T23:16:33.335Z] probe-end cell=gemini.prismatic-affinity trial=3 in=16103 out=27274 cost=$0.2929 dur=224576ms
+[2026-05-09T23:16:33.340Z] probe-start cell=gemini.cogalent-pruning trial=1
+[2026-05-09T23:18:17.910Z] probe-end cell=claude.transformer-architecture trial=2 in=22466 out=16952 cost=$0.5361 dur=255968ms
+[2026-05-09T23:18:17.911Z] probe-start cell=claude.transformer-architecture trial=3
+[2026-05-09T23:20:46.823Z] probe-end cell=gemini.cogalent-pruning trial=1 in=21578 out=31117 cost=$0.3381 dur=253483ms
+[2026-05-09T23:20:46.825Z] probe-start cell=gemini.cogalent-pruning trial=2
+[2026-05-09T23:23:23.025Z] probe-end cell=claude.transformer-architecture trial=3 in=25380 out=20814 cost=$0.6472 dur=305114ms
+[2026-05-09T23:24:54.817Z] probe-end cell=gemini.cogalent-pruning trial=2 in=20840 out=29525 cost=$0.3213 dur=247992ms
+[2026-05-09T23:24:54.818Z] probe-start cell=gemini.cogalent-pruning trial=3
+[2026-05-09T23:29:07.014Z] probe-end cell=gemini.cogalent-pruning trial=3 in=21291 out=29947 cost=$0.3261 dur=252195ms
+[2026-05-09T23:29:07.015Z] probe-start cell=gemini.gradient-descent trial=1
+[2026-05-09T23:33:15.262Z] probe-end cell=gemini.gradient-descent trial=1 in=20811 out=30098 cost=$0.3270 dur=248247ms
+[2026-05-09T23:33:15.264Z] probe-start cell=gemini.gradient-descent trial=2
+[2026-05-09T23:37:31.111Z] probe-end cell=gemini.gradient-descent trial=2 in=21986 out=31301 cost=$0.3405 dur=255847ms
+[2026-05-09T23:37:31.112Z] probe-start cell=gemini.gradient-descent trial=3
+[2026-05-09T23:41:43.129Z] probe-end cell=gemini.gradient-descent trial=3 in=22770 out=31013 cost=$0.3386 dur=252017ms
+[2026-05-09T23:41:43.130Z] probe-start cell=gemini.transformer-architecture trial=1
+[2026-05-09T23:46:13.198Z] probe-end cell=gemini.transformer-architecture trial=1 in=25295 out=32073 cost=$0.3523 dur=270068ms
+[2026-05-09T23:46:13.200Z] probe-start cell=gemini.transformer-architecture trial=2
+[2026-05-09T23:50:52.788Z] probe-end cell=gemini.transformer-architecture trial=2 in=27050 out=33627 cost=$0.3701 dur=279588ms
+[2026-05-09T23:50:52.789Z] probe-start cell=gemini.transformer-architecture trial=3
+[2026-05-09T23:55:32.773Z] probe-end cell=gemini.transformer-architecture trial=3 in=27310 out=34088 cost=$0.3750 dur=279984ms
+[2026-05-09T23:55:32.774Z] probe-phase-end trials=108 wall_clock_sec=9281.8
+[2026-05-09T23:55:32.774Z] probe-phase-trials-collected count=108
+[2026-05-09T23:55:32.775Z] judge-phase-start trials=108
+[2026-05-10T00:11:20.770Z] judge-retry trial=claude.transformer-architecture.3 judge=claude attempt=1/3 err="The operation was aborted due to timeout"
+[2026-05-10T00:31:22.687Z] judge-phase-end calls_ok=324/324 wall_clock_sec=2149.9
+[2026-05-10T00:31:22.716Z] run-end wall_clock_sec=11431.8 cells=36 judge_ok_rate=100.0%

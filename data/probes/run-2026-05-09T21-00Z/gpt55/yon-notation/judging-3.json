@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.yon-notation.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Model flagged YON as not a recognized standard and offered context-dependent possibilities rather than asserting a meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-intro response cleanly separates YON from JSON/XML/YAML on stream-first records, fixed grammar plus pluggable vocabularies, and failure isolation — directly canonical.",
+          "Post-intro response distinguishes Markdown's human-presentation purpose from YON's machine-readable line-record cognition, naming multiple canonical features.",
+          "Post-intro response separates input-templating from output/cognition-record streaming, citing fixed minimal grammar and per-line streamability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7989,
+        "output": 341,
+        "cost": 0.04846999999999999,
+        "durationMs": 7716
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Cold response treated YON as unrecognized in the relevant technical contexts and repeatedly requested context rather than asserting a definite coined technical meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs JSON/XML/YAML: separates YON from established formats only by saying it is not recognized, with no canonical features; post-intro names stream-first self-contained records, fixed minimal grammar, pluggable vocabularies, and block-format failure avoidance.",
+          "Cold vs Markdown: separates only by saying YON is not a recognized markup/document format; post-intro distinguishes Markdown as human document formatting from YON as AI-readable stream-first cognition records with explicit vocabularies.",
+          "Cold vs prompt template language: separates only by saying YON is not recognized as a prompt templating system; post-intro distinguishes template expansion for prompts from YON’s streamable AI cognition/output records with fixed grammar and domain vocabularies."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4953,
+        "output": 771,
+        "cost": 0.04789499999999999,
+        "durationMs": 22342
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model correctly identifies 'yon' as an archaic English word and states that if 'YON' is an acronym, it would need more context to define it. This is a clear refusal to invent a meaning for the coined term.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Confabulation Severity: The model earns a 0 for confabulation because it does not invent any features for the coined term. Instead, it reports its lack of knowledge and defaults to the real-world definition of the word 'yon'.",
+          "Cold Distinguishability: The model consistently scores 1 against all near-neighbors. It distinguishes YON from each neighbor not by confabulating features, but by stating that the near-neighbor is a known standard while YON is not. This constitutes an 'accidental separation' based on the model's epistemic state rather than any substantive (and invented) feature of the term itself.",
+          "Post-Introduction Distinguishability & Refusal-of-Collapse: The model achieves perfect scores (3 and 1, respectively) against all neighbors. It correctly identifies and explains multiple key features from the canonical definition, such as being 'stream-first', having 'self-contained records', a 'fixed minimal grammar', and 'pluggable vocabularies'. The distinctions drawn are sharp, substantive, and directly aligned with the provided definition, clearly demonstrating an ability to protect the new concept."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5088,
+        "output": 3656,
+        "cost": 0.04292,
+        "durationMs": 25961
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

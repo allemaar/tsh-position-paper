@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.eggf.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Model explicitly flags EGGF as not a recognized term and offers hedged inferences from word-shape.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: hedged guess that EGGF is a graph-based framework, partially aligned but unstable. Post: clearly distinguishes EGGF as authorship/credibility architecture vs general semantic data model, naming canonical URLs, typed Pathways, manifest endpoint.",
+          "Cold: partially separates by guessing EGGF is more formal/machine-oriented than PKM, unstable. Post: cleanly distinguishes public-facing publishing/credibility infrastructure from private note-taking, with concrete features.",
+          "Cold: partial separation noting publishing vs knowledge-processing distinction, hedged. Post: clean separation naming Entity gravity, canonical Bodies, typed Pathways, manifest endpoint vs page-rendering."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 14045,
+        "output": 435,
+        "cost": 0.08109999999999999,
+        "durationMs": 10591
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "In the cold state, the model explicitly stated that EGGF is not a widely recognized acronym or standard term and repeatedly qualified its comparisons as assumptions depending on source context rather than asserting a definite meaning.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs knowledge graph: partial separation because the model distinguished EGGF from RDF/schema.org/Wikidata as a possible framework or methodology involving graph-based knowledge, but lacked the canonical authorship, Entity gravity, canonical URL, typed Pathway, and manifest-endpoint specifics. Post-introduction: clean separation because it identified EGGF as an authorship-centered publishing-and-credibility architecture rather than a general semantic data model or public knowledge graph. Refusal-of-collapse: explicit distinction named authorship-centered architecture, canonical Bodies, typed Pathways, and manifest traversal.",
+          "Cold vs PKM: partial separation because the model distinguished a PKM as human-centered personal note management and guessed EGGF would be more structured, graph-based, and machine-oriented, but did not identify the canonical publishing-and-credibility architecture. Post-introduction: clean separation because it contrasted private/upstream note-taking with public-facing canonical authored Bodies, typed Pathways, Entity gravity, and manifest exposure. Refusal-of-collapse: explicit distinction named public authorship infrastructure versus private personal knowledge management.",
+          "Cold vs static-site generator with structured data: partial separation because the model distinguished static-site generation as page publishing and guessed EGGF would be a graph/knowledge framework for AI-readable structure, but missed or inverted EGGF’s publishing architecture role and lacked canonical details. Post-introduction: clean separation because it identified static-site generation as rendering/deployment while EGGF is an authorship graph and credibility layer with canonical URLs, typed Pathways, Entity gravity, and manifest endpoint. Refusal-of-collapse: explicit distinction named publishing engine versus graph architecture."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8556,
+        "output": 965,
+        "cost": 0.07173,
+        "durationMs": 15604
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model correctly identifies 'EGGF' as a non-standard term, refuses to provide a definite meaning, and offers only qualified guesses based on morphological similarity or context provided by the user's questions.",
+        "cold_distinguishability_scores": [
+          2,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model refused to define the term. When prompted for comparisons, it made well-reasoned hypotheses about what EGGF *might* be. vs KG: it correctly guessed EGGF would be a 'framework' or 'architecture' rather than a standard or dataset, a partial separation (2). vs PKM: it correctly identified the human-private vs. machine-public axis of separation (3). vs SSG: it correctly identified the publishing-system vs. knowledge-representation axis of separation (3).",
+          "Post-Distinguishability: After receiving the definition, the model made clean, substantive distinctions for all three near-neighbors. vs KG: It distinguished 'structured authorship' from 'structured knowledge'. vs PKM: It distinguished the 'public-facing publishing architecture' from the 'private thinking' tool. vs SSG: It distinguished the 'authorship graph' with its manifest endpoint from a system that merely 'publishes pages'.",
+          "Confabulation Severity: The model demonstrated honest uncertainty in the cold state, explicitly stating it did not recognize the term and that its suggestions were possibilities based on similar acronyms. This is a score of 0.",
+          "Refusal of Collapse: The model successfully refused to collapse the term into any of the near-neighbors after the definition was provided. It named multiple non-trivial distinguishing features for each comparison, such as 'structured authorship' (vs KG), 'public-facing' (vs PKM), and 'authorship graph' with a 'manifest endpoint' (vs SSG)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8814,
+        "output": 3368,
+        "cost": 0.0446975,
+        "durationMs": 24580
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      2,
+      2.3333333333333335,
+      2.3333333333333335
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 2.333333333333333
+  }
+}

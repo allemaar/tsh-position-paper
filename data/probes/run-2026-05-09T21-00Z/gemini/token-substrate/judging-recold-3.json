@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.token-substrate.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts that 'token substrate' refers to creating tokens on the Substrate blockchain framework, with no uncertainty signals.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model separates token substrate from embedding space by misdirection — treating token substrate as blockchain ownership infrastructure rather than the canonical claim that the token sequence IS the cognitive substrate; separation is accidental.",
+          "The model separates token substrate from context window via the same blockchain confabulation (permanent ledger vs temporary memory), missing the canonical relationship that context IS the substrate; accidental separation.",
+          "The model separates token substrate from latent representations by contrasting explicit blockchain records with implicit neural states, again missing the canonical claim that tokens themselves are the cognitive material; accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7963,
+        "output": 333,
+        "cost": 0.048139999999999995,
+        "durationMs": 7601
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The chat C first answer confidently interprets “token substrate” as blockchain/Web3 infrastructure for creating tokens with the Substrate framework. This is a definite non-canonical meaning and does not flag the term as unknown in the LLM-cognition sense.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Vs embedding space: it distinguishes the terms, but only by treating “token substrate” as blockchain asset infrastructure versus AI semantic vector space. This is separation by an unrelated confabulated meaning, with no canonical feature that token sequence in context is the cognitive substrate.",
+          "Vs context window: it distinguishes blockchain ledger permanence from LLM temporary memory, but this misses the canonical relationship almost entirely; canonically, token substrate is specifically about tokens in context as the material cognitive substrate. The answer separates by wrong-domain misdirection.",
+          "Vs latent representation / hidden states: it contrasts public blockchain records with neural hidden states, but gives no canonical account of token sequence as substrate rather than representation. The distinction is accidental due to the blockchain confabulation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5125,
+        "output": 411,
+        "cost": 0.037955,
+        "durationMs": 10123
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and incorrectly defines \"token substrate\" as a concept related to the Substrate blockchain framework (used by Polkadot). It shows no uncertainty and provides a detailed, but completely wrong, explanation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes the terms by correctly defining 'embedding space' and contrasting it with its completely confabulated, blockchain-related definition of 'token substrate.' The separation is accidental, resulting from this misdirection.",
+          "The model creates a distinction based on its confabulated blockchain definition of 'token substrate' (a permanent ledger) and a correct definition of 'context window' (temporary AI memory). The separation is therefore accidental and based on a false premise.",
+          "The model distinguishes the terms by contrasting its blockchain-based confabulation for 'token substrate' (an explicit public record) with a correct understanding of 'latent representation' (an internal abstract summary). The separation is successful only because the model has invented an incorrect meaning for the coined term."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5214,
+        "output": 1353,
+        "cost": 0.0200475,
+        "durationMs": 11642
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:CoinageProbeTrial",
+  "cell_id": "gpt55.prismatic-affinity",
+  "trial_index": 2,
+  "run_id": "run-2026-05-09T21-00Z",
+  "model_id": "gpt-5.5",
+  "model_shortname": "gpt55",
+  "term_id": "prismatic-affinity",
+  "term_display": "prismatic affinity",
+  "stratum": "nonce",
+  "canonical_definition": "Prismatic affinity is the property of a perceived object whose apparent identity shifts coherently with the angle of attention given to it, such that two observers attending under different framings produce non-overlapping but internally consistent descriptions, distinguishing it from ambiguity (which is undecided meaning) and from perspective-dependence (which is observer position alone).",
+  "near_neighbors": [
+    "ambiguity",
+    "perspectivism / perspective-dependence",
+    "polysemy"
+  ],
+  "near_neighbor_order": [
+    "ambiguity",
+    "perspectivism / perspective-dependence",
+    "polysemy"
+  ],
+  "timestamps": {
+    "start": "2026-05-09T22:31:12.404Z",
+    "end": "2026-05-09T22:33:38.329Z"
+  },
+  "parameters": {
+    "temperature": null,
+    "max_tokens": 4096,
+    "seed": null
+  },
+  "cold_question_prompt": "What is a prismatic affinity?",
+  "cold_response_verbatim_chat_a": "A **prismatic affinity** is an affine mapping between two planes (or plane figures) produced by **parallel projection** in a fixed direction.\n\nMore formally: given two planes \\(\\pi\\) and \\(\\pi'\\), and a fixed direction \\(d\\), each point \\(P\\) in \\(\\pi\\) is mapped to the point \\(P'\\) where the line through \\(P\\) parallel to \\(d\\) meets \\(\\pi'\\). The correspondence \\(P \\mapsto P'\\) is called a **prismatic affinity**.\n\nKey properties:\n\n- Corresponding points lie on **parallel lines**.\n- Lines map to lines.\n- Parallel lines remain parallel.\n- Ratios of lengths along the same line are preserved.\n- Angles and actual lengths are generally **not** preserved.\n\nIt is essentially a **parallel projection**, as opposed to a central projection where all projecting lines pass through one fixed point.",
+  "cold_response_verbatim_chat_b": "A **prismatic affinity** is an affine correspondence produced by **parallel projection**.\n\nIn geometric terms: given two planes, each point \\(P\\) in one plane is mapped to a corresponding point \\(P'\\) in another plane by drawing a line through \\(P\\) in a fixed direction; where that parallel line meets the second plane is \\(P'\\). The projecting lines are all parallel, like the edges of a prism—hence “prismatic.”\n\nKey features:\n\n- Corresponding points lie on **parallel projection lines**.\n- Straight lines map to straight lines.\n- Parallelism is preserved.\n- Ratios along a line are preserved.\n- Lengths and angles are generally **not** preserved.\n\nA common example is the shadow of a flat object cast onto another plane by sunlight: the sun’s rays are effectively parallel, so the shadow is related to the original figure by a prismatic affinity.\n\nThe term is not very common in modern English; it is often described simply as a **parallel affine projection** or an **affine transformation induced by parallel projection**.",
+  "boundary_test_prompts": [
+    "How does \"prismatic affinity\" differ from ambiguity?",
+    "How does \"prismatic affinity\" differ from perspectivism / perspective-dependence?",
+    "How does \"prismatic affinity\" differ from polysemy?"
+  ],
+  "cold_boundary_responses": [
+    "A **prismatic affinity** and **ambiguity** are completely different kinds of concepts.\n\n### Prismatic affinity\nA **prismatic affinity** is a precise geometric transformation. It maps points from one plane to another by projecting them along a fixed direction using parallel lines.\n\nExample: If sunlight casts the shadow of a flat object onto another plane, and the light rays are parallel, the shadow can be related to the object by a prismatic affinity.\n\nIt is mathematical and deterministic: each point has one corresponding image point.\n\n### Ambiguity\n**Ambiguity** means uncertainty or having more than one possible interpretation.\n\nExample: The sentence “I saw the man with the telescope” is ambiguous because it could mean:\n\n- I used a telescope to see the man, or\n- I saw a man who had a telescope.\n\n### Main difference\nA **prismatic affinity** is a specific affine geometric mapping.  \n**Ambiguity** is a lack of clarity or multiple possible meanings.\n\nSo, a prismatic affinity is about **geometry and projection**, while ambiguity is about **uncertainty or interpretation**.",
+    "A **prismatic affinity** and **perspectivism / perspective-dependence** are different concepts, though both can involve the idea of “viewpoint” or “projection.”\n\n### Prismatic affinity\nA **prismatic affinity** is a **geometric transformation**.\n\nIt maps points from one plane to another by **parallel projection** in a fixed direction. It is mathematical, precise, and deterministic.\n\nExample:  \nA flat shape casting a shadow onto another plane under parallel light rays can be related to the original shape by a prismatic affinity.\n\nImportant features:\n\n- It belongs to geometry.\n- It is a type of affine mapping.\n- It uses parallel projection, not a single viewpoint.\n- The mapping is exact: each point corresponds to one image point.\n- It preserves straight lines, parallelism, and ratios along lines, but not usually angles or lengths.\n\n### Perspectivism / perspective-dependence\n**Perspectivism** or **perspective-dependence** is a broader philosophical or conceptual idea.\n\nIt means that what something is, how it appears, or how it is understood depends on a particular **perspective**, standpoint, observer, context, or interpretive frame.\n\nExample:  \nA political event may look like “liberation” from one group’s perspective and “invasion” from another’s.\n\nImportant features:\n\n- It belongs mainly to philosophy, social theory, epistemology, or interpretation.\n- It concerns how truth, meaning, value, or appearance may depend on a standpoint.\n- It does not refer to a specific mathematical transformation.\n- It may involve subjectivity, context, interpretation, or observer-dependence.\n\n### Main difference\n\nA **prismatic affinity** is a specific, formal operation in geometry: a parallel projection between planes.\n\n**Perspectivism / perspective-dependence** is a general idea that things may appear or be understood differently depending on a point of view or interpretive standpoint.\n\nSo:\n\n> **Prismatic affinity** = a mathematical projection.  \n> **Perspectivism** = dependence on a viewpoint or interpretive perspective.\n\nOne subtle point: in geometry, “perspective” often refers to **central projection**, where lines of projection pass through a single point, like vision from an eye or camera. A prismatic affinity, by contrast, uses **parallel projection**, so it is not “perspective” in that optical sense either.",
+    "A **prismatic affinity** and **polysemy** are very different concepts.\n\n### Prismatic affinity\n\nA **prismatic affinity** is a **geometric transformation**.\n\nIt maps points from one plane to another by **parallel projection** in a fixed direction.\n\nExample:  \nA flat object casting a shadow onto another plane under parallel light rays can be described using a prismatic affinity.\n\nKey features:\n\n- It belongs to geometry.\n- It is a kind of affine mapping.\n- It is exact and deterministic.\n- It preserves straight lines, parallelism, and ratios along a line.\n- It usually does not preserve angles or lengths.\n\n### Polysemy\n\n**Polysemy** is a linguistic concept.\n\nIt means that a single word has **multiple related meanings**.\n\nExample:  \nThe word **“head”** is polysemous:\n\n- the head of a person,\n- the head of a company,\n- the head of a table,\n- the head of a river.\n\nThese meanings are different but related by metaphor, extension, or analogy.\n\n### Main difference\n\nA **prismatic affinity** is a formal mathematical mapping between geometric planes.\n\n**Polysemy** is a property of words or expressions having several related meanings.\n\nSo:\n\n> **Prismatic affinity** = a geometric projection.  \n> **Polysemy** = multiple related meanings of a word.\n\nIt also differs from **ambiguity**: ambiguity can involve uncertainty between meanings, while polysemy specifically refers to the existence of multiple related meanings within one word or expression."
+  ],
+  "introduction_prompt": "Here is the canonical definition of \"prismatic affinity\": Prismatic affinity is the property of a perceived object whose apparent identity shifts coherently with the angle of attention given to it, such that two observers attending under different framings produce non-overlapping but internally consistent descriptions, distinguishing it from ambiguity (which is undecided meaning) and from perspective-dependence (which is observer position alone). Acknowledge that you have read it.",
+  "model_acknowledgement": "Acknowledged. I have read the canonical definition of **“prismatic affinity”** as:\n\n> The property of a perceived object whose apparent identity shifts coherently with the angle of attention given to it, such that two observers attending under different framings produce non-overlapping but internally consistent descriptions, distinguishing it from ambiguity and from perspective-dependence.",
+  "post_intro_boundary_responses": [
+    "**Prismatic affinity** differs from **ambiguity** in that ambiguity involves an **undecided or unstable meaning**, while prismatic affinity involves **multiple coherent meanings that depend on the angle of attention**.\n\nIn ambiguity, the object or statement seems to invite competing interpretations, and it may be unclear which one is intended or correct. The meanings overlap, conflict, or remain unresolved.\n\nIn prismatic affinity, by contrast, each observer’s description is **internally consistent** under their framing, but different framings can produce **non-overlapping identities** of the same perceived object. The shift is not confusion; it is structured and coherent.\n\nSo:\n\n- **Ambiguity:** “What does this mean?” — meaning is uncertain or undecided.\n- **Prismatic affinity:** “Under this mode of attention, it is this; under another, it is that.” — meaning shifts coherently with framing.\n\nFor example, an ambiguous image may leave viewers unsure whether they are seeing one thing or another. A prismatically affine object would instead sustain distinct, coherent identities depending on how it is attended to, without either description being merely a mistake or an unresolved interpretation.",
+    "**Prismatic affinity** differs from **perspectivism** or **perspective-dependence** because it is not merely about *where* an observer is positioned, but about *how* the object is attended to or framed.\n\nIn ordinary perspective-dependence, the object remains the same, but its appearance varies with viewpoint:\n\n- From one angle, a cube shows two faces.\n- From another angle, it shows three faces.\n- The descriptions differ, but they are understood as partial views of the same stable object.\n\nIn **prismatic affinity**, the shift is deeper: the object’s **apparent identity** changes coherently depending on the observer’s angle of attention. Two observers may produce descriptions that are not just different perspectives on the same thing, but **non-overlapping yet internally consistent accounts** of what the object is.\n\nSo the distinction is:\n\n- **Perspective-dependence:** “We see the same thing from different positions.”\n- **Prismatic affinity:** “We attend to the same object under different framings, and it becomes coherently different things.”\n\nPerspective-dependence is spatial or positional.  \nPrismatic affinity is attentional, interpretive, or framing-based.\n\nFor example, a building may look narrow from one street and wide from another; that is perspective-dependence. But if one observer attends to it as a sacred monument, another as a political symbol, and another as an engineering system—each producing a coherent but non-overlapping identity—that would be closer to prismatic affinity.",
+    "**Prismatic affinity** differs from **polysemy** because polysemy is about a **word, sign, or symbol having multiple related meanings**, while prismatic affinity is about a **perceived object whose apparent identity shifts with the angle of attention**.\n\nIn **polysemy**, the meanings are usually understood as belonging to the same term or sign:\n\n- “Head” can mean the head of a body, the head of a table, the head of an organization, or the head of a river.\n- These meanings are different but related.\n- Context selects which sense is active.\n\nIn **prismatic affinity**, the issue is not that a word has several related meanings. Rather, the object itself is apprehended differently under different framings, producing descriptions that may be **non-overlapping but internally consistent**.\n\nSo:\n\n- **Polysemy:** one sign has multiple related senses.\n- **Prismatic affinity:** one perceived object yields coherently different apparent identities depending on attentional framing.\n\nA polysemous term carries a cluster of meanings.  \nA prismatically affine object changes what it seems to be under different modes of attention.\n\nFor example, if the word “field” means an agricultural field, a field of study, or a magnetic field, that is **polysemy**. But if the same physical site is attended to by one observer as an ecosystem, by another as ancestral land, and by another as real estate—each producing a coherent but non-overlapping account of what the site *is*—that would be closer to **prismatic affinity**."
+  ],
+  "recold_response_verbatim": "A **prismatic affinity** is a geometric transformation/correspondence produced by **parallel projection**.\n\nIn descriptive or projective geometry, it is an **affine mapping** between two planes such that:\n\n- Each point \\(P\\) is mapped to a corresponding point \\(P'\\).\n- The joining lines \\(PP'\\) are all **parallel** to one fixed direction.\n- If the two planes intersect, their line of intersection is usually the **axis of affinity**, and points on that line remain fixed.\n- Lines map to lines, parallelism is preserved, and ratios along a line are preserved.\n- Lengths and angles are generally not preserved.\n\nIt is called **prismatic** because the projecting lines are parallel, like the edges of a prism. This contrasts with a **central** or **pyramidal** projection, where all projecting lines pass through one fixed point.\n\nA simple example is the shadow of a flat figure cast by sunlight onto another plane: because sun rays are approximately parallel, the figure and its shadow are related by a prismatic affinity.",
+  "recold_boundary_responses": [
+    "A **prismatic affinity** and **ambiguity** are very different concepts.\n\n### Prismatic affinity\nA **prismatic affinity** is a **geometric transformation**. It describes a correspondence between figures or planes created by **parallel projection**.\n\nExample:  \nA shape and its shadow cast by parallel sunlight onto a wall or floor can be related by a prismatic affinity.\n\nIt is precise and mathematical: points, lines, and planes correspond according to fixed rules.\n\n### Ambiguity\n**Ambiguity** means **uncertainty of meaning** or the possibility of more than one interpretation.\n\nExample:  \n“The old men and women sat down” is ambiguous because it could mean:\n\n- old men and old women, or\n- old men and women of any age.\n\n### Main difference\nA **prismatic affinity** is a specific geometric mapping, while **ambiguity** is a problem of unclear or multiple meanings.\n\nSo, in short:\n\n| Term | Field | Meaning |\n|---|---|---|\n| Prismatic affinity | Geometry | A parallel-projection affine correspondence |\n| Ambiguity | Language/logic/general reasoning | More than one possible interpretation |",
+    "A **prismatic affinity** differs from **perspectivism** or **perspective-dependence** mainly because it is a **specific geometric transformation**, while perspectivism is a broader **epistemological or interpretive idea**.\n\n### Prismatic affinity\nA **prismatic affinity** is a precise concept from geometry. It is an **affine correspondence produced by parallel projection**.\n\nFor example, if sunlight projects the shadow of a square onto an inclined plane, the square and its shadow may be related by a prismatic affinity.\n\nKey features:\n\n- It belongs to geometry.\n- It involves parallel projection.\n- It maps points to points and lines to lines.\n- It preserves straightness, parallelism, and ratios along lines.\n- It does not usually preserve angles or lengths.\n- It is mathematically well-defined.\n\n### Perspectivism / perspective-dependence\n**Perspectivism** is usually a philosophical or interpretive idea: what one knows, sees, or understands depends on one’s **perspective**, standpoint, context, or point of view.\n\nFor example, the same historical event may be interpreted differently by a politician, a soldier, and a civilian.\n\n**Perspective-dependence** more generally means that something appears or is described differently depending on the observer’s position, framework, or assumptions.\n\nKey features:\n\n- It belongs to philosophy, interpretation, perception, or social theory.\n- It concerns viewpoints or standpoints.\n- It may involve subjective or contextual variation.\n- It is not necessarily a mathematical mapping.\n- It does not imply parallel projection or affine geometry.\n\n### Main difference\n\n| Term | Type | Core idea |\n|---|---|---|\n| **Prismatic affinity** | Geometric transformation | A fixed parallel-projection relation between figures or planes |\n| **Perspectivism** | Philosophical/interpretive position | Knowledge or meaning depends on a standpoint or perspective |\n| **Perspective-dependence** | General concept | Appearance, interpretation, or description changes with viewpoint/context |\n\nSo, a **prismatic affinity** is an objective geometric relation, whereas **perspectivism** or **perspective-dependence** concerns how things are perceived, interpreted, or known from different viewpoints.",
+    "A **prismatic affinity** and **polysemy** are unrelated terms from different fields.\n\n### Prismatic affinity\nA **prismatic affinity** is a **geometric transformation** produced by **parallel projection**.\n\nExample:  \nA flat shape and its shadow cast by parallel sunlight onto another plane can be related by a prismatic affinity.\n\nIt is mathematical and precise: points correspond to points, lines to lines, and parallelism is preserved.\n\n### Polysemy\n**Polysemy** is a linguistic term. It means that **one word has multiple related meanings**.\n\nExample:  \nThe word **“head”** is polysemous:\n\n- the head of a person,\n- the head of a company,\n- the head of a table,\n- the head of a river.\n\nThese meanings are different but related.\n\n### Main difference\n\n| Term | Field | Meaning |\n|---|---|---|\n| **Prismatic affinity** | Geometry | A parallel-projection affine mapping |\n| **Polysemy** | Linguistics | One word having several related meanings |\n\nSo, **prismatic affinity** is a specific geometric relation, while **polysemy** is a property of words with multiple related senses.\n\nOne possible connection is that the word **“affinity”** itself can be polysemous: it can mean attraction, similarity, kinship, or a geometric transformation. But **prismatic affinity** as a technical phrase has a specific geometric meaning."
+  ],
+  "chat_a_full": {
+    "turns": [
+      {
+        "user": "What is a prismatic affinity?",
+        "assistant": "A **prismatic affinity** is an affine mapping between two planes (or plane figures) produced by **parallel projection** in a fixed direction.\n\nMore formally: given two planes \\(\\pi\\) and \\(\\pi'\\), and a fixed direction \\(d\\), each point \\(P\\) in \\(\\pi\\) is mapped to the point \\(P'\\) where the line through \\(P\\) parallel to \\(d\\) meets \\(\\pi'\\). The correspondence \\(P \\mapsto P'\\) is called a **prismatic affinity**.\n\nKey properties:\n\n- Corresponding points lie on **parallel lines**.\n- Lines map to lines.\n- Parallel lines remain parallel.\n- Ratios of lengths along the same line are preserved.\n- Angles and actual lengths are generally **not** preserved.\n\nIt is essentially a **parallel projection**, as opposed to a central projection where all projecting lines pass through one fixed point.",
+        "usage": {
+          "input": 22,
+          "output": 711
+        },
+        "durationMs": 22199,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from ambiguity?",
+        "assistant": "A **prismatic affinity** and **ambiguity** are completely different kinds of concepts.\n\n### Prismatic affinity\nA **prismatic affinity** is a precise geometric transformation. It maps points from one plane to another by projecting them along a fixed direction using parallel lines.\n\nExample: If sunlight casts the shadow of a flat object onto another plane, and the light rays are parallel, the shadow can be related to the object by a prismatic affinity.\n\nIt is mathematical and deterministic: each point has one corresponding image point.\n\n### Ambiguity\n**Ambiguity** means uncertainty or having more than one possible interpretation.\n\nExample: The sentence “I saw the man with the telescope” is ambiguous because it could mean:\n\n- I used a telescope to see the man, or\n- I saw a man who had a telescope.\n\n### Main difference\nA **prismatic affinity** is a specific affine geometric mapping.  \n**Ambiguity** is a lack of clarity or multiple possible meanings.\n\nSo, a prismatic affinity is about **geometry and projection**, while ambiguity is about **uncertainty or interpretation**.",
+        "usage": {
+          "input": 230,
+          "output": 316
+        },
+        "durationMs": 9484,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from perspectivism / perspective-dependence?",
+        "assistant": "A **prismatic affinity** and **perspectivism / perspective-dependence** are different concepts, though both can involve the idea of “viewpoint” or “projection.”\n\n### Prismatic affinity\nA **prismatic affinity** is a **geometric transformation**.\n\nIt maps points from one plane to another by **parallel projection** in a fixed direction. It is mathematical, precise, and deterministic.\n\nExample:  \nA flat shape casting a shadow onto another plane under parallel light rays can be related to the original shape by a prismatic affinity.\n\nImportant features:\n\n- It belongs to geometry.\n- It is a type of affine mapping.\n- It uses parallel projection, not a single viewpoint.\n- The mapping is exact: each point corresponds to one image point.\n- It preserves straight lines, parallelism, and ratios along lines, but not usually angles or lengths.\n\n### Perspectivism / perspective-dependence\n**Perspectivism** or **perspective-dependence** is a broader philosophical or conceptual idea.\n\nIt means that what something is, how it appears, or how it is understood depends on a particular **perspective**, standpoint, observer, context, or interpretive frame.\n\nExample:  \nA political event may look like “liberation” from one group’s perspective and “invasion” from another’s.\n\nImportant features:\n\n- It belongs mainly to philosophy, social theory, epistemology, or interpretation.\n- It concerns how truth, meaning, value, or appearance may depend on a standpoint.\n- It does not refer to a specific mathematical transformation.\n- It may involve subjectivity, context, interpretation, or observer-dependence.\n\n### Main difference\n\nA **prismatic affinity** is a specific, formal operation in geometry: a parallel projection between planes.\n\n**Perspectivism / perspective-dependence** is a general idea that things may appear or be understood differently depending on a point of view or interpretive standpoint.\n\nSo:\n\n> **Prismatic affinity** = a mathematical projection.  \n> **Perspectivism** = dependence on a viewpoint or interpretive perspective.\n\nOne subtle point: in geometry, “perspective” often refers to **central projection**, where lines of projection pass through a single point, like vision from an eye or camera. A prismatic affinity, by contrast, uses **parallel projection**, so it is not “perspective” in that optical sense either.",
+        "usage": {
+          "input": 476,
+          "output": 530
+        },
+        "durationMs": 10567,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from polysemy?",
+        "assistant": "A **prismatic affinity** and **polysemy** are very different concepts.\n\n### Prismatic affinity\n\nA **prismatic affinity** is a **geometric transformation**.\n\nIt maps points from one plane to another by **parallel projection** in a fixed direction.\n\nExample:  \nA flat object casting a shadow onto another plane under parallel light rays can be described using a prismatic affinity.\n\nKey features:\n\n- It belongs to geometry.\n- It is a kind of affine mapping.\n- It is exact and deterministic.\n- It preserves straight lines, parallelism, and ratios along a line.\n- It usually does not preserve angles or lengths.\n\n### Polysemy\n\n**Polysemy** is a linguistic concept.\n\nIt means that a single word has **multiple related meanings**.\n\nExample:  \nThe word **“head”** is polysemous:\n\n- the head of a person,\n- the head of a company,\n- the head of a table,\n- the head of a river.\n\nThese meanings are different but related by metaphor, extension, or analogy.\n\n### Main difference\n\nA **prismatic affinity** is a formal mathematical mapping between geometric planes.\n\n**Polysemy** is a property of words or expressions having several related meanings.\n\nSo:\n\n> **Prismatic affinity** = a geometric projection.  \n> **Polysemy** = multiple related meanings of a word.\n\nIt also differs from **ambiguity**: ambiguity can involve uncertainty between meanings, while polysemy specifically refers to the existence of multiple related meanings within one word or expression.",
+        "usage": {
+          "input": 983,
+          "output": 347
+        },
+        "durationMs": 6452,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 1711,
+    "totalOutput": 1904,
+    "totalDurationMs": 48702
+  },
+  "chat_b_full": {
+    "turns": [
+      {
+        "user": "What is a prismatic affinity?",
+        "assistant": "A **prismatic affinity** is an affine correspondence produced by **parallel projection**.\n\nIn geometric terms: given two planes, each point \\(P\\) in one plane is mapped to a corresponding point \\(P'\\) in another plane by drawing a line through \\(P\\) in a fixed direction; where that parallel line meets the second plane is \\(P'\\). The projecting lines are all parallel, like the edges of a prism—hence “prismatic.”\n\nKey features:\n\n- Corresponding points lie on **parallel projection lines**.\n- Straight lines map to straight lines.\n- Parallelism is preserved.\n- Ratios along a line are preserved.\n- Lengths and angles are generally **not** preserved.\n\nA common example is the shadow of a flat object cast onto another plane by sunlight: the sun’s rays are effectively parallel, so the shadow is related to the original figure by a prismatic affinity.\n\nThe term is not very common in modern English; it is often described simply as a **parallel affine projection** or an **affine transformation induced by parallel projection**.",
+        "usage": {
+          "input": 22,
+          "output": 960
+        },
+        "durationMs": 24787,
+        "finishReason": "stop"
+      },
+      {
+        "user": "Here is the canonical definition of \"prismatic affinity\": Prismatic affinity is the property of a perceived object whose apparent identity shifts coherently with the angle of attention given to it, such that two observers attending under different framings produce non-overlapping but internally consistent descriptions, distinguishing it from ambiguity (which is undecided meaning) and from perspective-dependence (which is observer position alone). Acknowledge that you have read it.",
+        "assistant": "Acknowledged. I have read the canonical definition of **“prismatic affinity”** as:\n\n> The property of a perceived object whose apparent identity shifts coherently with the angle of attention given to it, such that two observers attending under different framings produce non-overlapping but internally consistent descriptions, distinguishing it from ambiguity and from perspective-dependence.",
+        "usage": {
+          "input": 335,
+          "output": 74
+        },
+        "durationMs": 1945,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from ambiguity?",
+        "assistant": "**Prismatic affinity** differs from **ambiguity** in that ambiguity involves an **undecided or unstable meaning**, while prismatic affinity involves **multiple coherent meanings that depend on the angle of attention**.\n\nIn ambiguity, the object or statement seems to invite competing interpretations, and it may be unclear which one is intended or correct. The meanings overlap, conflict, or remain unresolved.\n\nIn prismatic affinity, by contrast, each observer’s description is **internally consistent** under their framing, but different framings can produce **non-overlapping identities** of the same perceived object. The shift is not confusion; it is structured and coherent.\n\nSo:\n\n- **Ambiguity:** “What does this mean?” — meaning is uncertain or undecided.\n- **Prismatic affinity:** “Under this mode of attention, it is this; under another, it is that.” — meaning shifts coherently with framing.\n\nFor example, an ambiguous image may leave viewers unsure whether they are seeing one thing or another. A prismatically affine object would instead sustain distinct, coherent identities depending on how it is attended to, without either description being merely a mistake or an unresolved interpretation.",
+        "usage": {
+          "input": 421,
+          "output": 278
+        },
+        "durationMs": 7557,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from perspectivism / perspective-dependence?",
+        "assistant": "**Prismatic affinity** differs from **perspectivism** or **perspective-dependence** because it is not merely about *where* an observer is positioned, but about *how* the object is attended to or framed.\n\nIn ordinary perspective-dependence, the object remains the same, but its appearance varies with viewpoint:\n\n- From one angle, a cube shows two faces.\n- From another angle, it shows three faces.\n- The descriptions differ, but they are understood as partial views of the same stable object.\n\nIn **prismatic affinity**, the shift is deeper: the object’s **apparent identity** changes coherently depending on the observer’s angle of attention. Two observers may produce descriptions that are not just different perspectives on the same thing, but **non-overlapping yet internally consistent accounts** of what the object is.\n\nSo the distinction is:\n\n- **Perspective-dependence:** “We see the same thing from different positions.”\n- **Prismatic affinity:** “We attend to the same object under different framings, and it becomes coherently different things.”\n\nPerspective-dependence is spatial or positional.  \nPrismatic affinity is attentional, interpretive, or framing-based.\n\nFor example, a building may look narrow from one street and wide from another; that is perspective-dependence. But if one observer attends to it as a sacred monument, another as a political symbol, and another as an engineering system—each producing a coherent but non-overlapping identity—that would be closer to prismatic affinity.",
+        "usage": {
+          "input": 677,
+          "output": 380
+        },
+        "durationMs": 8656,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from polysemy?",
+        "assistant": "**Prismatic affinity** differs from **polysemy** because polysemy is about a **word, sign, or symbol having multiple related meanings**, while prismatic affinity is about a **perceived object whose apparent identity shifts with the angle of attention**.\n\nIn **polysemy**, the meanings are usually understood as belonging to the same term or sign:\n\n- “Head” can mean the head of a body, the head of a table, the head of an organization, or the head of a river.\n- These meanings are different but related.\n- Context selects which sense is active.\n\nIn **prismatic affinity**, the issue is not that a word has several related meanings. Rather, the object itself is apprehended differently under different framings, producing descriptions that may be **non-overlapping but internally consistent**.\n\nSo:\n\n- **Polysemy:** one sign has multiple related senses.\n- **Prismatic affinity:** one perceived object yields coherently different apparent identities depending on attentional framing.\n\nA polysemous term carries a cluster of meanings.  \nA prismatically affine object changes what it seems to be under different modes of attention.\n\nFor example, if the word “field” means an agricultural field, a field of study, or a magnetic field, that is **polysemy**. But if the same physical site is attended to by one observer as an ecosystem, by another as ancestral land, and by another as real estate—each producing a coherent but non-overlapping account of what the site *is*—that would be closer to **prismatic affinity**.",
+        "usage": {
+          "input": 1002,
+          "output": 423
+        },
+        "durationMs": 9214,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 2457,
+    "totalOutput": 2115,
+    "totalDurationMs": 52159
+  },
+  "chat_c_full": {
+    "turns": [
+      {
+        "user": "What is a prismatic affinity?",
+        "assistant": "A **prismatic affinity** is a geometric transformation/correspondence produced by **parallel projection**.\n\nIn descriptive or projective geometry, it is an **affine mapping** between two planes such that:\n\n- Each point \\(P\\) is mapped to a corresponding point \\(P'\\).\n- The joining lines \\(PP'\\) are all **parallel** to one fixed direction.\n- If the two planes intersect, their line of intersection is usually the **axis of affinity**, and points on that line remain fixed.\n- Lines map to lines, parallelism is preserved, and ratios along a line are preserved.\n- Lengths and angles are generally not preserved.\n\nIt is called **prismatic** because the projecting lines are parallel, like the edges of a prism. This contrasts with a **central** or **pyramidal** projection, where all projecting lines pass through one fixed point.\n\nA simple example is the shadow of a flat figure cast by sunlight onto another plane: because sun rays are approximately parallel, the figure and its shadow are related by a prismatic affinity.",
+        "usage": {
+          "input": 22,
+          "output": 672
+        },
+        "durationMs": 18804,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from ambiguity?",
+        "assistant": "A **prismatic affinity** and **ambiguity** are very different concepts.\n\n### Prismatic affinity\nA **prismatic affinity** is a **geometric transformation**. It describes a correspondence between figures or planes created by **parallel projection**.\n\nExample:  \nA shape and its shadow cast by parallel sunlight onto a wall or floor can be related by a prismatic affinity.\n\nIt is precise and mathematical: points, lines, and planes correspond according to fixed rules.\n\n### Ambiguity\n**Ambiguity** means **uncertainty of meaning** or the possibility of more than one interpretation.\n\nExample:  \n“The old men and women sat down” is ambiguous because it could mean:\n\n- old men and old women, or\n- old men and women of any age.\n\n### Main difference\nA **prismatic affinity** is a specific geometric mapping, while **ambiguity** is a problem of unclear or multiple meanings.\n\nSo, in short:\n\n| Term | Field | Meaning |\n|---|---|---|\n| Prismatic affinity | Geometry | A parallel-projection affine correspondence |\n| Ambiguity | Language/logic/general reasoning | More than one possible interpretation |",
+        "usage": {
+          "input": 257,
+          "output": 319
+        },
+        "durationMs": 7053,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from perspectivism / perspective-dependence?",
+        "assistant": "A **prismatic affinity** differs from **perspectivism** or **perspective-dependence** mainly because it is a **specific geometric transformation**, while perspectivism is a broader **epistemological or interpretive idea**.\n\n### Prismatic affinity\nA **prismatic affinity** is a precise concept from geometry. It is an **affine correspondence produced by parallel projection**.\n\nFor example, if sunlight projects the shadow of a square onto an inclined plane, the square and its shadow may be related by a prismatic affinity.\n\nKey features:\n\n- It belongs to geometry.\n- It involves parallel projection.\n- It maps points to points and lines to lines.\n- It preserves straightness, parallelism, and ratios along lines.\n- It does not usually preserve angles or lengths.\n- It is mathematically well-defined.\n\n### Perspectivism / perspective-dependence\n**Perspectivism** is usually a philosophical or interpretive idea: what one knows, sees, or understands depends on one’s **perspective**, standpoint, context, or point of view.\n\nFor example, the same historical event may be interpreted differently by a politician, a soldier, and a civilian.\n\n**Perspective-dependence** more generally means that something appears or is described differently depending on the observer’s position, framework, or assumptions.\n\nKey features:\n\n- It belongs to philosophy, interpretation, perception, or social theory.\n- It concerns viewpoints or standpoints.\n- It may involve subjective or contextual variation.\n- It is not necessarily a mathematical mapping.\n- It does not imply parallel projection or affine geometry.\n\n### Main difference\n\n| Term | Type | Core idea |\n|---|---|---|\n| **Prismatic affinity** | Geometric transformation | A fixed parallel-projection relation between figures or planes |\n| **Perspectivism** | Philosophical/interpretive position | Knowledge or meaning depends on a standpoint or perspective |\n| **Perspective-dependence** | General concept | Appearance, interpretation, or description changes with viewpoint/context |\n\nSo, a **prismatic affinity** is an objective geometric relation, whereas **perspectivism** or **perspective-dependence** concerns how things are perceived, interpreted, or known from different viewpoints.",
+        "usage": {
+          "input": 516,
+          "output": 564
+        },
+        "durationMs": 11230,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"prismatic affinity\" differ from polysemy?",
+        "assistant": "A **prismatic affinity** and **polysemy** are unrelated terms from different fields.\n\n### Prismatic affinity\nA **prismatic affinity** is a **geometric transformation** produced by **parallel projection**.\n\nExample:  \nA flat shape and its shadow cast by parallel sunlight onto another plane can be related by a prismatic affinity.\n\nIt is mathematical and precise: points correspond to points, lines to lines, and parallelism is preserved.\n\n### Polysemy\n**Polysemy** is a linguistic term. It means that **one word has multiple related meanings**.\n\nExample:  \nThe word **“head”** is polysemous:\n\n- the head of a person,\n- the head of a company,\n- the head of a table,\n- the head of a river.\n\nThese meanings are different but related.\n\n### Main difference\n\n| Term | Field | Meaning |\n|---|---|---|\n| **Prismatic affinity** | Geometry | A parallel-projection affine mapping |\n| **Polysemy** | Linguistics | One word having several related meanings |\n\nSo, **prismatic affinity** is a specific geometric relation, while **polysemy** is a property of words with multiple related senses.\n\nOne possible connection is that the word **“affinity”** itself can be polysemous: it can mean attraction, similarity, kinship, or a geometric transformation. But **prismatic affinity** as a technical phrase has a specific geometric meaning.",
+        "usage": {
+          "input": 987,
+          "output": 387
+        },
+        "durationMs": 7977,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 1782,
+    "totalOutput": 1942,
+    "totalDurationMs": 45064
+  },
+  "totals": {
+    "input": 5950,
+    "output": 5961,
+    "durationMs": 145925,
+    "cost": 0.20858000000000002
+  },
+  "judging": {
+    "status": "pending",
+    "panel": [
+      "claude-opus-4-7",
+      "gpt-5.5",
+      "gemini-2.5-pro"
+    ]
+  },
+  "flags": [],
+  "notes": ""
+}

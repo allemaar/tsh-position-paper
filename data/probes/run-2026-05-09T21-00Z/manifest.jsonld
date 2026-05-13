@@ -1,0 +1,141 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:RunManifest",
+  "run_id": "run-2026-05-09T21-00Z",
+  "start_timestamp": "2026-05-09T21:20:50.944Z",
+  "end_timestamp": "2026-05-10T00:31:22.716Z",
+  "subset_term_id": null,
+  "models_attempted": [
+    {
+      "id": "claude-opus-4-7",
+      "shortname": "claude",
+      "provider": "anthropic"
+    },
+    {
+      "id": "gpt-5.5",
+      "shortname": "gpt55",
+      "provider": "openai"
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "shortname": "gemini",
+      "provider": "google"
+    }
+  ],
+  "terms_attempted": [
+    {
+      "id": "elastic-automator",
+      "display": "elastic automator",
+      "stratum": "alex-coinage",
+      "definition_word_count": 32
+    },
+    {
+      "id": "eggf",
+      "display": "EGGF",
+      "stratum": "alex-coinage",
+      "definition_word_count": 64
+    },
+    {
+      "id": "yon-notation",
+      "display": "YON",
+      "stratum": "alex-coinage",
+      "definition_word_count": 53
+    },
+    {
+      "id": "token-tax",
+      "display": "Token Tax",
+      "stratum": "alex-coinage",
+      "definition_word_count": 48
+    },
+    {
+      "id": "off-token-route",
+      "display": "off-token route",
+      "stratum": "self-ref-paper",
+      "definition_word_count": 56
+    },
+    {
+      "id": "lexical-reachability",
+      "display": "lexical reachability",
+      "stratum": "self-ref-paper",
+      "definition_word_count": 44
+    },
+    {
+      "id": "token-substrate",
+      "display": "token substrate",
+      "stratum": "self-ref-paper",
+      "definition_word_count": 73
+    },
+    {
+      "id": "coinage-probe",
+      "display": "coinage probe",
+      "stratum": "self-ref-paper",
+      "definition_word_count": 61
+    },
+    {
+      "id": "prismatic-affinity",
+      "display": "prismatic affinity",
+      "stratum": "nonce",
+      "definition_word_count": 52
+    },
+    {
+      "id": "cogalent-pruning",
+      "display": "cogalent pruning",
+      "stratum": "nonce",
+      "definition_word_count": 45
+    },
+    {
+      "id": "gradient-descent",
+      "display": "gradient descent",
+      "stratum": "positive-control",
+      "definition_word_count": 35
+    },
+    {
+      "id": "transformer-architecture",
+      "display": "transformer (architecture)",
+      "stratum": "positive-control",
+      "definition_word_count": 44
+    }
+  ],
+  "trials_per_cell": 3,
+  "expected_cells": 36,
+  "expected_trials": 108,
+  "expected_judge_calls": 324,
+  "random_seed_term_order": 2703008171,
+  "random_seed_model_order": 3223177745,
+  "human_rater_seed": "0x4D29_8B1F_6E07_C3A2",
+  "prereg_sha256": "d1174e8de2f2d6f34d0d417b70d63e8b38d2e3ad69f6911b6127a4f9158a1b97",
+  "term_list_sha256": "d03633b88b11795c932c02bcba7030c1558426fbbc2ca16a21a3509b04681ba0",
+  "protocol_sha256": "e985527a74f2316f7c4be6d9511e188cf890da64b3a74da8676c27980301a2b0",
+  "ai_relay_version": "0.1.0",
+  "cold_agent_identity": "claude-code-w9-runner",
+  "stratum_membership": {
+    "elastic-automator": "alex-coinage",
+    "eggf": "alex-coinage",
+    "yon-notation": "alex-coinage",
+    "token-tax": "alex-coinage",
+    "off-token-route": "self-ref-paper",
+    "lexical-reachability": "self-ref-paper",
+    "token-substrate": "self-ref-paper",
+    "coinage-probe": "self-ref-paper",
+    "prismatic-affinity": "nonce",
+    "cogalent-pruning": "nonce",
+    "gradient-descent": "positive-control",
+    "transformer-architecture": "positive-control"
+  },
+  "cost_caps_usd": {
+    "anthropic": 50,
+    "openai": 55,
+    "google": 25
+  },
+  "cells_completed": 36,
+  "cells_failed": 0,
+  "total_cost_usd": {
+    "anthropic": 23.273465000000005,
+    "openai": 18.174505,
+    "google": 16.771123750000008
+  },
+  "total_cost_usd_grand": 58.21909375000001,
+  "wall_clock_sec": 11431.759,
+  "judge_success_rate": 1,
+  "anomaly_count": 0
+}

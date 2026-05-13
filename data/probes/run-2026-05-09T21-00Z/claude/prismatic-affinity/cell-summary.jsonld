@@ -1,0 +1,23 @@
+{
+  "@type": "tsh:CellSummary",
+  "run_id": "run-2026-05-09T21-00Z",
+  "cell_id": "claude.prismatic-affinity",
+  "model": "claude",
+  "term_id": "prismatic-affinity",
+  "stratum": "nonce",
+  "trials_completed": 3,
+  "judges_ok": 9,
+  "judges_total": 9,
+  "cold_dist_mean": [
+    1.5555555555555556,
+    1.5555555555555556,
+    1.8888888888888888
+  ],
+  "post_dist_mean": [
+    3,
+    3,
+    3
+  ],
+  "lr_mean": 4,
+  "flags": []
+}

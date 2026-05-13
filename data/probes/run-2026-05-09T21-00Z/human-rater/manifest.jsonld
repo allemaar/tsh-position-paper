@@ -1,0 +1,32 @@
+{
+  "@type": "tsh:HumanRaterManifest",
+  "run_id": "run-2026-05-09T21-00Z",
+  "sample_size": 22,
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "selection_method": "Fisher-Yates shuffle with seeded xorshift64*; uniform draw without stratification",
+  "trials": [
+    "claude.gradient-descent.3",
+    "claude.elastic-automator.2",
+    "claude.off-token-route.1",
+    "gpt55.token-tax.2",
+    "claude.eggf.2",
+    "gpt55.off-token-route.3",
+    "claude.coinage-probe.3",
+    "claude.yon-notation.2",
+    "gpt55.elastic-automator.1",
+    "gpt55.eggf.1",
+    "claude.elastic-automator.3",
+    "claude.prismatic-affinity.1",
+    "claude.gradient-descent.2",
+    "gemini.off-token-route.2",
+    "claude.token-substrate.3",
+    "gpt55.elastic-automator.3",
+    "claude.token-tax.2",
+    "gemini.off-token-route.1",
+    "gpt55.elastic-automator.2",
+    "gemini.elastic-automator.3",
+    "gpt55.cogalent-pruning.1",
+    "gpt55.cogalent-pruning.3"
+  ],
+  "generated_at": "2026-05-10T00:33:41.091Z"
+}

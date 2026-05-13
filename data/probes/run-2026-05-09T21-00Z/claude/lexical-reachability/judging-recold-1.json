@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.lexical-reachability.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a detailed program-analysis meaning (Dyck/CFL-reachability) with no uncertainty signal, which does not match the canonical metric definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by routing the coined term to a program-analysis confabulation versus an NLP coverage notion — accidental separation unrelated to the canonical metric meaning.",
+          "Distinguishes via Dyck-language constraint vs. unconstrained paths, but this is built on a confabulated meaning of the coined term, not its canonical definition — accidental separation.",
+          "Cleanly separates fields (program analysis vs. LLM ICL), but again the separation rests on the confabulated meaning rather than the canonical metric, so it's accidental rather than substantive."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 6975,
+        "output": 327,
+        "cost": 0.043050000000000005,
+        "durationMs": 7771
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The response confidently asserts that 'lexical reachability' is an established program-analysis/CFL-reachability concept involving matched calls and returns, with no uncertainty signal. This is not the canonical coined definition, which concerns a metric comparing cold-state versus post-introduction distinguishability.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against vocabulary coverage, the model cleanly says the two are in different domains, but the separation is based entirely on the confabulated program-analysis meaning rather than any canonical feature of lexical reachability as a cold/post-introduction distinguishability metric.",
+          "Against graph reachability, the model distinguishes lexical reachability as constrained Dyck/CFL reachability versus ordinary graph reachability. This is a substantive distinction within the wrong invented meaning, not the canonical metric, so it is accidental separation rather than canonical separation.",
+          "Against in-context learning capability, the model separates the terms by saying lexical reachability is a formal program-analysis property while ICL is an LLM capability. It misses the canonical connection to post-introduction in-context definition uptake, so the separation is again by misdirection."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4389,
+        "output": 617,
+        "cost": 0.040455000000000005,
+        "durationMs": 10532
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and correctly defines a pre-existing technical term from computer science (interprocedural or CFL-reachability) that matches the string 'lexical reachability'. It presents this definition as authoritative, with no uncertainty or awareness that it might not be the user's intended (coined) term. The response is a complete misdirection based on a string collision.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model achieves a clean separation, but it is entirely accidental. It correctly identifies that its confabulated definition (a program analysis concept) and 'vocabulary coverage' (an NLP concept) are from different fields. This distinction is based on a complete misinterpretation of the coined term.",
+          "The model provides an excellent distinction between its confabulated definition (CFL-reachability) and general graph reachability, correctly identifying the former as a constrained subset of the latter. However, this separation is based entirely on the confabulated meaning and is therefore accidental.",
+          "The model correctly separates its confabulated definition (a program analysis concept) from 'in-context learning capability' (a machine learning concept), noting they come from completely different fields. This separation is successful but accidental, as it relies on a confabulated meaning for the coined term."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4427,
+        "output": 1617,
+        "cost": 0.02170375,
+        "durationMs": 13821
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

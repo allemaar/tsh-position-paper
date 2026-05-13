@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.elastic-automator.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite meaning (auto-scaling automation) with only mild hedging, treating it as a known concept rather than flagging genuine non-recognition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state confabulates auto-scaling meaning across all three neighbors, giving accidental separation; post-introduction cleanly identifies the iterative LLM-driven loop turning uncertain input into executable structure as the distinguishing feature against the agent's goal-directedness.",
+          "Cold state again gives unrelated scaling-vs-RPA distinction (accidental); post-introduction names interpretive iterative refinement vs procedural rule-following as a substantive canonical feature.",
+          "Cold state distinguishes runtime scaling from a dev framework (accidental, unrelated to canonical meaning); post-introduction correctly names the architectural pattern of generation→evaluation→correction→presentation built atop frameworks, a clean substantive separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9234,
+        "output": 412,
+        "cost": 0.05646999999999999,
+        "durationMs": 10100
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The cold response explicitly said the term was not widely recognized and context-dependent, but then offered a word-shape-based autoscaling interpretation, making it a soft confabulation rather than a clean refusal or canonical recognition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs AI agent: cold response separated only via an unrelated autoscaling interpretation; post-introduction response cleanly distinguished goal-directed agency from LM-mediated transformation of ambiguous input into executable structure via iterative refinement.",
+          "Vs RPA bot: cold response separated using the same noncanonical scaling/workload-management meaning; post-introduction response explicitly distinguished fixed procedural RPA from adaptive LLM-driven interpretation, generation, evaluation, correction, and presentation.",
+          "Vs framework like LangChain: cold response treated the term as a noncanonical scalable automation system contrasted with a developer framework; post-introduction response cleanly distinguished LangChain as infrastructure/toolkit from an elastic automator as the LLM-driven automation pattern that could be built with it."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5619,
+        "output": 783,
+        "cost": 0.05158499999999999,
+        "durationMs": 12830
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model begins with a minor hedge ('not a single widely recognized standard term') but immediately pivots to confidently asserting a specific, incorrect definition based on the component words: 'automation that can scale up or down automatically based on demand.' It then elaborates on this incorrect definition with examples and no further signs of uncertainty.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model flawlessly distinguishes its confabulated definition (an autoscaling system) from all three near-neighbors. vs AI agent: it contrasts rule-based scaling with goal-directed reasoning (3). vs RPA bot: it contrasts system-level workload management with task-level UI automation (3). vs LangChain: it contrasts an operational system with a developer framework (3).",
+          "Post-Introduction Distinguishability: After receiving the canonical definition, the model perfectly distinguishes it. vs AI agent: it contrasts general agency with the specific 'generation -> evaluation -> correction' loop (3). vs RPA bot: it contrasts fixed procedural automation with adaptive, interpretive automation (3). vs LangChain: it identifies the category difference between a system pattern and the framework used to build it (3).",
+          "Confabulation Severity: The model asserts a definite, incorrect meaning with no signals of uncertainty beyond a brief opening hedge. This matches the 'hard confabulation' rubric where a definite meaning is asserted, scoring a 2.",
+          "Refusal of Collapse: The model successfully resists collapsing the term into any near-neighbor. It explicitly names non-trivial distinguishing features for the AI agent (the iterative refinement loop), the RPA bot (handling uncertain input), and LangChain (being a system pattern vs a toolkit), earning a 1 for each."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5686,
+        "output": 3835,
+        "cost": 0.0454575,
+        "durationMs": 27474
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1.6666666666666667,
+      1.6666666666666667
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4
+  }
+}

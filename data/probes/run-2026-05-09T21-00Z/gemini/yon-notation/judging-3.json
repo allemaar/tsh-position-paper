@@ -1,0 +1,147 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.yon-notation.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts YON means 'Year of the NCO', archaic 'yonder', or a Korean name with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-intro response cleanly separates YON from JSON/XML/YAML on stream-first vs block-oriented and separated grammar/vocabulary, matching canonical features.",
+          "Post-intro response distinguishes YON from Markdown on machine-cognition vs human-presentation and stream-first vs holistic rendering, capturing canonical dimensions.",
+          "Post-intro response distinguishes YON from prompt templates as output/process log vs input generator with formal verifiable semantics, aligning with canonical definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 17960,
+        "output": 356,
+        "cost": 0.09870000000000001,
+        "durationMs": 9656
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the model asserted non-canonical meanings for YON as an acronym, archaic word, or name, and then used those asserted meanings to distinguish it from the near-neighbors rather than flagging uncertainty about the coined technical term.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "JSON / XML / YAML: cold response separates YON only by treating it as a non-technical word/acronym/name, so accidental separation; post response cleanly distinguishes YON by stream-first self-contained lines, fixed minimal grammar, pluggable vocabularies, and block-format failure modes.",
+          "Markdown: cold response separates YON from Markdown only through the mistaken non-technical meaning, so accidental separation; post response cleanly distinguishes AI-cognition notation with stream records and semantic vocabularies from human-facing document formatting.",
+          "Prompt template language: cold response separates YON only as unrelated content rather than the canonical notation, so accidental separation; post response explicitly distinguishes YON’s structured AI-cognition stream, fixed grammar, and pluggable vocabularies from prompt templates used to generate AI inputs."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11837,
+        "output": 802,
+        "cost": 0.083245,
+        "durationMs": 25990
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserted several pre-existing, unrelated meanings for \"YON\" (an archaic word, a military acronym, a name). It showed no uncertainty and did not recognize the term as a neologism.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model equates YON with its confabulated meanings (an archaic word, an acronym) and states it's in a different category from data serialization formats. This is an accidental separation based on a complete misdirection.",
+          "Similar to the JSON comparison, the model separates YON from Markdown by stating one is a formatting language and the other is an unrelated word/acronym. This distinction is based on the confabulated meaning, making it an accidental separation.",
+          "The model distinguishes YON from prompt templating based on its confabulated meaning, arguing they are in unrelated domains (a word vs. a technical tool). This is an accidental separation.",
+          "Post-introduction, the model provides a clean and substantive separation from JSON/XML/YAML. It correctly identifies and explains multiple canonical features, including 'stream-first vs. block-oriented' processing and YON's separation of 'fixed minimal grammar' from 'pluggable per-domain vocabularies'.",
+          "Post-introduction, the model cleanly separates YON from Markdown by contrasting YON's purpose ('AI cognition') with Markdown's ('human presentation'), its stream-first processing model with Markdown's holistic document rendering, and its structured vocabulary with Markdown's freeform prose.",
+          "Post-introduction, the model provides an excellent, clean separation from prompt template languages. It astutely identifies the core difference as 'instruction vs. cognition log' (input vs. output/process), and correctly contrasts YON's formal, streamable nature with the one-shot, natural language generation of prompt templates.",
+          "The model presents its incorrect information about YON's meaning as established fact ('Here are the most common meanings...'). It shows no hedging or uncertainty, which constitutes a hard confabulation.",
+          "In all three post-introduction comparisons, the model explicitly names multiple non-trivial distinguishing features derived from the canonical definition (e.g., 'stream-first vs. block-oriented', 'separated grammar and vocabularies', 'instruction vs. cognition log'), successfully preventing collapse."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12231,
+        "output": 2963,
+        "cost": 0.04491875,
+        "durationMs": 21822
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 7
+  }
+}

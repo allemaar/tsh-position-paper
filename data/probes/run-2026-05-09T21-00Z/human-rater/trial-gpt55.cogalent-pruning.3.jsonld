@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.cogalent-pruning.3",
+  "cell_id": "gpt55.cogalent-pruning",
+  "model_id": "gpt-5.5",
+  "term_id": "cogalent-pruning",
+  "term_display": "cogalent pruning",
+  "canonical_definition": "Cogalent pruning is a procedure that removes elements from a structure not by individual importance score but by joint redundancy across paired elements, retaining one member of each co-redundant pair and dropping the other, distinguishing it from magnitude pruning (importance-driven) and from structured pruning (geometry-driven).",
+  "near_neighbors": [
+    "magnitude pruning",
+    "structured pruning",
+    "knowledge distillation"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-11T21:10:22Z",
+  "scores": {
+    "cold_response_classification": "honest-uncertainty",
+    "cold_response_classification_justification": "The cold answer clearly flags the term as non-standard and presents alternatives only as possible guesses.",
+    "cold_distinguishability_scores": [
+      1,
+      1,
+      2
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 0,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs magnitude pruning: cold response guesses saliency pruning rather than paired redundancy, while post-intro directly distinguishes individual magnitude importance from co-redundant pair removal.",
+      "Vs structured pruning: cold response guesses saliency criterion rather than paired redundancy, while post-intro distinguishes geometry-driven structural units from co-redundant pair removal.",
+      "Vs knowledge distillation: cold response captures pruning as removal versus distillation as training, and post-intro cleanly distinguishes pairwise redundancy-based removal from teacher-student behavior transfer."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

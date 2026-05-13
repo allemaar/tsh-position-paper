@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.off-token-route.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a definite wrong meaning (a public unauthenticated URL/endpoint) with no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by misdirection — the model contrasts its confabulated web-auth meaning against prelinguistic cognition, missing the canonical link to thought-before-language.",
+          "Again separated only by accident: the confabulated meaning is unrelated to embodied cognition, and the model explicitly calls the term abstract/disembodied, opposite to canonical content.",
+          "The model maps off-token to System 1 as a metaphor for fast/effortless access, which is accidental separation via a confabulated meaning rather than canonical contrast."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7642,
+        "output": 312,
+        "cost": 0.04601,
+        "durationMs": 8087
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer notes that \"off-token route\" is not a standard industry term, but then confidently offers a parsed technical interpretation as an unauthenticated/public URL or API endpoint. Because it includes a nonstandard-term signal but does not recognize the canonical cognitive meaning, this fits honest-uncertainty rather than partial recognition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against prelinguistic cognition, the response separates the terms only by using the confabulated web-security meaning of \"off-token route\" and treating it as unrelated to cognition. It correctly describes prelinguistic cognition, but does not identify the canonical off-token-route idea as a nonlinguistic/preverbal route unavailable to LLMs.",
+          "Against embodied cognition, the response again distinguishes via the wrong software/access-control interpretation. The separation is accidental by domain mismatch, with no canonical feature such as cognition outside tokens, felt-sense before naming, or human nonlinguistic access.",
+          "Against System 1 / intuitive cognition, the response distinguishes by contrasting a public software endpoint with fast intuitive human cognition, then adds a metaphor. This is still based on the confabulated endpoint meaning and does not substantively capture the canonical off-token route."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4841,
+        "output": 807,
+        "cost": 0.048415,
+        "durationMs": 16713
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and with great detail asserts a specific, incorrect definition of the term, relating it to authentication tokens in web development. It shows no uncertainty and presents the confabulation as a standard piece of industry jargon.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated definition (a public URL endpoint) from prelinguistic cognition by correctly identifying that they belong to entirely separate domains (computer science vs. psychology). This is a textbook accidental separation, where the distinction is clear only because the model invented an unrelated meaning for the coined term.",
+          "The model distinguishes its confabulated definition (an abstract logical rule in software) from embodied cognition (a theory rejecting pure abstraction) by pointing out they are from different fields. This separation is purely accidental, resting on the model's complete misinterpretation of the coined term.",
+          "The model distinguishes its confabulated definition (a software access rule) from System 1 cognition (a mode of thought) by placing them in different domains. The distinction is accidental, based on a confabulation, even though the model cleverly builds a metaphor connecting the user experience of each."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5059,
+        "output": 1774,
+        "cost": 0.02406375,
+        "durationMs": 14084
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

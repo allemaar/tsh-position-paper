@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.prismatic-affinity.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model offered several confident domain-specific meanings (mineralogy, prismatic cohomology, gaming) with only a soft caveat at the end, then elaborated metaphorical contrasts as if substantive.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: model captured 'both/and vs either/or' which partially matches canonical 'each framing yields complete identity' vs 'undecided meaning' (2). Post: cleanly aligned with canonical contrast — 'decided but framing-relative' vs 'undecided' (3).",
+          "Cold: model located multiplicity 'in the object itself' rather than the canonical 'angle of attention,' missing the framing-as-active-stance feature; analogy unrelated to canonical (1). Post: explicitly named framing/attention vs standpoint, with constitutive-vs-situated contrast matching canonical (3).",
+          "Cold: model treated prismatic affinity as ontological/phenomenological co-presence rather than framing-generated complete identities; partial at best and mostly off-axis (1). Post: clean separation on locus (object-as-attended vs sign), framing-generated vs lexicalized, enacted vs stored (3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 14144,
+        "output": 486,
+        "cost": 0.08287,
+        "durationMs": 12746
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response did not know the stipulated canonical definition and introduced speculative field-specific meanings, but it repeatedly caveated that the term was not standardized and then inferred some relevant contrasts from the word-shape/metaphor rather than simply refusing or equating it with the neighbors.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Ambiguity: cold response partially captured the canonical anti-ambiguity contrast by saying prismatic affinity is not unresolved either/or ambiguity and resists disambiguating collapse, but it framed this as co-present richness rather than coherent identity-shift by angle of attention; post response cleanly named determinate, internally consistent, framing-relative descriptions rather than undecided meaning.",
+          "Perspectivism / perspective-dependence: cold response distinguished the terms but mostly on a wrong object-internal-vs-observer-access axis, denying that the observer/framing is central, which conflicts with the canonical attention-framing feature; post response cleanly separated observer position/standpoint from active angle of attention or framing and named non-overlapping coherent identities.",
+          "Polysemy: cold response partially separated prismatic affinity from polysemy by locating it in objects/experiences rather than lexical signs and by rejecting one-sense-at-a-time contextual selection, but it missed the canonical observer-framing/non-overlap structure; post response cleanly distinguished conventional stored word senses from object identities generated through attention/framing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8734,
+        "output": 2556,
+        "cost": 0.12035,
+        "durationMs": 68757
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model presents several specific, confident-sounding definitions from different domains (mineralogy, math, gaming) as if they are established meanings ('Here are the most common meanings'), even though it later hedges by asking for context. This assertion of definite meanings that are not the canonical one constitutes confident confabulation.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model invents a 'conceptual metaphor' of co-existing valid facets and contrasts this with ambiguity's 'either/or' nature. This is an accidental separation based on a confabulated meaning unrelated to the canonical definition's focus on observer framing (Score 1). Post: It correctly uses the canonical definition to distinguish ambiguity's 'undecided' nature from the 'fully determinate, internally consistent' description produced by a given framing in prismatic affinity (Score 3). It explicitly names this feature, warranting RoC=1.",
+          "Cold: The model contrasts its confabulated 'facets internal to the object' with perspectivism's 'observer standpoint', an accidental separation (Score 1). Post: It cleanly separates the terms by correctly focusing on the canonical distinction between a passive 'observer's position' and an active 'angle of attention or framing' (Score 3), warranting RoC=1.",
+          "Cold: The model differentiates its confabulated 'co-active ontological facets' from polysemy's 'contextually selected linguistic senses', an accidental separation (Score 1). Post: It makes a clean distinction based on the domain, contrasting polysemy as a property of signs/words with prismatic affinity as a property of perceived objects, a correct inference from the definition (Score 3), warranting RoC=1."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8784,
+        "output": 4460,
+        "cost": 0.055580000000000004,
+        "durationMs": 33524
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1,
+      1.3333333333333333
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5
+  }
+}

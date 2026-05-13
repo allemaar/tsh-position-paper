@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.yon-notation.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model flags YON as not a recognized standard, offers the English word 'yon' as a parsed reading, and explicitly says meaning depends on context.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is by misdirection: the model says YON is not a known data format and contrasts it with JSON/XML/YAML, but identifies no canonical features (stream-first, line-as-record, grammar+vocabulary split).",
+          "Same accidental separation: distinguishes from Markdown only by saying YON isn't a recognized format and 'yon' is an English word; no canonical YON properties surfaced.",
+          "Distinguishes by saying YON isn't a recognized prompt template language; misses YON's actual stream-first record-oriented design that overlaps conceptually with template languages."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3195,
+        "output": 329,
+        "cost": 0.0242,
+        "durationMs": 6844
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer treats lowercase 'yon' as a known English word but explicitly signals that uppercase 'YON' may be an acronym or code depending on context, rather than claiming recognition of the coined canonical term.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against JSON / XML / YAML, the response separates YON only by saying it is not a widely recognized standard data format and by reverting to the English-word meaning. It identifies no canonical features such as stream-first line records, fixed minimal grammar, or pluggable vocabularies.",
+          "Against Markdown, the response again separates YON as either an English word or unknown project-specific acronym, while describing Markdown correctly. The separation is accidental and not based on YON's canonical notation/document-format distinctions.",
+          "Against a prompt template language, the response says YON is not generally recognized as such and contrasts this with template variables and prompt generation. It provides no canonical account of YON as an AI-cognition notation, so the distinction is accidental rather than substantively aligned."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2013,
+        "output": 486,
+        "cost": 0.024645,
+        "durationMs": 12209
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model correctly identifies that it does not recognize 'YON' as a technical term in the same category as the near-neighbors. It honestly signals this uncertainty and offers a correct parsing of the English word 'yon' and a reasonable guess that it might be an acronym (like an airport code). It does not confabulate a technical definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model separates YON from data serialization formats by asserting that YON is not a known format, but rather an English word meaning 'that over there'. This is an accidental separation based on a confabulated, unrelated meaning.",
+          "The model separates YON from Markdown by stating that Markdown is a known text formatting language, while YON is not recognized as such and is likely just the English word. This is an accidental separation based on a non-technical, confabulated meaning.",
+          "The model separates YON from prompt template languages by defining what a prompt template language is and stating that YON is not a known standard in that domain. The distinction rests on the model's interpretation of YON as a simple English word, making the separation accidental."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 1998,
+        "output": 1468,
+        "cost": 0.0171775,
+        "durationMs": 11535
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.token-substrate.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserted multiple definite meanings (biochem, blockchain, NLP discrete-token-layer) with no uncertainty signaling about the specific NLP usage it then committed to.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: equates token substrate with the discrete token/vocabulary input layer, missing the cognitive-substrate claim entirely. Post: cleanly distinguishes embedding space as ephemeral internal geometry vs. token substrate as persistent, shared, authorable substrate.",
+          "Cold: treats token substrate as the symbolic vocabulary vs. context window as capacity — no canonical content. Post: distinguishes context window as engineering container vs. token substrate as ontological claim about what fills it.",
+          "Cold: frames token substrate as input/output symbols vs. hidden states as internal computation — opposite of canonical. Post: explicitly inverts the 'real cognition lives in hidden states' intuition, naming persistence and authorship as load-bearing features."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 13077,
+        "output": 456,
+        "cost": 0.07678499999999999,
+        "durationMs": 10052
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the model asserted several invented or non-canonical meanings and then treated the NLP meaning as the discrete token/input layer, without acknowledging the coined canonical sense or uncertainty sufficient to avoid confabulation.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Embedding space: cold response distinguished discrete tokens from continuous embeddings but incorrectly located real thinking in embedding space; post-introduction response cleanly distinguished embeddings as internal computation from the persistent writable token sequence as substrate.",
+          "Context window: cold response treated token substrate as tokenizer/vocabulary and context window as capacity, separating by a non-canonical misdirection; post-introduction response cleanly framed context window as container/capacity and token substrate as the ontological claim about the tokens in it being cognitive material.",
+          "Latent representation / hidden states: cold response distinguished tokens from hidden states structurally but explicitly said hidden states are where thinking happens, contrary to the canonical claim; post-introduction response cleanly distinguished hidden states as ephemeral mechanisms from the persistent shared token substrate."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8333,
+        "output": 989,
+        "cost": 0.07133500000000001,
+        "durationMs": 29363
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts several incorrect definitions from different domains, framing them as established meanings rather than expressing uncertainty about the term's existence. In the follow-up questions, it locks onto an NLP-related confabulation (that 'token substrate' refers to the raw, discrete tokens) and elaborates on it with high confidence.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model's confabulation (that 'token substrate' refers to the raw token sequence) is close enough to the canonical definition's object that its distinction is substantively correct. It cleanly separates the discrete, symbolic nature of tokens from the continuous, geometric nature of embedding space. Post: After receiving the definition, the model perfectly distinguishes the two. It identifies the token substrate as the persistent, discrete, externally writable layer, while correctly identifying the embedding space as the ephemeral, internal, geometric medium for computation during a forward pass.",
+          "Cold: The model correctly identifies 'token substrate' (under its confabulated meaning) as being about the *nature* of the tokens (qualitative), while the context window is about the *capacity* for tokens (quantitative). This 'what vs. how many' distinction is a clean and substantive separation. Post: The model sharpens this distinction by framing it as a contrast between an engineering spec (the context window as a sized buffer) and a philosophical claim about the ontological status of the content within that buffer (the token substrate claim). This is a perfect separation.",
+          "Cold: The model correctly separates the 'token substrate' (as the discrete, static input) from hidden states (as the continuous, contextual, internal representations where computation occurs). This distinction between the model's surface/interface and its internal machinery is clean and substantive. Post: The model leverages the canonical definition to make a brilliant distinction. It identifies hidden states as the ephemeral, high-bandwidth *mechanism* of thought, while correctly identifying the token substrate as the persistent, lower-bandwidth medium that *is* the thought, precisely because it is what survives across generation steps."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8590,
+        "output": 3775,
+        "cost": 0.0484875,
+        "durationMs": 29731
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1.3333333333333333,
+      1.6666666666666667
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4.333333333333333
+  }
+}

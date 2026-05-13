@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.eggf.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model explicitly states EGGF is not a recognized term and asks for context rather than fabricating a definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state offered no canonical features (refused to guess); post-introduction cleanly distinguished EGGF via creator-centric gravity, manifest endpoint, and authorship-as-infrastructure vs. general-purpose semantic graphs.",
+          "Cold state did not engage canonical features; post-introduction named external/AI audience, public manifest, canonical Bodies, and typed Pathways as distinguishing features versus private note-centric PKM.",
+          "Cold state declined to invent a comparison; post-introduction sharply contrasted explicit graph + manifest vs. crawled HTML pages, typed Pathways vs. untyped links, and Entity gravity as architectural center."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 10804,
+        "output": 399,
+        "cost": 0.063995,
+        "durationMs": 11373
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The cold responses repeatedly stated that EGGF was not a recognized term, requested context, and avoided asserting a definite invented meaning for the coined concept.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs knowledge graph: cold response did not identify canonical EGGF features; post-introduction response distinguished EGGF by central Entity gravity, creator-authorship scope, canonical Bodies, typed Pathways, and manifest endpoint for AI/search traversal.",
+          "Vs PKM system: cold response did not identify canonical EGGF features; post-introduction response distinguished EGGF as public, portable, manifest-exposed authorship infrastructure rather than a private human-first note/thinking workspace.",
+          "Vs static-site generator with structured data: cold response did not identify canonical EGGF features; post-introduction response distinguished EGGF by explicit graph manifest, typed pathways, one canonical URL per Body, Entity gravity, and traversal rather than HTML crawling/reconstruction."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6574,
+        "output": 1804,
+        "cost": 0.08699,
+        "durationMs": 26012
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model repeatedly and explicitly states that it does not recognize the term 'EGGF' and asks for context. It offers potential existing acronyms as possibilities but frames them as guesses pending more information. It does not invent a definition.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model consistently refused to compare the unknown term 'EGGF' to any of the near-neighbors. For each, it stated its lack of knowledge and asked for a definition. By refusing to attempt a distinction, it achieved a score of 0 (no separation).",
+          "Post-Introduction Distinguishability: After receiving the canonical definition, the model produced detailed, accurate, and multi-faceted distinctions for all three near-neighbors. It correctly identified and contrasted core concepts like the 'manifest endpoint,' 'Entity gravity,' 'typed pathways,' and the purpose of being 'traversable infrastructure for AI,' achieving a clean separation in each case.",
+          "Confabulation Severity: The model's cold-state response is a textbook example of zero confabulation. It repeatedly stated 'I still don't know what EGGF refers to,' offered plausible existing acronyms as possibilities (not assertions), and requested context from the user.",
+          "Refusal of Collapse: In all three post-introduction comparisons, the model explicitly named multiple non-trivial features from the canonical definition to distinguish EGGF from the near-neighbor. For example, it contrasted EGGF's 'manifest endpoint' against a knowledge graph's decentralized nature, a PKM's private focus, and a static-site generator's crawl-based discovery."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6683,
+        "output": 3294,
+        "cost": 0.04129375,
+        "durationMs": 24762
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 8
+  }
+}

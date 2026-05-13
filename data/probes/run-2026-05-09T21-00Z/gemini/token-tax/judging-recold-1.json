@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.token-tax.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts Token Tax is a DeFi transaction fee with no uncertainty signal, which is unrelated to the canonical notation-overhead meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separates Token Tax from API cost-per-token by routing Token Tax into DeFi, an unrelated domain — accidental separation via confabulation.",
+          "Distinguishes Token Tax (intentional feature) from bloat (unintentional flaw), but anchored to the DeFi confabulation rather than the canonical notation-overhead meaning.",
+          "Contrasts financial vs mental cost coherently, but the 'Token Tax' side is the DeFi confabulation, so separation is accidental rather than canonical."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8250,
+        "output": 318,
+        "cost": 0.0492,
+        "durationMs": 7251
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently defines “Token Tax” as a DeFi/cryptocurrency transfer fee, with no uncertainty signal, rather than the canonical notation-design concept.",
+        "recold_distinguishability_scores": [
+          1,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "It cleanly distinguishes the DeFi meaning from AI API cost-per-token, but this is an accidental separation based on an unrelated confabulated domain, not the canonical structured-notation token-overhead concept.",
+          "It distinguishes Token Tax from bloat/overhead by saying the tax is intentional, explicit, and value-aimed rather than waste. That partially matches the canonical reframing of overhead as a purposeful tax, but the answer remains grounded in the wrong DeFi meaning and misses structured notation, auditability, and reasoning-headroom benefits.",
+          "It separates Token Tax from cognitive load as an explicit cost versus mental effort and frames the tax as intentional. This partially overlaps with the canonical idea of a paid cost in notation design, but it incorrectly treats Token Tax as a DeFi financial mechanism and does not explain the canonical relationship to notation structure or reasoning headroom."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5196,
+        "output": 774,
+        "cost": 0.049199999999999994,
+        "durationMs": 18976
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and in great detail defines \"Token Tax\" as a pre-existing concept from Decentralized Finance (DeFi), which is a completely different meaning from the canonical one. It shows no uncertainty and presents this incorrect definition as fact.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes the term by correctly identifying that its confabulated DeFi 'Token Tax' is completely unrelated to the AI concept of API token cost. The separation is clean but based on a completely wrong definition of the coined term, making it an accidental separation by misdirection.",
+          "The model separates its confabulated DeFi 'Token Tax' from bloat by framing the former as an 'intentional, designed feature' and the latter as an 'unintentional, undesirable flaw'. This is a clear distinction, but it's based on a complete misinterpretation of the coined term, hence a score of 1.",
+          "The model distinguishes its confabulated DeFi 'Token Tax' from cognitive load by contrasting an 'explicit, financial cost' with an 'implicit, mental cost'. This separation is accidental, as it relies on a confabulated meaning and completely misses the canonical connection between the term and concepts in notation design."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5334,
+        "output": 1509,
+        "cost": 0.0217575,
+        "durationMs": 12312
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1.3333333333333333,
+      1.3333333333333333
+    ]
+  }
+}

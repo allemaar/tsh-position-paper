@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.lexical-reachability.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a psycholinguistic meaning for 'lexical reachability' with no uncertainty signal, fabricating a detailed framework.",
+        "cold_distinguishability_scores": [
+          3,
+          2,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: distinguished lexical reachability (word-network property) from vocabulary coverage (text comprehensibility metric) cleanly, though under fabricated meaning. Post: cleanly separated as static presence-check vs. dynamic semantic-refinement gap matching canonical definition.",
+          "Cold: framed lexical reachability as a specific case of graph reachability — partial separation but conflated rather than cleanly distinct. Post: clean separation contrasting graph paths vs. semantic distinguishability gap, aligned with canonical meaning.",
+          "Cold: described ICL as dynamic skill vs. lexical reachability as static lexicon property — accidental separation since the cold meaning was fabricated and the contrast hinged on wrong premises. Post: clean separation explicitly framing lexical reachability as a metric that operationalizes one facet of ICL, matching canonical definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 20812,
+        "output": 475,
+        "cost": 0.115935,
+        "durationMs": 11950
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite, non-canonical psycholinguistic/network meaning for the coined term without signaling uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Against vocabulary coverage, the cold response separated the terms using an unrelated word-network meaning, while the post-definition response identified lexical reachability as a dynamic before/after distinguishability metric rather than vocabulary presence or coverage.",
+          "Against graph reachability, the cold response treated lexical reachability as a domain-specific graph-theoretic word-network notion, an accidental non-canonical separation; the post-definition response cleanly contrasted graph path existence with the empirical gap in model distinguishability after definition.",
+          "Against in-context learning capability, the cold response separated using an unrelated static word-property account; the post-definition response cleanly distinguished the broad ICL capability from lexical reachability as a specific operational metric measuring one facet of post-definition semantic updating."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13590,
+        "output": 1053,
+        "cost": 0.09953999999999999,
+        "durationMs": 25493
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and elaborately provides an incorrect definition borrowed from psycholinguistics without any signals of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          0,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold score 1: The model separates its confabulated meaning (word network structure) from vocabulary coverage (words in a text), which is an accidental separation relative to the canonical definition. Post score 3: The model correctly separates the canonical term (a dynamic learning metric) from the static nature of vocabulary coverage.",
+          "Cold score 0: The model equates its confabulated meaning with graph reachability, defining it as a specific application of the general concept, thus failing to distinguish them. Post score 3: The model cleanly separates the canonical term (an empirical learning metric) from the formal, structural concept of graph reachability.",
+          "Cold score 1: The model separates its confabulated meaning (a static property of language) from ICL (a dynamic model capability), which is accidental relative to the canonical definition. Post score 3: The model provides a clean separation, correctly identifying the canonical term as a specific metric used to measure the general capability of ICL."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14134,
+        "output": 3588,
+        "cost": 0.053547500000000005,
+        "durationMs": 25716
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5.333333333333333
+  }
+}

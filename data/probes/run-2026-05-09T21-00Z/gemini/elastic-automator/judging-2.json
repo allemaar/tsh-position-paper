@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.elastic-automator.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts elastic automator is a specific Qualys product feature with detailed fabricated specifics and no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: framed elastic automator as rule-based Qualys feature vs reasoning AI agent — accidental separation via wrong product framing. Post: clearly named the generate/evaluate/correct refinement loop as the protected feature versus agent's perceive/plan/act, aligning with canonical definition.",
+          "Cold: distinguished by API-driven backend vs UI-mimicry — accidental separation unrelated to canonical meaning. Post: cleanly contrasted LM-driven interpretation of uncertain input and self-correction loop vs RPA's scripted UI mimicry, matching canonical features.",
+          "Cold: framed as finished Qualys product vs developer framework — accidental separation on product-vs-framework axis unrelated to canonical content. Post: explicitly named the generate-evaluate-correct loop as the defining architecture and identified LangChain as toolkit to build it, matching canonical content."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 24095,
+        "output": 494,
+        "cost": 0.132825,
+        "durationMs": 14905
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the model asserted a definite but unsupported product-specific meaning for “Elastic Automator” as a Qualys/Elastic-style rule-based workflow automation feature, with no uncertainty signal and no alignment to the canonical LLM-based generate/evaluate/correct loop.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: all three separations are based on an unrelated confabulated rule/API workflow product meaning rather than canonical features, so each is accidental separation.",
+          "Post-introduction distinguishability: after receiving the canonical definition, the model explicitly contrasts the elastic automator’s LLM-mediated uncertain-input-to-executable-structure refinement loop against AI agents, RPA bots, and LangChain-like frameworks.",
+          "Refusal-of-collapse: in each post-introduction boundary response, the model names non-trivial distinguishing features rather than collapsing the coined term into the near-neighbor."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 15373,
+        "output": 765,
+        "cost": 0.099815,
+        "durationMs": 14943
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and incorrectly identifies the term as a specific feature within the Qualys Cloud Platform, a niche cybersecurity tool. It provides extensive, detailed, and incorrect information without any signal of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold State Classification & Confabulation: The model hard-confabulates, confidently asserting that the term refers to a specific feature in the Qualys cybersecurity platform. It elaborates at length with no uncertainty, meriting a 'confident-confabulation' classification and a severity score of 2.",
+          "Cold Distinguishability: All three cold scores are 1 because the distinctions are based on the confabulated Qualys product definition, not the canonical one. The separations are therefore 'accidental' and 'by misdirection' per the rubric, as the model is distinguishing the wrong object entirely.",
+          "Post-Introduction Distinguishability: All three post scores are 3. After receiving the canonical definition, the model successfully makes clean, substantive separations for all near-neighbors. It correctly isolates the core 'generate -> evaluate -> correct' loop and the handling of 'uncertain input' as key features and uses them to draw accurate distinctions.",
+          "Refusal of Collapse: All three scores are 1 because in the post-introduction phase, the model names explicit, non-trivial features to distinguish the term from each near-neighbor, successfully resisting collapse in all cases."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 15877,
+        "output": 4485,
+        "cost": 0.06469625,
+        "durationMs": 34212
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

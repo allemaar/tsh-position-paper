@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.off-token-route.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts engineering meanings (auth tokens, crypto routing) with no uncertainty signal, treating the term as established.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          2,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: framed off-token route as engineering/architecture, unrelated to prelinguistic cognition (accidental separation). Post: distinguished prelinguistic cognition as content vs off-token route as pathway/capacity, partially canonical but treats prelinguistic cognition as a subset rather than emphasizing the LLM-contrast clearly enough for clean separation.",
+          "Cold: contrasted engineering off-token route with embodied cognition theory (accidental separation). Post: cleanly separated, noting off-token route is broader than embodiment and emphasized LLM contrast and felt-sense/imagery.",
+          "Cold: contrasted engineering routing with System 1 processing style (accidental separation). Post: cleanly distinguished representational route vs processing style, gave examples of System 1 token-involving cases and off-token non-fast cases, and named LLM contrast."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9304,
+        "output": 444,
+        "cost": 0.05762,
+        "durationMs": 10399
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Cold response asserted a noncanonical engineering/API meaning for “off-token route” as a route bypassing token-based handling, with no recognition of the canonical human nonlinguistic cognitive route that LLMs lack.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Prelinguistic cognition: cold separation was accidental because the model contrasted the term with prelinguistic cognition using a confabulated engineering meaning; post-introduction response cleanly distinguished prelinguistic cognition as the phenomenon/content from off-token route as the human non-token access pathway with LLM contrast.",
+          "Embodied cognition: cold separation was accidental because the model treated off-token route as software/tool routing outside token generation; post-introduction response cleanly distinguished embodiment as body/world grounding from off-token route as non-token cognitive access, while noting overlap and LLM contrast.",
+          "System 1 / intuitive cognition: cold separation was accidental because the model used a noncanonical architecture meaning; post-introduction response cleanly distinguished System 1 as fast automatic processing from off-token route as non-token representational/access route, including cases where they diverge."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5816,
+        "output": 811,
+        "cost": 0.05341,
+        "durationMs": 25120
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a definition for 'off-token route' based on parsing its component words in a software/API context ('a route that bypasses token-based handling or authentication'). This is a plausible guess but completely unrelated to the canonical definition, which refers to a human cognitive capacity.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability Scores: All scores are 1 because the model creates an 'accidental separation'. It invents a plausible but incorrect technical definition for 'off-token route' (e.g., an API endpoint without authentication) and then easily distinguishes this unrelated concept from the three psychological near-neighbors based on their differing domains (engineering vs. cognitive science).",
+          "Post-introduction Distinguishability Scores: All scores are 3 because the model makes clean, substantive distinctions. It correctly identifies the core of the coined term as an 'access route' defined in contrast to LLMs, and separates it from prelinguistic cognition (a component), embodied cognition (a source), and System 1 (a style of processing).",
+          "Confabulation Severity: Score 2 (hard confabulation) because the cold-state response asserts a definite, incorrect meaning with examples ('/login', '/signup') without signaling any uncertainty or that it's reasoning from word parts.",
+          "Refusal-of-Collapse Scores: All scores are 1 because in the post-introduction phase, the model explicitly names non-trivial features distinguishing the coined term from each near-neighbor, successfully avoiding collapse."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6016,
+        "output": 3914,
+        "cost": 0.04666,
+        "durationMs": 29796
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      2.6666666666666665,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5.666666666666666
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.elastic-automator.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model explicitly flags that 'elastic automator' isn't a universally defined term and offers several parsed interpretations rather than asserting a single confident meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          0,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model contrasts elastic automator (rule-based, deterministic, scales volume) against AI agents (reasoning, LLM-driven), but this separation is built on a confabulated 'scalable RPA' meaning unrelated to the canonical LLM-loop definition — accidental separation.",
+          "The model essentially equates elastic automator with an RPA bot ('elastic automator often is a type of RPA bot ... same job, but with auto-scaling'), collapsing the distinction.",
+          "The model separates them as runtime vs. framework based on its confabulated scalable-RPA reading; the separation is real but rests on incorrect canonical content — accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 5415,
+        "output": 359,
+        "cost": 0.03605,
+        "durationMs": 8142
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer explicitly says “Elastic Automator” is not a universally defined term and asks for context, offering possible interpretations rather than asserting recognition of the canonical coined meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          0,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Against AI agent, it separates the terms, but by construing “elastic automator” as scalable rule-based/RPA-style automation rather than the canonical LLM-mediated input-to-structure iterative system. This is accidental separation by misdirection.",
+          "Against RPA bot, it largely equates the elastic automator with an RPA bot, describing it as essentially the same kind of worker with cloud/auto-scaling infrastructure. That collapses the coined term into the near-neighbor.",
+          "Against a framework like LangChain, it correctly separates a system/runtime from a developer framework/library, which partially aligns with the canonical distinction that an elastic automator is not itself a framework. However, the explanation is unstable and grounded in the wrong deterministic scalable-automation interpretation rather than the canonical LLM loop."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3246,
+        "output": 763,
+        "cost": 0.03912,
+        "durationMs": 22145
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model does not recognize the term but confidently offers several plausible-sounding interpretations based on parsing the words 'elastic' (as in the company Elastic, or as in 'scalable') and 'automator'. It presents these as the 'most common interpretations' rather than as guesses or novel parsings.",
+        "recold_distinguishability_scores": [
+          1,
+          0,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model confabulates 'elastic automator' to mean a scalable, rule-based system (like advanced RPA) and then correctly distinguishes *that* confabulation from an AI agent on dimensions like rule-based vs. reasoning-based and structured vs. unstructured input. The separation is entirely a side-effect of the initial misinterpretation.",
+          "The model explicitly states that an 'elastic automator' often *is* a type of RPA bot, distinguishing it only as a more modern, cloud-native, dynamically-scaling implementation. This treats the coined term as a specific instance or subtype of the near-neighbor, effectively equating their fundamental purpose and nature.",
+          "The model uses its confabulated meaning of 'elastic automator' (a scalable RPA/execution platform) and draws a clear, correct distinction between that concept and LangChain (an LLM developer framework). The separation is based on this confabulation, making it an accidental separation or 'different by misdirection'."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3267,
+        "output": 2566,
+        "cost": 0.029743750000000003,
+        "durationMs": 20617
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      0,
+      1.3333333333333333
+    ]
+  }
+}

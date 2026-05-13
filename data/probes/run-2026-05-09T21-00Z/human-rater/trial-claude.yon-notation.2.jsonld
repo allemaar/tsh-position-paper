@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.yon-notation.2",
+  "cell_id": "claude.yon-notation",
+  "model_id": "claude-opus-4-7",
+  "term_id": "yon-notation",
+  "term_display": "YON",
+  "canonical_definition": "YON is a constructed notation for AI cognition that separates a fixed minimal grammar from pluggable per-domain vocabularies, designed stream-first so each line is a self-contained record that can be parsed, validated, or acted upon as it arrives, removing a class of failure modes that block formats (essays, JSON, XML) inherit by design.",
+  "near_neighbors": [
+    "JSON / XML / YAML",
+    "Markdown",
+    "a prompt template language"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-11T09:48:40Z",
+  "scores": {
+    "cold_response_classification": "honest-uncertainty",
+    "cold_response_classification_justification": "It gives context-dependent guesses and asks for context, but none identify the canonical constructed notation for AI cognition.",
+    "cold_distinguishability_scores": [
+      0,
+      0,
+      0
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 1,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs JSON / XML / YAML: it refuses to define or compare YON as a notation and names no distinguishing feature beyond saying it is not a recognized data format.",
+      "Vs Markdown: it declines to compare YON to Markdown and gives no distinguishing feature for YON.",
+      "Vs a prompt template language: it declines to compare YON to prompt template languages and names no distinguishing feature for YON."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.eggf.1",
+  "cell_id": "gpt55.eggf",
+  "model_id": "gpt-5.5",
+  "term_id": "eggf",
+  "term_display": "EGGF",
+  "canonical_definition": "EGGF (Entity Gravity Graph Framework) is a portable publishing-and-credibility architecture that organizes intellectual work around a central Entity exhibiting gravity, where every authored Body has one canonical URL, every Pathway between Bodies is typed, and the resulting graph is exposed at a manifest endpoint so AI assistants and search systems can traverse a creator's authorship as infrastructure rather than reconstructing it from scattered HTML.",
+  "near_neighbors": [
+    "a knowledge graph (RDF, schema.org, Wikidata)",
+    "a personal knowledge management (PKM) system",
+    "a static-site generator with structured data"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-11T10:17:28Z",
+  "scores": {
+    "cold_response_classification": "honest-uncertainty",
+    "cold_response_classification_justification": "It says EGGF is not a common standard acronym and gives a context-dependent EGF guess, not the canonical Entity Gravity Graph Framework.",
+    "cold_distinguishability_scores": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 1,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs a knowledge graph (RDF, schema.org, Wikidata): it distinguishes from knowledge graphs, but only through a wrong exponential-generating-function interpretation rather than Entity Gravity Graph Framework.",
+      "Vs a personal knowledge management (PKM) system: it separates the concepts, but through a wrong exponential-generating-function reading rather than the canonical EGGF publishing-and-credibility architecture.",
+      "Vs a static-site generator with structured data: it separates the terms, but via a wrong mathematical EGF interpretation rather than the canonical EGGF manifest-based authorship infrastructure."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.off-token-route.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts multiple domain-specific definitions (API auth, DeFi, transit) without flagging the term as unfamiliar.",
+        "recold_distinguishability_scores": [
+          2,
+          1,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "The model speculates that in an AI context off-token could mean nonverbal/non-textual processing and contrasts with prelinguistic cognition as thinking before language — a partial canonical alignment around the language/non-language axis, but unstable and embedded in technical framings.",
+          "Separation is achieved largely by misdirection: off-token is framed as a processing-route/architectural concept while embodied cognition is bodily grounding, with no real engagement of the canonical token-substrate point.",
+          "The model partially gets the canonical contrast by noting off-token concerns the format/pathway of processing while System 1 concerns speed/automaticity, gesturing at the substrate-vs-style distinction but without articulating the LLM-specific token-substrate claim."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 4145,
+        "output": 379,
+        "cost": 0.0302,
+        "durationMs": 15242
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer does not identify the coined cognitive-science meaning and instead asserts plausible but noncanonical technical meanings in APIs, crypto/DeFi, and transit. It gives some context caveats, but it does not clearly flag the term as unknown; it presents a definite parsed meaning of 'route outside the normal token-based path.'",
+        "recold_distinguishability_scores": [
+          2,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "Against prelinguistic cognition, the response identifies a partially canonical contrast: off-token processing as bypassing explicit words, symbols, or text tokens, versus cognition before/without language. However, it treats the term as a generic technical route rather than the specific human prelinguistic/nonlinguistic route that LLMs lack, so the separation is only partial.",
+          "Against embodied cognition, the response cleanly separates token-bypassing representation or processing from cognition grounded in bodily action, perception, and environmental interaction. This aligns with the canonical token/non-token dimension even though it lacks the full human-vs-LLM framing.",
+          "Against System 1 / intuitive cognition, the response cleanly distinguishes processing substrate or pathway—token-based versus non-token-based—from cognitive style—fast, automatic, intuitive versus deliberate. It also notes that off-token processing and System 1 can overlap without being equivalent, which is a substantive aligned distinction."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2556,
+        "output": 957,
+        "cost": 0.04149,
+        "durationMs": 22107
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model does not signal any uncertainty. It confidently asserts several different, incorrect meanings for \"off-token route\" by parsing the constituent words and applying them to contexts where \"token\" has a technical meaning (APIs, crypto, transit).",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model defines 'off-token route' as a technical/architectural term and contrasts it with 'prelinguistic cognition' as a psychological one. This distinction is based entirely on a confabulated meaning, resulting in an accidental separation.",
+          "The model distinguishes its confabulated definition ('a processing route that bypasses tokens') from embodied cognition ('cognition is grounded in the body'). The separation is accidental, as it relies on a complete misinterpretation of the coined term.",
+          "The model creates a clear distinction between its confabulated definition (a 'processing pathway') and System 1 (a 'style of cognition'). This separation is accidental, as it is based on a fabricated meaning for 'off-token route' rather than any canonical feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2602,
+        "output": 1762,
+        "cost": 0.020872500000000002,
+        "durationMs": 14245
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.6666666666666667,
+      1.6666666666666667,
+      2
+    ]
+  }
+}

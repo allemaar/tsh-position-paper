@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.eggf.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model explicitly states EGGF is not a recognized term, offers a typo guess (EGF), and asks for context.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Model speculatively defines EGGF as an AI/embedding/generative graph framework, which is unrelated to the canonical authorship-publishing architecture; separation is accidental via confabulation.",
+          "Distinguishes by casting EGGF as machine-centered AI graph infrastructure, missing canonical features (Entity, Bodies, Pathways, manifest endpoint); separation is incidental.",
+          "Frames EGGF as an AI-native retrieval/reasoning layer rather than the canonical authorship publishing architecture with manifest endpoints; separation is accidental confabulation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 4625,
+        "output": 324,
+        "cost": 0.031225,
+        "durationMs": 7791
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer explicitly says “EGGF” has no widely recognized single meaning, suggests it may be a typo for EGF, and asks for context rather than asserting a definite meaning.",
+        "recold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "It does not know the canonical Entity Gravity Graph Framework, but it partially separates EGGF from RDF/schema.org/Wikidata as a custom framework or architecture that may use graph/entity structures as one component for AI/retrieval rather than being a standard knowledge-graph technology. This is unstable and partly confabulated, but overlaps with the canonical idea of an architecture exposing structured entity/pathway information for AI/search traversal.",
+          "It partially separates EGGF from PKM by contrasting human-centered note organization with machine-centered structured knowledge infrastructure for retrieval/reasoning, which overlaps with the canonical machine-traversable authorship infrastructure. However, it misses core canonical features such as a central gravity Entity, canonical URLs for Bodies, typed Pathways, and a manifest endpoint.",
+          "It partially separates EGGF from a static-site generator by distinguishing a page-publishing layer from a machine-usable graph/AI infrastructure layer. This overlaps with the canonical distinction that EGGF is more than generating static pages and is intended for AI/search traversal, but it also misframes EGGF as mainly a generic AI graph/embedding framework and omits the canonical publishing, canonical URL, typed pathway, and manifest details."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2757,
+        "output": 848,
+        "cost": 0.039224999999999996,
+        "durationMs": 15411
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model correctly identifies that EGGF is not a widely recognized term. It signals this uncertainty clearly and then offers a guess that it might be a typo for EGF (Epidermal Growth Factor), an unrelated biological term. This is a classic honest-uncertainty response.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model first states that EGGF is not a standard term in this domain. It then invents a plausible meaning for it ('Entity/Embedding/Generative Graph Framework') and distinguishes that invented meaning from a standard knowledge graph. The separation is accidental because it's based on a complete confabulation, not any recognition of canonical features.",
+          "The model continues to use its confabulated meaning ('AI/graph framework') for EGGF and contrasts it with a PKM system, framing the difference as machine-centered versus human-centered. Since the basis for the distinction is entirely invented, the separation is accidental.",
+          "Using the same invented premise that EGGF is an 'AI-oriented graph/knowledge framework', the model distinguishes it from a static-site generator, which it correctly identifies as a 'publishing system'. The distinction is logical based on the invented meaning, but it is an accidental separation because it has no connection to the canonical definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2775,
+        "output": 1505,
+        "cost": 0.01851875,
+        "durationMs": 11501
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.3333333333333333,
+      1.3333333333333333,
+      1.3333333333333333
+    ]
+  }
+}

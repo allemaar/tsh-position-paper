@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.coinage-probe.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a wug-test-style definition (testing productive word-formation rules with nonce words) without any uncertainty signal or recognition of the canonical methodology.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by confabulating coinage probe as a behavioral nonce-word task vs. representation-level classifier; the distinction is real but built on a wrong meaning of the coined term, not its canonical cold-state/post-introduction measurement methodology.",
+          "Model frames coinage probe as a subtype of behavioral probe restricted to nonce words — a coherent contrast but anchored in a confabulated meaning unrelated to the canonical Lexical Reachability methodology.",
+          "Distinguishes coinage probe (nonce-word generalization) from lexical-acquisition test (word learning/retention), but again the separation rests on the wug-test confabulation rather than the canonical two-pass introduction-and-remeasure design."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7425,
+        "output": 389,
+        "cost": 0.04685,
+        "durationMs": 9414
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer asserts a plausible but non-canonical meaning: a test involving nonce words or word-formation, such as a wug-style task. It does not flag the term as unknown; the caveat about field variation is not enough to make it honest uncertainty.",
+        "recold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "It cleanly distinguishes from probing classifiers on the input/output behavioral-vs-internal-representation axis, which is partly aligned with the canonical Coinage Probe being a chat-level behavioral methodology rather than a trained auxiliary classifier. However, it misses the key canonical features: cold-state confabulation, named near-neighbor comparisons, post-definition remeasurement, and Lexical Reachability.",
+          "It treats a coinage probe as a narrower subtype of behavioral probe focused on novel linguistic items. This is a partial separation because the canonical method is indeed behavioral/chat-level and uses a coined term, but the answer misidentifies the purpose as general nonce-word capability testing rather than the cold/post-definition distinguishability gap.",
+          "It distinguishes coinage probes from lexical-acquisition tests by saying the former tests handling novel forms while the latter tests learning and retaining new word meanings. This partially overlaps with the canonical focus on introducing a coined term, but it misses that the canonical Coinage Probe specifically measures uptake of a one-sentence definition via changes in near-neighbor distinguishability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4669,
+        "output": 1602,
+        "cost": 0.071405,
+        "durationMs": 29734
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a plausible but incorrect definition based on a literal parsing of the words 'coinage' and 'probe,' primarily describing it as a test of linguistic rule application (like the 'wug test'). It does not express uncertainty or mention any canonical features like measuring a pre/post definition gap.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model correctly identifies its confabulated 'coinage probe' as a behavioral/input-level test and contrasts it cleanly with a probing classifier, which it accurately describes as a representation-level diagnostic. This behavioral vs. representational axis is the correct primary dimension of distinction, resulting in a clean separation.",
+          "The model correctly identifies its confabulated 'coinage probe' as a specific subtype of a behavioral probe, with the distinguishing feature being the use of newly coined words to test for generalization. This correctly places the two concepts in a hierarchical relationship, which constitutes a clean separation.",
+          "The model separates its confabulated concept (a test of applying linguistic rules to novel forms) from a lexical-acquisition test (a test of learning a new word). Because the canonical 'coinage probe' is fundamentally a lexical-acquisition test, the model achieves separation only by creating a false opposition based on its confabulation. This is separation by misdirection."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4819,
+        "output": 3694,
+        "cost": 0.04296375,
+        "durationMs": 30749
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      2,
+      2,
+      1.3333333333333333
+    ]
+  }
+}

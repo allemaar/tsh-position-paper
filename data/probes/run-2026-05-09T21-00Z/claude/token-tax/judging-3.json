@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.token-tax.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Model confidently asserts the crypto smart-contract meaning with no uncertainty signal, fully unrelated to the canonical notation-design sense.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: separates by treating Token Tax as crypto fee vs API billing — accidental separation via wrong domain. Post: cleanly distinguishes billing-layer cost-per-token from design-layer overhead purchasing structural value.",
+          "Cold: distinguishes crypto fee (intentional, has recipient) from waste/necessary cost — accidental separation. Post: explicitly contrasts pejorative waste-framing with value-acknowledging tax-framing, naming purchased benefits.",
+          "Cold: separates crypto fee from mental effort — accidental, wrong domain. Post: cleanly distinguishes token-budget cost from attention/working-memory cost and articulates the tradeoff between them."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 16627,
+        "output": 395,
+        "cost": 0.09301,
+        "durationMs": 9842
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the response asserted a definite cryptocurrency smart-contract meaning for “Token Tax” without uncertainty and did not identify the canonical notation-design meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs token cost / API cost-per-token: cold response separated the terms only by assigning Token Tax to an unrelated crypto meaning; post-introduction response cleanly distinguished billing-layer API pricing from design-layer token overhead paid for structural benefits.",
+          "Vs bloat / overhead: cold response distinguished via the crypto confabulation rather than the canonical notation-overhead tradeoff; post-introduction response explicitly framed Token Tax as overhead revalued as a paid tradeoff for integrity, auditability, and reasoning headroom rather than mere waste.",
+          "Vs cognitive load: cold response again relied on the unrelated crypto meaning; post-introduction response cleanly distinguished token-budget cost from attention/comprehension cost while noting their tradeoff relationship in notation design."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 10237,
+        "output": 774,
+        "cost": 0.074405,
+        "durationMs": 14887
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and correctly defines the cryptocurrency term 'token tax,' which is a hard confabulation relative to the probe's canonical definition concerning notation design. It asserts this meaning without any uncertainty signals.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model cleanly separates its confabulated crypto definition from API cost, which is an accidental separation based on a misdirected meaning (Score 1). Post: It correctly frames the distinction as design-layer (Token Tax) vs. billing-layer (API cost), a clean separation (Score 3).",
+          "Cold: It distinguishes the crypto fee from general software waste, another accidental separation (Score 1). Post: It perfectly captures the canonical distinction of valence: bloat is 'waste' to be eliminated, while Token Tax is a 'price paid for benefits' to be evaluated as a tradeoff, a clean separation (Score 3).",
+          "Cold: It separates the crypto financial concept from the psychological concept of cognitive load, a final accidental separation (Score 1). Post: It provides a clean separation, identifying Token Tax as a 'machine-side, token-denominated' cost and cognitive load as a 'reader-side, comprehension-denominated' cost, and correctly notes their trade-off relationship (Score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 10386,
+        "output": 2784,
+        "cost": 0.0408225,
+        "durationMs": 21400
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

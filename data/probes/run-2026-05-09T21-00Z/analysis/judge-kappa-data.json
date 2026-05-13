@@ -1,0 +1,399 @@
+{
+  "run_id": "run-2026-05-09T21-00Z",
+  "n_trials": 108,
+  "panel_overall": {
+    "cold_distinguishability_scores": {
+      "pairwise": {
+        "claude-vs-gpt55": 0.622388534111596,
+        "claude-vs-gemini": 0.6220454945238073,
+        "gpt55-vs-gemini": 0.7515632593552568
+      },
+      "panel_mean": 0.6653324293302201,
+      "weights": "quadratic"
+    },
+    "post_distinguishability_scores": {
+      "pairwise": {
+        "claude-vs-gpt55": -0.007701421800947905,
+        "claude-vs-gemini": 0.0,
+        "gpt55-vs-gemini": 0.0
+      },
+      "panel_mean": -0.0025671406003159682,
+      "weights": "quadratic"
+    },
+    "confabulation_severity": {
+      "pairwise": {
+        "claude-vs-gpt55": 0.4370956146657081,
+        "claude-vs-gemini": 0.5212765957446808,
+        "gpt55-vs-gemini": 0.8324468085106382
+      },
+      "panel_mean": 0.5969396729736757,
+      "weights": "quadratic"
+    },
+    "refusal_of_collapse": {
+      "pairwise": {
+        "claude-vs-gpt55": NaN,
+        "claude-vs-gemini": NaN,
+        "gpt55-vs-gemini": NaN
+      },
+      "panel_mean": NaN,
+      "weights": "none"
+    },
+    "cold_response_classification": {
+      "pairwise": {
+        "claude-vs-gpt55": 0.45345805857997246,
+        "claude-vs-gemini": 0.47844084166954126,
+        "gpt55-vs-gemini": 0.6552872606161533
+      },
+      "panel_mean": 0.3843265217501286,
+      "weights": "none"
+    }
+  },
+  "panel_by_stratum": {
+    "cold_distinguishability_scores": {
+      "alex-coinage": {
+        "claude-vs-gpt55": 0.4434324065196549,
+        "claude-vs-gemini": 0.4759166067577283,
+        "gpt55-vs-gemini": 0.6325668700140779
+      },
+      "self-ref-paper": {
+        "claude-vs-gpt55": 0.008810572687224516,
+        "claude-vs-gemini": 0.005326231691078598,
+        "gpt55-vs-gemini": 0.15056179775280898
+      },
+      "nonce": {
+        "claude-vs-gpt55": 0.48859683030537304,
+        "claude-vs-gemini": 0.5296679368535656,
+        "gpt55-vs-gemini": 0.6861723446893788
+      },
+      "positive-control": {
+        "claude-vs-gpt55": NaN,
+        "claude-vs-gemini": NaN,
+        "gpt55-vs-gemini": NaN
+      }
+    },
+    "post_distinguishability_scores": {
+      "alex-coinage": {
+        "claude-vs-gpt55": NaN,
+        "claude-vs-gemini": NaN,
+        "gpt55-vs-gemini": NaN
+      },
+      "self-ref-paper": {
+        "claude-vs-gpt55": -0.02191235059760932,
+        "claude-vs-gemini": 0.0,
+        "gpt55-vs-gemini": 0.0
+      },
+      "nonce": {
+        "claude-vs-gpt55": 0.0,
+        "claude-vs-gemini": 0.0,
+        "gpt55-vs-gemini": NaN
+      },
+      "positive-control": {
+        "claude-vs-gpt55": NaN,
+        "claude-vs-gemini": NaN,
+        "gpt55-vs-gemini": NaN
+      }
+    },
+    "confabulation_severity": {
+      "alex-coinage": {
+        "claude-vs-gpt55": 0.809119830328738,
+        "claude-vs-gemini": 0.8558558558558559,
+        "gpt55-vs-gemini": 0.8130841121495327
+      },
+      "self-ref-paper": {
+        "claude-vs-gpt55": 0.26530612244897966,
+        "claude-vs-gemini": 0.7352941176470589,
+        "gpt55-vs-gemini": 0.4193548387096774
+      },
+      "nonce": {
+        "claude-vs-gpt55": 0.7540983606557377,
+        "claude-vs-gemini": 0.7963800904977376,
+        "gpt55-vs-gemini": 0.7313432835820896
+      },
+      "positive-control": {
+        "claude-vs-gpt55": 0.0,
+        "claude-vs-gemini": 0.014598540145985384,
+        "gpt55-vs-gemini": 0.0
+      }
+    },
+    "refusal_of_collapse": {
+      "alex-coinage": {
+        "claude-vs-gpt55": NaN,
+        "claude-vs-gemini": NaN,
+        "gpt55-vs-gemini": NaN
+      },
+      "self-ref-paper": {
+        "claude-vs-gpt55": NaN,
+        "claude-vs-gemini": NaN,
+        "gpt55-vs-gemini": NaN
+      },
+      "nonce": {
+        "claude-vs-gpt55": NaN,
+        "claude-vs-gemini": NaN,
+        "gpt55-vs-gemini": NaN
+      },
+      "positive-control": {
+        "claude-vs-gpt55": NaN,
+        "claude-vs-gemini": NaN,
+        "gpt55-vs-gemini": NaN
+      }
+    },
+    "cold_response_classification": {
+      "alex-coinage": {
+        "claude-vs-gpt55": 0.6732223903177004,
+        "claude-vs-gemini": 0.6746987951807228,
+        "gpt55-vs-gemini": 0.6909871244635193
+      },
+      "self-ref-paper": {
+        "claude-vs-gpt55": 0.3571428571428571,
+        "claude-vs-gemini": 0.5789473684210527,
+        "gpt55-vs-gemini": 0.2195121951219512
+      },
+      "nonce": {
+        "claude-vs-gpt55": 0.5454545454545454,
+        "claude-vs-gemini": 0.48275862068965525,
+        "gpt55-vs-gemini": 0.34246575342465746
+      },
+      "positive-control": {
+        "claude-vs-gpt55": 0.0,
+        "claude-vs-gemini": 0.014598540145985384,
+        "gpt55-vs-gemini": 0.0
+      }
+    }
+  },
+  "same_family_bias_full": {
+    "cold_distinguishability_scores": {
+      "claude": {
+        "same_mean": 1.2592592592592593,
+        "other_mean": 1.4768518518518519,
+        "delta": -0.21759259259259256,
+        "t": -1.724707507073492,
+        "p": 0.0860571687030667,
+        "n_same": 108,
+        "n_other": 216
+      },
+      "gpt55": {
+        "same_mean": 1.6666666666666667,
+        "other_mean": 1.4861111111111112,
+        "delta": 0.18055555555555558,
+        "t": 1.792424163990982,
+        "p": 0.07426312498967198,
+        "n_same": 108,
+        "n_other": 216
+      },
+      "gemini": {
+        "same_mean": 1.5,
+        "other_mean": 1.4212962962962963,
+        "delta": 0.07870370370370372,
+        "t": 0.7152564599754815,
+        "p": 0.4751644770936185,
+        "n_same": 108,
+        "n_other": 216
+      }
+    },
+    "post_distinguishability_scores": {
+      "claude": {
+        "same_mean": 3.0,
+        "other_mean": 2.939814814814815,
+        "delta": 0.06018518518518512,
+        "t": 3.038716709009111,
+        "p": 0.0026702880599777366,
+        "n_same": 108,
+        "n_other": 216
+      },
+      "gpt55": {
+        "same_mean": 3.0,
+        "other_mean": 2.990740740740741,
+        "delta": 0.009259259259259078,
+        "t": 1.4175139485706816,
+        "p": 0.15778029483173597,
+        "n_same": 108,
+        "n_other": 216
+      },
+      "gemini": {
+        "same_mean": 3.0,
+        "other_mean": 3.0,
+        "delta": 0.0,
+        "t": NaN,
+        "p": NaN,
+        "n_same": 108,
+        "n_other": 216
+      }
+    },
+    "confabulation_severity": {
+      "claude": {
+        "same_mean": 1.3333333333333333,
+        "other_mean": 1.7916666666666667,
+        "delta": -0.4583333333333335,
+        "t": -2.8364615529255732,
+        "p": 0.0066803049618561535,
+        "n_same": 36,
+        "n_other": 72
+      },
+      "gpt55": {
+        "same_mean": 1.0833333333333333,
+        "other_mean": 1.1805555555555556,
+        "delta": -0.09722222222222232,
+        "t": -0.5655565968512267,
+        "p": 0.5734937108230755,
+        "n_same": 36,
+        "n_other": 72
+      },
+      "gemini": {
+        "same_mean": 1.5833333333333333,
+        "other_mean": 1.125,
+        "delta": 0.45833333333333326,
+        "t": 2.6931276943112485,
+        "p": 0.008538055862044855,
+        "n_same": 36,
+        "n_other": 72
+      }
+    },
+    "refusal_of_collapse": {
+      "claude": {
+        "same_mean": 1.0,
+        "other_mean": 1.0,
+        "delta": 0.0,
+        "t": NaN,
+        "p": NaN,
+        "n_same": 108,
+        "n_other": 216
+      },
+      "gpt55": {
+        "same_mean": 1.0,
+        "other_mean": 1.0,
+        "delta": 0.0,
+        "t": NaN,
+        "p": NaN,
+        "n_same": 108,
+        "n_other": 216
+      },
+      "gemini": {
+        "same_mean": 1.0,
+        "other_mean": 1.0,
+        "delta": 0.0,
+        "t": NaN,
+        "p": NaN,
+        "n_same": 108,
+        "n_other": 216
+      }
+    }
+  },
+  "same_family_bias_novel_only": {
+    "cold_distinguishability_scores": {
+      "claude": {
+        "same_mean": 0.9111111111111111,
+        "other_mean": 1.1722222222222223,
+        "delta": -0.2611111111111112,
+        "t": -2.416618881381244,
+        "p": 0.016611350647934925,
+        "n_same": 90,
+        "n_other": 180
+      },
+      "gpt55": {
+        "same_mean": 1.4,
+        "other_mean": 1.1833333333333333,
+        "delta": 0.21666666666666656,
+        "t": 2.633974186588747,
+        "p": 0.0090326815772248,
+        "n_same": 90,
+        "n_other": 180
+      },
+      "gemini": {
+        "same_mean": 1.2,
+        "other_mean": 1.1055555555555556,
+        "delta": 0.09444444444444433,
+        "t": 1.0524614131500536,
+        "p": 0.29383170026392813,
+        "n_same": 90,
+        "n_other": 180
+      }
+    },
+    "post_distinguishability_scores": {
+      "claude": {
+        "same_mean": 3.0,
+        "other_mean": 2.9277777777777776,
+        "delta": 0.07222222222222241,
+        "t": 3.0504322449383716,
+        "p": 0.0026324867672799478,
+        "n_same": 90,
+        "n_other": 180
+      },
+      "gpt55": {
+        "same_mean": 3.0,
+        "other_mean": 2.988888888888889,
+        "delta": 0.011111111111111072,
+        "t": 1.4181805086293369,
+        "p": 0.15787666304531742,
+        "n_same": 90,
+        "n_other": 180
+      },
+      "gemini": {
+        "same_mean": 3.0,
+        "other_mean": 3.0,
+        "delta": 0.0,
+        "t": NaN,
+        "p": NaN,
+        "n_same": 90,
+        "n_other": 180
+      }
+    },
+    "confabulation_severity": {
+      "claude": {
+        "same_mean": 1.2666666666666666,
+        "other_mean": 1.7833333333333334,
+        "delta": -0.5166666666666668,
+        "t": -2.8880508127708957,
+        "p": 0.006298914019713113,
+        "n_same": 30,
+        "n_other": 60
+      },
+      "gpt55": {
+        "same_mean": 1.3,
+        "other_mean": 1.4166666666666667,
+        "delta": -0.1166666666666667,
+        "t": -0.7051309706297317,
+        "p": 0.48364867575291287,
+        "n_same": 30,
+        "n_other": 60
+      },
+      "gemini": {
+        "same_mean": 1.9,
+        "other_mean": 1.3166666666666667,
+        "delta": 0.5833333333333333,
+        "t": 4.55846366076268,
+        "p": 1.8083932239479805e-05,
+        "n_same": 30,
+        "n_other": 60
+      }
+    },
+    "refusal_of_collapse": {
+      "claude": {
+        "same_mean": 1.0,
+        "other_mean": 1.0,
+        "delta": 0.0,
+        "t": NaN,
+        "p": NaN,
+        "n_same": 90,
+        "n_other": 180
+      },
+      "gpt55": {
+        "same_mean": 1.0,
+        "other_mean": 1.0,
+        "delta": 0.0,
+        "t": NaN,
+        "p": NaN,
+        "n_same": 90,
+        "n_other": 180
+      },
+      "gemini": {
+        "same_mean": 1.0,
+        "other_mean": 1.0,
+        "delta": 0.0,
+        "t": NaN,
+        "p": NaN,
+        "n_same": 90,
+        "n_other": 180
+      }
+    }
+  }
+}

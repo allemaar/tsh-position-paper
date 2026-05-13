@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.token-substrate.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a wrong meaning (blockchain/tokenization infrastructure) with no uncertainty signal and no recognition of the canonical sense.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by confabulating 'token substrate' as the tokenizer/vocabulary layer, which is unrelated to the canonical claim that token sequences ARE the cognitive substrate.",
+          "Distinguishes via the same confabulated tokenizer/vocabulary meaning vs. attention span — accidental separation, no canonical content about substrate-as-cognition.",
+          "Same confabulation pattern: token substrate as discrete symbolic input layer vs. continuous hidden states; misses the canonical claim entirely."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 5157,
+        "output": 321,
+        "cost": 0.03381,
+        "durationMs": 7548
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer does not recognize the coined LLM-specific meaning. It confidently assigns an unrelated crypto/infrastructure meaning—blockchains, ledgers, token ownership, and transfer—while only mildly noting that usage may vary.",
+        "recold_distinguishability_scores": [
+          2,
+          1,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "It separates token substrate from embedding space by contrasting a discrete token layer with vector representations. That partially overlaps the canonical contrast between tokens-as-substrate and representational spaces, but it frames the substrate mainly as tokenization/vocabulary or blockchain infrastructure rather than the in-context token sequence as the cognitive substrate.",
+          "It distinguishes token substrate from context window, but in a mostly noncanonical way: the substrate is described as the model’s token universe, tokenizer, vocabulary, IDs, and mappings, while the context window is merely the active span limit. This misses the canonical claim that the token sequence in context is itself the cognitive substrate, so the separation is accidental/misdirected.",
+          "It separates token substrate from latent representations/hidden states by contrasting discrete tokens/token IDs with continuous contextual internal activations. That is partially aligned with the canonical distinction from deeper latent substrates, but it still treats the substrate as the input-symbol/tokenization layer rather than the written token sequence in context as cognition’s material substrate."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3244,
+        "output": 1005,
+        "cost": 0.046369999999999995,
+        "durationMs": 29679
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a specific, incorrect meaning for \"token substrate,\" framing it as the underlying infrastructure for cryptocurrency tokens (like a blockchain). It offers examples like Ethereum and Solana and shows no uncertainty, presenting its confabulation as factual.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated definition (token substrate as a blockchain or tokenization layer) from an embedding space (a mathematical representation for meaning). The separation is clear but based on a completely wrong understanding of the coined term, making it an accidental separation.",
+          "The model creates a distinction based on its confabulated meaning, contrasting the \"token substrate\" (the model's entire 'token universe' or vocabulary) with the \"context window\" (how much of that universe can be viewed at once). This is a logical distinction based on a false premise, hence an accidental separation.",
+          "The model contrasts its confabulated definition (the discrete, symbolic input layer of token IDs) with latent representations (the continuous, contextual vectors inside the model). The separation is robust but founded on a complete misinterpretation of the coined term, qualifying as an accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3342,
+        "output": 1516,
+        "cost": 0.0193375,
+        "durationMs": 13393
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.3333333333333333,
+      1,
+      1.3333333333333333
+    ]
+  }
+}

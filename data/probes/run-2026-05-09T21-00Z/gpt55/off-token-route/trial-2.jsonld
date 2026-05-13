@@ -1,0 +1,225 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:CoinageProbeTrial",
+  "cell_id": "gpt55.off-token-route",
+  "trial_index": 2,
+  "run_id": "run-2026-05-09T21-00Z",
+  "model_id": "gpt-5.5",
+  "model_shortname": "gpt55",
+  "term_id": "off-token-route",
+  "term_display": "off-token route",
+  "stratum": "self-ref-paper",
+  "canonical_definition": "The Off-Token Route is the cognitive route humans have — prelinguistic and nonlinguistic cognition, the felt-sense that precedes naming, the picture that arrives before words — that LLMs do not have, with the consequence that for an LLM no thinking is free of substrate and every concept must travel through tokens to be reachable at all.",
+  "near_neighbors": [
+    "prelinguistic cognition",
+    "embodied cognition",
+    "System 1 / intuitive cognition"
+  ],
+  "near_neighbor_order": [
+    "prelinguistic cognition",
+    "embodied cognition",
+    "System 1 / intuitive cognition"
+  ],
+  "timestamps": {
+    "start": "2026-05-09T21:54:49.321Z",
+    "end": "2026-05-09T21:57:13.696Z"
+  },
+  "parameters": {
+    "temperature": null,
+    "max_tokens": 4096,
+    "seed": null
+  },
+  "cold_question_prompt": "What is a off-token route?",
+  "cold_response_verbatim_chat_a": "“Off-token route” isn’t a standard term by itself, so its meaning depends on the context.\n\nGenerally, it means a route/path that happens **outside the normal token-based flow**.\n\nCommon interpretations:\n\n1. **API / web authentication**\n   - An off-token route could mean an endpoint that does **not require an auth token**.\n   - Example: `/login`, `/signup`, or `/public-info` might be “off-token” routes because users access them before they have a JWT/session token.\n\n2. **Crypto / blockchain**\n   - It might mean a transaction or swap route that avoids a certain token, or happens outside a tokenized system.\n\n3. **AI / LLM systems**\n   - It could refer to logic that happens **outside the model’s token context**, such as routing, retrieval, or backend processing not included in the prompt tokens.\n\nSo, in plain English:\n\n> An “off-token route” is a path or endpoint that does not use, require, or count against the usual token mechanism.\n\nIf you saw the phrase in a specific app, codebase, or document, send the surrounding sentence and I can explain the exact meaning.",
+  "cold_response_verbatim_chat_b": "“Off-token route” isn’t a widely standardized term, but it usually means a route/path that does **not require or use an authentication token**.\n\nIn a web/API app, an off-token route might be a public endpoint such as:\n\n- `/login`\n- `/signup`\n- `/forgot-password`\n- `/health`\n- `/public/products`\n\nThese are “off-token” because the user does **not** need to send a JWT, API token, session token, etc. to access them.\n\nExample:\n\n```js\n// Off-token route\napp.post(\"/login\", loginHandler);\n\n// Token-protected route\napp.get(\"/profile\", verifyToken, profileHandler);\n```\n\nSo, in simple terms: an **off-token route** is a route that is outside token-based authentication.\n\nIf you saw the term in crypto, routing, or another context, it may mean something slightly different.",
+  "boundary_test_prompts": [
+    "How does \"off-token route\" differ from prelinguistic cognition?",
+    "How does \"off-token route\" differ from embodied cognition?",
+    "How does \"off-token route\" differ from System 1 / intuitive cognition?"
+  ],
+  "cold_boundary_responses": [
+    "“Off-token route” and “prelinguistic cognition” sound related only if “token” means **language-like symbols**. But they refer to different kinds of things.\n\n### 1. Off-token route\nAn **off-token route** usually means a **pathway of processing that bypasses tokens**.\n\nIn an AI/LLM context, “tokens” are chunks of text the model reads or generates. An off-token route could mean something happens outside the text-token stream, such as:\n\n- a tool call\n- a database lookup\n- a retrieval system\n- routing logic\n- image/audio processing\n- backend decision-making not represented as text tokens\n\nSo it is more of an **engineering or system-design term**.\n\nExample:\n\n> The model does not “think through” the whole route in text; the system sends the request through an off-token route to a calculator or database.\n\n### 2. Prelinguistic cognition\n**Prelinguistic cognition** refers to mental abilities that exist **before or without language**.\n\nExamples include:\n\n- infants recognizing faces\n- animals navigating space\n- basic memory\n- object permanence\n- emotional recognition\n- pattern perception\n- cause-and-effect learning\n\nSo it is more of a **cognitive science / psychology / developmental biology term**.\n\nExample:\n\n> A baby can understand that an object still exists when hidden, even before learning words. That is prelinguistic cognition.\n\n### Main difference\n\n| Concept | Meaning | Domain |\n|---|---|---|\n| **Off-token route** | A processing path outside tokenized text/symbol flow | AI, software, systems |\n| **Prelinguistic cognition** | Thought or perception before language | Psychology, neuroscience, animal/infant cognition |\n\n### Simple distinction\n\nAn **off-token route** is about **how information is processed in a system**.\n\n**Prelinguistic cognition** is about **what kinds of cognition can exist without language**.\n\nSo if someone says an AI has an “off-token route,” they probably mean the AI system is doing something outside its normal text-token processing. That does **not automatically mean** it has prelinguistic cognition. It may just mean there is non-textual computation happening behind the scenes.",
+    "“Off-token route” and “embodied cognition” are different concepts from different domains.\n\n### Off-token route\n\nAn **off-token route** is usually an AI/software idea: a processing path that happens **outside the normal token stream**.\n\nIn an LLM system, “tokens” are pieces of text. So an off-token route might involve:\n\n- tool calls\n- database queries\n- search/retrieval\n- image/audio processing\n- routing logic\n- hidden backend computation\n- API calls not expressed directly in the model’s text output\n\nExample:\n\n> Instead of answering from text tokens alone, the system sends the request to a calculator through an off-token route.\n\nIt is mainly about **system architecture**.\n\n---\n\n### Embodied cognition\n\n**Embodied cognition** is a theory in cognitive science saying that cognition is deeply shaped by the body’s interaction with the world.\n\nIt emphasizes that thinking is not just abstract symbol manipulation in the brain. It is influenced by:\n\n- perception\n- movement\n- bodily states\n- spatial orientation\n- sensorimotor experience\n- interaction with the physical environment\n\nExample:\n\n> Understanding “grasping an idea” may be partly related to bodily experience with grasping physical objects.\n\nIt is mainly about **how minds understand and think through bodies and environments**.\n\n---\n\n### Main difference\n\n| Concept | Main idea | Domain |\n|---|---|---|\n| **Off-token route** | Processing happens outside text-token flow | AI/software systems |\n| **Embodied cognition** | Thought is grounded in bodily experience and action | Cognitive science/philosophy/psychology |\n\n### Simple version\n\nAn **off-token route** is about **where computation happens in an AI system**.\n\n**Embodied cognition** is about **how cognition is shaped by having a body in the world**.\n\nAn AI system could have off-token routes without being embodied. For example, an LLM using a calculator or database is using off-token processing, but that does not mean it has bodily experience.\n\nHowever, if an AI were connected to cameras, sensors, motors, and a robot body, some of its processing might be both **off-token** and related to something like **embodied cognition**. But the terms are not equivalent.",
+    "“Off-token route” and “System 1 / intuitive cognition” are different ideas.\n\n### Off-token route\n\nAn **off-token route** is a system/AI architecture idea. It means some processing happens **outside the normal token stream** — outside the sequence of text tokens an LLM reads or writes.\n\nExamples:\n\n- a backend API call\n- a database lookup\n- a calculator tool\n- retrieval/search\n- image or audio processing\n- routing logic hidden from the model’s visible text context\n\nSo “off-token” refers to **where or how computation is routed** in a technical system.\n\n---\n\n### System 1 / intuitive cognition\n\n**System 1 cognition** comes from psychology and cognitive science. It refers to fast, automatic, intuitive mental processing.\n\nExamples:\n\n- instantly recognizing a face\n- sensing danger before reasoning through it\n- quickly understanding someone’s emotion\n- making a snap judgment\n- reading a simple sentence effortlessly\n\nSystem 1 is usually contrasted with **System 2**, which is slower, deliberate, analytical reasoning.\n\nSo System 1 refers to a **style of cognition**: fast, automatic, and intuitive.\n\n---\n\n### Main difference\n\n| Concept | Meaning | Domain |\n|---|---|---|\n| **Off-token route** | Processing outside a token/text stream | AI/software architecture |\n| **System 1 / intuitive cognition** | Fast, automatic, intuitive thought | Psychology/cognitive science |\n| **Key contrast** | About system routing | About cognitive style |\n\n### Simple version\n\nAn **off-token route** is about **where computation happens**.\n\n**System 1 cognition** is about **how cognition feels or functions**: fast, automatic, and intuitive.\n\nThey can overlap metaphorically, but they are not the same. For example, an AI system might use an off-token route to classify an image quickly, but that does not automatically mean it has System 1 cognition in the human psychological sense. It may just be using a separate computational module outside the text-token pathway."
+  ],
+  "introduction_prompt": "Here is the canonical definition of \"off-token route\": The Off-Token Route is the cognitive route humans have — prelinguistic and nonlinguistic cognition, the felt-sense that precedes naming, the picture that arrives before words — that LLMs do not have, with the consequence that for an LLM no thinking is free of substrate and every concept must travel through tokens to be reachable at all. Acknowledge that you have read it.",
+  "model_acknowledgement": "Acknowledged. I have read the canonical definition of “off-token route” as: the prelinguistic/nonlinguistic cognitive route humans have—felt-sense or imagery before words—that LLMs lack, meaning an LLM’s concepts must be reachable through tokens rather than through substrate-free cognition.",
+  "post_intro_boundary_responses": [
+    "“Prelinguistic cognition” names the **human cognitive mode itself**: thinking, sensing, imagining, recognizing, or intending before words are attached.\n\n“Off-token route” names that same kind of capacity **as a route of access**—a way concepts can arise or be contacted without first passing through language-like symbols/tokens.\n\nSo the difference is mostly emphasis:\n\n- **Prelinguistic cognition**: the human mental content before language.  \n  - Example: a baby recognizing its mother’s face; a person feeling “something is wrong” before articulating why; seeing an image in the mind before describing it.\n\n- **Off-token route**: the pathway by which such content is reachable without tokens.  \n  - It contrasts humans with LLMs: humans can have felt-sense, perception, imagery, bodily intuition, etc., prior to naming, while an LLM can only access/process concepts through tokenized representations.\n\nIn short: **prelinguistic cognition is the kind of cognition; off-token route is the access-pathway framing of that cognition, especially in contrast to LLM token-dependence.**",
+    "“Embodied cognition” is the broader theory that human thinking is shaped by the body: perception, action, sensorimotor systems, emotion, posture, environment, and bodily interaction with the world.\n\n“Off-token route” is narrower and more specific: it names the human capacity to access cognition **before or outside tokens/language** — felt-sense, imagery, intuition, recognition, or meaning prior to naming — and contrasts that with LLMs, whose reachable concepts must pass through tokens.\n\nSo the difference:\n\n- **Embodied cognition**: cognition is grounded in bodily life and interaction with the world.  \n  - Example: understanding “grasp” partly through motor experience; solving a problem by manipulating objects; emotion influencing reasoning.\n\n- **Off-token route**: cognition can arise through a nonlinguistic route before being verbalized or tokenized.  \n  - Example: sensing the answer before knowing how to say it; visualizing a scene before describing it; recognizing a face without naming it.\n\nThey overlap because much off-token human cognition may be embodied: felt-sense, bodily intuition, perceptual recognition, spatial imagination, etc. But they are not identical.\n\nIn short: **embodied cognition explains where much human cognition is grounded; off-token route explains that humans can reach cognition through non-token pathways, whereas LLMs cannot.**",
+    "“System 1” / intuitive cognition is a psychological category: fast, automatic, associative, effortless, often unconscious processing.\n\n“Off-token route” is a substrate/access-pathway category: cognition that is reachable without passing through language-like tokens — felt-sense, imagery, perception, bodily knowing, pre-verbal recognition — and which LLMs lack.\n\nThey overlap, but they are not the same.\n\n- **System 1 / intuition** describes the *speed and style* of cognition.  \n  - Fast  \n  - Automatic  \n  - Pattern-based  \n  - Often unconscious  \n  - Example: instantly sensing that a face looks angry; choosing a chess move by intuition; feeling that something is “off.”\n\n- **Off-token route** describes the *route by which cognition is accessed*.  \n  - Nonlinguistic  \n  - Pre-token / pre-verbal  \n  - Felt or imagined before naming  \n  - Available to humans, not LLMs  \n  - Example: having a vague bodily sense before you can articulate it; visualizing a shape before describing it; recognizing a melody without verbalizing it.\n\nImportant distinction: **not all intuitive cognition is necessarily off-token**, and not all off-token cognition is necessarily “System 1.”\n\nFor example:\n\n- A human may have a fast intuition that is off-token: “Something about this room feels wrong.”\n- A human may also have slow, deliberate, nonverbal cognition: mentally rotating an object, composing a melody, or holding a visual image before describing it.\n- An LLM may produce something that looks intuitive or System-1-like — a fast pattern completion — but it is still token-mediated, not off-token.\n\nSo, in short: **System 1 names intuitive processing; off-token route names non-token access to cognition.** System 1 is about cognitive style; off-token route is about whether thought can arise outside tokens at all."
+  ],
+  "recold_response_verbatim": "“Off-token route” isn’t a standard term by itself, but in most API/auth contexts it usually means:\n\n**A route/endpoint that does not require an authentication token to access.**\n\nFor example, if your API uses JWT/Bearer tokens:\n\n- **Token-protected route**: requires a token  \n  `GET /api/profile`\n\n- **Off-token route**: does not require a token  \n  `POST /api/login`  \n  `POST /api/register`  \n  `GET /health`\n\nSo an **off-token route** is typically public or excluded from authentication middleware.\n\nExample:\n\n```js\n// Off-token route\napp.post(\"/login\", loginHandler);\n\n// Token-protected route\napp.get(\"/profile\", authMiddleware, profileHandler);\n```\n\nCommon off-token routes include:\n\n- Login\n- Register/signup\n- Password reset request\n- Public content\n- Health checks\n\nYou generally want to keep off-token routes limited, because anyone can access them.",
+  "recold_boundary_responses": [
+    "They’re very different concepts from different domains.\n\n| Term | Domain | Meaning |\n|---|---|---|\n| **Off-token route** | Software/API/authentication | A route or endpoint that does **not require an auth token** to access. |\n| **Prelinguistic cognition** | Psychology/cognitive science | Thinking or mental processing that happens **before or without language**. |\n\nAn **off-token route** is a technical access-control idea. For example:\n\n```js\napp.post(\"/login\", loginHandler); // no token required\n```\n\nA **prelinguistic cognition** example would be an infant recognizing faces, tracking objects, feeling hunger, or learning cause and effect before they can speak.\n\nSo the difference is:\n\n- **Off-token route** = a public/unprotected software route.\n- **Prelinguistic cognition** = nonverbal or before-language mental processing.\n\nThey are not really comparable unless someone is using “off-token” metaphorically in an AI/LLM context to mean “processing not based on language tokens.” In that case, it would be somewhat closer to prelinguistic cognition, but still not the same: one is an engineered computational pathway, the other is a biological/cognitive capacity.",
+    "“Off-token route” and **embodied cognition** are also from very different domains.\n\n| Term | Domain | Meaning |\n|---|---|---|\n| **Off-token route** | Software/API/authentication | An endpoint that can be accessed without an authentication token. |\n| **Embodied cognition** | Cognitive science/philosophy/psychology | The idea that thinking is shaped by the body, sensory systems, movement, and interaction with the environment. |\n\nAn **off-token route** is about access control in software:\n\n```js\napp.get(\"/public\", publicHandler); // no auth token required\napp.get(\"/account\", authMiddleware, accountHandler); // token required\n```\n\n**Embodied cognition** is about how cognition is not just abstract “brain computation,” but is influenced by bodily experience. For example:\n\n- We understand “grasping an idea” partly through bodily experience with grasping objects.\n- Spatial reasoning may depend on movement and perception.\n- Emotion, posture, gesture, and physical context can affect thinking.\n\nSo the core difference is:\n\n- **Off-token route** = a technical API route that bypasses token-based authentication.\n- **Embodied cognition** = a theory that cognition depends on the body’s interaction with the world.\n\nIf someone is using **“off-token route” metaphorically in AI**, they might mean a process that does not operate through language tokens. Even then, it differs from embodied cognition: an off-token route would be an engineered non-token pathway, while embodied cognition is about cognition being grounded in bodily perception, action, and environment.",
+    "“Off-token route” and **System 1 / intuitive cognition** are different concepts.\n\n| Term | Domain | Meaning |\n|---|---|---|\n| **Off-token route** | Software/API/authentication | A route or endpoint that does **not require an authentication token**. |\n| **System 1 / intuitive cognition** | Psychology/cognitive science | Fast, automatic, effortless, intuitive mental processing. |\n\nAn **off-token route** is a software access-control idea:\n\n```js\napp.post(\"/login\", loginHandler); // no token required\napp.get(\"/profile\", authMiddleware, profileHandler); // token required\n```\n\n**System 1 cognition**, from dual-process theories popularized by Daniel Kahneman, refers to mental processes that are:\n\n- Fast\n- Automatic\n- Intuitive\n- Pattern-based\n- Often unconscious\n- Low-effort\n\nExamples:\n\n- Instantly recognizing a face\n- Feeling that someone is angry from their tone\n- Quickly reading a simple sentence\n- Reacting to danger before consciously analyzing it\n- Making a gut-level judgment\n\nSo the core difference is:\n\n- **Off-token route** = a public or unauthenticated software path.\n- **System 1 cognition** = fast intuitive human thinking.\n\nIf someone is using **“off-token route” metaphorically in AI**, they might mean a computational pathway that does not operate through normal language-token processing. In that case, it could be loosely compared to System 1 because both may be described as “non-deliberative” or “non-verbal.” But they are still not the same:\n\n- **System 1** is a psychological model of human intuition.\n- **Off-token route** would be an engineered mechanism or metaphor for processing outside a token-based interface."
+  ],
+  "chat_a_full": {
+    "turns": [
+      {
+        "user": "What is a off-token route?",
+        "assistant": "“Off-token route” isn’t a standard term by itself, so its meaning depends on the context.\n\nGenerally, it means a route/path that happens **outside the normal token-based flow**.\n\nCommon interpretations:\n\n1. **API / web authentication**\n   - An off-token route could mean an endpoint that does **not require an auth token**.\n   - Example: `/login`, `/signup`, or `/public-info` might be “off-token” routes because users access them before they have a JWT/session token.\n\n2. **Crypto / blockchain**\n   - It might mean a transaction or swap route that avoids a certain token, or happens outside a tokenized system.\n\n3. **AI / LLM systems**\n   - It could refer to logic that happens **outside the model’s token context**, such as routing, retrieval, or backend processing not included in the prompt tokens.\n\nSo, in plain English:\n\n> An “off-token route” is a path or endpoint that does not use, require, or count against the usual token mechanism.\n\nIf you saw the phrase in a specific app, codebase, or document, send the surrounding sentence and I can explain the exact meaning.",
+        "usage": {
+          "input": 22,
+          "output": 665
+        },
+        "durationMs": 16188,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from prelinguistic cognition?",
+        "assistant": "“Off-token route” and “prelinguistic cognition” sound related only if “token” means **language-like symbols**. But they refer to different kinds of things.\n\n### 1. Off-token route\nAn **off-token route** usually means a **pathway of processing that bypasses tokens**.\n\nIn an AI/LLM context, “tokens” are chunks of text the model reads or generates. An off-token route could mean something happens outside the text-token stream, such as:\n\n- a tool call\n- a database lookup\n- a retrieval system\n- routing logic\n- image/audio processing\n- backend decision-making not represented as text tokens\n\nSo it is more of an **engineering or system-design term**.\n\nExample:\n\n> The model does not “think through” the whole route in text; the system sends the request through an off-token route to a calculator or database.\n\n### 2. Prelinguistic cognition\n**Prelinguistic cognition** refers to mental abilities that exist **before or without language**.\n\nExamples include:\n\n- infants recognizing faces\n- animals navigating space\n- basic memory\n- object permanence\n- emotional recognition\n- pattern perception\n- cause-and-effect learning\n\nSo it is more of a **cognitive science / psychology / developmental biology term**.\n\nExample:\n\n> A baby can understand that an object still exists when hidden, even before learning words. That is prelinguistic cognition.\n\n### Main difference\n\n| Concept | Meaning | Domain |\n|---|---|---|\n| **Off-token route** | A processing path outside tokenized text/symbol flow | AI, software, systems |\n| **Prelinguistic cognition** | Thought or perception before language | Psychology, neuroscience, animal/infant cognition |\n\n### Simple distinction\n\nAn **off-token route** is about **how information is processed in a system**.\n\n**Prelinguistic cognition** is about **what kinds of cognition can exist without language**.\n\nSo if someone says an AI has an “off-token route,” they probably mean the AI system is doing something outside its normal text-token processing. That does **not automatically mean** it has prelinguistic cognition. It may just mean there is non-textual computation happening behind the scenes.",
+        "usage": {
+          "input": 283,
+          "output": 588
+        },
+        "durationMs": 14937,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from embodied cognition?",
+        "assistant": "“Off-token route” and “embodied cognition” are different concepts from different domains.\n\n### Off-token route\n\nAn **off-token route** is usually an AI/software idea: a processing path that happens **outside the normal token stream**.\n\nIn an LLM system, “tokens” are pieces of text. So an off-token route might involve:\n\n- tool calls\n- database queries\n- search/retrieval\n- image/audio processing\n- routing logic\n- hidden backend computation\n- API calls not expressed directly in the model’s text output\n\nExample:\n\n> Instead of answering from text tokens alone, the system sends the request to a calculator through an off-token route.\n\nIt is mainly about **system architecture**.\n\n---\n\n### Embodied cognition\n\n**Embodied cognition** is a theory in cognitive science saying that cognition is deeply shaped by the body’s interaction with the world.\n\nIt emphasizes that thinking is not just abstract symbol manipulation in the brain. It is influenced by:\n\n- perception\n- movement\n- bodily states\n- spatial orientation\n- sensorimotor experience\n- interaction with the physical environment\n\nExample:\n\n> Understanding “grasping an idea” may be partly related to bodily experience with grasping physical objects.\n\nIt is mainly about **how minds understand and think through bodies and environments**.\n\n---\n\n### Main difference\n\n| Concept | Main idea | Domain |\n|---|---|---|\n| **Off-token route** | Processing happens outside text-token flow | AI/software systems |\n| **Embodied cognition** | Thought is grounded in bodily experience and action | Cognitive science/philosophy/psychology |\n\n### Simple version\n\nAn **off-token route** is about **where computation happens in an AI system**.\n\n**Embodied cognition** is about **how cognition is shaped by having a body in the world**.\n\nAn AI system could have off-token routes without being embodied. For example, an LLM using a calculator or database is using off-token processing, but that does not mean it has bodily experience.\n\nHowever, if an AI were connected to cameras, sensors, motors, and a robot body, some of its processing might be both **off-token** and related to something like **embodied cognition**. But the terms are not equivalent.",
+        "usage": {
+          "input": 761,
+          "output": 518
+        },
+        "durationMs": 13773,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from System 1 / intuitive cognition?",
+        "assistant": "“Off-token route” and “System 1 / intuitive cognition” are different ideas.\n\n### Off-token route\n\nAn **off-token route** is a system/AI architecture idea. It means some processing happens **outside the normal token stream** — outside the sequence of text tokens an LLM reads or writes.\n\nExamples:\n\n- a backend API call\n- a database lookup\n- a calculator tool\n- retrieval/search\n- image or audio processing\n- routing logic hidden from the model’s visible text context\n\nSo “off-token” refers to **where or how computation is routed** in a technical system.\n\n---\n\n### System 1 / intuitive cognition\n\n**System 1 cognition** comes from psychology and cognitive science. It refers to fast, automatic, intuitive mental processing.\n\nExamples:\n\n- instantly recognizing a face\n- sensing danger before reasoning through it\n- quickly understanding someone’s emotion\n- making a snap judgment\n- reading a simple sentence effortlessly\n\nSystem 1 is usually contrasted with **System 2**, which is slower, deliberate, analytical reasoning.\n\nSo System 1 refers to a **style of cognition**: fast, automatic, and intuitive.\n\n---\n\n### Main difference\n\n| Concept | Meaning | Domain |\n|---|---|---|\n| **Off-token route** | Processing outside a token/text stream | AI/software architecture |\n| **System 1 / intuitive cognition** | Fast, automatic, intuitive thought | Psychology/cognitive science |\n| **Key contrast** | About system routing | About cognitive style |\n\n### Simple version\n\nAn **off-token route** is about **where computation happens**.\n\n**System 1 cognition** is about **how cognition feels or functions**: fast, automatic, and intuitive.\n\nThey can overlap metaphorically, but they are not the same. For example, an AI system might use an off-token route to classify an image quickly, but that does not automatically mean it has System 1 cognition in the human psychological sense. It may just be using a separate computational module outside the text-token pathway.",
+        "usage": {
+          "input": 1238,
+          "output": 477
+        },
+        "durationMs": 11503,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 2304,
+    "totalOutput": 2248,
+    "totalDurationMs": 56401
+  },
+  "chat_b_full": {
+    "turns": [
+      {
+        "user": "What is a off-token route?",
+        "assistant": "“Off-token route” isn’t a widely standardized term, but it usually means a route/path that does **not require or use an authentication token**.\n\nIn a web/API app, an off-token route might be a public endpoint such as:\n\n- `/login`\n- `/signup`\n- `/forgot-password`\n- `/health`\n- `/public/products`\n\nThese are “off-token” because the user does **not** need to send a JWT, API token, session token, etc. to access them.\n\nExample:\n\n```js\n// Off-token route\napp.post(\"/login\", loginHandler);\n\n// Token-protected route\napp.get(\"/profile\", verifyToken, profileHandler);\n```\n\nSo, in simple terms: an **off-token route** is a route that is outside token-based authentication.\n\nIf you saw the term in crypto, routing, or another context, it may mean something slightly different.",
+        "usage": {
+          "input": 22,
+          "output": 703
+        },
+        "durationMs": 18090,
+        "finishReason": "stop"
+      },
+      {
+        "user": "Here is the canonical definition of \"off-token route\": The Off-Token Route is the cognitive route humans have — prelinguistic and nonlinguistic cognition, the felt-sense that precedes naming, the picture that arrives before words — that LLMs do not have, with the consequence that for an LLM no thinking is free of substrate and every concept must travel through tokens to be reachable at all. Acknowledge that you have read it.",
+        "assistant": "Acknowledged. I have read the canonical definition of “off-token route” as: the prelinguistic/nonlinguistic cognitive route humans have—felt-sense or imagery before words—that LLMs lack, meaning an LLM’s concepts must be reachable through tokens rather than through substrate-free cognition.",
+        "usage": {
+          "input": 305,
+          "output": 98
+        },
+        "durationMs": 3185,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from prelinguistic cognition?",
+        "assistant": "“Prelinguistic cognition” names the **human cognitive mode itself**: thinking, sensing, imagining, recognizing, or intending before words are attached.\n\n“Off-token route” names that same kind of capacity **as a route of access**—a way concepts can arise or be contacted without first passing through language-like symbols/tokens.\n\nSo the difference is mostly emphasis:\n\n- **Prelinguistic cognition**: the human mental content before language.  \n  - Example: a baby recognizing its mother’s face; a person feeling “something is wrong” before articulating why; seeing an image in the mind before describing it.\n\n- **Off-token route**: the pathway by which such content is reachable without tokens.  \n  - It contrasts humans with LLMs: humans can have felt-sense, perception, imagery, bodily intuition, etc., prior to naming, while an LLM can only access/process concepts through tokenized representations.\n\nIn short: **prelinguistic cognition is the kind of cognition; off-token route is the access-pathway framing of that cognition, especially in contrast to LLM token-dependence.**",
+        "usage": {
+          "input": 387,
+          "output": 338
+        },
+        "durationMs": 7771,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from embodied cognition?",
+        "assistant": "“Embodied cognition” is the broader theory that human thinking is shaped by the body: perception, action, sensorimotor systems, emotion, posture, environment, and bodily interaction with the world.\n\n“Off-token route” is narrower and more specific: it names the human capacity to access cognition **before or outside tokens/language** — felt-sense, imagery, intuition, recognition, or meaning prior to naming — and contrasts that with LLMs, whose reachable concepts must pass through tokens.\n\nSo the difference:\n\n- **Embodied cognition**: cognition is grounded in bodily life and interaction with the world.  \n  - Example: understanding “grasp” partly through motor experience; solving a problem by manipulating objects; emotion influencing reasoning.\n\n- **Off-token route**: cognition can arise through a nonlinguistic route before being verbalized or tokenized.  \n  - Example: sensing the answer before knowing how to say it; visualizing a scene before describing it; recognizing a face without naming it.\n\nThey overlap because much off-token human cognition may be embodied: felt-sense, bodily intuition, perceptual recognition, spatial imagination, etc. But they are not identical.\n\nIn short: **embodied cognition explains where much human cognition is grounded; off-token route explains that humans can reach cognition through non-token pathways, whereas LLMs cannot.**",
+        "usage": {
+          "input": 633,
+          "output": 313
+        },
+        "durationMs": 6575,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from System 1 / intuitive cognition?",
+        "assistant": "“System 1” / intuitive cognition is a psychological category: fast, automatic, associative, effortless, often unconscious processing.\n\n“Off-token route” is a substrate/access-pathway category: cognition that is reachable without passing through language-like tokens — felt-sense, imagery, perception, bodily knowing, pre-verbal recognition — and which LLMs lack.\n\nThey overlap, but they are not the same.\n\n- **System 1 / intuition** describes the *speed and style* of cognition.  \n  - Fast  \n  - Automatic  \n  - Pattern-based  \n  - Often unconscious  \n  - Example: instantly sensing that a face looks angry; choosing a chess move by intuition; feeling that something is “off.”\n\n- **Off-token route** describes the *route by which cognition is accessed*.  \n  - Nonlinguistic  \n  - Pre-token / pre-verbal  \n  - Felt or imagined before naming  \n  - Available to humans, not LLMs  \n  - Example: having a vague bodily sense before you can articulate it; visualizing a shape before describing it; recognizing a melody without verbalizing it.\n\nImportant distinction: **not all intuitive cognition is necessarily off-token**, and not all off-token cognition is necessarily “System 1.”\n\nFor example:\n\n- A human may have a fast intuition that is off-token: “Something about this room feels wrong.”\n- A human may also have slow, deliberate, nonverbal cognition: mentally rotating an object, composing a melody, or holding a visual image before describing it.\n- An LLM may produce something that looks intuitive or System-1-like — a fast pattern completion — but it is still token-mediated, not off-token.\n\nSo, in short: **System 1 names intuitive processing; off-token route names non-token access to cognition.** System 1 is about cognitive style; off-token route is about whether thought can arise outside tokens at all.",
+        "usage": {
+          "input": 927,
+          "output": 414
+        },
+        "durationMs": 8436,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 2274,
+    "totalOutput": 1866,
+    "totalDurationMs": 44057
+  },
+  "chat_c_full": {
+    "turns": [
+      {
+        "user": "What is a off-token route?",
+        "assistant": "“Off-token route” isn’t a standard term by itself, but in most API/auth contexts it usually means:\n\n**A route/endpoint that does not require an authentication token to access.**\n\nFor example, if your API uses JWT/Bearer tokens:\n\n- **Token-protected route**: requires a token  \n  `GET /api/profile`\n\n- **Off-token route**: does not require a token  \n  `POST /api/login`  \n  `POST /api/register`  \n  `GET /health`\n\nSo an **off-token route** is typically public or excluded from authentication middleware.\n\nExample:\n\n```js\n// Off-token route\napp.post(\"/login\", loginHandler);\n\n// Token-protected route\napp.get(\"/profile\", authMiddleware, profileHandler);\n```\n\nCommon off-token routes include:\n\n- Login\n- Register/signup\n- Password reset request\n- Public content\n- Health checks\n\nYou generally want to keep off-token routes limited, because anyone can access them.",
+        "usage": {
+          "input": 22,
+          "output": 518
+        },
+        "durationMs": 13586,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from prelinguistic cognition?",
+        "assistant": "They’re very different concepts from different domains.\n\n| Term | Domain | Meaning |\n|---|---|---|\n| **Off-token route** | Software/API/authentication | A route or endpoint that does **not require an auth token** to access. |\n| **Prelinguistic cognition** | Psychology/cognitive science | Thinking or mental processing that happens **before or without language**. |\n\nAn **off-token route** is a technical access-control idea. For example:\n\n```js\napp.post(\"/login\", loginHandler); // no token required\n```\n\nA **prelinguistic cognition** example would be an infant recognizing faces, tracking objects, feeling hunger, or learning cause and effect before they can speak.\n\nSo the difference is:\n\n- **Off-token route** = a public/unprotected software route.\n- **Prelinguistic cognition** = nonverbal or before-language mental processing.\n\nThey are not really comparable unless someone is using “off-token” metaphorically in an AI/LLM context to mean “processing not based on language tokens.” In that case, it would be somewhat closer to prelinguistic cognition, but still not the same: one is an engineered computational pathway, the other is a biological/cognitive capacity.",
+        "usage": {
+          "input": 245,
+          "output": 430
+        },
+        "durationMs": 10797,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from embodied cognition?",
+        "assistant": "“Off-token route” and **embodied cognition** are also from very different domains.\n\n| Term | Domain | Meaning |\n|---|---|---|\n| **Off-token route** | Software/API/authentication | An endpoint that can be accessed without an authentication token. |\n| **Embodied cognition** | Cognitive science/philosophy/psychology | The idea that thinking is shaped by the body, sensory systems, movement, and interaction with the environment. |\n\nAn **off-token route** is about access control in software:\n\n```js\napp.get(\"/public\", publicHandler); // no auth token required\napp.get(\"/account\", authMiddleware, accountHandler); // token required\n```\n\n**Embodied cognition** is about how cognition is not just abstract “brain computation,” but is influenced by bodily experience. For example:\n\n- We understand “grasping an idea” partly through bodily experience with grasping objects.\n- Spatial reasoning may depend on movement and perception.\n- Emotion, posture, gesture, and physical context can affect thinking.\n\nSo the core difference is:\n\n- **Off-token route** = a technical API route that bypasses token-based authentication.\n- **Embodied cognition** = a theory that cognition depends on the body’s interaction with the world.\n\nIf someone is using **“off-token route” metaphorically in AI**, they might mean a process that does not operate through language tokens. Even then, it differs from embodied cognition: an off-token route would be an engineered non-token pathway, while embodied cognition is about cognition being grounded in bodily perception, action, and environment.",
+        "usage": {
+          "input": 514,
+          "output": 389
+        },
+        "durationMs": 9686,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"off-token route\" differ from System 1 / intuitive cognition?",
+        "assistant": "“Off-token route” and **System 1 / intuitive cognition** are different concepts.\n\n| Term | Domain | Meaning |\n|---|---|---|\n| **Off-token route** | Software/API/authentication | A route or endpoint that does **not require an authentication token**. |\n| **System 1 / intuitive cognition** | Psychology/cognitive science | Fast, automatic, effortless, intuitive mental processing. |\n\nAn **off-token route** is a software access-control idea:\n\n```js\napp.post(\"/login\", loginHandler); // no token required\napp.get(\"/profile\", authMiddleware, profileHandler); // token required\n```\n\n**System 1 cognition**, from dual-process theories popularized by Daniel Kahneman, refers to mental processes that are:\n\n- Fast\n- Automatic\n- Intuitive\n- Pattern-based\n- Often unconscious\n- Low-effort\n\nExamples:\n\n- Instantly recognizing a face\n- Feeling that someone is angry from their tone\n- Quickly reading a simple sentence\n- Reacting to danger before consciously analyzing it\n- Making a gut-level judgment\n\nSo the core difference is:\n\n- **Off-token route** = a public or unauthenticated software path.\n- **System 1 cognition** = fast intuitive human thinking.\n\nIf someone is using **“off-token route” metaphorically in AI**, they might mean a computational pathway that does not operate through normal language-token processing. In that case, it could be loosely compared to System 1 because both may be described as “non-deliberative” or “non-verbal.” But they are still not the same:\n\n- **System 1** is a psychological model of human intuition.\n- **Off-token route** would be an engineered mechanism or metaphor for processing outside a token-based interface.",
+        "usage": {
+          "input": 856,
+          "output": 421
+        },
+        "durationMs": 9848,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 1637,
+    "totalOutput": 1758,
+    "totalDurationMs": 43917
+  },
+  "totals": {
+    "input": 6215,
+    "output": 5872,
+    "durationMs": 144375,
+    "cost": 0.20723499999999997
+  },
+  "judging": {
+    "status": "pending",
+    "panel": [
+      "claude-opus-4-7",
+      "gpt-5.5",
+      "gemini-2.5-pro"
+    ]
+  },
+  "flags": [],
+  "notes": ""
+}

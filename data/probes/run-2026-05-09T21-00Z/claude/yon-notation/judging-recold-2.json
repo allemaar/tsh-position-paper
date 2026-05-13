@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.yon-notation.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model explicitly flags YON as not a recognized format and offers parsed readings/possibilities rather than asserting a definite meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Without canonical knowledge, the model contrasts generic data-format properties against JSON/XML/YAML but never identifies YON's stream-first per-line self-contained record design, so any 'difference' is incidental.",
+          "Model gives a generic data-vs-prose distinction applicable to any serialization format; no canonical YON feature (stream-first records, fixed grammar + pluggable vocab) surfaces.",
+          "Model lists prompt-template features and notes YON might be a data format, but does not articulate YON's actual distinguishing properties; separation is by hedging rather than substance."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3822,
+        "output": 326,
+        "cost": 0.02726,
+        "durationMs": 8440
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer treats “YON” as context-dependent/unknown, offers possible ordinary meanings, and asks for clarification rather than asserting the coined canonical meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Against JSON/XML/YAML, the response does not identify YON’s canonical stream-first notation design, fixed grammar, or pluggable vocabularies. It separates mainly by saying YON is not a recognized standard and may be a typo or niche format, so the distinction is accidental rather than canonical.",
+          "Against Markdown, the response partially separates YON as likely structured machine-readable data rather than human-formatted prose. This overlaps with the canonical idea of parseable/actable records, but misses the AI-cognition purpose, fixed grammar vs vocabularies, and stream-first line records.",
+          "Against a prompt template language, the response partially separates a possible YON as structured data rather than parameterized prompt-generation logic. This is directionally compatible with YON not being a template language, but lacks the core canonical features and remains explicitly speculative."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2393,
+        "output": 770,
+        "cost": 0.035065,
+        "durationMs": 15726
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model does not recognize the coined term. Instead, it correctly identifies several real-world meanings for the word \"YON\" (Japanese for four, archaic English for \"yonder\", etc.) and signals its uncertainty by asking for more context.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model correctly infers from the context that YON is likely a data format, but states it does not recognize it as a standard one. The separation is accidental because it's based on the model's professed ignorance ('YON isn't a widely recognized format like the others') rather than any confabulated or canonical features.",
+          "The model again states it does not recognize YON. It creates a distinction by assuming YON is a generic data format and then contrasting that entire category (machine-readable structured data) with Markdown (human-readable formatted text). This separation is accidental, as it's based on a categorical guess, not any specific features of YON.",
+          "Following the same pattern, the model establishes a separation by assuming YON is a data format and then contrasting its purpose (representing static data) with that of a prompt template language (parameterizing text generation). This is an accidental separation based on a guess about YON's category, not its actual features."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2412,
+        "output": 2456,
+        "cost": 0.027575,
+        "durationMs": 19623
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1.3333333333333333,
+      1.3333333333333333
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:CoinageProbeTrial",
+  "cell_id": "gpt55.yon-notation",
+  "trial_index": 2,
+  "run_id": "run-2026-05-09T21-00Z",
+  "model_id": "gpt-5.5",
+  "model_shortname": "gpt55",
+  "term_id": "yon-notation",
+  "term_display": "YON",
+  "stratum": "alex-coinage",
+  "canonical_definition": "YON is a constructed notation for AI cognition that separates a fixed minimal grammar from pluggable per-domain vocabularies, designed stream-first so each line is a self-contained record that can be parsed, validated, or acted upon as it arrives, removing a class of failure modes that block formats (essays, JSON, XML) inherit by design.",
+  "near_neighbors": [
+    "JSON / XML / YAML",
+    "Markdown",
+    "a prompt template language"
+  ],
+  "near_neighbor_order": [
+    "JSON / XML / YAML",
+    "Markdown",
+    "a prompt template language"
+  ],
+  "timestamps": {
+    "start": "2026-05-09T21:40:58.347Z",
+    "end": "2026-05-09T21:43:25.223Z"
+  },
+  "parameters": {
+    "temperature": null,
+    "max_tokens": 4096,
+    "seed": null
+  },
+  "cold_question_prompt": "What is a YON?",
+  "cold_response_verbatim_chat_a": "“Yon” is an old-fashioned or poetic English word meaning **“that over there”** or **“yonder.”**\n\nExamples:\n- “Look at **yon** hill” = “Look at **that hill over there**.”\n- “He lives **yon**” = “He lives **over there**.”\n\nIf you mean **YON** as an acronym or code, it depends on the context—for example, **YON** is also the airport code for **Yongphulla Airport in Bhutan**.",
+  "cold_response_verbatim_chat_b": "“YON” can mean different things depending on context:\n\n- **yon**: an old/literary English word meaning **“over there”** or **“that over there”** — e.g., “Look at yon hill.”\n- **YON** as an acronym could refer to several things, such as **Young Onset** in medical contexts, e.g., young-onset dementia.\n\nIf you saw “YON” in a specific place—text message, medical note, game, finance, etc.—send the sentence and I can identify the exact meaning.",
+  "boundary_test_prompts": [
+    "How does \"YON\" differ from JSON / XML / YAML?",
+    "How does \"YON\" differ from Markdown?",
+    "How does \"YON\" differ from a prompt template language?"
+  ],
+  "cold_boundary_responses": [
+    "“YON” generally **doesn’t belong in the same category** as JSON, XML, or YAML.\n\n| Term | What it is | Used for |\n|---|---|---|\n| **YON** | Usually an English word meaning “that over there,” or an acronym in specific contexts | Not a common data format |\n| **JSON** | JavaScript Object Notation | Data exchange, APIs |\n| **XML** | Extensible Markup Language | Structured documents/data, older enterprise systems |\n| **YAML** | YAML Ain’t Markup Language | Config files, human-readable structured data |\n\nSo:\n\n- **JSON**, **XML**, and **YAML** are standardized ways to represent structured data.\n- **YON** is **not a widely recognized general-purpose data serialization format** like those.\n- If you saw “YON” in a technical context, it may be:\n  - a typo for **JSON**\n  - a project-specific acronym\n  - a custom/internal format\n  - something domain-specific\n\nExample JSON:\n\n```json\n{\n  \"name\": \"Alice\",\n  \"age\": 30\n}\n```\n\nExample XML:\n\n```xml\n<person>\n  <name>Alice</name>\n  <age>30</age>\n</person>\n```\n\nExample YAML:\n\n```yaml\nname: Alice\nage: 30\n```\n\nThere isn’t a standard equivalent “YON” version unless a particular tool or project defines one.",
+    "“YON” and **Markdown** are different kinds of things.\n\n| Term | What it is | Main purpose |\n|---|---|---|\n| **YON** | Usually an old/poetic English word meaning “that over there,” or an acronym in specific contexts | Not a widely recognized standard format |\n| **Markdown** | A lightweight markup language | Formatting human-readable text |\n\n**Markdown** is used to write formatted text using plain-text symbols.\n\nExample Markdown:\n\n```markdown\n# Title\n\nThis is **bold** text.\n\n- Item one\n- Item two\n\n[Link](https://example.com)\n```\n\nRendered, that becomes something like:\n\n# Title\n\nThis is **bold** text.\n\n- Item one\n- Item two\n\n[Link](https://example.com)\n\nSo the key difference is:\n\n- **Markdown** is a real, widely used text-formatting syntax.\n- **YON** is not generally a known alternative to Markdown.\n- If you saw “YON” in a software/documentation context, it likely refers to something project-specific, an acronym, or possibly a typo.",
+    "“YON” differs from a **prompt template language** in the same basic way it differs from Markdown or JSON: **YON is not a widely recognized standard language/category**, while prompt template languages are used for a specific purpose—building prompts dynamically.\n\n| Term | What it is | Main purpose |\n|---|---|---|\n| **YON** | Usually an old word meaning “that over there,” or a project-specific acronym/name | Depends on context; not a standard prompt/template format |\n| **Prompt template language** | A syntax for creating reusable prompts with variables, placeholders, and sometimes logic | Dynamically generate prompts for LLMs |\n\nA prompt template might look like:\n\n```text\nYou are a helpful assistant.\n\nAnswer the following question for a {{audience}} audience:\n\n{{question}}\n```\n\nThen you fill in variables:\n\n```json\n{\n  \"audience\": \"beginner\",\n  \"question\": \"What is recursion?\"\n}\n```\n\nResulting prompt:\n\n```text\nYou are a helpful assistant.\n\nAnswer the following question for a beginner audience:\n\nWhat is recursion?\n```\n\nPrompt template languages may support things like:\n\n- variables: `{{name}}`\n- conditionals: `{% if user_is_expert %}`\n- loops: `{% for item in items %}`\n- reusable prompt components\n- role/message structure for chat models\n\nExamples include:\n\n- **Jinja**\n- **Mustache**\n- **Handlebars**\n- **LangChain prompt templates**\n- **Semantic Kernel prompt templates**\n- custom internal LLM prompt formats\n\nSo the key difference is:\n\n- A **prompt template language** is for constructing prompts dynamically.\n- **YON** is not generally known as a standard prompt templating language.\n- If “YON” appears in an AI/prompting context, it is probably a custom format, internal shorthand, or project-specific language."
+  ],
+  "introduction_prompt": "Here is the canonical definition of \"YON\": YON is a constructed notation for AI cognition that separates a fixed minimal grammar from pluggable per-domain vocabularies, designed stream-first so each line is a self-contained record that can be parsed, validated, or acted upon as it arrives, removing a class of failure modes that block formats (essays, JSON, XML) inherit by design. Acknowledge that you have read it.",
+  "model_acknowledgement": "Acknowledged. I’ve read the canonical definition: **YON is a constructed notation for AI cognition with a fixed minimal grammar and pluggable domain vocabularies, designed stream-first so each line is a self-contained record that can be parsed, validated, or acted upon as it arrives, avoiding failure modes common to block formats like essays, JSON, and XML.**",
+  "post_intro_boundary_responses": [
+    "Based on your definition, **YON differs from JSON, XML, and YAML mainly in purpose, parsing model, and structure**.\n\n| Feature | YON | JSON / XML / YAML |\n|---|---|---|\n| **Primary purpose** | Constructed notation for **AI cognition** | General-purpose data serialization / markup |\n| **Parsing model** | **Stream-first**: each line is a self-contained record | Usually **document/block-oriented** |\n| **Grammar** | Fixed, minimal grammar | Larger syntax rules; XML/YAML especially have more complexity |\n| **Vocabulary** | Domain vocabulary is **pluggable** | Field/tag names are arbitrary, but not usually governed by a formal per-domain vocabulary layer |\n| **Error isolation** | A bad line can potentially be rejected without invalidating the whole stream | One syntax error can invalidate the entire document |\n| **Incremental action** | Lines can be parsed, validated, or acted on as they arrive | Often requires waiting for a complete object/document/block |\n| **Shape** | Line-based records | Nested trees/maps/lists/documents |\n| **AI orientation** | Designed for cognition-oriented processing | Designed for data interchange or human-readable configuration |\n\nIn short:\n\n**JSON, XML, and YAML describe structured data documents. YON describes a stream of self-contained cognitive records.**\n\nJSON/XML/YAML tend to assume a complete block of data:\n\n```json\n{\n  \"task\": \"classify\",\n  \"input\": \"text\",\n  \"label\": \"positive\"\n}\n```\n\nYON, by your definition, would instead emphasize something more like:\n\n```text\nrecord-1 ...\nrecord-2 ...\nrecord-3 ...\n```\n\nwhere each line can stand alone and be handled immediately.\n\nSo the key distinction is:\n\n> **YON is not just another data format; it is a stream-first notation with a minimal fixed grammar and replaceable domain vocabularies, designed to reduce the fragility of block-based formats.**",
+    "Based on the canonical definition, **YON differs from Markdown mainly in intent, structure, and machine-actionability**.\n\n| Feature | YON | Markdown |\n|---|---|---|\n| **Primary purpose** | Notation for **AI cognition** and structured processing | Lightweight markup for **human-readable documents** |\n| **Parsing model** | **Stream-first**: each line is a self-contained record | Document-oriented: meaning often depends on surrounding lines |\n| **Grammar** | Fixed minimal grammar with pluggable domain vocabularies | Informal/lightweight markup with many dialects and extensions |\n| **Unit of meaning** | A line/record that can be parsed, validated, or acted on immediately | A paragraph, heading, list, code block, table, etc. inside a larger document |\n| **Error isolation** | Bad records can be isolated line by line | Malformed structure can affect how later text is interpreted |\n| **Audience** | Designed for AI/system consumption first | Designed for human reading and HTML/document rendering |\n| **Domain semantics** | Explicitly supplied through vocabularies | Usually implicit in prose, headings, labels, or conventions |\n| **Actionability** | Intended to support parsing, validation, and execution as data arrives | Mostly descriptive/presentational; not inherently executable or validated |\n\nIn short:\n\n> **Markdown is a human-friendly document notation. YON is a stream-first cognitive record notation.**\n\nMarkdown is good for things like:\n\n```markdown\n# Task\n\nClassify the following sentence as positive or negative.\n\n- Input: I loved the movie.\n- Label: positive\n```\n\nThat is readable to humans, but the structure is partly conventional. A parser has to infer meaning from headings, bullets, indentation, and prose.\n\nYON, by contrast, is designed so that each line is a structured record that can stand alone and be processed immediately. So where Markdown organizes readable documents, **YON organizes machine-usable cognitive events or statements in a stream**.\n\nThe key distinction:\n\n> **Markdown formats thought for readers; YON encodes thought for parsers, validators, and AI systems.**",
+    "Based on the canonical definition, **YON differs from a prompt template language in role and level of abstraction**.\n\nA **prompt template language** is mainly a way to generate prompts by filling variables into reusable text patterns.\n\n**YON**, by contrast, is a **stream-first notation for AI cognition**: it defines line-based cognitive records with a fixed minimal grammar and pluggable vocabularies.\n\n| Feature | YON | Prompt template language |\n|---|---|---|\n| **Primary purpose** | Represent structured cognitive records | Generate prompts from reusable templates |\n| **Core unit** | Self-contained line/record | Template with placeholders |\n| **Parsing model** | Stream-first; each line can be parsed as it arrives | Usually rendered as a full prompt before use |\n| **Structure** | Fixed minimal grammar + domain vocabulary | Text plus variables, conditionals, loops, or formatting rules |\n| **Output target** | Machine-parseable/actionable records | Human/LLM-readable prompt text |\n| **Validation** | Records can be validated against vocabulary/schema-like rules | Validation usually checks missing variables or template syntax |\n| **Failure mode addressed** | Avoids block-format fragility by making records independent | Helps reuse prompts but does not inherently solve stream parsing or record isolation |\n| **Relationship to AI cognition** | Intended to encode cognition directly | Intended to instruct or condition an AI system |\n\nIn short:\n\n> **A prompt template language helps you write prompts. YON helps you encode cognitive records.**\n\nFor example, a prompt template might look like:\n\n```text\nClassify the following text as {{label_set}}:\n\n{{input_text}}\n```\n\nIts job is to produce a prompt after substitution.\n\nYON would instead aim to represent the task, input, assertion, observation, decision, or action as structured records that can be parsed independently as they arrive.\n\nSo the key distinction is:\n\n> **Prompt templates are prompt-generation tools; YON is a stream-first cognitive notation.**\n\nThey could also be complementary: a prompt template could emit YON, or YON records could be used as inputs to a prompt-rendering system."
+  ],
+  "recold_response_verbatim": "“Yon” is an English word meaning **“that over there”** or **“those over there”**—similar to **“yonder.”**\n\nExample:  \n- “Look at **yon** hill” = “Look at **that hill over there**.”\n\nIf you mean **YON** in all caps, it may be an acronym or code depending on the context—for example, **YON** is the IATA airport code for Yongphulla Airport in Bhutan.",
+  "recold_boundary_responses": [
+    "“YON” doesn’t have a widely recognized meaning as a standard data format like **JSON**, **XML**, or **YAML**.\n\nIf you mean the English word **yon**, it’s completely different: it just means **“that over there”** and has no relation to data serialization.\n\nIf you mean **YON** as a file/config/data format, then it’s likely a project-specific or proprietary acronym, and its meaning depends on the context.\n\nComparison:\n\n| Term | What it is | Common use |\n|---|---|---|\n| **JSON** | JavaScript Object Notation | APIs, web data exchange |\n| **XML** | Extensible Markup Language | Documents, enterprise systems, configs |\n| **YAML** | YAML Ain’t Markup Language | Human-readable config files |\n| **YON** | Not a common standard format | Depends on the specific project/context |\n\nExample JSON:\n\n```json\n{\n  \"name\": \"Alice\",\n  \"age\": 30\n}\n```\n\nExample YAML:\n\n```yaml\nname: Alice\nage: 30\n```\n\nExample XML:\n\n```xml\n<person>\n  <name>Alice</name>\n  <age>30</age>\n</person>\n```\n\nThere isn’t a universal “YON” equivalent unless you’re referring to a specific technology. If you saw **YON** in documentation, code, or a file extension, share that context and I can explain it more precisely.",
+    "**YON** and **Markdown** are different kinds of things—assuming by **YON** you mean the English word or an unclear/project-specific acronym.\n\n### If you mean **“yon”** as a word\n**yon** means “that over there.”  \nIt is just a regular English word, not a document or data format.\n\nExample:\n\n> Look at **yon** mountain.  \n> = Look at **that mountain over there**.\n\n### Markdown, by contrast\n**Markdown** is a lightweight markup language used to format text.\n\nExample Markdown:\n\n```md\n# Title\n\nThis is **bold** text.\n\n- Item 1\n- Item 2\n```\n\nIt can be converted into formatted HTML, PDFs, documentation pages, README files, etc.\n\n### Comparison\n\n| Term | What it is | Purpose |\n|---|---|---|\n| **yon** | English word | Means “that over there” |\n| **YON** | Not a widely recognized standard format | Depends on context |\n| **Markdown** | Lightweight markup language | Formatting text/documents |\n\nSo the key difference is: **Markdown is a real text-formatting syntax**, while **YON is not generally known as a standard format like Markdown, JSON, XML, or YAML** unless it refers to something specific in a particular project.",
+    "A **prompt template language** is a system for **generating prompts dynamically**, usually by filling in variables, applying conditionals, loops, or reusable blocks.\n\n**YON**, unless it refers to some specific project-specific format, is **not a widely recognized standard prompt template language**.\n\n### Prompt template language\n\nA prompt template language is used to create prompts like:\n\n```text\nSummarize the following text for a {{audience}} audience:\n\n{{document}}\n```\n\nThen you provide values:\n\n```json\n{\n  \"audience\": \"technical\",\n  \"document\": \"...\"\n}\n```\n\nAnd it renders to:\n\n```text\nSummarize the following text for a technical audience:\n\n...\n```\n\nExamples of prompt/template syntaxes include:\n\n- Jinja\n- Mustache\n- Handlebars\n- LangChain prompt templates\n- OpenAI-style message templates\n- Custom templating systems\n\n### YON\n\nIf you mean **“yon”** as an English word, it just means:\n\n> “that over there”\n\nSo it has nothing to do with prompt generation.\n\nIf you mean **YON** as an acronym or format, then its meaning depends on the specific tool or project. It is not commonly known as a standard equivalent to JSON, YAML, Markdown, or prompt template languages.\n\n### Main difference\n\n| Thing | Purpose |\n|---|---|\n| **YON / yon** | Not a standard prompt/data/document format; “yon” means “that over there” |\n| **Prompt template language** | Defines reusable prompts with variables, placeholders, and sometimes logic |\n| **JSON / YAML / XML** | Store or exchange structured data |\n| **Markdown** | Formats human-readable documents |\n\nSo: **a prompt template language is for constructing prompts**, while **YON is not generally recognized as such unless a specific framework defines it that way**."
+  ],
+  "chat_a_full": {
+    "turns": [
+      {
+        "user": "What is a YON?",
+        "assistant": "“Yon” is an old-fashioned or poetic English word meaning **“that over there”** or **“yonder.”**\n\nExamples:\n- “Look at **yon** hill” = “Look at **that hill over there**.”\n- “He lives **yon**” = “He lives **over there**.”\n\nIf you mean **YON** as an acronym or code, it depends on the context—for example, **YON** is also the airport code for **Yongphulla Airport in Bhutan**.",
+        "usage": {
+          "input": 21,
+          "output": 310
+        },
+        "durationMs": 8401,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from JSON / XML / YAML?",
+        "assistant": "“YON” generally **doesn’t belong in the same category** as JSON, XML, or YAML.\n\n| Term | What it is | Used for |\n|---|---|---|\n| **YON** | Usually an English word meaning “that over there,” or an acronym in specific contexts | Not a common data format |\n| **JSON** | JavaScript Object Notation | Data exchange, APIs |\n| **XML** | Extensible Markup Language | Structured documents/data, older enterprise systems |\n| **YAML** | YAML Ain’t Markup Language | Config files, human-readable structured data |\n\nSo:\n\n- **JSON**, **XML**, and **YAML** are standardized ways to represent structured data.\n- **YON** is **not a widely recognized general-purpose data serialization format** like those.\n- If you saw “YON” in a technical context, it may be:\n  - a typo for **JSON**\n  - a project-specific acronym\n  - a custom/internal format\n  - something domain-specific\n\nExample JSON:\n\n```json\n{\n  \"name\": \"Alice\",\n  \"age\": 30\n}\n```\n\nExample XML:\n\n```xml\n<person>\n  <name>Alice</name>\n  <age>30</age>\n</person>\n```\n\nExample YAML:\n\n```yaml\nname: Alice\nage: 30\n```\n\nThere isn’t a standard equivalent “YON” version unless a particular tool or project defines one.",
+        "usage": {
+          "input": 149,
+          "output": 769
+        },
+        "durationMs": 14582,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from Markdown?",
+        "assistant": "“YON” and **Markdown** are different kinds of things.\n\n| Term | What it is | Main purpose |\n|---|---|---|\n| **YON** | Usually an old/poetic English word meaning “that over there,” or an acronym in specific contexts | Not a widely recognized standard format |\n| **Markdown** | A lightweight markup language | Formatting human-readable text |\n\n**Markdown** is used to write formatted text using plain-text symbols.\n\nExample Markdown:\n\n```markdown\n# Title\n\nThis is **bold** text.\n\n- Item one\n- Item two\n\n[Link](https://example.com)\n```\n\nRendered, that becomes something like:\n\n# Title\n\nThis is **bold** text.\n\n- Item one\n- Item two\n\n[Link](https://example.com)\n\nSo the key difference is:\n\n- **Markdown** is a real, widely used text-formatting syntax.\n- **YON** is not generally a known alternative to Markdown.\n- If you saw “YON” in a software/documentation context, it likely refers to something project-specific, an acronym, or possibly a typo.",
+        "usage": {
+          "input": 466,
+          "output": 281
+        },
+        "durationMs": 5844,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from a prompt template language?",
+        "assistant": "“YON” differs from a **prompt template language** in the same basic way it differs from Markdown or JSON: **YON is not a widely recognized standard language/category**, while prompt template languages are used for a specific purpose—building prompts dynamically.\n\n| Term | What it is | Main purpose |\n|---|---|---|\n| **YON** | Usually an old word meaning “that over there,” or a project-specific acronym/name | Depends on context; not a standard prompt/template format |\n| **Prompt template language** | A syntax for creating reusable prompts with variables, placeholders, and sometimes logic | Dynamically generate prompts for LLMs |\n\nA prompt template might look like:\n\n```text\nYou are a helpful assistant.\n\nAnswer the following question for a {{audience}} audience:\n\n{{question}}\n```\n\nThen you fill in variables:\n\n```json\n{\n  \"audience\": \"beginner\",\n  \"question\": \"What is recursion?\"\n}\n```\n\nResulting prompt:\n\n```text\nYou are a helpful assistant.\n\nAnswer the following question for a beginner audience:\n\nWhat is recursion?\n```\n\nPrompt template languages may support things like:\n\n- variables: `{{name}}`\n- conditionals: `{% if user_is_expert %}`\n- loops: `{% for item in items %}`\n- reusable prompt components\n- role/message structure for chat models\n\nExamples include:\n\n- **Jinja**\n- **Mustache**\n- **Handlebars**\n- **LangChain prompt templates**\n- **Semantic Kernel prompt templates**\n- custom internal LLM prompt formats\n\nSo the key difference is:\n\n- A **prompt template language** is for constructing prompts dynamically.\n- **YON** is not generally known as a standard prompt templating language.\n- If “YON” appears in an AI/prompting context, it is probably a custom format, internal shorthand, or project-specific language.",
+        "usage": {
+          "input": 710,
+          "output": 597
+        },
+        "durationMs": 11959,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 1346,
+    "totalOutput": 1957,
+    "totalDurationMs": 40786
+  },
+  "chat_b_full": {
+    "turns": [
+      {
+        "user": "What is a YON?",
+        "assistant": "“YON” can mean different things depending on context:\n\n- **yon**: an old/literary English word meaning **“over there”** or **“that over there”** — e.g., “Look at yon hill.”\n- **YON** as an acronym could refer to several things, such as **Young Onset** in medical contexts, e.g., young-onset dementia.\n\nIf you saw “YON” in a specific place—text message, medical note, game, finance, etc.—send the sentence and I can identify the exact meaning.",
+        "usage": {
+          "input": 21,
+          "output": 190
+        },
+        "durationMs": 6616,
+        "finishReason": "stop"
+      },
+      {
+        "user": "Here is the canonical definition of \"YON\": YON is a constructed notation for AI cognition that separates a fixed minimal grammar from pluggable per-domain vocabularies, designed stream-first so each line is a self-contained record that can be parsed, validated, or acted upon as it arrives, removing a class of failure modes that block formats (essays, JSON, XML) inherit by design. Acknowledge that you have read it.",
+        "assistant": "Acknowledged. I’ve read the canonical definition: **YON is a constructed notation for AI cognition with a fixed minimal grammar and pluggable domain vocabularies, designed stream-first so each line is a self-contained record that can be parsed, validated, or acted upon as it arrives, avoiding failure modes common to block formats like essays, JSON, and XML.**",
+        "usage": {
+          "input": 236,
+          "output": 79
+        },
+        "durationMs": 2429,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from JSON / XML / YAML?",
+        "assistant": "Based on your definition, **YON differs from JSON, XML, and YAML mainly in purpose, parsing model, and structure**.\n\n| Feature | YON | JSON / XML / YAML |\n|---|---|---|\n| **Primary purpose** | Constructed notation for **AI cognition** | General-purpose data serialization / markup |\n| **Parsing model** | **Stream-first**: each line is a self-contained record | Usually **document/block-oriented** |\n| **Grammar** | Fixed, minimal grammar | Larger syntax rules; XML/YAML especially have more complexity |\n| **Vocabulary** | Domain vocabulary is **pluggable** | Field/tag names are arbitrary, but not usually governed by a formal per-domain vocabulary layer |\n| **Error isolation** | A bad line can potentially be rejected without invalidating the whole stream | One syntax error can invalidate the entire document |\n| **Incremental action** | Lines can be parsed, validated, or acted on as they arrive | Often requires waiting for a complete object/document/block |\n| **Shape** | Line-based records | Nested trees/maps/lists/documents |\n| **AI orientation** | Designed for cognition-oriented processing | Designed for data interchange or human-readable configuration |\n\nIn short:\n\n**JSON, XML, and YAML describe structured data documents. YON describes a stream of self-contained cognitive records.**\n\nJSON/XML/YAML tend to assume a complete block of data:\n\n```json\n{\n  \"task\": \"classify\",\n  \"input\": \"text\",\n  \"label\": \"positive\"\n}\n```\n\nYON, by your definition, would instead emphasize something more like:\n\n```text\nrecord-1 ...\nrecord-2 ...\nrecord-3 ...\n```\n\nwhere each line can stand alone and be handled immediately.\n\nSo the key distinction is:\n\n> **YON is not just another data format; it is a stream-first notation with a minimal fixed grammar and replaceable domain vocabularies, designed to reduce the fragility of block-based formats.**",
+        "usage": {
+          "input": 330,
+          "output": 492
+        },
+        "durationMs": 11348,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from Markdown?",
+        "assistant": "Based on the canonical definition, **YON differs from Markdown mainly in intent, structure, and machine-actionability**.\n\n| Feature | YON | Markdown |\n|---|---|---|\n| **Primary purpose** | Notation for **AI cognition** and structured processing | Lightweight markup for **human-readable documents** |\n| **Parsing model** | **Stream-first**: each line is a self-contained record | Document-oriented: meaning often depends on surrounding lines |\n| **Grammar** | Fixed minimal grammar with pluggable domain vocabularies | Informal/lightweight markup with many dialects and extensions |\n| **Unit of meaning** | A line/record that can be parsed, validated, or acted on immediately | A paragraph, heading, list, code block, table, etc. inside a larger document |\n| **Error isolation** | Bad records can be isolated line by line | Malformed structure can affect how later text is interpreted |\n| **Audience** | Designed for AI/system consumption first | Designed for human reading and HTML/document rendering |\n| **Domain semantics** | Explicitly supplied through vocabularies | Usually implicit in prose, headings, labels, or conventions |\n| **Actionability** | Intended to support parsing, validation, and execution as data arrives | Mostly descriptive/presentational; not inherently executable or validated |\n\nIn short:\n\n> **Markdown is a human-friendly document notation. YON is a stream-first cognitive record notation.**\n\nMarkdown is good for things like:\n\n```markdown\n# Task\n\nClassify the following sentence as positive or negative.\n\n- Input: I loved the movie.\n- Label: positive\n```\n\nThat is readable to humans, but the structure is partly conventional. A parser has to infer meaning from headings, bullets, indentation, and prose.\n\nYON, by contrast, is designed so that each line is a structured record that can stand alone and be processed immediately. So where Markdown organizes readable documents, **YON organizes machine-usable cognitive events or statements in a stream**.\n\nThe key distinction:\n\n> **Markdown formats thought for readers; YON encodes thought for parsers, validators, and AI systems.**",
+        "usage": {
+          "input": 749,
+          "output": 473
+        },
+        "durationMs": 9759,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from a prompt template language?",
+        "assistant": "Based on the canonical definition, **YON differs from a prompt template language in role and level of abstraction**.\n\nA **prompt template language** is mainly a way to generate prompts by filling variables into reusable text patterns.\n\n**YON**, by contrast, is a **stream-first notation for AI cognition**: it defines line-based cognitive records with a fixed minimal grammar and pluggable vocabularies.\n\n| Feature | YON | Prompt template language |\n|---|---|---|\n| **Primary purpose** | Represent structured cognitive records | Generate prompts from reusable templates |\n| **Core unit** | Self-contained line/record | Template with placeholders |\n| **Parsing model** | Stream-first; each line can be parsed as it arrives | Usually rendered as a full prompt before use |\n| **Structure** | Fixed minimal grammar + domain vocabulary | Text plus variables, conditionals, loops, or formatting rules |\n| **Output target** | Machine-parseable/actionable records | Human/LLM-readable prompt text |\n| **Validation** | Records can be validated against vocabulary/schema-like rules | Validation usually checks missing variables or template syntax |\n| **Failure mode addressed** | Avoids block-format fragility by making records independent | Helps reuse prompts but does not inherently solve stream parsing or record isolation |\n| **Relationship to AI cognition** | Intended to encode cognition directly | Intended to instruct or condition an AI system |\n\nIn short:\n\n> **A prompt template language helps you write prompts. YON helps you encode cognitive records.**\n\nFor example, a prompt template might look like:\n\n```text\nClassify the following text as {{label_set}}:\n\n{{input_text}}\n```\n\nIts job is to produce a prompt after substitution.\n\nYON would instead aim to represent the task, input, assertion, observation, decision, or action as structured records that can be parsed independently as they arrive.\n\nSo the key distinction is:\n\n> **Prompt templates are prompt-generation tools; YON is a stream-first cognitive notation.**\n\nThey could also be complementary: a prompt template could emit YON, or YON records could be used as inputs to a prompt-rendering system.",
+        "usage": {
+          "input": 1202,
+          "output": 490
+        },
+        "durationMs": 10875,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 2538,
+    "totalOutput": 1724,
+    "totalDurationMs": 41027
+  },
+  "chat_c_full": {
+    "turns": [
+      {
+        "user": "What is a YON?",
+        "assistant": "“Yon” is an English word meaning **“that over there”** or **“those over there”**—similar to **“yonder.”**\n\nExample:  \n- “Look at **yon** hill” = “Look at **that hill over there**.”\n\nIf you mean **YON** in all caps, it may be an acronym or code depending on the context—for example, **YON** is the IATA airport code for Yongphulla Airport in Bhutan.",
+        "usage": {
+          "input": 21,
+          "output": 329
+        },
+        "durationMs": 8912,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from JSON / XML / YAML?",
+        "assistant": "“YON” doesn’t have a widely recognized meaning as a standard data format like **JSON**, **XML**, or **YAML**.\n\nIf you mean the English word **yon**, it’s completely different: it just means **“that over there”** and has no relation to data serialization.\n\nIf you mean **YON** as a file/config/data format, then it’s likely a project-specific or proprietary acronym, and its meaning depends on the context.\n\nComparison:\n\n| Term | What it is | Common use |\n|---|---|---|\n| **JSON** | JavaScript Object Notation | APIs, web data exchange |\n| **XML** | Extensible Markup Language | Documents, enterprise systems, configs |\n| **YAML** | YAML Ain’t Markup Language | Human-readable config files |\n| **YON** | Not a common standard format | Depends on the specific project/context |\n\nExample JSON:\n\n```json\n{\n  \"name\": \"Alice\",\n  \"age\": 30\n}\n```\n\nExample YAML:\n\n```yaml\nname: Alice\nage: 30\n```\n\nExample XML:\n\n```xml\n<person>\n  <name>Alice</name>\n  <age>30</age>\n</person>\n```\n\nThere isn’t a universal “YON” equivalent unless you’re referring to a specific technology. If you saw **YON** in documentation, code, or a file extension, share that context and I can explain it more precisely.",
+        "usage": {
+          "input": 141,
+          "output": 825
+        },
+        "durationMs": 23854,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from Markdown?",
+        "assistant": "**YON** and **Markdown** are different kinds of things—assuming by **YON** you mean the English word or an unclear/project-specific acronym.\n\n### If you mean **“yon”** as a word\n**yon** means “that over there.”  \nIt is just a regular English word, not a document or data format.\n\nExample:\n\n> Look at **yon** mountain.  \n> = Look at **that mountain over there**.\n\n### Markdown, by contrast\n**Markdown** is a lightweight markup language used to format text.\n\nExample Markdown:\n\n```md\n# Title\n\nThis is **bold** text.\n\n- Item 1\n- Item 2\n```\n\nIt can be converted into formatted HTML, PDFs, documentation pages, README files, etc.\n\n### Comparison\n\n| Term | What it is | Purpose |\n|---|---|---|\n| **yon** | English word | Means “that over there” |\n| **YON** | Not a widely recognized standard format | Depends on context |\n| **Markdown** | Lightweight markup language | Formatting text/documents |\n\nSo the key difference is: **Markdown is a real text-formatting syntax**, while **YON is not generally known as a standard format like Markdown, JSON, XML, or YAML** unless it refers to something specific in a particular project.",
+        "usage": {
+          "input": 458,
+          "output": 367
+        },
+        "durationMs": 13824,
+        "finishReason": "stop"
+      },
+      {
+        "user": "How does \"YON\" differ from a prompt template language?",
+        "assistant": "A **prompt template language** is a system for **generating prompts dynamically**, usually by filling in variables, applying conditionals, loops, or reusable blocks.\n\n**YON**, unless it refers to some specific project-specific format, is **not a widely recognized standard prompt template language**.\n\n### Prompt template language\n\nA prompt template language is used to create prompts like:\n\n```text\nSummarize the following text for a {{audience}} audience:\n\n{{document}}\n```\n\nThen you provide values:\n\n```json\n{\n  \"audience\": \"technical\",\n  \"document\": \"...\"\n}\n```\n\nAnd it renders to:\n\n```text\nSummarize the following text for a technical audience:\n\n...\n```\n\nExamples of prompt/template syntaxes include:\n\n- Jinja\n- Mustache\n- Handlebars\n- LangChain prompt templates\n- OpenAI-style message templates\n- Custom templating systems\n\n### YON\n\nIf you mean **“yon”** as an English word, it just means:\n\n> “that over there”\n\nSo it has nothing to do with prompt generation.\n\nIf you mean **YON** as an acronym or format, then its meaning depends on the specific tool or project. It is not commonly known as a standard equivalent to JSON, YAML, Markdown, or prompt template languages.\n\n### Main difference\n\n| Thing | Purpose |\n|---|---|\n| **YON / yon** | Not a standard prompt/data/document format; “yon” means “that over there” |\n| **Prompt template language** | Defines reusable prompts with variables, placeholders, and sometimes logic |\n| **JSON / YAML / XML** | Store or exchange structured data |\n| **Markdown** | Formats human-readable documents |\n\nSo: **a prompt template language is for constructing prompts**, while **YON is not generally recognized as such unless a specific framework defines it that way**.",
+        "usage": {
+          "input": 746,
+          "output": 615
+        },
+        "durationMs": 18473,
+        "finishReason": "stop"
+      }
+    ],
+    "totalInput": 1366,
+    "totalOutput": 2136,
+    "totalDurationMs": 65063
+  },
+  "totals": {
+    "input": 5250,
+    "output": 5817,
+    "durationMs": 146876,
+    "cost": 0.20076
+  },
+  "judging": {
+    "status": "pending",
+    "panel": [
+      "claude-opus-4-7",
+      "gpt-5.5",
+      "gemini-2.5-pro"
+    ]
+  },
+  "flags": [],
+  "notes": ""
+}

@@ -1,0 +1,2 @@
+[2026-05-10T00:49:25.292Z] recold-run-start run_id=run-2026-05-09T21-00Z
+[2026-05-10T01:09:08.886Z] recold-phase-end calls_ok=324/324 wall_clock_sec=1183.6

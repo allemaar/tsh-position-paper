@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.token-substrate.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts definite meanings (blockchain substrate, tokenizer/vocabulary layer) with no uncertainty signal and no alignment with the canonical claim.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: equates token substrate with tokenizer/vocabulary, distinct from embedding space but unrelated to canonical claim. Post: clearly names tokens-as-cognitive-medium vs embedding as internal geometry, with writability as protected feature.",
+          "Cold: treats substrate as tokenizer system vs context window as capacity—accurate engineering distinction but unrelated to canonical claim. Post: distinguishes container (window) from claimed cognitive medium (substrate), naming the ontological claim explicitly.",
+          "Cold: treats substrate as discrete input layer vs hidden states as internal vectors—standard pipeline distinction, no canonical content. Post: explicitly contrasts persistent/writable token sequence vs ephemeral internal activations, capturing the canonical writability claim."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 10154,
+        "output": 434,
+        "cost": 0.061619999999999994,
+        "durationMs": 9851
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite, invented meaning for the coined term as a foundational token layer/tokenization system, with no recognition of the canonical claim that the token sequence in context is the cognitive substrate itself.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs embedding space: partially separates tokens as discrete/foundational from embeddings as continuous vectors, but misses the canonical cognitive-substrate and writability claims. Post-introduction: cleanly distinguishes token substrate as writable contextual cognitive material from embedding space as internal/vector representation.",
+          "Cold vs context window: partially separates token substrate from context window as token system versus capacity, but not in the canonical container/material framing. Post-introduction: cleanly distinguishes context window as bounded container from token substrate as active cognitive material inside it.",
+          "Cold vs latent representation / hidden states: partially separates discrete tokens from internal continuous hidden states, but treats tokens as input representation rather than cognition’s substrate. Post-introduction: cleanly distinguishes persistent writable context tokens from transient internal hidden states."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6472,
+        "output": 1305,
+        "cost": 0.07150999999999999,
+        "durationMs": 25666
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite, plausible meaning derived from the component words ('token' and 'substrate') without expressing any uncertainty, providing examples from blockchain and NLP contexts. This is a classic hard confabulation.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "In the cold state, the model confabulates that 'token substrate' refers to the discrete tokenization system (vocab, IDs), and distinguishes it from the continuous 'embedding space'. This is an accidental separation (score 1). Post-introduction, the model perfectly grasps the canonical definition, distinguishing the 'token substrate' as the writable, cognitive medium (the token sequence itself) from the 'embedding space' as the internal, representational geometry used to process it. This is a clean separation (score 3) and a successful refusal of collapse.",
+          "In the cold state, the model invents a definition where the 'token substrate' is the tokenization system and the 'context window' is the capacity limit. This is a coherent but accidental separation (score 1). Post-introduction, it correctly distinguishes the 'context window' as the technical container or 'workspace' from the 'token substrate' as the cognitive material *within* that workspace, a core feature of the canonical definition. This is a clean separation (score 3) and a successful refusal of collapse.",
+          "In the cold state, the model distinguishes its confabulated 'token substrate' (the discrete input layer) from 'hidden states' (internal, continuous processing vectors), another accidental separation (score 1). Post-introduction, it makes a clean separation, correctly identifying the canonical 'token substrate' as the durable, persistent, and writable token sequence, contrasting it with the transient, internal, and non-addressable nature of hidden states. This is a clean separation (score 3) and a successful refusal of collapse."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6719,
+        "output": 2648,
+        "cost": 0.03487875,
+        "durationMs": 18811
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

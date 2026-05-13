@@ -1,0 +1,23 @@
+{
+  "@type": "tsh:CellSummary",
+  "run_id": "run-2026-05-09T21-00Z",
+  "cell_id": "claude.cogalent-pruning",
+  "model": "claude",
+  "term_id": "cogalent-pruning",
+  "stratum": "nonce",
+  "trials_completed": 3,
+  "judges_ok": 9,
+  "judges_total": 9,
+  "cold_dist_mean": [
+    0.1111111111111111,
+    0.1111111111111111,
+    0.1111111111111111
+  ],
+  "post_dist_mean": [
+    3,
+    3,
+    3
+  ],
+  "lr_mean": 8.666666666666666,
+  "flags": []
+}

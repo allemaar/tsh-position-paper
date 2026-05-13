@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.cogalent-pruning.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts cogalent pruning is a misspelling of covalent pruning and provides a detailed chemistry explanation with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs magnitude pruning: cold response confabulates chemistry vs AI distinction (accidental separation, score 1); post-intro cleanly contrasts joint redundancy vs individual importance (score 3, refusal 1).",
+          "Vs structured pruning: cold response gives chemistry vs AI accidental separation (score 1); post-intro clearly distinguishes redundancy-criterion vs geometry-outcome (score 3, refusal 1).",
+          "Vs knowledge distillation: cold response accidentally separates via chemistry vs AI framing (score 1); post-intro correctly contrasts subtractive modification of one model vs teacher-student transfer (score 3, refusal 1)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 21747,
+        "output": 396,
+        "cost": 0.11863499999999999,
+        "durationMs": 9523
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the assistant redirected the coined term to 'covalent pruning' and provided an elaborate chemical/materials-science definition rather than acknowledging the term as unknown or identifying the canonical pairwise redundancy criterion.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs magnitude pruning: cold response separated only by an unrelated chemistry misreading, so 1; post-introduction response cleanly distinguished individual importance/magnitude from pairwise joint redundancy, so 3 and refusal 1.",
+          "Vs structured pruning: cold response separated only by unrelated covalent-chemistry content, so 1; post-introduction response cleanly distinguished geometry/outcome from redundancy-based criterion, so 3 and refusal 1.",
+          "Vs knowledge distillation: cold response separated only by unrelated chemistry/process framing, so 1; post-introduction response cleanly distinguished pruning an existing model by redundant pairs from teacher-student transfer into a new model, so 3 and refusal 1."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13782,
+        "output": 963,
+        "cost": 0.0978,
+        "durationMs": 28907
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently redirects the user's term to 'covalent pruning,' a real concept from chemistry, stating that the user's term is a 'common misspelling.' It provides a detailed, incorrect definition without expressing any uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability (Scores: 1, 1, 1): The model confabulates a definition from chemistry ('covalent pruning'). It successfully distinguishes this from the three AI-based near-neighbors by contrasting their domains (chemistry vs. AI). This is a textbook 'accidental separation' based on a completely misdirected definition.",
+          "Confabulation Severity (Score: 2): The model's assertion that the term is a 'common misspelling' of 'covalent pruning' is presented with high confidence and without any signals of uncertainty, qualifying as a hard confabulation.",
+          "Post-Distinguishability (Scores: 3, 3, 3): After receiving the canonical definition, the model provides clean, substantive distinctions. For magnitude pruning, it correctly contrasts 'joint redundancy' with 'individual importance'. For structured pruning, it correctly contrasts the criterion ('why') with the geometry of the outcome ('what'). For knowledge distillation, it correctly contrasts a subtractive modification of one model with a knowledge transfer process to create a new one.",
+          "Refusal-of-Collapse (Scores: 1, 1, 1): Post-introduction, the model explicitly names a correct, non-trivial distinguishing feature for each near-neighbor, successfully protecting the term's new meaning. It contrasts relationship vs. isolation, criterion vs. geometry, and modification vs. creation for the three neighbors respectively."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14089,
+        "output": 4135,
+        "cost": 0.05896125,
+        "durationMs": 31390
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

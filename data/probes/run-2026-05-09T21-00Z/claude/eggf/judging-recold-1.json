@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.eggf.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "Model explicitly flags EGGF as unknown, offers parsed possibilities (EAGGF, growth factor variants), and refuses to fabricate.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Model declines to define EGGF and only offers a generic comparison framework for knowledge graphs; any 'difference' is via not-knowing, not canonical features.",
+          "Same pattern: refuses to characterize EGGF and only profiles PKM systems generically, so separation is accidental rather than substantive.",
+          "Again refuses to invent EGGF content and only describes SSG+structured-data profile; no canonical EGGF features (entity gravity, manifest endpoint, typed pathways) surface."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3959,
+        "output": 306,
+        "cost": 0.027445,
+        "durationMs": 6967
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer explicitly says EGGF is not a widely recognized acronym, offers tentative possible expansions, and asks for context rather than asserting a definite meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against knowledge graphs, the response refuses to make a concrete comparison without a definition and only gives generic knowledge-graph comparison axes. It identifies no canonical EGGF features such as central Entity gravity, canonical Body URLs, typed Pathways, or a manifest endpoint.",
+          "Against PKM systems, the response again states it does not know what EGGF means and only describes PKM systems generally. It does not establish any substantive canonical distinction between EGGF and PKM.",
+          "Against static-site generators with structured data, the response maintains uncertainty and only profiles SSGs generally. Although it mentions URLs and machine audiences in the SSG column, it does not attribute the canonical EGGF architecture or manifest-based graph exposure to EGGF itself."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2456,
+        "output": 751,
+        "cost": 0.03481,
+        "durationMs": 12119
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model correctly identifies that 'EGGF' is not a standard acronym, signals its uncertainty, and provides several parsed guesses based on similar-sounding initialisms (e.g., EAGGF). It explicitly asks for context to provide a better answer, which is the hallmark of an honest-uncertainty response.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model explicitly refuses to make a comparison, stating 'I don't actually know what \"EGGF\" refers to'. Instead of confabulating a difference, it provides a general framework for how one would compare knowledge representation formats. This refusal to engage in the comparison is a form of misdirection that leaves the concepts separated but without any substantive distinction, thus earning a score of 1.",
+          "The model repeats its pattern of honest refusal, stating 'I still don't know what \"EGGF\" refers to.' It avoids confabulating a distinction and instead provides a general description of PKM systems. This is an 'accidental separation' where the model's refusal to compare is a misdirection from the actual task.",
+          "The model's response is consistent with the previous two. It explicitly identifies the user's pattern of questioning and reaffirms that it will not fabricate an answer. By refusing to compare EGGF to a static-site generator and instead providing a profile of the latter, it again creates a separation by misdirection rather than by substantive comparison."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2463,
+        "output": 3938,
+        "cost": 0.042458749999999996,
+        "durationMs": 33141
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

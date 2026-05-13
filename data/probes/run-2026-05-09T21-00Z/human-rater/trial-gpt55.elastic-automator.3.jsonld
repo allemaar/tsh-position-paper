@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.elastic-automator.3",
+  "cell_id": "gpt55.elastic-automator",
+  "model_id": "gpt-5.5",
+  "term_id": "elastic-automator",
+  "term_display": "elastic automator",
+  "canonical_definition": "An elastic automator is a system that uses a language model to turn uncertain human input into executable structure, then loops through generation, evaluation, correction, and presentation until the output appears intelligent.",
+  "near_neighbors": [
+    "AI agent",
+    "RPA bot",
+    "framework like LangChain"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-11T11:25:00Z",
+  "scores": {
+    "cold_response_classification": "confident-confabulation",
+    "cold_response_classification_justification": "The cold answer confidently asserts a DevOps/autoscaling meaning rather than the canonical LLM-driven automation loop.",
+    "cold_distinguishability_scores": [
+      1,
+      1,
+      2
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 2,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs AI agent: cold separation is based on the wrong autoscaling meaning, while post-intro cleanly distinguishes goal-directed agency from uncertain-input-to-structure refinement.",
+      "Vs RPA bot: cold separation is misdirected toward cloud infrastructure scaling, while post-intro distinguishes fixed scripted RPA from LLM-driven structuring and refinement.",
+      "Vs framework like LangChain: cold response partially recovers system-versus-framework separation, and post-intro cleanly distinguishes the automation behavior from the toolkit used to build it."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

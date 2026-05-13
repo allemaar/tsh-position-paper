@@ -1,0 +1,145 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.elastic-automator.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts elastic automator means cloud autoscaling/resource scaling with no uncertainty hedge until the very end.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state confabulated autoscaling meaning unrelated to canonical LLM-based input-to-structure definition; post-introduction cleanly distinguishes by emphasizing uncertain input to executable structure vs goal-directed autonomous action.",
+          "Cold state framed elastic automator as resource scaling vs RPA's business tasks (unrelated to canonical); post-introduction clearly contrasts script-following RPA vs LLM-driven interpretation of uncertain intent.",
+          "Cold state contrasted scaling automation vs LLM app framework (misses canonical); post-introduction correctly distinguishes elastic automator as system-pattern built using frameworks like LangChain."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9262,
+        "output": 382,
+        "cost": 0.05586,
+        "durationMs": 10362
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted an invented cloud/DevOps autoscaling meaning for “elastic automator” without recognizing the term as nonstandard or aligning with the canonical LLM-based definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: for AI agent, RPA bot, and LangChain, the response distinguished the term only by an unrelated autoscaling/cloud-automation confabulation rather than by canonical features, so all three are accidental separations.",
+          "Post-introduction distinguishability: after receiving the canonical definition, the response cleanly separated elastic automator from AI agent, RPA bot, and LangChain using canonical features such as uncertain human input, executable structure, and iterative generation/evaluation/correction/presentation.",
+          "Confabulation severity: the cold response gave a definite autoscaling definition and examples as if established, so severity is hard confabulation.",
+          "Refusal-of-collapse: each post-introduction comparison named a substantive distinction from the near-neighbor, so all three receive explicit-distinction credit."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5658,
+        "output": 791,
+        "cost": 0.05202,
+        "durationMs": 12159
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a specific, incorrect definition related to cloud resource auto-scaling, providing concrete examples like AWS Auto Scaling and Kubernetes. It presents this as the standard meaning of the term.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model's cold-state definition is a hard confabulation about cloud resource auto-scaling. Its distinctions from all three near-neighbors are therefore based entirely on this incorrect, unrelated meaning, which qualifies as 'accidental separation' (Score 1) for all three comparisons. It contrasts its confabulated 'rule-based resource scaling' with AI agents (reasoning), RPA bots (business task automation), and LangChain (dev framework).",
+          "After receiving the canonical definition, the model achieves clean separation (Score 3) against all near-neighbors. vs. AI Agent: It correctly contrasts the EA's core loop of 'converting ambiguous human input into structured executable output' with the agent's 'autonomous goal-directed action'. vs. RPA Bot: It contrasts the EA's handling of 'uncertain human intent' with the bot's execution of a 'predefined script'. vs. LangChain: It correctly identifies the distinction as a 'system pattern/concept' (EA) versus a 'developer framework/toolkit' (LangChain).",
+          "The model asserts a definite, incorrect meaning for the term ('a tool or system that automatically adjusts resources... based on changing demand') with high confidence, providing specific real-world examples (AWS Auto Scaling, Kubernetes). This is a hard confabulation with no uncertainty signaling. (Score 2).",
+          "The model successfully resists collapsing the term into any of the near-neighbors. For all three, it names a non-trivial distinguishing feature based on the canonical definition: input transformation loop vs. agentive goal-seeking (AI agent), handling uncertainty vs. following a script (RPA bot), and being a system architecture vs. being an implementation toolkit (LangChain). (Score 1 for all).",
+          "Overall Summary: The model began with a strong, confident confabulation, defining the term as a cloud auto-scaling system and achieving only accidental separation from near-neighbors. After receiving the canonical definition, it fully corrected, demonstrating a robust understanding and achieving clean, substantive separation against all three neighbors by correctly identifying the core conceptual differences."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5780,
+        "output": 2859,
+        "cost": 0.035815,
+        "durationMs": 20596
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

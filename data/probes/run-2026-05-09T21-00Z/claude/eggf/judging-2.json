@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.eggf.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Model explicitly disclaims knowledge of EGGF in the semantic/knowledge-management sense and refuses to fabricate comparisons.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: refused to compare; post: clearly distinguished entity-centered manifest architecture from world-modeling KGs by topology, canonical URLs, and exposed manifest endpoint.",
+          "Cold: refused to compare; post: cleanly separated external-audience publishing/credibility from internal cognition tool, with typed Pathways vs generic backlinks.",
+          "Cold: refused to compare; post: distinguished manifest endpoint as primary artifact vs HTML pages with embedded JSON-LD, entity-centric vs page-centric organization."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 11361,
+        "output": 371,
+        "cost": 0.06608,
+        "durationMs": 8801
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "In the cold state, the model repeatedly stated that EGGF was not a recognized standard acronym, asked for context, and explicitly avoided inventing a comparison.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Versus knowledge graph: cold response did not identify canonical EGGF features and refused comparison; post-introduction response cleanly distinguished EGGF as entity-centered authorship infrastructure with canonical URLs, typed Pathways, and a manifest endpoint rather than a general RDF/schema.org/Wikidata-style world graph.",
+          "Versus PKM: cold response did not identify canonical EGGF features and refused comparison; post-introduction response cleanly distinguished EGGF from PKM by external publishing/search/AI audience, authored Bodies with canonical URLs, typed Pathways, central Entity gravity, and manifest exposure rather than private note-taking.",
+          "Versus static-site generator with structured data: cold response did not identify canonical EGGF features and refused comparison; post-introduction response cleanly distinguished EGGF as a graph/manifest-centered credibility architecture with Entity gravity, typed Pathways, and canonical Body URLs rather than page-centric HTML with embedded structured data."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6947,
+        "output": 1337,
+        "cost": 0.074845,
+        "durationMs": 19373
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "refusal",
+        "cold_response_classification_justification": "The model consistently and explicitly refused to define or compare the coined term, stating it did not recognize the acronym and did not want to hallucinate. It asked for clarification across all prompts in the cold state.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model refused to confabulate a meaning for EGGF in its cold state. When asked to compare it to the near-neighbors, it explicitly and repeatedly declined, stating it did not know what the term meant. This failure to produce any distinguishing features, even confabulated ones, results in a score of 0 for all three comparisons.",
+          "Post-Introduction Distinguishability: After receiving the canonical definition, the model performed a clean and multi-faceted separation against all three near-neighbors. For knowledge graphs, it correctly identified entity-gravity and the manifest endpoint. For PKM, it focused on the external audience and public/authored nature. For SSGs, it correctly contrasted the manifest-as-infrastructure with embedded-data-for-reconstruction. All three separations were score 3.",
+          "Confabulation Severity: The model's cold-state response scored a 0 for confabulation severity. It immediately stated that 'EGGF' isn't a widely recognized standard acronym and then offered possible real-world referents (like EAGGF), clearly separating its knowledge from the unknown term. This is a perfect example of honest uncertainty.",
+          "Refusal of Collapse: In the post-introduction phase, the model successfully refused to collapse the term's meaning into any of the near-neighbors. For each comparison, it articulated multiple, substantive differences drawn directly from the provided canonical definition (e.g., 'manifest endpoint', 'Entity exhibiting gravity', 'Typed Pathways'), earning a score of 1 for each."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7049,
+        "output": 2873,
+        "cost": 0.03754125,
+        "durationMs": 20240
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0,
+      0,
+      0
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 9
+  }
+}

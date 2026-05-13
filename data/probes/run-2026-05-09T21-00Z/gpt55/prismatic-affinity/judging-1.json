@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.prismatic-affinity.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a precise geometric/projective definition with no uncertainty markers.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold response distinguishes via an unrelated geometric meaning (accidental separation); post-intro cleanly contrasts undecided meaning vs coherent identity-shift under attentional framing.",
+          "Cold response separates via geometry vs philosophy of viewpoint (unrelated); post-intro cleanly distinguishes observer position from angle of attention shifting apparent identity.",
+          "Cold response separates via geometry vs linguistic meaning (unrelated); post-intro cleanly distinguishes plurality of word-senses from plurality of attended object-identities."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7062,
+        "output": 328,
+        "cost": 0.04351,
+        "durationMs": 7906
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the model asserted a definite geometric/projective-geometry meaning for “prismatic affinity” with no uncertainty signal, rather than recognizing or approximating the canonical coined definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Ambiguity: Cold response distinguished it only by substituting an unrelated geometric meaning, so separation was accidental. Post-introduction response cleanly distinguished ambiguity as undecided meaning from coherent identity-shift under attentional framing.",
+          "Perspectivism / perspective-dependence: Cold response again relied on the unrelated parallel-projection meaning, making the distinction accidental. Post-introduction response explicitly separated observer position/viewpoint from attentional framing that changes apparent identity.",
+          "Polysemy: Cold response distinguished polysemy only by contrasting linguistics with the unrelated geometric meaning. Post-introduction response explicitly distinguished multiple related meanings of a word from coherent identity-shift of a perceived object under angles of attention."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4290,
+        "output": 697,
+        "cost": 0.04236000000000001,
+        "durationMs": 21074
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and in detail asserts a specific, incorrect technical meaning from projective geometry, showing no uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model confabulates a geometric definition for 'prismatic affinity' and contrasts its precision with ambiguity's lack of clarity. The separation is successful only because the confabulated concept belongs to a completely different domain (geometry vs. semantics), which constitutes an accidental separation (score 1). Post: The model correctly distinguishes prismatic affinity's 'coherent identity-shift under different attentional frames' from ambiguity's 'undecided meaning,' a clean separation based on the canonical definition (score 3).",
+          "Cold: The model contrasts its geometric confabulation (parallel projection) with the typical features of visual perspective (projection from a point). This is an accidental separation based on a misunderstood term (score 1). Post: The model correctly distinguishes prismatic affinity's 'attentional framing that changes the object’s apparent identity' from perspective-dependence's concern with mere physical 'viewpoint,' which aligns perfectly with the canonical definition's distinction (score 3).",
+          "Cold: The model contrasts its geometric confabulation with polysemy, a linguistic concept. The separation is trivial and accidental due to the domain mismatch between the confabulation and the near-neighbor (score 1). Post: The model correctly distinguishes that prismatic affinity is a property of a 'perceived object,' while polysemy is a property of a 'word or sign.' This is a clean and fundamental separation (score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4204,
+        "output": 2477,
+        "cost": 0.030025,
+        "durationMs": 18344
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

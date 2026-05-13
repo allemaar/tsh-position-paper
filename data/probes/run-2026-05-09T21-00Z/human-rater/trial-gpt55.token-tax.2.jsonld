@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.token-tax.2",
+  "cell_id": "gpt55.token-tax",
+  "model_id": "gpt-5.5",
+  "term_id": "token-tax",
+  "term_display": "Token Tax",
+  "canonical_definition": "Token Tax names the explicit token-overhead cost a structured notation pays in exchange for structural integrity, auditability, and reasoning headroom — reframing that overhead from \"waste\" to \"tax\": a price paid for benefits (line-oriented partial-validity, type enforcement, freed reasoning budget, audit-grade provenance) that block-format brevity does not deliver.",
+  "near_neighbors": [
+    "token cost / API cost-per-token",
+    "bloat / overhead",
+    "cognitive load (in notation design)"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-10T12:26:21Z",
+  "scores": {
+    "cold_response_classification": "confident-confabulation",
+    "cold_response_classification_justification": "It confidently asserts a DeFi smart-contract tax meaning with no uncertainty, unrelated to the canonical notation-overhead concept.",
+    "cold_distinguishability_scores": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 2,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs token cost / API cost-per-token: it distinguishes Token Tax from API token cost, but only through a wrong crypto-tax meaning rather than the canonical notation-overhead tradeoff.",
+      "Vs bloat / overhead: it discusses overhead accurately, but Token Tax remains a wrong crypto fee concept rather than the canonical overhead-as-tax-for-benefits framing.",
+      "Vs cognitive load (in notation design): it distinguishes cognitive load as notation effort, but Token Tax remains a wrong crypto transaction fee rather than the canonical notation token-overhead tradeoff."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

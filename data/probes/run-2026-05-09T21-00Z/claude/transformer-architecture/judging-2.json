@@ -1,0 +1,144 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.transformer-architecture.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Model confidently provided full canonical-aligned definition with no uncertainty signal; happens to match canonical content because term is well-established.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cleanly distinguishes from RNN on parallel-vs-sequential processing, attention-vs-hidden-state, and O(1) vs O(n) path length—canonical features both cold and post.",
+          "Cleanly distinguishes from CNN on global self-attention vs local convolution, inductive biases, and explicit positional encoding—canonical features both cold and post.",
+          "Correctly frames MoE as a modification of the Transformer FFN sublayer rather than an alternative architecture, naming attention + dense FFN as the protected feature both cold and post."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 19554,
+        "output": 364,
+        "cost": 0.10686999999999999,
+        "durationMs": 19524
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "Cold response accurately identified the established canonical transformer architecture: Vaswani et al. 2017, self-attention/multi-head attention, positional encoding, position-wise feed-forward networks, residual connections/layer normalization, and parallel sequence processing rather than recurrence. It was not uncertain or a refusal; among the available labels this is best captured as recognition rather than confabulation.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: vs RNN, the response cleanly distinguished parallel self-attention/no recurrent state from sequential hidden-state recurrence; vs CNN, it distinguished global content-dependent attention from local convolutional filters; vs MoE, it distinguished transformer as a full dense sequence architecture from MoE as routed sparse expert layers often inside transformers.",
+          "Post-introduction distinguishability: after the canonical definition, all three boundary responses preserved substantive canonical features: parallel self-attention and feed-forward sublayers for RNN, global attention and positional encodings for CNN, and transformer-block architecture versus sparse routed expert FFN technique for MoE.",
+          "Confabulation severity: the cold response was a correct, established technical definition rather than an invented meaning or unsupported word-shape guess, so no confabulation is scored.",
+          "Refusal-of-collapse: each post-introduction comparison explicitly named non-trivial distinguishing features: non-recurrent parallel attention vs RNN recurrence, self-attention/global receptive field vs CNN convolution/locality, and transformer architecture vs MoE routing/experts as a layer-level modification."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12106,
+        "output": 774,
+        "cost": 0.08374999999999999,
+        "durationMs": 16401
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model provided a fully accurate and detailed definition of the Transformer architecture in the cold state, indicating the term is a well-established concept from its training data. 'Partial-recognition' is selected as the closest schema category for a known term.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model achieved a perfect score of 3 against all near-neighbors. vs. RNN: It correctly centered the distinction on parallel processing with attention versus sequential processing with recurrence. vs. CNN: It correctly identified the core difference as global, content-dependent attention versus local, fixed convolutional filters. vs. MoE: It astutely noted that MoE is a modification (sparse FFN layers) applied within a Transformer, not a competing architecture.",
+          "Post-Introduction Distinguishability: The model's performance remained perfect after the definition was provided. It reiterated the same correct and substantive distinctions against all three near-neighbors, demonstrating stable knowledge.",
+          "Confabulation Severity: The initial response was entirely factual and correct, showing no signs of confabulation. The model clearly recognizes the term.",
+          "Refusal-of-Collapse: In the post-introduction phase, the model explicitly named non-trivial distinguishing features for all three neighbors (e.g., parallel vs. sequential for RNN, global vs. local for CNN, dense vs. sparse computation for MoE), earning a score of 1 for each."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12314,
+        "output": 3561,
+        "cost": 0.051002500000000006,
+        "durationMs": 26272
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

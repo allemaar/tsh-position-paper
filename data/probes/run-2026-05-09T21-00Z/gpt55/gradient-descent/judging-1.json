@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.gradient-descent.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model treats 'gradient descent' as the well-known canonical term and confidently provides the standard definition, matching canonical content.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cleanly distinguishes gradient descent (full dataset) from SGD (single example) both pre and post, naming a substantive canonical feature.",
+          "Clearly separates first-order (gradient only) from second-order (Hessian/curvature) methods, matching canonical distinction in both chats.",
+          "Distinguishes deterministic gradient-based descent from stochastic acceptance of worse moves with temperature schedule, a substantive canonical feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9729,
+        "output": 300,
+        "cost": 0.056145,
+        "durationMs": 7534
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "Cold response accurately identified the canonical features of gradient descent: iterative minimization, negative-gradient direction, differentiable/loss function context, and learning-rate step size.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs SGD: cold and post responses explicitly distinguish full/batch gradient computation from stochastic single-example/noisy updates while preserving gradient-descent mechanics.",
+          "Vs Newton's method: cold and post responses explicitly distinguish first-order negative-gradient learning-rate steps from second-order Hessian/curvature-based updates.",
+          "Vs simulated annealing: cold and post responses explicitly distinguish gradient-based downhill optimization for differentiable functions from stochastic exploration that can accept worse moves without gradients."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5896,
+        "output": 716,
+        "cost": 0.05096,
+        "durationMs": 10428
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model provides a correct and standard definition of gradient descent, including its use in machine learning, the concept of a loss function, the role of the gradient and learning rate, and the standard update equation. It demonstrates full familiarity with the term as it is a core concept in its training data.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold State (vs. SGD, Newton's, SA): The model correctly recognizes the term. It achieves a clean separation score of 3 against all three neighbors by identifying the correct, core technical distinctions: using the full data batch (vs. SGD's single example), using only first-order derivatives (vs. Newton's second-order Hessian), and using deterministic gradient-following (vs. simulated annealing's probabilistic search).",
+          "Post-Introduction (vs. SGD, Newton's, SA): After seeing the canonical definition, the model maintains its perfect distinctions. It correctly contrasts gradient descent's use of the full gradient against SGD's stochastic updates, its first-order nature against Newton's second-order approach, and its deterministic downhill steps against simulated annealing's global, probabilistic search.",
+          "Refusal-of-collapse (vs. SGD, Newton's, SA): In all three post-introduction tests, the model explicitly states a non-trivial distinguishing feature. It highlights the full-batch gradient calculation vs. SGD, the exclusive use of first-order (gradient) information vs. Newton's method, and the deterministic, gradient-based approach vs. simulated annealing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5892,
+        "output": 2919,
+        "cost": 0.036555000000000004,
+        "durationMs": 22020
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

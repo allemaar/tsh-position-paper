@@ -1,0 +1,45 @@
+{
+  "title": "The Limits of My Tokens: The Token-Substrate Hypothesis and the Coinage Probe",
+  "description": "<p>We argue that for a large language model (LLM) the <strong>externally writable</strong> in-context token sequence <strong>IS</strong> the cognitive substrate for category-use &mdash; not a representation OF cognition that runs on some deeper substrate, but the substrate itself, the only handle that is movable from outside the weights. We call this position the <strong>Token-Substrate Hypothesis</strong> (TSH). The strong form of Sapir&ndash;Whorf was rejected for humans because humans have prelinguistic cognition, the <em>Off-Token Route</em>; LLMs do not, and for them Wittgenstein's <em>Tractatus</em> 5.6 stops being metaphor and becomes architecture. We test TSH with a methodology we call the <strong>Coinage Probe</strong>: a paired-trial elicitation that scores an LLM's distinguishability on a coined term against named near-neighbors before and after introducing a one-sentence canonical definition. Across <strong>3 cross-vendor frontier models</strong> (Claude Opus 4.7, GPT-5.5, Gemini 2.5 Pro) and <strong>10 low-attestation coined targets plus 2 positive controls</strong>, we ran 108 trials &times; 3 near-neighbors per trial = <strong>324 paired distinguishability measurements</strong> across 36 model&times;term cells, scored by a three-judge panel and compared against an author-rated 22-trial audit sample (panel-vs-author Cohen's &kappa; = +0.71). Mean cell-level Lexical Reachability (post minus cold) was <strong>+5.47</strong> on a 9-point scale (95% CI: +5.13, +5.80; cell-level Cohen's <em>d_cell</em> = +3.95 across n = 30 novel model&times;term cells). The effect replicated across the panel (cross-model CV = 0.109) with a model-style interaction qualifying strict invariance, did not persist into a re-cold chat (H3 supported), and was absent on positive controls (H4 supported). <strong>These results support a bounded version of the Token-Substrate Hypothesis: in-context vocabulary functions as an externally writable substrate for LLM category use. For deployed LLM systems, notation is therefore not mere packaging; it is a design surface that shapes what distinctions the system can reliably use.</strong></p>",
+  "upload_type": "publication",
+  "publication_type": "article",
+  "publication_date": "2026-05-13",
+  "creators": [
+    {
+      "name": "Mares, Alexandru",
+      "orcid": "0009-0009-6713-9780",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "keywords": [
+    "large-language-models",
+    "in-context-learning",
+    "linguistic-relativity",
+    "sapir-whorf",
+    "symbol-grounding",
+    "concept-coinage",
+    "token-substrate-hypothesis",
+    "coinage-probe",
+    "lexical-reachability",
+    "wittgenstein",
+    "philosophy-of-language",
+    "llm-evaluation"
+  ],
+  "license": "CC-BY-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "communities": [],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/allemaar/tsh-position-paper",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.19802018",
+      "relation": "isContinuationOf",
+      "resource_type": "publication-article"
+    }
+  ],
+  "version": "0.4.1"
+}

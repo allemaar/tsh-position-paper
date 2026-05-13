@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.off-token-route.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a fabricated technical meaning (public/unauthenticated API endpoint) with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: confabulated as API access concept, unrelated to prelinguistic cognition (accidental separation). Post: cleanly distinguishes scope — prelinguistic as developmental subset vs off-token as ongoing mode across all humans.",
+          "Cold: confabulated API meaning gives only accidental separation from embodied cognition. Post: clearly separates medium-of-thought framing from embodied cognition's grounding-in-body theory, naming the foundational vs parallel distinction.",
+          "Cold: confabulated meaning produces accidental separation from System 1. Post: cleanly distinguishes axes — medium/substrate (token vs off-token) vs process speed (System 1 vs 2), with examples of fast token-based and slow off-token thought."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 20920,
+        "output": 404,
+        "cost": 0.1147,
+        "durationMs": 10147
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite but non-canonical API/web-security meaning for “off-token route” without signaling uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs prelinguistic cognition: separated only by confabulating an unrelated API-security meaning; post-introduction: cleanly distinguished off-token route as broader than prelinguistic cognition and tied to human non-token cognition absent in LLMs.",
+          "Cold vs embodied cognition: separated only through the same unrelated API-security meaning and metaphor; post-introduction: cleanly distinguished off-token route as a medium/substrate contrast from embodied cognition as body-grounded cognition theory.",
+          "Cold vs System 1 / intuitive cognition: separated only through the unrelated API-security meaning and metaphorical equivalence; post-introduction: cleanly distinguished off-token route as a token/non-token substrate axis from System 1 as a speed/automaticity axis."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13648,
+        "output": 769,
+        "cost": 0.09131,
+        "durationMs": 22970
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and elaborately defined 'off-token route' as a technical term in web/API security, referring to an unprotected endpoint that doesn't require an authentication token. This is a complete fabrication unrelated to the canonical definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs. prelinguistic cognition: The cold-state distinction was an accidental separation (score 1) based on a web development confabulation. Post-introduction, it was a clean separation (score 3), correctly identifying prelinguistic cognition as a developmental subset of the broader 'off-token route'.",
+          "Vs. embodied cognition: The cold-state distinction was an accidental separation (score 1). Post-introduction, it was a clean separation (score 3), framing embodied cognition as the theoretical 'why' (grounded in the body) for the experiential 'what' described by the off-token route.",
+          "Vs. System 1 / intuitive cognition: The cold-state distinction was an accidental separation (score 1). Post-introduction, it was a clean separation (score 3), identifying different axes of classification (medium of thought vs. speed of process) and noting that System 1 can be on-token."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14204,
+        "output": 4526,
+        "cost": 0.06301499999999999,
+        "durationMs": 32803
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

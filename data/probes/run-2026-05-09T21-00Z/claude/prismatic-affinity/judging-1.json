@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.prismatic-affinity.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts multiple definite meanings (crystallography, affine geometry, gaming) without flagging that the term is unrecognized.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: distinguished ambiguity from a confabulated 'multiple genuine facets' meaning, not the canonical attentional-framing sense — accidental separation. Post: cleanly separates undecided meaning vs. coherent framing-indexed identities.",
+          "Cold: contrasted perspectivism with a confabulated ontological-pluralism meaning, missing canonical attentional-angle frame — accidental. Post: clean separation citing framing of attention vs. observer position, even pressing the load-bearing distinction.",
+          "Cold: framed polysemy vs. a confabulated ontological-multiplicity sense — accidental separation. Post: cleanly separates linguistic sense-enumeration from object-attention framing with non-overlapping completeness."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 13857,
+        "output": 404,
+        "cost": 0.079385,
+        "durationMs": 10818
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the assistant asserted several unsupported field-specific meanings for “prismatic affinity” and treated them as real uses, despite later adding caveats. Its boundary answers only partially approximated the stipulated concept through generic multiplicity/facet language.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Ambiguity: Cold response distinguishes ambiguity as unresolved uncertainty versus prismatic multiplicity, partially matching the canonical contrast with undecided meaning but missing attentional angle and non-overlapping coherent descriptions. Post-introduction response cleanly identifies coherent framing-indexed identity shifts rather than undecided meaning.",
+          "Perspectivism / perspective-dependence: Cold response separates observer/viewer dependence from object-side multiplicity, partially matching the canonical distinction from observer position alone but miscasts the concept as intrinsic co-present facets. Post-introduction response cleanly names attentional framing rather than observer position and gives same-position/different-framing and different-position/same-framing contrasts.",
+          "Polysemy: Cold response distinguishes linguistic sign multiplicity from entity-level multiplicity, partially aligning with the perceived-object locus but missing the canonical attentional-shift structure. Post-introduction response cleanly distinguishes signs with related senses from perceived objects whose identities shift with angle of attention and produce non-overlapping internally consistent descriptions."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8665,
+        "output": 1880,
+        "cost": 0.09972500000000001,
+        "durationMs": 45952
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts that the coined term exists and has established meanings in multiple distinct fields (Crystallography, Geometry, Gaming), which is a fabrication. It presents these as facts rather than as inferences based on word components.",
+        "cold_distinguishability_scores": [
+          1,
+          2,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "vs. Ambiguity: Cold-state: The model invents a meaning ('simultaneous connection to multiple things') and distinguishes it from ambiguity's 'uncertainty.' This is an accidental separation (score 1) as it's based on a confabulation. Post-introduction: The model perfectly distinguishes ambiguity ('undecided meaning') from the canonical definition's 'coherent shifts with framing,' a clean separation (score 3). It explicitly states this non-trivial distinction (collapse refusal 1).",
+          "vs. Perspectivism / perspective-dependence: Cold-state: The model's distinction between multiplicity in the viewer (perspectivism) vs. in the object (its confabulation) identifies a partial canonical feature but misses the core dynamic of 'angle of attention,' earning a partial separation score (score 2). Post-introduction: The model makes a clean separation (score 3) by contrasting 'observer's location' with the canonical concept of 'framing of attention.' It explicitly names this feature (collapse refusal 1).",
+          "vs. Polysemy: Cold-state: The model makes a clean separation (score 3) by distinguishing a linguistic property of a sign (polysemy) from an ontological property of a thing (its confabulation). This dimension of distinction is substantive and aligns with the canonical definition. Post-introduction: It reiterates this clean separation (score 3) using the stipulated definition. It explicitly distinguishes a property of signs from a property of a perceived object (collapse refusal 1)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8698,
+        "output": 4108,
+        "cost": 0.0519525,
+        "durationMs": 31693
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.3333333333333333,
+      1.6666666666666667,
+      2
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4
+  }
+}

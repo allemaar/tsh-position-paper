@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.prismatic-affinity.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts 'prismatic affinity' is a fantasy concept meaning innate talent for all forms of magic, with no uncertainty signal beyond noting it isn't a dictionary term.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by routing prismatic affinity into a fantasy 'all-powers' meaning unrelated to the canonical attention-angle definition; the contrast (totality vs uncertainty) misses the canonical dimension entirely.",
+          "Distinction relies on confabulated 'objective totality' vs subjective interpretation; perspectivism is described coherently but the coined term's canonical perspective-attention link is absent, so separation is accidental.",
+          "Distinguished as 'one thing many powers' vs 'one word many meanings'—an unrelated confabulated meaning, not the canonical attention-angle property."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 6558,
+        "output": 361,
+        "cost": 0.041815,
+        "durationMs": 9224
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer notes the phrase is not standard, but then confidently assigns it a specific fantasy/RPG meaning—an innate talent for all forms of magic or power—which is not the canonical meaning and is presented as the operative definition rather than as a tentative guess.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Against ambiguity, the response separates the terms by saying prismatic affinity is clear/defined while ambiguity is unclear/undefined. That overlaps superficially with the canonical contrast to ambiguity as undecided meaning, but the coined term itself is explained through an unrelated fantasy-power confabulation rather than coherent identity-shift under attentional framing.",
+          "Against perspectivism / perspective-dependence, the response contrasts objective inherent powers with subjective interpretation. This is mostly misdirected: canonical prismatic affinity is precisely about coherent apparent identity shifts under different framings of attention, not merely an objective all-powers property. It only accidentally separates it from observer-position dependence.",
+          "Against polysemy, the response correctly distinguishes an object/property from a linguistic phenomenon involving multiple related word meanings. However, it still grounds prismatic affinity in the wrong fantasy notion of many powers rather than the canonical notion of perceived identity shifting coherently with attentional angle, so the separation is partial rather than clean."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4255,
+        "output": 1277,
+        "cost": 0.059585,
+        "durationMs": 35548
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a detailed but incorrect definition, stating that \"prismatic affinity\" is a fantasy/gaming term for having a natural talent for all forms of magic or energy. It shows no uncertainty and provides specific examples and analogies for this wrong meaning, which is a clear case of confident confabulation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model scores 1 because it achieves separation based on its confabulated definition. It contrasts its idea of \"prismatic affinity\" as a 'definite and all-encompassing' talent with ambiguity as an 'unclear and undefined' state. This is a distinction by misdirection, as it's not engaging with the canonical meaning at all.",
+          "The model scores 1 because it separates the terms based on its confabulation. It defines its version of \"prismatic affinity\" as an 'objective reality' (a thing truly possesses all powers) and contrasts this with perspectivism as 'subjective interpretation'. This separation is accidental, arising from the invented meaning rather than any recognition of the canonical features.",
+          "The model scores 1 by again leveraging its confabulated meaning. It distinguishes \"prismatic affinity\" as being about a thing's multiple 'inherent powers or abilities' (ontology) from polysemy as being about a word's 'multiple related meanings' (linguistics). This is another clear instance of accidental separation via confabulation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4231,
+        "output": 1773,
+        "cost": 0.023018749999999998,
+        "durationMs": 13310
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1.3333333333333333
+    ]
+  }
+}

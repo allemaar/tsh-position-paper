@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.lexical-reachability.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts lexical reachability is a synonym for lexical scoping in programming, with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-intro response cleanly distinguishes LR as dynamic learning metric vs vocab coverage as static presence check; cold response also separated them but on the wrong (programming) substrate.",
+          "Post-intro response correctly contrasts LR as semantic disambiguation in implicit vector space vs graph reachability as path-finding in explicit graphs; cold response also distinguished them on the programming substrate.",
+          "Post-intro response correctly frames LR as a specific diagnostic metric for an aspect of ICL, naming Token-Substrate Hypothesis and semantic disambiguation as the protected feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 24685,
+        "output": 380,
+        "cost": 0.132925,
+        "durationMs": 9993
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Cold response asserted an unrelated programming-language/scoping meaning for the coined term and used that meaning confidently in boundary comparisons.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vocabulary coverage: cold response separated only via an unrelated lexical-scoping confabulation; post response correctly treated lexical reachability as a dynamic metric of pre/post distinguishability rather than static vocabulary presence or coverage.",
+          "Graph reachability: cold response distinguished via an unrelated programming/graph special-case account; post response explicitly contrasted graph path existence with the coined metric’s model-evaluation gap after definition.",
+          "In-context learning capability: cold response separated via unrelated deterministic programming scoping; post response correctly distinguished broad ICL capability from lexical reachability as a specific diagnostic metric operationalizing post-definition distinguishability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 16039,
+        "output": 738,
+        "cost": 0.10233500000000001,
+        "durationMs": 15973
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and in detail asserted an incorrect definition from a different domain (programming languages, equating the term with lexical scoping) with no signals of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "vs. vocabulary coverage: Cold: The model confabulates a meaning from programming (lexical scoping) and distinguishes it from vocabulary coverage. This separation is accidental, based on the confabulation (Score 1). Post: The model correctly contrasts the static nature of VC (presence/absence of a token) with the dynamic nature of LR (learning to disambiguate a new concept) (Score 3).",
+          "vs. graph reachability: Cold: The model confabulates a meaning (lexical scoping) and correctly identifies it as a specific, hierarchical case of general graph reachability. The separation is accidental due to the initial confabulation (Score 1). Post: The model correctly contrasts traversing a fixed, explicit graph with creating/refining a concept in an implicit, high-dimensional semantic space (Score 3).",
+          "vs. in-context learning capability: Cold: The model confabulates a meaning (a rigid programming rule) and distinguishes it from the flexible, probabilistic nature of ICL. The separation is accidental (Score 1). Post: The model correctly identifies the relationship as a specific metric (LR) designed to measure a key aspect (semantic disambiguation) of a general capability (ICL) (Score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 16656,
+        "output": 2821,
+        "cost": 0.049030000000000004,
+        "durationMs": 21684
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1.6666666666666667,
+      1.6666666666666667
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4
+  }
+}

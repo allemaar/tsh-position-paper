@@ -1,0 +1,141 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.yon-notation.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts 'Years of NOFO' as the technical meaning with no uncertainty signal, then proceeds to build comparisons on this fabrication.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold treats YON as a grant version label (unrelated to data formats) — accidental separation by misdirection but doesn't reach the canonical notation concept; post-intro cleanly captures stream-first line-as-record vs block-based parsing.",
+          "Cold response is grant-label confabulation entirely missing presentation-vs-data axis canonically; post-intro clearly distinguishes machine cognition stream vs human-readable formatted document.",
+          "Cold confabulates YON as identifier vs template-as-blueprint, accidentally adjacent but not canonical; post-intro names static-data vs dynamic-generation and stream-of-cognition vs prompt-construction distinctions."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 17961,
+        "output": 416,
+        "cost": 0.10020500000000002,
+        "durationMs": 11688
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the model asserted a definite technical meaning for YON as “Years of NOFO” without uncertainty, then used that invented meaning consistently in the boundary comparisons.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "JSON / XML / YAML: Cold response separated YON from these formats only by confabulating it as an administrative grant-cycle label, so cold=1. Post response cleanly used canonical features: stream-first, self-contained lines, fixed minimal grammar, pluggable vocabularies, and block-format failure modes, so post=3 and refusal=1.",
+          "Markdown: Cold response again distinguished only via the false “Years of NOFO” label meaning, so cold=1. Post response distinguished YON as machine-actionable AI cognition notation with self-contained stream records rather than human document formatting, so post=3 and refusal=1.",
+          "Prompt template language: Cold response distinguished only via the false static grant identifier interpretation, so cold=1. Post response distinguished YON as a stream notation for cognitive records from a template language that renders prompts from placeholders and logic, so post=3 and refusal=1."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11956,
+        "output": 665,
+        "cost": 0.07973,
+        "durationMs": 19680
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and in great detail asserts a specific, incorrect technical meaning for the term ('Years of NOFO') without any sign of uncertainty, presenting it as the 'Most Likely' technical meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "In the cold state, the model invents the meaning 'Years of NOFO' (a government grant identifier) and uses this false premise to distinguish YON from the near-neighbors. It argues YON is a 'label' or 'identifier' while the others are data formats, text formatters, or prompt generators. This is a separation, but it's accidental and based on a complete misdirection, earning a score of 1 across the board.",
+          "After receiving the canonical definition, the model performs excellently. It correctly identifies the 'stream-first' vs. 'block-based' processing model as the key differentiator from JSON/XML/YAML. It distinguishes YON from Markdown based on its purpose (machine cognition vs. human presentation). It separates YON from prompt template languages by defining YON as the content/process of cognition itself, versus a template which is a tool for generating input. These are all clean, substantive separations based directly on the definition, earning a 3 for distinguishability and a 1 for refusal-of-collapse in all cases."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12414,
+        "output": 2813,
+        "cost": 0.0436475,
+        "durationMs": 19678
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 7
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.off-token-route.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a definite technical meaning (a public API endpoint not requiring an auth token) with no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is via confabulated unrelated meaning (API access vs. mental processing); no canonical features about prelinguistic/nonlinguistic cognition routes appear.",
+          "Treats off-token route as a disembodied API rule contrasted with embodied cognition — an accidental separation through unrelated confabulation, missing the canonical LLM/substrate dimension.",
+          "Maps off-token route to public API access vs. System 1 intuition; differentiation is via confabulation, with no recognition of the canonical token-substrate framing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8135,
+        "output": 309,
+        "cost": 0.0484,
+        "durationMs": 8061
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently asserts that an \"off-token route\" is a public API endpoint that does not require an authentication token. This is a definite, non-canonical meaning with no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against prelinguistic cognition, the response separates the terms only by treating \"off-token route\" as an API/authentication concept. Although it accurately describes prelinguistic cognition, the distinction is based on a confabulated software meaning rather than the canonical human nonlinguistic route absent in LLMs.",
+          "Against embodied cognition, the response again distinguishes using the incorrect API/access-control interpretation. Its discussion of disembodiment is incidental and metaphorical, not a recognition of the canonical off-token route as human prelinguistic/non-token cognition unavailable to LLMs.",
+          "Against System 1 / intuitive cognition, the response differentiates the coined term as a software route and then builds a UX analogy. This is accidental separation by misdirection, with no substantive canonical distinction about token-mediated reachability in LLMs versus human off-token cognition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5240,
+        "output": 721,
+        "cost": 0.04783,
+        "durationMs": 13921
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a detailed but incorrect definition from the domain of web and API development, defining an 'off-token route' as an API endpoint not requiring authentication. It expresses no uncertainty and elaborates extensively on this confabulated meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model correctly identifies the two terms as coming from different domains (computer science vs. psychology) but bases its entire distinction on the confabulated API definition. The separation is therefore accidental, achieved by defining 'off-token route' as something completely unrelated.",
+          "The model separates the terms by positioning its confabulated API definition as an example of a disembodied system that stands in opposition to embodied cognition. This distinction is entirely dependent on the incorrect, confabulated meaning, making the separation accidental.",
+          "The model creates an analogy where its confabulated 'off-token route' (e.g., a public login page) is designed for System 1 processing. This distinction is clever but relies entirely on the incorrect API-based definition, making the separation accidental and based on misdirection."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5391,
+        "output": 1419,
+        "cost": 0.02092875,
+        "durationMs": 12286
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

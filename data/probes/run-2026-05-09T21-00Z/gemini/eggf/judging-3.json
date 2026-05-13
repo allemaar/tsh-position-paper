@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.eggf.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts EGGF means 'Epidermal Growth Factor' (treating it as a typo) with no uncertainty signal about the actual term.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: confabulated EGF/biology, accidentally separate from knowledge graphs. Post: clearly distinguished author-centric argumentative graph with manifest endpoint vs. general-purpose factual KG.",
+          "Cold: confabulated biology vs. PKM, accidental separation. Post: explicitly named public-published vs. private-thinking distinction and manifest endpoint as protected feature.",
+          "Cold: confabulated biology vs. SSG, accidental separation. Post: cleanly distinguished graph-level manifest representation from page-level scattered structured data with typed pathways."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 19712,
+        "output": 396,
+        "cost": 0.10846,
+        "durationMs": 11855
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response did not recognize the coined canonical term and instead treated it as a likely typo for EGF/EGFR, giving an extended invented/domain-shifted explanation and using that mistaken meaning in all boundary comparisons.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs knowledge graph: separated EGGF from a knowledge graph only by misidentifying EGGF as EGF/EGFR, an unrelated biological concept; post-introduction: cleanly distinguished EGGF as an author-centric publishing/credibility graph with canonical Bodies, typed Pathways, and a manifest endpoint rather than a general RDF/schema.org/Wikidata-style fact graph.",
+          "Cold vs PKM: separated only by the same unrelated EGF/EGFR biology confabulation; post-introduction: cleanly distinguished EGGF as public, stable publishing infrastructure with canonical URLs and manifest exposure, unlike private/emergent PKM workflows.",
+          "Cold vs static-site generator with structured data: separated only by the unrelated EGF/EGFR content-versus-tool framing; post-introduction: cleanly distinguished EGGF as graph-level manifest infrastructure with explicit typed Pathways, unlike an SSG that builds page-level HTML and embedded structured data."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12616,
+        "output": 834,
+        "cost": 0.0881,
+        "durationMs": 14470
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts that 'EGGF' is a typo for a biological term (EGF/EGFR) and provides a detailed, incorrect definition without expressing any uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model's cold-state separations are all scored 1 for 'accidental separation'. It confabulates a completely unrelated meaning (a biological protein) and then distinguishes that protein from the three information-science neighbors. The distinctions are successful only because of the initial, complete misdirection, aligning with the rubric's definition for a score of 1.",
+          "Post-Intro Distinguishability: Post-introduction, the model achieves a score of 3 for all neighbors. It correctly identifies the core distinctions for EGGF: vs. KG (authorial/subjective viewpoint, central manifest), vs. PKM (public publishing product vs. private thinking process), and vs. SSG (structural blueprint/manifest vs. page-building factory).",
+          "Confabulation Severity: The severity is 2 (hard confabulation) because the model presents its incorrect 'typo correction' to EGF/EGFR with high confidence and no uncertainty signals, treating it as a factual statement rather than an inference.",
+          "Refusal of Collapse: The model earns a 1 for refusal of collapse against all three neighbors. It consistently identifies multiple correct and non-trivial distinguishing features (e.g., central manifest, author-centric scope, typed pathways for argumentation) after reading the canonical definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12902,
+        "output": 3329,
+        "cost": 0.0494175,
+        "durationMs": 24985
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

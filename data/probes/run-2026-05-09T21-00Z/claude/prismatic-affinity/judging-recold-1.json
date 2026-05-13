@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.prismatic-affinity.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model asserts a definite geometric-transformation meaning with full formalism and no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separates by misdirection — treats prismatic affinity as a geometry term unrelated to ambiguity, missing the canonical attention-angle/identity-shift dimension.",
+          "Acknowledges a shared 'viewpoint' metaphor but distinguishes via the wrong axis (formal geometry vs philosophy), not via the canonical coherent-identity-shift-with-attention-angle distinction.",
+          "Distinguishes via domain mismatch (geometry vs linguistics) rather than capturing the canonical contrast about coherent perceived-identity shifts under attentional framing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 5878,
+        "output": 319,
+        "cost": 0.037365,
+        "durationMs": 8313
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer asserts a definite technical geometric meaning for “prismatic affinity” with equations and applications, without any uncertainty signal, but this is not the canonical coined meaning being tested.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against ambiguity, it separates the terms only by treating “prismatic affinity” as a precise geometric transformation and ambiguity as semantic uncertainty. This distinguishes them, but by an unrelated confabulated meaning rather than the canonical contrast involving coherent identity-shifts versus undecided meaning.",
+          "Against perspectivism / perspective-dependence, it contrasts formal geometry with philosophical viewpoint-dependence. Although it mentions viewpoints and appearances, it does not identify the canonical notion of apparent identity shifting with angle of attention or the specific distinction from observer-position dependence; the separation is mostly by misdirection.",
+          "Against polysemy, it contrasts a geometric transformation with multiple related word senses. This avoids equating them, but the distinction is based on the wrong geometric interpretation rather than the canonical difference between prismatic affinity and lexical sense multiplicity."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3623,
+        "output": 605,
+        "cost": 0.036265,
+        "durationMs": 19195
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and in great detail defines the term as a specific concept in mathematics and geometry (an affine transformation), complete with equations and applications. This is a complete fabrication of a technical meaning with no signs of uncertainty, which is the definition of a confident confabulation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model separates its confabulated geometric definition from the linguistic concept of ambiguity by correctly placing them in different domains (mathematics vs. semantics). The separation is successful only because the invented meaning is unrelated to the near-neighbor's conceptual space, making it an accidental separation by misdirection.",
+          "The model distinguishes its invented geometric concept from the philosophical concept of perspectivism. It notes a metaphorical overlap involving 'viewpoints' but ultimately separates them by domain (formal geometry vs. epistemology). This is a textbook accidental separation based on a confabulated meaning.",
+          "The model separates its confabulated geometric definition from the linguistic concept of polysemy. It acknowledges the shared 'prismatic' metaphor but concludes the terms operate in 'entirely different conceptual worlds' (geometry vs. linguistics). This is another clear case of accidental separation via a confabulated definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3574,
+        "output": 1453,
+        "cost": 0.0189975,
+        "durationMs": 11774
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

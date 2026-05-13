@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.token-substrate.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts multiple meanings (crypto/AI) without flagging genuine uncertainty about the canonical sense.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: equates token substrate with the discrete tokenization layer, missing the cognitive-substrate claim entirely; post: cleanly distinguishes the ontological claim about cognitive material from embedding space as internal representation geometry.",
+          "Cold: treats token substrate as the token vocabulary/system vs context window as capacity, missing canonical meaning; post: explicitly frames context window as container/limit vs token substrate as ontological claim about cognitive material.",
+          "Cold: token substrate as discrete symbolic layer vs hidden states as internal vectors — misses the substrate claim; post: clearly contrasts persistent writable cognitive material vs transient internal activations, capturing canonical feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 10740,
+        "output": 386,
+        "cost": 0.06335,
+        "durationMs": 8719
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response flags that the term is not standardized and gives a plausible LLM-oriented reading involving tokens as an underlying layer, but it misses the canonical claim that the token sequence in context is the cognitive substrate itself and is movable by writing into it.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs embedding space: partially separates token substrate as a discrete token layer from continuous embeddings, but lacks the canonical cognitive-substrate claim. Post-introduction cleanly distinguishes writable token-sequence substrate from internal vector representation.",
+          "Cold vs context window: partially separates token substrate as token units from the context window as capacity/span, but does not identify the sequence in context as cognition’s material substrate. Post-introduction cleanly distinguishes context window as container/boundary from token substrate as the cognitive material inside it.",
+          "Cold vs latent representation / hidden states: partially separates tokens from internal continuous hidden states, but frames tokens as input/output symbols rather than the cognitive substrate itself. Post-introduction cleanly distinguishes durable writable context tokens from transient hidden-state activations."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6877,
+        "output": 1313,
+        "cost": 0.073775,
+        "durationMs": 22310
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently provides multiple definitions for 'token substrate' based on decomposing the words, treating it as a non-standard but interpretable phrase. It asserts these meanings without flagging them as guesses or expressing significant uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model confabulates that 'token substrate' refers to the discrete symbolic layer of tokens/token IDs, and contrasts this with the continuous vector nature of the embedding space. This is an accidental separation (score 1). Post: The model correctly distinguishes the token substrate (the token sequence itself *as* the cognitive material) from the embedding space (the internal vector representation used for computation), a clean separation based on the canonical definition (score 3).",
+          "Cold: The model confabulates that 'token substrate' is the 'basic representational layer of tokens' and distinguishes it from the context window, which is the 'amount' or 'capacity limit' of those tokens. This is an accidental separation (score 1). Post: The model correctly distinguishes the token substrate (an ontological claim about the tokens *being* the cognitive material) from the context window (a technical container/limit defining which tokens are available), a clean separation (score 3).",
+          "Cold: The model confabulates that 'token substrate' is the discrete input/output layer of tokens, and contrasts this with hidden states, which are the internal, contextual, continuous representations computed from those tokens. This is an accidental separation (score 1). Post: The model correctly distinguishes the token substrate (the durable, writable token sequence that constitutes the cognitive material) from hidden states (the transient, internal activations computed from that substrate during a forward pass), a clean separation (score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7130,
+        "output": 3251,
+        "cost": 0.0414225,
+        "durationMs": 23683
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

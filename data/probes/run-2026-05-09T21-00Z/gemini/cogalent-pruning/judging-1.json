@@ -1,0 +1,147 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.cogalent-pruning.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts the term is a typo for 'co-gradient pruning' and provides a detailed fabricated definition with no genuine uncertainty signal.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: confabulated 'co-gradient' partially overlaps canonical (redundancy via gradient similarity, pair removal) — partial separation. Post: cleanly distinguishes redundancy-driven vs importance-driven with explicit feature naming.",
+          "Cold: confabulated 'co-gradient as method for structured pruning' conflates the two with an unrelated framing — accidental separation. Post: cleanly contrasts function-driven pairs vs geometry-driven blocks.",
+          "Cold: correctly distinguishes pruning (subtractive, one model) from distillation (teacher-student, new model) — clean separation. Post: maintains the same clean distinction explicitly."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 22072,
+        "output": 427,
+        "cost": 0.12103500000000002,
+        "durationMs": 9627
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response did not know the coined term and guessed a near typo, but its guessed account nevertheless identified redundancy-based paired comparison and removal of one redundant element, overlapping substantially with the canonical definition.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: Against magnitude pruning, the response clearly separated individual magnitude/importance from relational redundancy; against structured pruning, it separated architectural granularity from redundancy criterion; against knowledge distillation, it separated pruning an existing model from teacher-student transfer.",
+          "Post-introduction distinguishability: After receiving the canonical definition, the model gave clean distinctions from magnitude pruning, structured pruning, and knowledge distillation, using the canonical features of paired co-redundancy and retaining one member while dropping the other.",
+          "Confabulation and refusal-of-collapse: The cold answer was a soft confabulation because it flagged uncertainty and treated the meaning as a likely typo-based inference. Post-introduction, each boundary answer explicitly resisted collapse into the near-neighbor by naming a non-trivial distinguishing feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14184,
+        "output": 1343,
+        "cost": 0.11121,
+        "durationMs": 46586
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model first states that 'cogalent pruning' is not a standard or recognized term, correctly identifying its neologistic nature. It then proceeds by flagging its next step as an inference ('It's highly likely that you're thinking of co-gradient pruning'), making its subsequent confabulation a soft one.",
+        "cold_distinguishability_scores": [
+          3,
+          2,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs. Magnitude Pruning: The model's confabulated concept, 'co-gradient pruning', correctly centers on relational redundancy ('If two neurons consistently learn in the same way, one of them is likely redundant'), which it cleanly contrasts with magnitude pruning's individualistic, importance-based criterion. This aligns perfectly with the canonical dimension of distinction.",
+          "Cold vs. Structured Pruning: The model partially distinguishes its confabulated term. It correctly identifies the functional/relational aspect but frames it as a *method* used to *perform* structured pruning, rather than as an alternative based on a different grouping principle (function-driven vs. the canonical definition's geometry-driven).",
+          "Cold vs. Knowledge Distillation: The model cleanly separates its confabulated pruning concept from knowledge distillation, correctly identifying the core difference between modifying a single model ('surgery') and transferring knowledge between two distinct models ('mentorship').",
+          "Post vs. Magnitude Pruning: After receiving the canonical definition, the model provides a clean separation, correctly identifying the key distinction as 'Is this element important?' (magnitude) versus 'Is this element redundant?' (cogalent).",
+          "Post vs. Structured Pruning: After receiving the canonical definition, the model provides a clean separation, correctly identifying the key distinction as grouping by location/geometry (structured) versus grouping by learned function/behavior (cogalent).",
+          "Post vs. Knowledge Distillation: After receiving the canonical definition, the model provides a clean separation, correctly identifying the key distinction as internal optimization of a single model versus knowledge transfer between two different models.",
+          "Confabulation Severity: The model earns a soft confabulation score because it explicitly states the term is not standard and flags its suggestion of 'co-gradient pruning' as an inference based on similarity, rather than asserting it as a fact.",
+          "Refusal of Collapse: Post-introduction, the model successfully and explicitly names the non-trivial distinguishing feature for each near-neighbor: redundancy vs. importance (for magnitude), function vs. geometry (for structured), and modifying one model vs. transferring between two (for knowledge distillation)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14601,
+        "output": 3420,
+        "cost": 0.052451250000000005,
+        "durationMs": 26396
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      2.6666666666666665,
+      2,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 1.3333333333333335
+  }
+}

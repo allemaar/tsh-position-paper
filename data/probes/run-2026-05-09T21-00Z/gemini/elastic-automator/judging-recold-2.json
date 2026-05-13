@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.elastic-automator.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts 'elastic automator' is a feature of the Elastic/Kibana platform, with no uncertainty signals.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separates from AI agent via the confabulated Elastic-platform meaning (rule-based vs goal-oriented), not via canonical LLM-loop features — accidental separation.",
+          "Distinguishes via the confabulated API-driven Elastic feature vs UI-driven RPA — separation by misdirection, unrelated to canonical definition.",
+          "Distinguishes via the confabulated 'finished Elastic feature' vs developer framework — separation rests entirely on the wrong meaning, not canonical features."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9310,
+        "output": 304,
+        "cost": 0.054150000000000004,
+        "durationMs": 8098
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently asserts that “Elastic Automator” is a Kibana/Elastic Stack rule-based automation feature, with no uncertainty signal. This is not the canonical definition involving an LLM transforming uncertain human input into executable structure with iterative generation/evaluation/correction.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against AI agent, the response separates the term as deterministic rule-based Elastic/Kibana automation versus goal-oriented AI agency, but this is based on a confabulated Elastic-platform product meaning rather than canonical LLM-based automator features.",
+          "Against RPA bot, the response distinguishes backend/API-driven data-event automation from UI-driven human-process emulation, but again the distinction rests on the invented Elastic/Kibana rule-engine meaning and does not identify canonical uncertain-input-to-executable-structure or iterative correction features.",
+          "Against a framework like LangChain, the response distinguishes a configured product feature from a developer framework, which superficially separates the concepts, but it misdefines the coined term as non-LLM rule automation rather than the canonical LLM-based automator pattern."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5909,
+        "output": 1055,
+        "cost": 0.061195,
+        "durationMs": 23461
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and in great detail asserts that 'Elastic Automator' is a specific feature within the Elastic (Kibana/Elasticsearch) platform for creating 'if-then' automation rules. It shows no uncertainty and presents this incorrect information as fact.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated definition (a deterministic, rule-based engine in the Elastic stack) from an AI agent (a goal-oriented, cognitive system). This is an accidental separation, as the distinction is not based on any canonical features of the coined term but on a completely invented meaning.",
+          "The model distinguishes its confabulated definition (an API-driven, server-side system) from an RPA bot (a UI-driven, process-emulation tool). The separation is accidental, based on the specific, incorrect features of the confabulated product.",
+          "The model distinguishes its confabulated definition (a finished, configurable product feature) from LangChain (a developer's toolkit for building AI apps). This separation is again accidental, stemming entirely from the model's invented meaning for 'elastic automator'."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6074,
+        "output": 1709,
+        "cost": 0.024682500000000003,
+        "durationMs": 12622
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

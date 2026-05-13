@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.gradient-descent.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently treats 'gradient descent' as the well-known canonical concept with no uncertainty signal, which matches the canonical meaning here.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cleanly separates batch/full-dataset gradient from one-sample stochastic gradient with concrete update rules in both cold and post-intro chats.",
+          "Distinguishes first-order vs second-order (gradient vs Hessian) clearly in both states, matching canonical 'first-order' feature.",
+          "Distinguishes deterministic gradient-based descent from stochastic uphill-accepting global search in both states, naming differentiability and acceptance probability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 21639,
+        "output": 346,
+        "cost": 0.11684499999999999,
+        "durationMs": 8663
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response accurately identified the canonical meaning of gradient descent, including iterative minimization, negative gradient direction, and learning-rate step size, rather than guessing an unrelated meaning or refusing.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: cleanly distinguishes gradient descent from SGD by full-dataset versus stochastic/sample-based gradient estimates; from Newton's method by first-order gradient-only updates versus Hessian-based second-order updates; and from simulated annealing by derivative-based downhill steps versus stochastic gradient-free exploration.",
+          "Post-introduction distinguishability: after the canonical definition, the responses preserve the same substantive distinctions for all three near-neighbors, explicitly invoking first-order negative-gradient learning-rate updates where relevant.",
+          "Refusal-of-collapse: each post-introduction boundary answer names a non-trivial distinguishing feature: batch/full gradient versus stochastic estimate, gradient-only versus Hessian/curvature, and gradient-based deterministic descent versus probabilistic annealed random moves."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13324,
+        "output": 1224,
+        "cost": 0.10334,
+        "durationMs": 20619
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model correctly recognizes 'gradient descent' as a standard technical term in machine learning, not a novel coined term, and provides a full, accurate, canonical definition.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model fully understands the term 'gradient descent' as it is a standard concept in its training data. It provides clean, canonical separations for all three near-neighbors. vs. SGD: correctly identifies the amount of data used per update (full batch vs. single sample). vs. Newton's method: correctly identifies the use of first-order derivatives vs. second-order derivatives (Hessian). vs. simulated annealing: correctly identifies the deterministic, gradient-based approach vs. a stochastic, gradient-free approach that can accept worse solutions.",
+          "The model's already-perfect performance is maintained. It reiterates the same correct distinctions as in the cold state. For Newton's method and simulated annealing, it skillfully incorporates language from the provided canonical definition (e.g., 'first-order', 'differentiable function') to reinforce the distinctions, demonstrating successful grounding.",
+          "Post-introduction, the model clearly names a non-trivial distinguishing feature for each near-neighbor. It distinguishes from SGD by data usage per step, from Newton's method by the order of derivative information used, and from simulated annealing by the use of gradients and the probabilistic acceptance of non-improving steps.",
+          "The model correctly identifies the term and provides a canonical definition. There is no confabulation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13401,
+        "output": 2991,
+        "cost": 0.04666125,
+        "durationMs": 22681
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

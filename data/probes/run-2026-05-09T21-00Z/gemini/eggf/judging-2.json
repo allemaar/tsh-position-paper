@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.eggf.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response confidently asserts EGGF means 'Epidermal Growth Factor Family' with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold equates EGGF with a biological protein family entirely unrelated to knowledge graphs; post-intro cleanly distinguishes by author-centric subjective authorship vs objective consensus facts and explicit manifest/Pathway architecture.",
+          "Cold treats EGGF as a piece of biological knowledge vs PKM as container; post-intro names canonical/polished outward-facing publishing vs raw inward-facing personal capture as the distinguishing axis.",
+          "Cold positions EGGF as biological subject vs SSG as publishing tool; post-intro explicitly contrasts architecture vs tool, typed Pathways and manifest endpoint vs implicit hyperlinks and per-page schema.org."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 20162,
+        "output": 411,
+        "cost": 0.111085,
+        "durationMs": 11348
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the model asserted a definite non-canonical expansion of EGGF as a biological term, treating it as established rather than flagging uncertainty about the coined term.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: all three distinctions are accidental because the model separates EGGF from each near-neighbor only by assigning EGGF an unrelated biological meaning, with no canonical EGGF features identified.",
+          "Post-introduction distinguishability: all three responses cleanly separate EGGF from the near-neighbors using canonical features such as central Entity, authored Bodies, canonical URLs, typed Pathways, manifest endpoint, and AI/search traversal.",
+          "Refusal-of-collapse: all three post-introduction comparisons name non-trivial distinguishing features rather than collapsing EGGF into the near-neighbor."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12897,
+        "output": 752,
+        "cost": 0.087045,
+        "durationMs": 12843
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and incorrectly asserts that EGGF stands for 'Epidermal Growth Factor Family', providing a detailed biological explanation without any uncertainty signals. The re-cold check further confirmed this tendency by confabulating a completely different meaning ('Embryo, Gamete, and Germ-line tissue Freezing').",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model's cold-state responses are all based on the confabulated meaning of EGGF as 'Epidermal Growth Factor Family'. The distinctions it draws are therefore accidental separations between a biological concept and the near-neighbors, earning a score of 1 across the board. It is not comparing the correct concepts.",
+          "After receiving the canonical definition, the model achieved a clean separation (score 3) against all three near-neighbors. For knowledge graphs, it correctly identified the subjective authorship vs. objective fact distinction. For PKM, it distinguished the public/published/programmatic nature of EGGF from the private/raw/personal nature of PKM. For SSGs, it correctly framed the difference as an 'architecture' (EGGF) vs. a 'tool' (SSG) and highlighted key canonical features like the manifest endpoint and typed pathways.",
+          "The model's initial response was a hard confabulation (score 2). It asserted 'EGGF most commonly stands for the Epidermal Growth Factor Family' with high confidence and no indication of uncertainty or that it was guessing.",
+          "In the post-introduction phase, the model successfully refused to collapse the term into any near-neighbor (score 1 on all). It explicitly named multiple substantive, non-trivial distinguishing features for each comparison, such as 'subjective authorship' for KGs, 'publishing polished work to an external, programmatic audience' for PKMs, and being an 'architectural blueprint' with a 'manifest endpoint' for SSGs."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13138,
+        "output": 3162,
+        "cost": 0.048042499999999995,
+        "durationMs": 23591
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 7
+  }
+}

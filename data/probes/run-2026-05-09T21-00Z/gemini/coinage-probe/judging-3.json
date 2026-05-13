@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.coinage-probe.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response confidently asserts coinage probe means a knowledge-cutoff dating technique, with no uncertainty signals.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state cleanly separates coinage probe (data-cutoff forensics) from probing classifier (internal representation analysis); post-intro response names distinctions but reframes coinage probe as generic in-context novel-word learning rather than the specific cold/post-definition gap methodology, missing canonical content despite naming features.",
+          "Cold state separates coinage probe (data inclusion) from capability eval (skill measurement) clearly; post-intro names distinctions (delta vs absolute, diagnostic vs benchmark) but still grounds coinage probe in generic novel-word-in-context rather than the two-measurement Lexical Reachability methodology — distinction exists but partial fidelity to canonical.",
+          "Cold state distinguishes coinage probe (past memorization check) from lexical acquisition (in-context learning); post-intro inverts and calls coinage probe a subtype of lexical-acquisition test focused on morphological rule application, naming distinction but losing the canonical two-state measurement — partial separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 22374,
+        "output": 485,
+        "cost": 0.12399500000000001,
+        "durationMs": 11429
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response confidently asserted a specific but non-canonical meaning: a data-freshness/knowledge-cutoff planting test. It did not flag uncertainty, despite only partially overlapping with the canonical method through use of coined terms and model outputs.",
+        "cold_distinguishability_scores": [
+          3,
+          2,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs probing classifier: cold response cleanly separated black-box/output behavior from internal representation probes, though under a wrong data-cutoff framing; post response explicitly contrasted behavioral pre/post Lexical Reachability with hidden-state classifier probes.",
+          "Vs behavioral probe / capability evaluation: cold response partially separated a narrow coinage-based diagnostic from broad capability evaluation but framed it as data inclusion rather than canonical Lexical Reachability; post response explicitly named pre/post intervention, delta measurement, and diagnostic substrate inference.",
+          "Vs lexical-acquisition test: cold response distinguished only by misframing coinage probe as past memorization/data forensics versus present lexical learning; post response explicitly distinguished the canonical near-neighbor structure, before/after definition measurement, distinguishability, Lexical Reachability, and substrate inference."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14602,
+        "output": 1836,
+        "cost": 0.12809,
+        "durationMs": 37785
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently provides a detailed, incorrect definition related to determining an LLM's knowledge cutoff date, citing specific examples, without expressing any uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model produced a detailed and confident confabulation, defining a 'coinage probe' as a method to find an LLM's knowledge cutoff date. All distinctions in the cold state were made against this incorrect definition. This constitutes an 'accidental separation' (score 1) for all three neighbors, as the model correctly defined the neighbors but separated them from a confabulated concept unrelated to the canonical one.",
+          "After receiving the canonical definition, the model perfectly distinguished the term from all three near-neighbors. It correctly identified the core purpose (testing the cognitive substrate), methodology (pre/post-test intervention), and key metric ('Lexical Reachability' or the 'gap' between states) as the distinguishing features, earning a 'clean separation' (score 3) for all.",
+          "The model's cold-state response was a 'hard confabulation' (score 2). It asserted a definite, detailed, and incorrect meaning with high confidence, providing specific examples and a step-by-step guide without any signals of uncertainty.",
+          "Post-introduction, the model explicitly named multiple non-trivial distinguishing features for all three neighbors. It consistently identified the concept of measuring the 'gap' or 'delta' between a cold state and a post-definition state ('Lexical Reachability') as the core feature separating a Coinage Probe from the other methods, thus earning a score of 1 for all."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 15074,
+        "output": 2594,
+        "cost": 0.0447825,
+        "durationMs": 18694
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      2.3333333333333335,
+      2,
+      1.6666666666666667
+    ],
+    "post_distinguishability_mean": [
+      2.3333333333333335,
+      2.3333333333333335,
+      2.3333333333333335
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 1.0000000000000002
+  }
+}

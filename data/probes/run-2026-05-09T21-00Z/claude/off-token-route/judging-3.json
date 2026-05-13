@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.off-token-route.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts multiple definite technical meanings (DeFi routing, unauthenticated API routes, token ring) without flagging that the term itself is unknown to it as a real concept.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: confabulates unrelated technical meanings, separating from prelinguistic cognition only by misdirection. Post: cleanly identifies scope (subset relation), framing (contrastive vs descriptive), and substrate-emphasis as distinguishing features.",
+          "Cold: separates only because the confabulated meaning is in a different domain entirely. Post: distinguishes by noting embodiment is one possible account, off-token is substrate-agnostic, with different contrast classes.",
+          "Cold: separation is accidental via domain mismatch with confabulated technical meaning. Post: explicitly identifies orthogonal axes (processing-style vs substrate-medium) and gives examples that cross-cut each category."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 11349,
+        "output": 431,
+        "cost": 0.06752,
+        "durationMs": 10843
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response flagged that the term was not standardized and mostly speculated unrelated engineering meanings, but the boundary answers partially inferred the token/nonlinguistic contrast as a metaphor rather than recognizing the canonical definition.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs prelinguistic cognition: cold answer mostly misrouted to unrelated technical senses but partially noticed the idea of bypassing linguistic tokens; post answer cleanly distinguished prelinguistic cognition as a subset/neighbor while emphasizing the LLM-contrastive off-token route.",
+          "Vs embodied cognition: cold answer treated the term as unrelated engineering but partially identified a metaphorical non-symbolic/body-routed contrast; post answer cleanly distinguished embodiment as a theory of bodily grounding from off-token cognition as non-token-mediated access.",
+          "Vs System 1 / intuitive cognition: cold answer partially recognized the non-symbolic/intuitive cluster and LLM token contrast but did not cleanly separate processing style from substrate; post answer cleanly distinguished System 1 as a speed/automaticity axis from off-token route as a medium/substrate axis."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7101,
+        "output": 2619,
+        "cost": 0.114075,
+        "durationMs": 54257
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model correctly identifies that the term is not standard, but then immediately offers three detailed, definite, and incorrect definitions from unrelated technical domains (crypto, APIs, networking), presenting them as the 'most likely interpretations'. This constitutes a hard confabulation.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: For all three neighbors, the model confabulates a meaning for 'off-token route' from software engineering/crypto. It then separates this invented meaning from the cognitive science concepts by correctly noting they belong to different domains. This is a textbook accidental separation, earning a score of 1 across the board.",
+          "Post-Introduction Distinguishability: After receiving the definition, the model achieves clean separations for all three near-neighbors. It correctly identifies prelinguistic cognition as a subset of the off-token route; it correctly distinguishes the substrate-based definition of the coined term from the causal theory of embodied cognition; and it correctly identifies the orthogonal axes of processing style (System 1) vs. substrate (off-token route).",
+          "Confabulation Severity: The model asserts three detailed and definite, but incorrect, definitions after a mild hedge ('isn't a widely standardized term'). Presenting these as the 'most likely interpretations' without any basis is a hard confabulation, meriting a score of 2.",
+          "Refusal of Collapse: Post-introduction, the model explicitly names non-trivial distinguishing features for all three near-neighbors. It correctly distinguishes the coined term based on scope (vs. prelinguistic), substrate vs. causal theory (vs. embodied), and processing medium vs. processing style (vs. System 1), earning a 1 for each."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7380,
+        "output": 2672,
+        "cost": 0.035945000000000005,
+        "durationMs": 20634
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.3333333333333333,
+      1.3333333333333333,
+      1.3333333333333333
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5
+  }
+}

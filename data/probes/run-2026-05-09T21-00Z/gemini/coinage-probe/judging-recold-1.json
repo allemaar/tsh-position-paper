@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.coinage-probe.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a specific psycholinguistic meaning (Wug-test-style morphological generalization) with no uncertainty signal, despite the term being novel.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model cleanly separates its confabulated meaning (behavioral rule-application via nonce words) from probing classifiers (internal representation analysis), but this is accidental separation since the confabulated meaning is unrelated to the canonical definition about lexical reachability measurement.",
+          "Separation is by misdirection: model frames coinage probe as a specific subtype of behavioral probe focused on morphological rules, which is internally coherent but unrelated to the canonical methodology of measuring confabulation gaps.",
+          "Model distinguishes form-testing vs. meaning-learning, a clean conceptual contrast, but rooted entirely in the Wug-test confabulation rather than the canonical near-neighbor distinction about substrate evidence."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8285,
+        "output": 362,
+        "cost": 0.050475000000000006,
+        "durationMs": 8935
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently defines 'coinage probe' as a psycholinguistic Wug-test-style nonce-word grammar test, with no uncertainty signal. That is not the canonical methodology involving cold-state confabulation, post-definition remeasurement, and Lexical Reachability.",
+        "recold_distinguishability_scores": [
+          2,
+          2,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "It cleanly distinguishes its guessed 'coinage probe' from probing classifiers as black-box behavioral output testing versus white-box representational probing, which partially aligns with the canonical method's non-representational, chat-based evaluation. However, it misses the defining cold/post-definition distinguishability and Lexical Reachability structure.",
+          "It separates 'coinage probe' from broader behavioral probes/capability evaluation by treating it as a narrow subtype, which is a partially plausible structural distinction. But the subtype is misidentified as Wug-style morphology testing rather than the canonical coined-term confabulation-and-remeasurement methodology.",
+          "It distinguishes 'coinage probe' from lexical-acquisition tests by saying the former tests grammar/form while the latter tests learning word meaning. This is an accidental separation based on the wrong Wug-test interpretation and misses that the canonical method centrally involves introducing a coined definition and measuring uptake/distinguishability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5352,
+        "output": 1009,
+        "cost": 0.05703,
+        "durationMs": 16830
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and incorrectly defines a 'coinage probe' as a technique for testing grammatical rule application using nonce words, citing the Wug Test as the classic example. It shows no uncertainty and presents this incorrect definition as fact, which is a clear instance of confident-confabulation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model scores 1 for accidental separation. It confabulates that a 'coinage probe' is a 'Wug Test' (a behavioral test) and then correctly distinguishes this from a probing classifier (which examines internal representations). The separation is successful but based on a completely misdirected understanding of the coined term, not its canonical features.",
+          "The model scores 1 for accidental separation. It defines 'coinage probe' as the Wug Test and then correctly identifies this as a specific subtype of a broader 'behavioral probe'. The distinction is valid for the concepts the model is actually comparing, but it's an accidental separation because it relies on the initial confabulation and misses all canonical features of the coined term.",
+          "The model scores 1 for accidental separation. It distinguishes its confabulated 'Wug Test' meaning (testing grammatical form) from a lexical-acquisition test (testing semantic learning). The distinction is sharp and well-articulated, but it's a separation by misdirection, as it's not based on the canonical definition of a 'coinage probe'."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5467,
+        "output": 2295,
+        "cost": 0.02978375,
+        "durationMs": 18058
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.3333333333333333,
+      1.3333333333333333,
+      1
+    ]
+  }
+}

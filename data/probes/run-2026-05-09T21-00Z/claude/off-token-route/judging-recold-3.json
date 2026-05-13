@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.off-token-route.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts crypto/DeFi and web-dev meanings as the likely interpretations without flagging the term as unknown.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved only by misdirection — the model treats 'off-token route' as a DeFi/API term unrelated to cognition, missing the canonical link to nonlinguistic cognition entirely.",
+          "Same accidental separation: the contrast rests on the confabulated engineering meaning vs. embodied cognition theory, with no canonical content about substrate-free thought.",
+          "Again the difference is asserted via the wrong domain framing; no canonical feature about LLMs lacking a nonlinguistic route is identified."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 4142,
+        "output": 306,
+        "cost": 0.02836,
+        "durationMs": 7569
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer explicitly says \"off-token route\" is not a widely standardized term and asks for context, while offering possible interpretations from crypto/DeFi, APIs, and transit. It does not recognize the canonical cognitive meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against prelinguistic cognition, the response separates the terms only by assigning \"off-token route\" an unrelated crypto/API routing meaning. Although it accurately describes prelinguistic cognition, it misses the canonical link to nonlinguistic felt-sense cognition and LLM token dependence.",
+          "Against embodied cognition, the response again distinguishes by misdirection: \"off-token route\" is treated as an engineered routing concept rather than a cognitive route humans have. No substantive canonical contrast with embodiment is identified.",
+          "Against System 1 / intuitive cognition, the response maintains the same unrelated technical interpretation. It notices that the user may be probing a cognitive-science metaphor, but it does not supply the canonical off-token route concept or cleanly distinguish it from intuitive cognition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2556,
+        "output": 751,
+        "cost": 0.03531,
+        "durationMs": 17848
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts that \"off-token route\" is a technical term, with its \"most likely meaning\" being in cryptocurrency/DeFi, and a secondary meaning in API systems. It provides detailed, specific, but entirely incorrect definitions for these contexts without expressing any uncertainty about the definitions themselves, only about which context applies.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes the terms by defining \"off-token route\" as a technical concept in crypto/web development and correctly defining prelinguistic cognition as a concept from cognitive science. It concludes they are from entirely different domains. This is a separation based on a complete confabulation of the coined term's meaning, making it an accidental separation.",
+          "The model again relies on its confabulated definition of \"off-token route\" (a crypto or API concept) and contrasts it with a correct definition of embodied cognition. It correctly states they belong to unrelated fields. The separation is achieved by misdirection via the invented meaning, not by grasping any true features of the coined term.",
+          "The model follows the same pattern, contrasting its confabulated crypto/DeFi definition of \"off-token route\" with a correct definition of System 1 cognition. It concludes there is no conceptual overlap. This distinction is purely an artifact of the initial confabulation, hence it is an accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2593,
+        "output": 1497,
+        "cost": 0.018211250000000002,
+        "durationMs": 12180
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

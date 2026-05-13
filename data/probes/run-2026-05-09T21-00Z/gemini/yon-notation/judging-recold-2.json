@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.yon-notation.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts YON means 'YottaDB Object Notation,' a binary internal database format, with no uncertainty signaling.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved via confabulation (binary internal DB format vs text interchange formats), not via canonical features like stream-first records or grammar/vocabulary split.",
+          "Distinction (data storage vs text styling) is built on the confabulated YottaDB binary meaning, unrelated to canonical stream-first AI cognition notation.",
+          "Differentiation (static stored data vs dynamic text generation) again rests on the confabulated binary database identity, missing canonical stream-first/self-contained-record properties."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7255,
+        "output": 303,
+        "cost": 0.04385,
+        "durationMs": 8295
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer does not recognize YON as the coined notation and instead confidently supplies unrelated meanings such as 'Year of the Nurse,' an archaic word, and a name, without clearly flagging the term as unknown.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against JSON / XML / YAML, the response separates YON by identifying it as a supposed YottaDB binary internal object notation, which is unrelated to the canonical YON. It does not identify the fixed minimal grammar, pluggable vocabularies, stream-first line records, or AI-cognition purpose.",
+          "Against Markdown, the response distinguishes YON as machine-oriented structured data versus human document formatting, but this is based on the same incorrect YottaDB/binary-storage confabulation rather than canonical YON features.",
+          "Against a prompt template language, the response distinguishes YON as static stored data versus dynamic text generation, but again relies on an unrelated YottaDB interpretation and misses the canonical separation of minimal grammar, domain vocabularies, and stream-first actionable records."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4732,
+        "output": 956,
+        "cost": 0.05234,
+        "durationMs": 20993
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model does not express any uncertainty. It confidently asserts several possible meanings for YON ('Year of the Nurse', an archaic word, a name) and presents them as the 'most common meanings', without indicating that it is guessing or that the term is fabricated.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model abandons its initial guesses and confabulates a new, more plausible-sounding technical meaning for YON: 'YottaDB Object Notation'. It then distinguishes this fabricated entity from JSON/XML/YAML on valid dimensions (binary vs. text, specific-purpose vs. general-purpose). The separation is accidental, based on a confabulated meaning.",
+          "The model continues with its 'YottaDB Object Notation' confabulation. It correctly distinguishes a data representation format (its confabulated YON) from a document formatting language (Markdown). This separation is successful only because the model invented an unrelated meaning for YON, making it an accidental separation.",
+          "The model again uses its 'YottaDB Object Notation' confabulation. It provides a clear distinction between a static data storage format (its made-up YON) and a dynamic tool for text generation (a prompt template). The reasoning is sound, but it's for a confabulated term, so the separation is accidental."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4872,
+        "output": 1621,
+        "cost": 0.0223,
+        "durationMs": 12937
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

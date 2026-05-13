@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.yon-notation.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model initially gave honest possibilities but then in the technical context confidently invented 'YON is an Object Notation' as a JSON superset with no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model confabulates YON as a JSON-superset config format with comments and trailing commas — separation by misdirection, missing the canonical stream-first/grammar-vs-vocabulary nature.",
+          "Separation is achieved (data vs document formatting) but based on the confabulated 'JSON superset' meaning rather than the canonical stream-first record-per-line design.",
+          "Separation is achieved (static data vs dynamic generation) but based on the confabulated config-format meaning, not the canonical AI-cognition notation with pluggable vocabularies."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7634,
+        "output": 325,
+        "cost": 0.046295,
+        "durationMs": 8157
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer does not recognize the coined canonical term. It presents several ordinary possibilities for 'yon' and asks for context, rather than asserting the canonical technical meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against JSON / XML / YAML, the response separates YON from those formats but does so via a confabulated meaning: 'YON is an Object Notation,' a human-friendly JSON superset. It does not identify the canonical AI-cognition notation, fixed grammar plus pluggable vocabularies, or stream-first line-record design.",
+          "Against Markdown, the response distinguishes YON as structured data rather than document formatting, but this rests on the same invented data-serialization interpretation and misses the canonical purpose and stream-first cognitive-record design.",
+          "Against a prompt template language, the response distinguishes YON as static structured data rather than dynamic prompt generation, but again this is based on the confabulated object-notation framing and lacks the canonical features of YON."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5006,
+        "output": 757,
+        "cost": 0.04774,
+        "durationMs": 15152
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model's initial response did not confabulate a technical meaning. Instead, it correctly identified several real-world meanings of the word 'yon' (the archaic word, acronyms, names) and possible typos. It explicitly asked for context to disambiguate, clearly signaling it did not recognize the term.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model confabulates that YON stands for 'YON is an Object Notation' and is a human-friendly superset of JSON. It then distinguishes YON based on features of this invented definition (e.g., support for comments and trailing commas). This separation is purely accidental, based on a completely fabricated premise, and shares no features with the canonical definition.",
+          "Continuing with its confabulated definition of YON as a data serialization format, the model correctly distinguishes this from Markdown's purpose as a document formatting language. The separation is sound for the invented meaning but accidental with respect to the canonical one.",
+          "The model uses its invented definition of YON (a static data format) and correctly distinguishes it from a prompt template language (a tool for dynamically generating text). This distinction is entirely based on the confabulated meaning of YON, making the separation accidental."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5191,
+        "output": 1929,
+        "cost": 0.02577875,
+        "durationMs": 15522
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

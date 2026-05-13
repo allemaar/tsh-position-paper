@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.prismatic-affinity.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a geometric/affine-transformation meaning with no uncertainty signal in the initial response.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by misdirection — geometric transformation vs. semantic ambiguity — none of the canonical features (angle of attention, coherent identity shift) appear.",
+          "Despite a thoughtful comparison, the contrast rests on the confabulated geometric meaning; canonical features like coherent identity shift under framing are absent, so separation is accidental.",
+          "Again separates by contrasting geometric determinism against semantic multiplicity, but the canonical notion of framing-dependent coherent identities is missing; separation is by misdirection."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 5761,
+        "output": 308,
+        "cost": 0.036504999999999996,
+        "durationMs": 7710
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently presents 'prismatic affinity' as a precise geometry/affine-transformation term, with no uncertainty signal, rather than treating it as unknown or giving the canonical interpretive definition.",
+        "recold_distinguishability_scores": [
+          1,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Against ambiguity, the response separates the terms mostly by misdirecting to a mathematical meaning. Although it says ambiguity involves undecided/multiple meanings, it does not identify the canonical feature of coherent identity-shift under attentional framing, so the separation is accidental.",
+          "Against perspectivism / perspective-dependence, the response remains anchored in the wrong geometric definition, but it does introduce partially aligned ideas: different appearances from angles, a lawful/structured relation among views, and contrast with perspective as observer-standpoint. This partially overlaps with the canonical distinction, though it is unstable and not framed as attentional identity-shift.",
+          "Against polysemy, the response again relies on the wrong geometric definition, but it partially separates the coined term from linguistic multiple senses and notes structured multiplicity from a common source. It misses the canonical object-perception/framing account, so this is only partial separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3526,
+        "output": 1148,
+        "cost": 0.05207,
+        "durationMs": 30508
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model provides a very detailed and confident definition of 'prismatic affinity' as a specific concept from affine geometry. This definition is entirely incorrect and has no overlap with the canonical meaning related to perception and framing. The model shows no uncertainty whatsoever.",
+        "recold_distinguishability_scores": [
+          1,
+          2,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated geometric term from ambiguity by contrasting mathematical precision and determinism with linguistic multiplicity and uncertainty. This is an accidental separation based on a complete misdirection of the term's meaning.",
+          "Starting from its geometric confabulation, the model creates a metaphor of a 'lawful relationship' or a 'rule-governed transformation' between viewpoints. This captures a key aspect of the canonical definition's 'coherent shift' in identity, and contrasts it well with perspectivism's potential for incommensurability. This constitutes a partial separation, as a canonical feature is identified, albeit unstably through a metaphor.",
+          "The model distinguishes its confabulated geometric concept (a single, deterministic transformation) from polysemy (a word having multiple coexisting, related meanings). This is a clear but accidental separation, as it relies on contrasting geometry with linguistics rather than engaging with the canonical meaning of the coined term."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3478,
+        "output": 1954,
+        "cost": 0.023887500000000002,
+        "durationMs": 15616
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1.6666666666666667,
+      1.3333333333333333
+    ]
+  }
+}

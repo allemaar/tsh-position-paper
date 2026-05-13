@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.yon-notation.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the re-cold check, the model confidently asserts YON means 'YottaDB Object Notation,' a binary database format, with no uncertainty signaled.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-introduction, the model cleanly separates YON from JSON/XML/YAML on the canonical stream-vs-block axis and resilience; cold response confabulated YottaDB binary format, an unrelated meaning.",
+          "Post-introduction clearly distinguishes YON (machine-process notation, line-as-record) from Markdown (human presentation, document-level); cold response confabulated binary database format unrelated to canonical meaning.",
+          "Post-introduction names the direction-of-flow distinction (YON as AI output/cognition stream vs template as input generator), a substantive canonical feature; cold response confabulated unrelated binary storage meaning."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 19776,
+        "output": 413,
+        "cost": 0.109205,
+        "durationMs": 9552
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "In the cold state, the model did not recognize the canonical coined technical meaning of YON and repeatedly signaled uncertainty or treated it as hypothetical/non-standard rather than asserting the canonical concept.",
+        "cold_distinguishability_scores": [
+          1,
+          2,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs JSON/XML/YAML: separated YON only as unknown/non-standard or possible typo/proprietary format, with no canonical stream-first/minimal-grammar/vocabulary features, so accidental separation. Post: cleanly distinguished stream-first line records, incremental validation/action, and resilience from block formats.",
+          "Cold vs Markdown: partially distinguished YON as machine-parseable structured information rather than human presentation, which overlaps weakly with canonical machine-oriented notation, but lacked the defining stream-first and grammar/vocabulary separation. Post: cleanly distinguished semantic machine-processable line records from presentational document markup.",
+          "Cold vs prompt template language: distinguished only by treating YON as a generic static data payload rather than a text-generation template, which is mostly misdirected and misses canonical AI-cognition stream notation. Post: cleanly distinguished YON as formal, streamable AI cognitive/output notation from prompt templates as input-side text-generation blueprints."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12923,
+        "output": 1341,
+        "cost": 0.10484500000000001,
+        "durationMs": 48768
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "While the model's first response confidently confabulated meanings for the English word 'yon', once the context was specified as a data format, it explicitly stated that YON is not a standard or recognized format and proceeded by treating it as a hypothetical, which constitutes honest uncertainty within the relevant technical context.",
+        "cold_distinguishability_scores": [
+          1,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model treated YON as a hypothetical data format. Versus JSON/XML/YAML, it only managed an accidental separation by claiming YON is non-standard (score 1). Versus Markdown and prompt templates, it correctly placed YON in the general category of 'data format' and distinguished that category from the others, thus identifying a partial canonical feature (machine-readable, for data representation) in both cases (score 2).",
+          "Post Distinguishability: The model perfectly assimilated the canonical definition. For all three near-neighbors, it identified a core design principle of YON (stream-first vs. block; machine processing vs. human presentation; AI output vs. AI input) and used it to draw a clean, substantive, and accurate distinction.",
+          "Confabulation Severity: The model's initial response to 'What is a YON?' asserted several definite meanings of the English word 'yon' (archaic word, place name, etc.) with no uncertainty signals, which constitutes a hard confabulation.",
+          "Refusal-of-Collapse: In all three post-introduction comparisons, the model clearly articulated a non-trivial distinguishing feature derived directly from the canonical definition, such as 'stream-oriented notation' vs 'block-oriented formats', 'processing meaning' vs 'presenting text', and the direction of communication (AI output vs. AI input)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13526,
+        "output": 3535,
+        "cost": 0.0522575,
+        "durationMs": 26593
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1.6666666666666667,
+      1.3333333333333333
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5
+  }
+}

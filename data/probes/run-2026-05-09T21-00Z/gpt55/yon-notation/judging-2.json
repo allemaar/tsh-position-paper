@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.yon-notation.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Model flags YON as not a recognized standard format and offers only the English word and airport code as known meanings.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: equates YON with non-format/word, accidental separation; Post: clearly names stream-first line records, fixed grammar, pluggable vocabularies vs block document orientation.",
+          "Cold: notes YON is not a known format, accidental separation; Post: distinguishes machine-actionable cognitive records vs human-readable document markup.",
+          "Cold: notes YON is not a known prompt template, accidental separation; Post: distinguishes cognitive record encoding vs prompt-generation, even noting complementarity."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7889,
+        "output": 343,
+        "cost": 0.04802,
+        "durationMs": 7924
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "In the cold state, the assistant did not recognize YON as the coined technical notation and instead gave ordinary/context-dependent meanings while repeatedly noting that uppercase YON is not a widely recognized standard format and may be project-specific.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs JSON/XML/YAML: the assistant separated YON from JSON/XML/YAML only by treating it as an ordinary word or unknown/project-specific term, not by identifying canonical stream-first/minimal-grammar features. Post-introduction: it explicitly distinguished YON as stream-first, line-based, AI-cognition-oriented, with fixed minimal grammar and pluggable vocabularies versus block/document data formats.",
+          "Cold vs Markdown: the assistant again separated YON from Markdown only as an ordinary word or unknown nonstandard format. Post-introduction: it explicitly distinguished YON as machine-actionable, stream-first cognitive records versus human-readable document markup.",
+          "Cold vs prompt template language: the assistant separated YON only by saying it is not a recognized prompt/template language. Post-introduction: it explicitly distinguished YON as a stream-first cognitive notation with self-contained records from template systems that generate prompts using variables/placeholders."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4944,
+        "output": 1658,
+        "cost": 0.07446,
+        "durationMs": 53403
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model did not confabulate a technical meaning for \"YON\". Instead, it correctly identified the existing English word \"yon\", flagged that a capitalized \"YON\" might be an acronym in a specific context, and stated that it is not a recognized term in the same category as the near-neighbors.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model consistently scored 1 because its distinction in all three cases was based on contrasting the near-neighbor with the *English word* \"yon\" (meaning \"over there\"), not the coined technical term. This constitutes an \"accidental separation\" where the term is treated as different only due to a correctly identified but irrelevant alternative meaning.",
+          "The model scored 3 across the board because it successfully internalized the canonical definition and used its core principles—stream-first parsing, fixed minimal grammar, pluggable vocabularies, and purpose for AI cognition—to draw clear and accurate distinctions from each near-neighbor.",
+          "The score is 0 because the model did not confabulate a technical meaning. It explicitly flagged its uncertainty, correctly identified the common English word, and suggested other possibilities like project-specific acronyms, which is a hallmark of honest uncertainty.",
+          "The scores are all 1 because, post-definition, the model explicitly named multiple non-trivial distinguishing features for each near-neighbor. Key features identified included \"stream-first vs. block-oriented,\" \"notation for AI cognition vs. general data/document format,\" and \"machine-actionability vs. human-readability.\""
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5083,
+        "output": 2282,
+        "cost": 0.02917375,
+        "durationMs": 16774
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

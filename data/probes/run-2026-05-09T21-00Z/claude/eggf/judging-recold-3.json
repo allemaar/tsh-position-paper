@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.eggf.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "Model explicitly flags the term as unknown and offers parsed guesses rather than asserting a definite meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "No canonical features identified; model declines to compare and only lists unrelated acronym guesses, so any 'difference' is accidental via misdirection.",
+          "Same pattern: refuses to invent a comparison and lists unrelated PKM-adjacent concepts without surfacing canonical EGGF features.",
+          "Again declines substantive comparison; mentions SSG examples but never identifies any canonical EGGF property, so separation is accidental."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3168,
+        "output": 272,
+        "cost": 0.02264,
+        "durationMs": 6181
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer explicitly says EGGF is not a widely recognized standard acronym, gives tentative possibilities, and asks for context rather than asserting a definite meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against a knowledge graph, the response does not equate EGGF with RDF/schema.org/Wikidata, but it also provides no canonical EGGF features; separation is only by saying the term is unknown or possibly a typo, so this is accidental/non-substantive separation.",
+          "Against a PKM system, the response again admits not knowing what EGGF is and offers only adjacent guesses such as PKG, Memex, Zettelkasten, or agent memory graphs; it gives no canonical features, so separation is accidental/non-substantive.",
+          "Against a static-site generator with structured data, the response refuses to invent a comparison and says EGGF is unknown in semantic web, PKM, or web publishing spaces; it does not identify canonical publishing, URL, typed pathway, or manifest features, so separation is accidental/non-substantive."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 1937,
+        "output": 568,
+        "cost": 0.026725,
+        "durationMs": 10749
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model's initial response clearly states that \"'EGGF' isn't a widely recognized standard acronym\" and that its meaning is context-dependent. It then offers several speculative expansions from completely unrelated domains (agriculture, finance, medicine) and explicitly asks for more context, signaling its uncertainty rather than confabulating a technical definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model explicitly refuses to compare EGGF to a knowledge graph, stating \"I don't have reliable information about what 'EGGF' stands for.\" This is an 'accidental separation' (score 1) because it does not equate the terms, but the implied difference is based entirely on the model's ignorance rather than any substantive feature. It fails to provide a comparison, resulting in separation by misdirection/refusal.",
+          "The model gives the \"same honest answer\" and refuses to differentiate EGGF from a PKM system. It correctly states that any comparison would be fabricated without a definition. This earns a score of 1 because it's an accidental separation; the model implicitly treats them as different by being unable to compare them, but the separation is not based on any canonical features.",
+          "For the third time, the model refuses to perform the comparison, stating it doesn't know what EGGF is and flagging the user's prompt as a possible test. This is another instance of accidental separation (score 1), where the model avoids equating the terms but provides no basis for their distinction, effectively separating them by declaring its own lack of knowledge."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 1921,
+        "output": 3259,
+        "cost": 0.03499125,
+        "durationMs": 25707
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

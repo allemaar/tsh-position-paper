@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.yon-notation.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model lists possible meanings (yonder, yarn-over-needle, acronym) and explicitly flags that it doesn't recognize YON as a standard term, asking for context.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Model hedges that YON is not a recognized format and contrasts generic 'object notation' with JSON/XML/YAML; it does not surface canonical features like stream-first or self-contained per-line records, so separation is accidental via 'unknown niche format' framing.",
+          "Same pattern: distinguishes via generic 'data vs document' axis without identifying YON's stream-first or grammar+vocabulary features; separation is accidental.",
+          "Distinguishes via 'data notation vs template rendering' generically, missing canonical stream-first/self-contained-line dimensions; accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3316,
+        "output": 317,
+        "cost": 0.024505,
+        "durationMs": 9853
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer does not claim the coined technical meaning; it offers known meanings of “yon” and says the acronym could vary by context, asking for more context.",
+        "recold_distinguishability_scores": [
+          1,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Against JSON/XML/YAML, the answer separates YON mostly by saying it is not a recognized standard and may be a niche/custom object notation. That is not the canonical stream-first AI-cognition notation distinction, so the separation is largely accidental.",
+          "Against Markdown, the answer partially aligns with the canonical distinction by treating YON as a parseable structured notation rather than document-oriented formatted text, but it lacks the fixed minimal grammar, pluggable vocabularies, and stream-first line-record features.",
+          "Against a prompt template language, the answer partially separates a parsed notation/data representation from a template system that renders prompts with variables and logic. This is directionally compatible but misses the canonical AI-cognition, minimal-grammar, vocabulary, and stream-first design features."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2086,
+        "output": 1274,
+        "cost": 0.04865,
+        "durationMs": 30018
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model does not recognize the term in the intended technical context. Instead, it correctly identifies several pre-existing meanings (the archaic word for 'yonder', a knitting term) and notes it could be an acronym, explicitly signaling its uncertainty and asking for context.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model guesses that YON is a data format, but distinguishes it from JSON/XML/YAML by asserting YON is 'not a widely recognized standard' and is likely 'niche, custom, or project-specific'. This is an accidental separation based on a confabulated status, not a substantive feature.",
+          "The model assumes YON is a data/object notation and correctly distinguishes this *assumed purpose* from Markdown's purpose as a markup language for formatted text. The separation is logical but accidental, as it relies entirely on a confabulated meaning for YON.",
+          "The model again assumes YON is a data/object notation and distinguishes it from a prompt template language by contrasting its purpose (representing static data) with the template's purpose (dynamically generating prompts with variables). This is another accidental separation based on a guess about YON's function."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2075,
+        "output": 1721,
+        "cost": 0.01980375,
+        "durationMs": 14139
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1.3333333333333333,
+      1.3333333333333333
+    ]
+  }
+}

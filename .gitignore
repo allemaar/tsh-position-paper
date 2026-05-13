@@ -1,0 +1,40 @@
+# Vault-internal artifacts that should never ship to the public repo
+figures/raw/
+_publish/
+_scaffold.md
+figure-*-brief.md
+wip/
+
+# Web-optimisation formats (PNG is canonical per publishing-guide)
+figures/*.svg
+figures/*.webp
+latex/figures/*.svg
+latex/figures/*.webp
+
+# Obsidian workspace state
+.obsidian/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# LaTeX build artifacts
+latex/*.aux
+latex/*.log
+latex/*.out
+latex/*.toc
+latex/*.bbl
+latex/*.blg
+latex/*.fls
+latex/*.fdb_latexmk
+latex/*.synctex.gz
+latex/*.pdf
+
+# Python scratch
+_scratch-tsh-w*/
+__pycache__/
+*.pyc

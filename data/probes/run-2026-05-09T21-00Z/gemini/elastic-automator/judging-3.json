@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.elastic-automator.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a specific meaning (Elastic Stack alerting/automation) with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state invents an Elastic Stack alerting meaning unrelated to the canonical LLM-loop definition; post-introduction correctly contrasts the generate-evaluate-correct loop against general agent decision-making.",
+          "Cold state distinguishes via backend-data vs UI mimicry, unrelated to canonical features; post-introduction cleanly separates language-model interpretation/generation from scripted UI mimicry.",
+          "Cold state contrasts Elastic alerting feature vs LangChain framework, missing canonical features; post-introduction correctly frames elastic automator as the architectural pattern that LangChain agents implement."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 23319,
+        "output": 397,
+        "cost": 0.12652,
+        "durationMs": 9443
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite Elastic Stack alerting/automation meaning for the coined term, despite noting it was not an official product name, and did not flag the proposed definition as merely speculative from word shape.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs AI agent: the model separated the term from AI agent only under a confabulated Elastic Stack/rules-based meaning, not canonical LM-mediated uncertain-input refinement. Post-introduction: it identified uncertain human input, executable structure, and generate/evaluate/correct loop as distinguishing features.",
+          "Cold vs RPA bot: the model distinguished it as backend Elastic/API alerting versus UI mimicry, which is an unrelated confabulated meaning. Post-introduction: it cleanly contrasted RPA’s scripted procedure with the canonical LLM-based ambiguity-handling iterative refinement loop.",
+          "Cold vs framework like LangChain: the model distinguished Elastic Stack alerting from LangChain as a framework, an accidental separation based on the wrong meaning. Post-introduction: it cleanly distinguished the canonical elastic automator as an architectural/process pattern from LangChain as an implementation framework/toolbox."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14956,
+        "output": 813,
+        "cost": 0.09917000000000001,
+        "durationMs": 15303
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a detailed but incorrect definition, linking the term to the alerting and automation features of the Elastic (ELK) Stack. It presents this as fact with no uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: In the cold state, the model defends its confabulated definition (automation within the ELK Stack) against all three near-neighbors. It provides clear and substantive distinctions between its incorrect definition and the neighbors (e.g., rules-based vs. goal-oriented for AI agent; backend/API vs. frontend/UI for RPA). However, because the starting definition is entirely wrong, the separation is accidental and based on misdirection, meriting a score of 1 for each.",
+          "Confabulation Severity: The model asserts a definite, detailed meaning (features of the Elastic Stack) with high confidence and provides extensive examples. There is no signal of uncertainty, making it a hard confabulation. Score is 2.",
+          "Post-Intro Distinguishability: After receiving the canonical definition, the model achieves clean separation against all three neighbors. It correctly identifies the EA as a specific type of AI agent defined by its iterative refinement loop, contrasts this creative/interpretive process with RPA's procedural mimicry, and accurately frames the EA as a conceptual architecture that can be built using a framework like LangChain. All scores are 3.",
+          "Refusal of Collapse: Post-introduction, the model explicitly names non-trivial distinguishing features for each near-neighbor. It isolates the `generate -> evaluate -> correct` loop vs. AI agents, the automation of 'judgment' vs. RPA's automation of 'procedure', and the 'blueprint vs. toolbox' distinction vs. LangChain. All scores are 1."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 15436,
+        "output": 2462,
+        "cost": 0.043915,
+        "durationMs": 19430
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

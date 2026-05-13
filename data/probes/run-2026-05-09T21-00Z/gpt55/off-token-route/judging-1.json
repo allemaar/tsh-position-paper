@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.off-token-route.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a software/API meaning (unauthenticated route) with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: confabulated API meaning is unrelated to prelinguistic cognition (accidental separation). Post: cleanly distinguishes the cognition itself vs the access-route framing.",
+          "Cold: API meaning unrelated to embodied cognition (accidental separation). Post: clearly contrasts bodily grounding vs non-token access route.",
+          "Cold: API meaning unrelated to System 1 (accidental separation). Post: cleanly distinguishes processing speed/automaticity from non-token substrate access."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8080,
+        "output": 318,
+        "cost": 0.048350000000000004,
+        "durationMs": 7686
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response did not recover the canonical cognitive/LLM contrastive meaning; it supplied an unrelated API-authentication interpretation, though with some hedging that the term was not standard.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs prelinguistic cognition: cold separation was only by an unrelated API-route meaning; post-definition response cleanly distinguished the cognition itself from the human non-token access route and LLM token-bound contrast.",
+          "Vs embodied cognition: cold separation was accidental via software/access-control confabulation; post-definition response distinguished bodily grounding from non-token access to meaning, while noting possible overlap.",
+          "Vs System 1 / intuitive cognition: cold separation was accidental via unrelated software meaning; post-definition response distinguished processing style/speed from non-token substrate/access and gave cases where they come apart."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5115,
+        "output": 749,
+        "cost": 0.048045000000000004,
+        "durationMs": 21506
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and exclusively defines the term based on a common meaning from software/API development ('a route/endpoints that does not require a token for access'), showing no uncertainty or awareness of the intended cognitive science context.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model distinguishes its confabulated software-related definition from prelinguistic cognition by correctly noting they are from completely different domains (software vs. psychology). This is an accidental separation based on a misinterpretation, scoring 1. Post: The model makes a clean separation, identifying 'prelinguistic cognition' as the phenomenon itself, while 'off-token route' is the term for the human *pathway* to such cognition, named in contrast to the token-bound nature of LLMs. This is a substantive distinction, scoring 3.",
+          "Cold: The model distinguishes its confabulated software term from embodied cognition by placing them in unrelated fields. This separation is successful only because the initial definition was a complete misdirection, scoring 1. Post: The model provides a clean separation, defining the core distinction as 'grounding' (embodied cognition) versus 'access' (off-token route). It correctly states that embodied cognition is about the bodily basis of thought, while off-token route is about the non-token pathway to thought that LLMs lack. This is a substantive distinction, scoring 3.",
+          "Cold: The model distinguishes its confabulated software term from System 1 by identifying them as concepts from different, unrelated fields (API development vs. psychology). This is a classic accidental separation, scoring 1. Post: The model draws a sharp, clean distinction: System 1 is about the *style* of processing (fast, automatic), while off-token route is about the *substrate* or access method (non-token-based). It correctly notes that the two can overlap but are conceptually different axes. This is a substantive distinction, scoring 3."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5290,
+        "output": 2406,
+        "cost": 0.030672500000000002,
+        "durationMs": 18919
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

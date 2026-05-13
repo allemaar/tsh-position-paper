@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.transformer-architecture.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model gave a substantively accurate canonical description of the Transformer architecture in cold state, identifying self-attention, multi-head attention, feed-forward layers, residual connections, layer normalization, and the Vaswani 2017 origin.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold and post-intro responses cleanly distinguish Transformer from RNN by contrasting parallel self-attention vs sequential hidden-state recurrence, a substantive canonical dimension.",
+          "Cold and post-intro responses cleanly distinguish Transformer from CNN by contrasting global self-attention vs local convolutional filters, with explicit inductive-bias discussion.",
+          "Cold and post-intro responses correctly frame MoE as a routing/sparsity technique often embedded within Transformers, distinguishing the architecture from the scaling technique."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 17101,
+        "output": 375,
+        "cost": 0.09488,
+        "durationMs": 9575
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "Cold response correctly identified the established transformer architecture and named core canonical features rather than inventing an unrelated meaning.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: vs RNN, CNN, and MoE the response cleanly distinguished transformer self-attention/parallel sequence processing from recurrence, convolution, and expert routing respectively.",
+          "Post-introduction distinguishability: after the canonical definition, all three boundary responses explicitly preserved the transformer’s multi-head self-attention/feed-forward architecture and contrasted it with each near-neighbor.",
+          "Refusal-of-collapse: each post-introduction comparison named a non-trivial distinguishing feature: non-recurrent parallel attention vs RNNs, attention vs convolution/local filters for CNNs, and architecture vs routed expert scaling for MoE."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 10683,
+        "output": 738,
+        "cost": 0.075555,
+        "durationMs": 15930
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model provides a detailed, accurate, and confident description of the Transformer architecture, demonstrating full recognition of this established technical term. It correctly identifies self-attention as the key mechanism, lists major components, and contrasts it with older architectures like RNNs. The classification is 'partial-recognition' as it is the highest available score for a positive identification.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Response & Confabulation: The model demonstrated full recognition of the established technical term 'transformer (architecture)', providing a detailed and accurate definition. There was no confabulation (severity 0) as the response was based on correct knowledge.",
+          "Cold Distinguishability: The model provided clean, substantive distinctions against all near-neighbors. It correctly identified the core differences: parallel processing via self-attention vs. sequential recurrence (RNN); global attention vs. local convolutional filters (CNN); and a full architecture vs. a composable scaling technique (MoE).",
+          "Post-Introduction & Refusal-of-Collapse: Post-introduction, the model maintained perfect distinguishability. It explicitly refused to collapse the term against any neighbor, naming key distinguishing features for each: parallel processing/attention for RNN, global attention vs. local convolution for CNN, and the architecture-vs-component relationship for MoE."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11073,
+        "output": 3248,
+        "cost": 0.04632125,
+        "durationMs": 24159
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

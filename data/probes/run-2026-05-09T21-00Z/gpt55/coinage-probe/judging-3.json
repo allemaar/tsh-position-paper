@@ -1,0 +1,145 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.coinage-probe.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Model asserts a definite meaning (test eliciting newly coined words, wug-test style) with no uncertainty signal about the actual canonical methodology.",
+        "cold_distinguishability_scores": [
+          3,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: cleanly separated from probing classifier on behavioral-vs-representational axis (3); post: explicitly named cold-state confabulation, Lexical Reachability, and in-context lexical uptake vs representational decodability (3).",
+          "Cold: confabulated coinage probe as word-formation elicitation, treating it as a behavioral probe subtype but not on canonical grounds (1); post: named cold-state baseline, near-neighbor contrast set, definitional intervention, and Lexical Reachability as distinguishing features (3).",
+          "Cold: confabulated as wug-test-style morphology probe rather than canonical methodology, separation incidental (1); post: distinguished via cold-state confabulation measurement, near-neighbor contrast, and Lexical Reachability as substrate evidence (3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 13832,
+        "output": 429,
+        "cost": 0.079885,
+        "durationMs": 10959
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold answer asserted a definite, non-canonical meaning: a prompt for eliciting newly invented words. It did not identify the canonical cold/post measurement methodology, near-neighbor contrast structure, or Lexical Reachability, despite a brief caveat that the term is not standardized.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs probing classifier: cold response correctly separated behavioral prompting from auxiliary classifiers over hidden states, but under a wrong coined-word-production interpretation; post-introduction response cleanly distinguished black-box lexical-conceptual uptake and Lexical Reachability from representational decodability.",
+          "Vs behavioral probe / capability evaluation: cold response treated coinage probe as a narrow behavioral probe, giving partial structural separation but not the canonical cold/post near-neighbor methodology; post-introduction response explicitly named the fresh coined term, cold-state baseline, definitional intervention, contrast set, remeasurement, and Lexical Reachability.",
+          "Vs lexical-acquisition test: cold response separated invention of new words from learning words, which is mostly a non-canonical misdirection; post-introduction response cleanly distinguished the canonical methodology from general word-learning tests by emphasizing cold confabulation, fixed near-neighbors, single-sentence definition, immediate uptake, and Lexical Reachability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8637,
+        "output": 2210,
+        "cost": 0.109485,
+        "durationMs": 44018
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a confident, detailed, and incorrect definition based on a plausible but wrong morphological decomposition of the term ('coinage' + 'probe'), without expressing any uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          0,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs. probing classifier (Score 1): The model separates the terms, but does so based on its own confabulated definition of 'coinage probe' (a test of word creation). This is an accidental separation, as it does not engage with any of the canonical features.",
+          "Cold vs. behavioral probe (Score 0): The model explicitly equates the terms, stating that its confabulated 'coinage probe' is 'a specific kind of behavioral probe' and that the difference is only one of scope.",
+          "Cold vs. lexical-acquisition test (Score 1): The model separates the terms based on its confabulation, contrasting the ability to invent a word (its incorrect definition) with the ability to learn a word. This is an accidental separation, not based on canonical features.",
+          "Post vs. probing classifier (Score 3): The model provides a clean, detailed separation based on the canonical definition. It correctly contrasts the coinage probe's black-box, lexical intervention and 'Lexical Reachability' measurement with the probing classifier's white-box, representational decodability analysis.",
+          "Post vs. behavioral probe (Score 3): The model provides a clean separation, identifying the specific methodological components of the canonical coinage probe (cold-state baseline, near-neighbor set, definitional intervention, Lexical Reachability) that distinguish it from a generic behavioral probe.",
+          "Post vs. lexical-acquisition test (Score 3): The model provides a clean separation, correctly identifying the specific diagnostic structure of the canonical coinage probe (cold-state baseline, near-neighbor contrast, Lexical Reachability measurement) as its key difference from a general lexical-acquisition test."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8904,
+        "output": 2592,
+        "cost": 0.03705,
+        "durationMs": 17869
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      2,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5
+  }
+}

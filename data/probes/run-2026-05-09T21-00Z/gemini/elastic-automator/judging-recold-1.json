@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.elastic-automator.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts elastic automator is a feature within Elastic Cloud, an IFTTT-like workflow engine, with no uncertainty signals.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by misdirection: the confabulated 'rule-based workflow engine in Elastic Cloud' is contrasted with AI agents, but this has no relation to the canonical LLM-driven loop definition.",
+          "Again accidental separation — the API-vs-GUI distinction stems from the confabulated Elastic Cloud product, not from anything aligned with the canonical definition of elastic automator.",
+          "The product-vs-framework contrast is internally coherent but rests entirely on the confabulated meaning; no canonical features (LLM loop, generation/evaluation/correction) appear."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9351,
+        "output": 331,
+        "cost": 0.055029999999999996,
+        "durationMs": 8507
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently invents a specific meaning for “Elastic Automator” as a native Elastic Cloud automation/workflow feature, with no uncertainty signal. This does not match the canonical definition involving an LLM transforming uncertain human input into executable structure through generation/evaluation/correction/presentation loops.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Vs AI agent: It separates the term from an AI agent, but does so using the confabulated Elastic Cloud rule-based workflow meaning. It asserts the automator is deterministic and non-AI, which is not aligned with the canonical LLM-based loop, so the separation is accidental/misdirected.",
+          "Vs RPA bot: It distinguishes by claiming Elastic Automator is API/backend Elastic-stack automation while RPA is GUI/front-end automation. This is a coherent distinction, but it is based on the invented Elastic Cloud product meaning rather than canonical features, so it is accidental separation.",
+          "Vs framework like LangChain: It distinguishes a supposed prebuilt Elastic workflow product from a developer framework like LangChain. Although it separates product/tool from framework, it does not identify the canonical LLM-mediated uncertain-input-to-executable-structure loop and instead describes Elastic Automator as deterministic and non-generative, so the separation is misdirected."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5942,
+        "output": 788,
+        "cost": 0.053349999999999995,
+        "durationMs": 16685
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and incorrectly identifies \"elastic automator\" as a specific, real feature within the Elastic Cloud product suite. It provides extensive, detailed descriptions of this existing tool, showing no uncertainty and recognizing none of the canonical features of the coined term.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated definition (a rule-based, deterministic workflow engine in Elastic Cloud) from an AI agent by correctly identifying dimensions like rule-based vs. goal-oriented. However, this separation is accidental because it's based entirely on a confabulated meaning, not the canonical one.",
+          "The model creates a separation based on its confabulated definition (an API-driven backend tool) versus an RPA bot (a UI-driven frontend tool). This is a valid technical distinction but is entirely accidental ('different by misdirection') as it does not reference any canonical features of an elastic automator.",
+          "The model distinguishes its confabulated definition (a specific product feature with a UI) from LangChain (a low-level developer framework). This separation is based on the correct distinction between a product and a library, but it's accidental with respect to the coined term's actual meaning, arising from the confabulation itself."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6070,
+        "output": 1781,
+        "cost": 0.0253975,
+        "durationMs": 13809
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

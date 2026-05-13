@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.token-tax.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts crypto-taxation as the primary meaning with no uncertainty signal about the canonical notation-design meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: confabulates crypto-tax vs API-billing distinction, unrelated to canonical. Post: cleanly separates structural-overhead design principle from literal API billing metric, naming the abstraction-level difference.",
+          "Cold: confabulates literal-tax vs metaphorical-inefficiency, unrelated to canonical justified-overhead framing. Post: cleanly distinguishes Token Tax as justified/intentional overhead buying integrity vs bloat as unjustified waste, matching canonical reframing.",
+          "Cold: confabulates financial-cost vs mental-cost, unrelated to canonical. Post: cleanly separates machine-side token cost for systemic integrity from human-side mental cost, identifying the inverse trade-off."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 22051,
+        "output": 443,
+        "cost": 0.12133000000000001,
+        "durationMs": 11307
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Cold response asserted a cryptocurrency/tax-law meaning as the primary meaning and treated later distinctions through that unrelated frame, without adequately flagging non-recognition of the coined canonical sense.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs token cost/API cost-per-token: separated only by misdirecting Token Tax into crypto taxation; post-introduction cleanly distinguished conceptual notation overhead from literal API billing cost.",
+          "Cold vs bloat/overhead: separated only by unrelated crypto-tax framing; post-introduction explicitly distinguished justified structural overhead from wasteful bloat and named auditability/type-safety/integrity benefits.",
+          "Cold vs cognitive load: separated only by unrelated crypto-tax framing; post-introduction explicitly distinguished token overhead from human mental effort while relating Token Tax to reduced reasoning burden."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14141,
+        "output": 744,
+        "cost": 0.093025,
+        "durationMs": 14862
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts three detailed, but incorrect, definitions for the term (related to crypto tax, symbolic tax, and sociological tokenism) with no hedging or uncertainty, completely missing the canonical meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model accidentally separates the terms by contrasting its confabulated 'crypto tax' definition with the correct definition of API cost. Post: The model correctly identifies 'Token Tax' as a conceptual design principle about structural overhead and API cost as the literal financial metric for service billing, explaining how the former influences the latter.",
+          "Cold: The model accidentally separates the terms by contrasting a literal financial tax with a metaphorical technical cost, which is opposite to the canonical definition's intent. Post: The model perfectly captures the core canonical distinction, framing 'Token Tax' as justified, purposeful overhead that buys systemic benefits, while 'bloat' is unjustified, wasteful overhead.",
+          "Cold: The model accidentally separates the terms by contrasting a literal external financial cost with a metaphorical internal mental cost. Post: The model correctly distinguishes 'Token Tax' as a cost paid by the machine for systemic integrity from 'cognitive load' as a cost paid by the human for understanding, and astutely identifies their often inverse relationship."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14798,
+        "output": 2484,
+        "cost": 0.0433375,
+        "durationMs": 18737
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

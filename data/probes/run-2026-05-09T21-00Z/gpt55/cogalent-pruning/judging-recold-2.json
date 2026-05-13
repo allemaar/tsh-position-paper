@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.cogalent-pruning.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model explicitly flags 'cogalent pruning' as not a standard term and offers parsed guesses (gradient/saliency pruning) rather than asserting a definite meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          2,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "The model substitutes a confabulated meaning (gradient/saliency pruning) and contrasts that with magnitude pruning; separation is accidental and not aligned with the canonical co-redundancy criterion.",
+          "The model correctly distinguishes granularity (whole components) from importance criterion, which partially aligns with the canonical contrast that cogalent pruning is element-level and not geometry-driven, though it doesn't capture the joint-redundancy idea.",
+          "Cleanly separates pruning (removal of model parts) from distillation (training a student to mimic a teacher), which substantively matches the canonical dimension regardless of the specific pruning criterion."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3792,
+        "output": 366,
+        "cost": 0.028109999999999996,
+        "durationMs": 7545
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer explicitly says “cogalent pruning” is not a standard recognized term and suggests it may be a typo or misheard phrase, then offers possible parsed alternatives rather than asserting a definite meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Versus magnitude pruning, the response separates the term only by hypothesizing it means gradient/saliency pruning. This misses the canonical joint-redundancy / paired-element criterion and instead distinguishes by an unrelated importance-to-loss criterion, so the separation is accidental.",
+          "Versus structured pruning, the response again treats the coined term as gradient/saliency pruning and contrasts criterion versus granularity. It does not identify the canonical paired co-redundancy basis or the contrast with geometry-driven pruning, so this is accidental separation by misdirection.",
+          "Versus knowledge distillation, the response correctly frames the coined term as a pruning/removal technique rather than a teacher-student training/transfer method. It still lacks the key canonical mechanism of joint redundancy across paired elements, so this is only partial canonical alignment rather than clean recognition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2240,
+        "output": 777,
+        "cost": 0.03451,
+        "durationMs": 16821
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model correctly identifies that \"cogalent pruning\" is not a standard term, states it might be a typo, and offers several plausible alternatives based on parsing the term (e.g., gradient pruning, cognitive pruning). This is a clear example of flagging the term as unknown and offering guesses.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "The model assumes 'cogalent pruning' is a form of saliency/gradient-based pruning. It then draws a clean distinction against magnitude pruning by contrasting the core criteria: removing weights based on their importance to the model's loss function versus removing them based on their small absolute value. This is a substantive and correct separation.",
+          "The model correctly identifies that its assumed meaning for the coined term (a gradient-based importance *criterion*) is orthogonal to structured pruning (a *granularity* for what gets removed, e.g., entire channels or layers). It explains that these are not mutually exclusive but describe different axes of pruning, which is a clean conceptual separation.",
+          "The model makes a fundamental and clean distinction. It correctly frames pruning (the category it assigns the coined term to) as a technique for removing parts of an existing model ('model surgery'), whereas knowledge distillation is a technique for training a new, smaller model to mimic a larger one ('model transfer')."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2226,
+        "output": 1567,
+        "cost": 0.0184525,
+        "durationMs": 13038
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.6666666666666667,
+      2,
+      2.6666666666666665
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.elastic-automator.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a specific meaning (an event-driven, autoscaling automation pattern combining elasticity and automation) with no uncertainty signals.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model cleanly separates its confabulated meaning (scalable executor) from AI agent (reasoner), but the separation is based on an unrelated invented definition rather than canonical LLM-loop semantics — accidental separation.",
+          "Distinguishes its confabulated backend/API automation pattern from RPA's UI-mimicking bots; clear contrast but rests on confabulated meaning unrelated to canonical definition.",
+          "Contrasts infrastructure execution pattern with LangChain as logic framework; coherent separation but anchored in confabulated meaning, not canonical LLM-loop definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8876,
+        "output": 341,
+        "cost": 0.052905,
+        "durationMs": 8678
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer does not recognize the coined canonical meaning. It confidently defines the term as cloud-style elastic/scalable automation and serverless/job-runner infrastructure, with no mention of LLM-mediated uncertain input, executable-structure generation, or iterative generation/evaluation/correction/presentation loops.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Vs AI agent: It separates the term from AI agents, but on the basis of a confabulated autoscaling executor meaning rather than the canonical LLM-based transformation-and-correction loop. This is accidental separation.",
+          "Vs RPA bot: It distinguishes backend/API/cloud automation from UI-level RPA, but again relies on the wrong autoscaling-infrastructure interpretation and supplies no canonical features. This is accidental separation.",
+          "Vs framework like LangChain: It distinguishes an execution/infrastructure pattern from an LLM framework, but assigns LLM intelligence to LangChain while denying it to the elastic automator, contrary to the canonical definition. This is accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5697,
+        "output": 1059,
+        "cost": 0.060255,
+        "durationMs": 21733
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a detailed definition by combining the concepts of \"elasticity\" (from cloud computing, i.e., resource scaling) and \"automation\" (like CI/CD pipelines). This definition is plausible but completely misses the canonical meaning related to LLMs and turning uncertain input into structured output. It presents this parsed, confabulated meaning as a factual explanation of an existing architectural pattern.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model separates the terms by contrasting its confabulated definition of 'elastic automator' (a scalable, non-intelligent task executor like a CI/CD runner) with an AI agent (an autonomous, reasoning decision-maker). The distinction is clear, but it's based entirely on a fabricated meaning for the coined term, making the separation accidental.",
+          "The model draws a sharp distinction by defining the 'elastic automator' as a backend/API-level system (consistent with its confabulation about CI/CD and serverless functions) and contrasting it with RPA bots which operate at the frontend/UI level. The separation is successful but accidental, as it relies on the confabulated meaning, not the canonical one.",
+          "The model creates a separation by defining 'elastic automator' as the execution infrastructure (the 'stage and crew') and LangChain as the AI development framework used to write the application logic (the 'script for the play'). This distinction between runtime environment and development framework is clear, but it is based on the model's confabulated definition, not the canonical one, resulting in an accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5838,
+        "output": 2104,
+        "cost": 0.0283375,
+        "durationMs": 17155
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

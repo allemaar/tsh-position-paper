@@ -1,0 +1,144 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.elastic-automator.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Model explicitly flags the term as not widely recognized and offers multiple speculative interpretations rather than asserting a definite meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: model treated elastic automator as scaling/rule-based ops tool, missing the LLM-loop core; post: cleanly named 'absorption of ambiguity by iteration' and 'appears intelligent' as protected features distinguishing from agency-framed AI agent.",
+          "Cold: framed as backend/infra automation vs UI-mimicking RPA, unrelated to canonical LLM-loop meaning; post: sharply distinguished on uncertainty-handling — RPA's deterministic script vs LLM-generated executable structure with self-correction loop.",
+          "Cold: framed as runtime ops tool vs developer SDK, missing canonical content; post: explicitly noted LangChain is a framework while elastic automator is a runtime pattern requiring the generate/evaluate/correct/present loop, even noting LangGraph maps closely."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 14469,
+        "output": 473,
+        "cost": 0.08417,
+        "durationMs": 12070
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The cold response explicitly said the term was not standardized and framed its meanings as contextual guesses, but those guesses were noncanonical Elastic/cloud automation interpretations.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: all three comparisons separated the term from the near-neighbor only by using an unrelated cloud/Elastic/rule-based automation meaning, not the canonical LLM ambiguity-to-structure iterative loop.",
+          "Post-introduction distinguishability: all three boundary answers used canonical features such as LLM use, uncertain input, executable structure, iteration, evaluation, correction, and system-vs-framework distinctions.",
+          "Refusal-of-collapse: post-introduction answers explicitly distinguished the elastic automator from AI agents, RPA bots, and LangChain-like frameworks using non-trivial canonical or category features."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8728,
+        "output": 1249,
+        "cost": 0.08110999999999999,
+        "durationMs": 31501
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model correctly identifies the term as non-standard, provides several plausible, contextualized hypotheses for its meaning (e.g., related to Elastic the company, or 'elastic' in cloud computing), and explicitly asks for context to provide a better answer.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Response & Confabulation: The model adopted an 'honest uncertainty' stance, flagging the term as non-standard and offering multiple plausible interpretations based on word shape (e.g., 'Elastic' the company, 'elastic' from cloud computing). It did not assert a single meaning, asking for context instead. This constitutes a soft confabulation (severity 1) because it provided detailed definitions for its hypotheses rather than simply refusing.",
+          "Cold Distinguishability: For all three near-neighbors, the model adopted one of its confabulated definitions (typically related to cloud auto-scaling or Elastic Stack tooling) and compared that to the neighbor. This led to clean separations, but on completely unrelated grounds to the canonical definition, resulting in a score of 1 (accidental separation) for each.",
+          "Post-Distinguishability (vs. AI agent): The model achieved a clean separation (score 3). After noting the significant overlap, it identified subtle but substantive differences based on the definition's framing: 'appears intelligent' as an epistemic hedge, the deflationary view of agency (automation vs. goal-pursuit), and the constitutive nature of the self-correction loop.",
+          "Post-Distinguishability (vs. RPA & LangChain): The model achieved clean separations (score 3) against both. It correctly contrasted the EA's core function—using an LLM to absorb input uncertainty—with an RPA bot's brittle, deterministic, UI-based scripting. It also correctly identified the category error in comparing an EA (a system pattern) with LangChain (a developer framework/toolkit used to build such patterns).",
+          "Refusal of Collapse: The model successfully refused to collapse the term into any of the near-neighbors after being given the definition. It explicitly named non-trivial distinguishing features for each: the conceptual reframing vs. AI agents, the handling of uncertainty vs. RPA bots, and the system-vs-framework distinction vs. LangChain."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8951,
+        "output": 3491,
+        "cost": 0.04609875000000001,
+        "durationMs": 26033
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

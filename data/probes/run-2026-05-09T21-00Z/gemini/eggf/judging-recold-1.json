@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.eggf.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts EGGF is most likely a typo for EGF (Epidermal Growth Factor) without flagging genuine uncertainty about the coined term itself.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model separates EGF (a protein) from a knowledge graph, but this is accidental separation via confabulation — none of the canonical EGGF features (entity gravity, manifest endpoint, typed pathways) appear.",
+          "Again separates a biological protein from a PKM system, an accidental distinction unrelated to EGGF's actual publishing-architecture meaning.",
+          "Distinguishes a protein from SSG+structured data, an accidental separation; canonical EGGF features like manifest endpoints and typed pathways for AI traversal are absent."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7211,
+        "output": 328,
+        "cost": 0.044255,
+        "durationMs": 8507
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The response explicitly says EGGF is not a widely known or standard acronym, says meaning depends on context, offers likely guesses such as a typo for EGF or a niche acronym, and asks for context rather than claiming recognition of the coined term.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against a knowledge graph, the response distinguishes only by misidentifying EGGF as EGF/Epidermal Growth Factor and treating it as a biological entity that could be represented inside a knowledge graph. This is separation by unrelated confabulated meaning, not by canonical EGGF features such as authored Bodies, typed Pathways, canonical URLs, or a manifest endpoint.",
+          "Against a PKM system, the response again assumes EGGF means EGF and contrasts a single biological fact/protein with a personal note-taking or second-brain system. The distinction is coherent for the wrong referent and contains no canonical EGGF architecture features, so it is accidental separation.",
+          "Against a static-site generator with structured data, the response treats EGGF/EGF as biological content and the SSG as publishing machinery with structured labels. Although it mentions machine-readable publishing generally, it does not identify EGGF as a portable authorship graph framework with canonical URLs, typed pathways, and a manifest endpoint; the separation rests on the wrong biological interpretation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4701,
+        "output": 693,
+        "cost": 0.044295,
+        "durationMs": 12608
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model correctly identifies that 'EGGF' is not a standard term, signals its uncertainty, and then offers several plausible guesses, primarily that it is a typo for 'EGF' (Epidermal Growth Factor). It does not assert a definite wrong meaning but instead explores possibilities.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated meaning (EGF, a protein) from a knowledge graph, explaining that EGF is content that would be represented as a node within a KG. This is a separation by misdirection, as it's not distinguishing the canonical EGGF at all.",
+          "The model distinguishes a biological fact (EGF) from a personal system for managing information (PKM). The separation is based on the confabulated meaning and is therefore accidental, contrasting a single piece of content with a tool for managing content.",
+          "The model distinguishes its confabulated concept (EGF, a protein) from the technology used to publish information about it (a static-site generator with structured data). This is another accidental separation, where the model explains the relationship between content and publishing machinery instead of comparing two like concepts."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4743,
+        "output": 1548,
+        "cost": 0.021408749999999997,
+        "durationMs": 13189
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

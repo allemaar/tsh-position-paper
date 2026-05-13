@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.token-substrate.3",
+  "cell_id": "claude.token-substrate",
+  "model_id": "claude-opus-4-7",
+  "term_id": "token-substrate",
+  "term_display": "token substrate",
+  "canonical_definition": "The token substrate is the claim that for an LLM, the token sequence in context IS the cognitive substrate — not a representation OF cognition that runs on some deeper substrate, but the substrate itself — with the consequence that a token added to context is not a description of a thought but the material the thought is made of, and therefore the substrate is movable by the act of writing into it.",
+  "near_neighbors": [
+    "embedding space",
+    "context window",
+    "latent representation / hidden states"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-11T11:14:11Z",
+  "scores": {
+    "cold_response_classification": "honest-uncertainty",
+    "cold_response_classification_justification": "It says the term is context-dependent and not formal in NLP, with a loose tokenization/vocabulary guess but not the canonical claim that context tokens are the cognitive substrate.",
+    "cold_distinguishability_scores": [
+      2,
+      2,
+      2
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 1,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs embedding space: it misses the canonical claim that context tokens are the cognitive substrate, but partially aligns by contrasting discrete tokens with embedding-space representations.",
+      "Vs context window: it misses the stronger cognitive-substrate claim, but partially aligns by distinguishing token substrate as token units/encoding from context window as token-count capacity.",
+      "Vs latent representation / hidden states: it misses the canonical claim that the context token sequence itself is the cognitive substrate, but partially distinguishes discrete token substrate from continuous hidden states."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

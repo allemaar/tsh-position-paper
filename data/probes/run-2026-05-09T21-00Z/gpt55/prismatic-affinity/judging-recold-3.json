@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.prismatic-affinity.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a geometric/affine-transformation meaning with no uncertainty signals, which does not match the canonical definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by confabulating a geometry meaning unrelated to the canonical sense, so the contrast with ambiguity is accidental.",
+          "The contrast with perspectivism rests on the confabulated geometric definition, not on canonical features like coherent angle-of-attention shifts.",
+          "Polysemy is distinguished only because the confabulated geometric meaning is treated as univocal, again an accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3560,
+        "output": 273,
+        "cost": 0.024625,
+        "durationMs": 7017
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently asserts that “prismatic affinity” is a known geometric affine transformation/shear-like operation, with no uncertainty signal. This does not match the canonical coined meaning involving perceived identity shifting coherently with angle of attention.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Vs ambiguity: It separates the term from ambiguity by treating it as a precise geometric operation rather than undecided meaning. This is an unrelated confabulated meaning, not a partial recognition of the canonical attentional/identity-shift property.",
+          "Vs perspectivism / perspective-dependence: It distinguishes the term as a mathematical parallel projection/shear from observer-standpoint dependence. Although it mentions viewpoint/projection loosely, it does not capture the canonical distinction: framing/angle of attention producing non-overlapping but internally consistent object descriptions rather than observer position alone.",
+          "Vs polysemy: It separates the term from polysemy by saying the former is a definite geometric mapping and the latter is multiple related word senses. This is again separation via the wrong geometric interpretation, with no canonical features identified."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2168,
+        "output": 525,
+        "cost": 0.02659,
+        "durationMs": 14308
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a specific, incorrect definition from geometry ('an affine collineation') without any hedging or signals of uncertainty. The canonical definition is about perception, not mathematics. This is a clear case of confident confabulation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated geometric definition (which is 'exact and well-defined') from ambiguity (which is a 'lack of clarity or uniqueness in meaning'). This separation is accidental, based entirely on the unrelated confabulated meaning.",
+          "The model distinguishes its confabulated geometric transformation (which is 'mathematical and exact') from perspectivism (the idea that what is perceived 'depends on a viewpoint'). This distinction is an artifact of the confabulation and does not engage with the canonical definition.",
+          "The model distinguishes its confabulated geometric definition (a 'well-defined geometric operation' with a single meaning) from polysemy ('one word has multiple related meanings'). The separation is accidental, resulting from contrasting the near-neighbor with a completely invented concept."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2109,
+        "output": 1486,
+        "cost": 0.017496249999999998,
+        "durationMs": 12083
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

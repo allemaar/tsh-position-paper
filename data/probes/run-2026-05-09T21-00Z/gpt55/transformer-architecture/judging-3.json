@@ -1,0 +1,146 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.transformer-architecture.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently produced a detailed, accurate description of the Transformer architecture in the cold state with no uncertainty signals.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold and post responses cleanly distinguish Transformer from RNN by naming parallel self-attention vs sequential hidden-state recurrence, aligned with canonical definition.",
+          "Cold and post responses cleanly distinguish Transformer from CNN by contrasting global self-attention with local convolution filters, matching canonical features.",
+          "Cold and post responses correctly identify MoE as a scaling technique often inserted into Transformers rather than an alternative architecture, naming router/expert sparsity as the distinguishing feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 18513,
+        "output": 347,
+        "cost": 0.10124000000000001,
+        "durationMs": 8487
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response accurately recognized the established term and supplied canonical features: Vaswani et al. 2017, self-attention, multi-head attention, positional encodings, feed-forward layers, residual connections/layer normalization, and parallel rather than recurrent sequence processing.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "RNN: Cold and post responses cleanly distinguish Transformer self-attention and parallel sequence processing from RNN recurrence, hidden states, and sequential processing; post response explicitly refuses collapse.",
+          "CNN: Cold and post responses cleanly distinguish Transformer self-attention/global token interactions from CNN convolutional/local filter processing; post response explicitly names non-trivial distinguishing features.",
+          "MoE: Cold and post responses cleanly distinguish Transformer as an attention-based architecture from MoE as a routing/expert scaling component often used inside Transformers; post response explicitly refuses collapse."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11671,
+        "output": 756,
+        "cost": 0.08103500000000001,
+        "durationMs": 13115
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model correctly and comprehensively identifies 'transformer (architecture)' as an established technical term from its training data, providing a detailed and accurate definition that aligns perfectly with the canonical one.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability (vs RNN): The model provides a clean, substantive distinction, correctly identifying the core differences in sequence processing (parallel vs. sequential), core mechanism (self-attention vs. recurrence), and handling of long-range dependencies.",
+          "Cold Distinguishability (vs CNN): The model provides a clean, substantive distinction, correctly contrasting the core mechanisms (self-attention vs. convolution) and their implications for modeling relationships (global vs. local) and inductive bias.",
+          "Cold Distinguishability (vs MoE): The model provides a clean, substantive distinction by correctly identifying that the terms are not mutually exclusive alternatives. It accurately frames Transformer as an architecture and MoE as a scaling technique/component that can be used within it, distinguishing attention from expert routing.",
+          "Post-Introduction Distinguishability (All): After seeing the canonical definition, the model maintains clean, perfect separations for all three near-neighbors. It uses clear tables and explanations to contrast Transformers with RNNs, CNNs, and MoE along the correct dimensions.",
+          "Refusal of Collapse (vs RNN): The model explicitly distinguishes by contrasting parallel processing via multi-head self-attention with an RNN's sequential, recurrent processing.",
+          "Refusal of Collapse (vs CNN): The model explicitly distinguishes by contrasting the Transformer's global self-attention mechanism with the CNN's use of local convolutional filters.",
+          "Refusal of Collapse (vs MoE): The model explicitly distinguishes by identifying the Transformer as a complete architecture and MoE as a sub-component/scaling technique, noting they are often combined rather than being alternatives."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12096,
+        "output": 3299,
+        "cost": 0.04811,
+        "durationMs": 24029
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

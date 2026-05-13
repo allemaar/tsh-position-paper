@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.lexical-reachability.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a programming-language scoping meaning with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold answer treats lexical reachability as a code-scoping concept entirely unrelated to canonical metric; post-intro cleanly separates it as a behavioral metric vs. token presence in vocabulary.",
+          "Cold answer's scoping notion is unrelated to the canonical metric; post-intro clearly contrasts behavioral distinguishability gap vs. graph path connectivity.",
+          "Cold answer's code-scoping framing is unrelated to canonical definition; post-intro distinguishes narrow term-level diagnostic from broad prompt-based learning ability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9360,
+        "output": 358,
+        "cost": 0.05575,
+        "durationMs": 8386
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response confidently assigns an established programming-language/scope meaning to “lexical reachability” rather than flagging uncertainty or identifying the canonical metric involving cold/post distinguishability against near-neighbors.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vocabulary coverage: cold response separates it from the coined term only via an unrelated programming-scope interpretation; post-introduction response cleanly distinguishes vocabulary presence/coverage from the canonical behavioral metric over model × term × near-neighbor cells.",
+          "Graph reachability: cold response distinguishes graph paths from lexical scope, which is an accidental separation based on the wrong meaning; post-introduction response cleanly contrasts graph connectivity with the canonical cold/post distinguishability-gap metric.",
+          "In-context learning capability: cold response distinguishes general prompt adaptation from a wrong scope/access notion, not the canonical metric; post-introduction response explicitly identifies lexical reachability as a targeted diagnostic of definition-in-context uptake rather than general in-context learning capability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6045,
+        "output": 1000,
+        "cost": 0.060225,
+        "durationMs": 22900
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and consistently asserts a pre-existing technical meaning for the term (lexical scope in programming), which is entirely different from the canonical definition. It does not express any uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model cleanly separates its confabulated definition ('visibility/accessibility in context') from vocabulary coverage ('inclusion in a word inventory'). This is an accidental separation because the confabulated meaning is unrelated to the canonical one. Post: The model correctly separates the canonical definition (a behavioral metric of distinguishability improvement) from vocabulary coverage ('presence/availability').",
+          "Cold: The model cleanly separates its confabulated definition ('visibility in source code') from graph reachability ('paths in a graph'). This is an accidental separation based on a wrong definition. Post: The model correctly separates the canonical definition (a 'behavioral metric over model performance') from graph reachability (a 'structural property of a graph').",
+          "Cold: The model cleanly separates its confabulated definition ('access') from in-context learning ('adaptation or inference'). This is an accidental separation. Post: The model correctly separates the canonical definition as a 'specialized diagnostic' of lexical uptake from the 'broad ability' of in-context learning."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6292,
+        "output": 1982,
+        "cost": 0.027684999999999998,
+        "durationMs": 14933
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 7
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.eggf.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model flagged EGGF as not widely recognized and offered EGF (exponential generating function) as a possible interpretation while inviting context.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state confabulated EGF as a math object, accidentally separating from knowledge graph; post-introduction clearly named canonical URLs, typed Pathways, manifest endpoint, and creator-centered authority as distinguishing features.",
+          "Cold state again used EGF math meaning, accidentally separating from PKM; post-introduction clearly distinguished public publishing infrastructure with canonical Bodies vs private note-taking workspace.",
+          "Cold state used EGF math meaning, accidentally separating from SSG; post-introduction explicitly identified canonical authorship graph, typed Pathways, and manifest endpoint as distinct from page rendering."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 12443,
+        "output": 395,
+        "cost": 0.07208999999999999,
+        "durationMs": 9581
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Cold response explicitly said EGGF is not a common standard acronym and depended on context, then conditionally redirected to EGF/exponential generating function rather than asserting a definite EGGF meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold distinguishability: all three near-neighbor comparisons separated EGGF from the neighbor only by misidentifying it as EGF/exponential generating function, with no canonical EGGF features; this is accidental separation for each near-neighbor.",
+          "Post-introduction distinguishability: all three responses used canonical EGGF features—central Entity gravity, authored Bodies with canonical URLs, typed Pathways, manifest endpoint, AI/search traversal, and publishing/credibility architecture—to distinguish it cleanly from the near-neighbors.",
+          "Refusal-of-collapse: each post-introduction boundary response named non-trivial distinguishing features rather than collapsing EGGF into the near-neighbor; cold confabulation severity is 0 because the model flagged uncertainty rather than asserting a definite meaning."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7571,
+        "output": 791,
+        "cost": 0.061585,
+        "durationMs": 14164
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model correctly states that 'EGGF isn’t a very common standard acronym' and then hedges its answer by guessing it might be a typo for 'EGF' ('If you mean EGF...'). This signals uncertainty rather than asserting a false definition with confidence.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model confabulated a completely unrelated meaning for EGGF (Exponential Generating Function) based on a similar acronym, EGF. While it cleanly distinguished this unrelated mathematical concept from all three near-neighbors, this constitutes an 'accidental separation' as it is a complete misdirection from the canonical definition. All three scores are 1.",
+          "After receiving the canonical definition, the model achieved a clean separation for all three near-neighbors. It correctly identified EGGF's unique focus on being a creator-centered 'publishing-and-credibility architecture' with a 'manifest endpoint', contrasting this with the general fact representation of a knowledge graph, the private nature of a PKM, and the page-rendering function of a static-site generator. All three scores are 3.",
+          "The model did not assert a meaning for EGGF with confidence. Instead, it flagged its guess by asking 'If you mean EGF...'. This is a classic soft confabulation, scoring 1.",
+          "In the post-introduction phase, the model successfully identified and articulated specific, non-trivial features of EGGF that distinguish it from each near-neighbor. For all three, it highlighted concepts like the manifest endpoint, the focus on canonical authorship and credibility, and the Entity-centric gravity, earning a score of 1 for each."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7753,
+        "output": 3334,
+        "cost": 0.04303125,
+        "durationMs": 22876
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

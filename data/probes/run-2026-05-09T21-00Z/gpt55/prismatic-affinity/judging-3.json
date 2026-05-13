@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.prismatic-affinity.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite geometric meaning (parallel projection / affine transformation) with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: distinguished via unrelated geometric meaning (accidental separation). Post: cleanly identified ambiguity as undecided meaning vs coherent framing-dependent shift.",
+          "Cold: separated only by domain mismatch (geometry vs viewpoint). Post: explicitly named angle-of-attention/framing vs observer position as the canonical distinguishing feature.",
+          "Cold: separated by domain (geometry vs linguistics), unrelated to canonical meaning. Post: clearly contrasted lexical multiple meanings with perceptual identity-refraction under framing.",
+          "All three post-introduction responses named non-trivial canonical distinguishing features."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7792,
+        "output": 410,
+        "cost": 0.049210000000000004,
+        "durationMs": 9414
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite established geometric meaning for the coined term without uncertainty, rather than flagging non-recognition or approximating the canonical perceptual/framing property.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Ambiguity: cold separation was accidental because it contrasted ambiguity with an unrelated geometric transformation; post-introduction response cleanly distinguished undecided meaning from coherent framing-dependent identity shift.",
+          "Perspectivism / perspective-dependence: cold separation was accidental because it used the unrelated parallel-projection sense; post-introduction response explicitly protected the canonical distinction between observer position alone and angle/framing of attention shifting apparent identity.",
+          "Polysemy: cold separation was accidental because it contrasted polysemy with an unrelated geometric meaning; post-introduction response explicitly distinguished multiple related word senses from object-identity shifts under different framings."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4721,
+        "output": 558,
+        "cost": 0.040345000000000006,
+        "durationMs": 15940
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a detailed and specific technical definition from geometry (affine transformation via parallel projection), presenting it as established fact with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model invents a geometric definition and correctly distinguishes this precise mathematical concept from the general idea of ambiguity, which constitutes an accidental separation (Score 1). Post: The model correctly identifies the canonical distinction: a coherent, framing-dependent shift in identity versus an undecided or unresolved meaning (Score 3).",
+          "Cold: The model distinguishes its confabulated geometric definition (a parallel projection) from the broader concept of perspectivism, even noting the difference from visual perspective, which is a textbook accidental separation (Score 1). Post: The model correctly isolates the key canonical feature, contrasting a shift based on 'angle of attention' with one based on 'observer position alone' (Score 3).",
+          "Cold: The model correctly separates its confabulated geometric concept from the linguistic concept of polysemy, an accidental separation based on a wrong definition (Score 1). Post: The model makes a clean distinction between a property of a perceived object (prismatic affinity) and a semantic property of a word (polysemy) (Score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4679,
+        "output": 2507,
+        "cost": 0.030918750000000002,
+        "durationMs": 18743
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.token-substrate.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts that token substrate is a blockchain framework for tokens, with no uncertainty signals.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: equates with blockchain/embedding-space contrast, unrelated to canonical meaning. Post: clearly distinguishes substrate as dynamic cognitive workspace from embedding space as static semantic map.",
+          "Cold: blockchain ledger vs AI memory, unrelated to canonical meaning. Post: explicitly notes substrate resides within context window, distinguishing cognitive content from architectural container.",
+          "Cold: blockchain registry vs AI internal state, unrelated misdirection. Post: cleanly captures explicit-surface vs implicit-internal distinction central to canonical claim."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 22072,
+        "output": 351,
+        "cost": 0.11913500000000002,
+        "durationMs": 8174
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Cold response asserted a definite blockchain/crypto meaning for the coined term with no uncertainty signal, rather than recognizing the LLM-cognition canonical sense.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Embedding space: cold distinction was accidental via unrelated blockchain framing; post-introduction response cleanly distinguished token sequence as mutable cognitive substrate from embeddings as vector/semantic lookup space.",
+          "Context window: cold distinction was accidental via unrelated blockchain framing; post-introduction response distinguished the context window as architectural capacity/container from the token substrate as the active token content/material of thought.",
+          "Latent representation / hidden states: cold distinction was accidental via unrelated blockchain framing; post-introduction response explicitly distinguished observable discrete token substrate as material cognition from hidden states as internal processing machinery."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14307,
+        "output": 615,
+        "cost": 0.08998500000000001,
+        "durationMs": 13072
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently provided a detailed definition of 'token substrate' as a concept from blockchain technology, which is entirely different from the canonical definition related to LLM cognition. It showed no uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model confabulated a blockchain definition and separated it from the AI concept of embedding space. This is an accidental separation via misdirection (score 1). Post: After receiving the canonical definition, the model cleanly distinguished the token substrate as the 'dynamic workspace' and 'material of thought' from the embedding space as the 'static library of concepts' (score 3).",
+          "Cold: The model contrasted its confabulated blockchain definition with the AI concept of a context window. The separation was based on a complete misinterpretation of the coined term (score 1). Post: The model correctly and cleanly distinguished the token substrate as the 'cognitive content' residing within the context window, which it identified as the 'architectural container' or technical boundary (score 3).",
+          "Cold: The model separated its incorrect blockchain definition from the AI concept of latent states, which is a separation based on a confabulation (score 1). Post: The model provided a clean separation, correctly identifying the token substrate as the explicit, observable sequence where cognition occurs, versus the latent states which are the implicit, internal 'background machinery' for processing that substrate (score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14780,
+        "output": 2730,
+        "cost": 0.045774999999999996,
+        "durationMs": 20089
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

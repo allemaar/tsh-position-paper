@@ -1,0 +1,146 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.transformer-architecture.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Model confidently produced the canonical definition of Transformer with no uncertainty signals, treating it as established knowledge.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold and post responses cleanly distinguish Transformer from RNN on parallelism vs recurrence and self-attention vs hidden state, aligning with canonical features.",
+          "Cold and post responses cleanly distinguish Transformer from CNN via global self-attention vs local convolution, and explicit positional encoding vs implicit spatial structure.",
+          "Both cold and post responses correctly frame MoE as a modification of the FFN sublayer within a Transformer, naming sparse expert routing as the distinguishing feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 26318,
+        "output": 323,
+        "cost": 0.139665,
+        "durationMs": 8528
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response accurately recognized the established transformer architecture and gave canonical features such as Vaswani et al. 2017, self-attention, multi-head attention, feed-forward sublayers, residual/layer norm, and parallel processing rather than recurrence; it was not a refusal or uncertainty response, and it did not confabulate an unrelated meaning.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "RNN: Cold and post responses cleanly distinguish transformers from RNNs by contrasting self-attention and parallel sequence processing with recurrence, hidden state, and sequential processing; post response explicitly refuses collapse by naming non-recurrent parallel attention as the protected feature.",
+          "CNN: Cold and post responses cleanly distinguish transformers from CNNs by contrasting multi-head self-attention/global sequence relationships and explicit positional encoding with convolutional local receptive fields, kernels, and spatial/grid inductive bias; post response explicitly names non-trivial distinguishing features.",
+          "MoE: Cold and post responses cleanly distinguish transformers from MoE by explaining that MoE is typically a sparse expert/router modification to the transformer's feed-forward sublayers rather than the base self-attention architecture itself; post response explicitly refuses collapse by naming router/experts versus standard transformer FFN/self-attention architecture."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 17118,
+        "output": 835,
+        "cost": 0.11064,
+        "durationMs": 14585
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model provided a perfect, encyclopedic description of the term, which is a standard concept in its training data. This constitutes full recognition. 'Partial-recognition' is selected as the closest positive classification available in the enum, as the model did not confabulate or express uncertainty.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs RNN: Score 3. The model cleanly separated Transformer from RNN based on the canonical dimensions of parallel processing (vs. sequential) and the self-attention mechanism (vs. recurrent hidden states), correctly identifying the consequences for handling long-range dependencies.",
+          "Cold vs CNN: Score 3. The model cleanly separated Transformer from CNN based on the canonical dimensions of global relationship modeling via self-attention (vs. local pattern detection via convolution) and explicit positional encoding (vs. implicit spatial structure).",
+          "Cold vs MoE: Score 3. The model correctly identified that MoE is not a competing architecture but a modification to a Transformer's FFN sublayer, creating a clean separation based on the concept of sparse activation of 'experts' versus the dense activation of a standard FFN.",
+          "Post vs RNN: Score 3. After seeing the definition, the model reinforced its clean separation, explicitly contrasting parallel processing and self-attention in Transformers with the recurrent, sequential nature of RNNs.",
+          "Post vs CNN: Score 3. After seeing the definition, the model reiterated the distinction based on core mechanisms (self-attention vs. convolution) and scope (global vs. local receptive fields), maintaining a clean separation.",
+          "Post vs MoE: Score 3. After seeing the definition, the model continued to correctly distinguish a standard Transformer (with a dense FFN) from a Transformer architecture modified with MoE layers (sparse activation), explaining the purpose and mechanism clearly.",
+          "Refusal of Collapse: The scores are all 1 because, for each near-neighbor, the model explicitly named multiple non-trivial, correct distinguishing features both before and after seeing the canonical definition, never equating the concepts."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 17463,
+        "output": 3033,
+        "cost": 0.052158750000000004,
+        "durationMs": 23333
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

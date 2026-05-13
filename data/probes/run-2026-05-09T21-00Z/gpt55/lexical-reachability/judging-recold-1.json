@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.lexical-reachability.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a programming-language scope meaning with no uncertainty signal and no acknowledgment that the term is non-standard.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Cleanly separates code-scope accessibility from corpus word-list coverage, but the separation is via an unrelated confabulated meaning rather than the canonical cold/post-introduction distinguishability gap.",
+          "Cleanly separates source-code scope from graph paths, even noting they can be related, but again the contrast rests on a confabulated programming meaning unrelated to the canonical metric.",
+          "Sharply contrasts a static code concept with a model behavioral property, but the distinction is built on a confabulated meaning rather than the canonical operationalization of the Token-Substrate Hypothesis."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3878,
+        "output": 307,
+        "cost": 0.027065,
+        "durationMs": 7261
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserted that 'lexical reachability' is a programming-language scope concept about whether identifiers are accessible from a location in source code. This is not the canonical coined definition, and the response gave no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against vocabulary coverage, the model separated the terms, but only by using a confabulated programming-scope meaning for lexical reachability rather than the canonical metric involving cold/post-introduction distinguishability. This is accidental separation.",
+          "Against graph reachability, the model distinguished source-code lexical scope from graph paths. Although superficially plausible because both use 'reachability,' it does not identify the canonical definition or its measurement relation to near-neighbor distinguishability, so the separation is accidental.",
+          "Against in-context learning capability, the model correctly described in-context learning but contrasted it with a wrong programming-scope meaning of lexical reachability. It did not connect lexical reachability to post-introduction distinguishability after a definition in context, so this is accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2462,
+        "output": 537,
+        "cost": 0.028420000000000004,
+        "durationMs": 8682
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts that 'lexical reachability' is a concept from programming languages related to lexical scope, providing a detailed and correct explanation of that concept, but showing no awareness of the coined term's canonical meaning. It expresses no uncertainty.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model separates the terms by contrasting its confabulated definition (lexical scope in programming) with the correct definition of vocabulary coverage. This is a clear but accidental separation based on a misdirected meaning.",
+          "The model correctly defines graph reachability and contrasts it with its confabulated definition of lexical reachability (lexical scope). The distinction is valid for the concepts being compared, but constitutes an accidental separation for the coined term.",
+          "The model separates its confabulated definition (a programming language concept) from in-context learning capability (an AI model property). The separation is clear but accidental, as it stems from a completely incorrect initial definition of the coined term."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2501,
+        "output": 1572,
+        "cost": 0.018846250000000002,
+        "durationMs": 11985
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

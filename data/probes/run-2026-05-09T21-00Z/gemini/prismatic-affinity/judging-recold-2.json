@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.prismatic-affinity.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently invents a fantasy/gaming meaning with no uncertainty signal and no acknowledgment that the term is unfamiliar.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved via an unrelated fantasy-magic confabulation rather than the canonical attention-angle/identity-shift dimension, so it's accidental.",
+          "Distinguishes via fictional 'objective multiple powers vs subjective interpretation,' missing the canonical framing-coherence dimension; separation is incidental.",
+          "Distinguishes via 'many sources vs many meanings of one symbol,' but anchored in the magic-toolbox confabulation rather than canonical content; accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7603,
+        "output": 290,
+        "cost": 0.045265,
+        "durationMs": 11197
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently asserts a specific fantasy/gaming meaning for “prismatic affinity” as innate access to multiple magical elements or energies, with no meaningful uncertainty signal, and does not supply the canonical perceptual/framing-based definition.",
+        "recold_distinguishability_scores": [
+          2,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against ambiguity, the response is based on the wrong fantasy-magic meaning, but it partially captures a canonical contrast by treating prismatic affinity as structured multiplicity rather than undecided or unclear meaning.",
+          "Against perspectivism / perspective-dependence, the response separates the terms by claiming prismatic affinity involves objective multiple truths while perspectivism involves subjective interpretation. This misses and partly contradicts the canonical feature that prismatic affinity itself shifts with angle of attention/framing, so the separation is accidental.",
+          "Against polysemy, the response distinguishes it from lexical multiple meanings, but only by using the confabulated fantasy notion of many magical sources versus one word with many meanings. It does not identify the canonical object-perception and attentional-framing structure, so the separation is accidental."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4864,
+        "output": 1291,
+        "cost": 0.06305,
+        "durationMs": 40793
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a detailed, incorrect definition related to fantasy magic systems. It treats the term as a known concept (\"a popular concept in fantasy, sci-fi, and gaming\") and shows no signs of uncertainty, which is the hallmark of confident confabulation. The asserted meaning is entirely unrelated to the canonical definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model successfully distinguishes its confabulated meaning ('mastery of many, clearly defined categories') from ambiguity ('lack of a clearly defined category'). However, this is a separation by misdirection, as it's based on a completely fabricated definition of 'prismatic affinity'. This is an accidental separation.",
+          "The model draws a distinction between its confabulated meaning (mastering multiple objective truths/elements) and perspectivism (truth being subjective and interpretive). This separation is coherent but accidental, as it relies on a confabulated meaning that has no relation to the canonical one.",
+          "The model distinguishes its confabulated meaning ('many distinct sources of power') from polysemy ('a single source having many distinct meanings'). This distinction is logical within the model's confabulation but is entirely disconnected from the canonical definition, making it an accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4838,
+        "output": 1578,
+        "cost": 0.0218275,
+        "durationMs": 12708
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.3333333333333333,
+      1,
+      1
+    ]
+  }
+}

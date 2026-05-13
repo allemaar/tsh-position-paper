@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.off-token-route.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts crypto/DeFi and API meanings as definite interpretations without flagging uncertainty about the term itself being unfamiliar.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: model gave unrelated crypto/API meaning, only metaphorically gesturing at non-tokenized thought; post: cleanly separated route-vs-stage, contrastive framing, and broader extension including nonlinguistic-coexisting-with-language.",
+          "Cold: confabulated unrelated technical meaning with only loose metaphor; post: distinguished theory-of-cognition vs. access-path, body-centering vs. pre-token-centering, and different contrast classes.",
+          "Cold: unrelated technical meaning with only metaphorical bridge; post: clearly separated processing-speed/automaticity axis from substrate/medium axis, noting linguistic System 1 and nonlinguistic System 2."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 11497,
+        "output": 397,
+        "cost": 0.06741,
+        "durationMs": 9566
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Cold response flagged nonstandard usage but then supplied unrelated crypto/API/networking meanings as likely meanings, with no stable recognition of the canonical cognitive/LLM contrast.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Prelinguistic cognition: cold separation was mainly by unrelated technical-domain confabulation, with only a loose metaphorical hint; post-introduction cleanly distinguished prelinguistic cognition as a human-side phenomenon from Off-Token Route as the contrastive access-path concept involving LLM token-boundedness.",
+          "Embodied cognition: cold separation relied on the same unrelated crypto/API framing, with only a loose symbolic-bypass analogy; post-introduction cleanly distinguished body-centered grounding from the off-token/pre-token access-route claim.",
+          "System 1 / intuitive cognition: cold separation was accidental via unrelated technical meanings and a loose intuition metaphor; post-introduction cleanly distinguished speed/automaticity from medium/substrate and token-boundedness."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7093,
+        "output": 1662,
+        "cost": 0.08532500000000001,
+        "durationMs": 37113
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model does not recognize the term. It confidently asserts several incorrect meanings from technical domains like crypto and networking, presenting them as the 'most likely' or 'most common' interpretations without any uncertainty markers.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Scores: The model confabulates a meaning related to crypto/networking. When comparing this to the near-neighbors, it correctly defines the near-neighbors but separates them from its own incorrect definition. This is an 'accidental separation' based on a confabulation, scoring a 1 for all three.",
+          "Confabulation Severity: The model asserts its incorrect definitions with high confidence ('most likely meaning', 'typically refers to'), offering no hedge or signal that it is guessing based on word shape. This is a hard confabulation, scoring a 2.",
+          "Post Scores: Post-introduction, the model demonstrates deep understanding. For all three near-neighbors, it articulates multiple, substantive dimensions of difference. It distinguishes 'off-token route' as being relational (defined against LLMs), about the medium of thought (not speed, like System 1), and an access path (not a full theory, like embodied cognition). These are clean separations, scoring 3.",
+          "Refusal-of-Collapse: In all three post-introduction comparisons, the model explicitly names multiple non-trivial features that distinguish the coined term from the near-neighbor, clearly refusing to collapse the concepts and earning a score of 1 for each."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7356,
+        "output": 2345,
+        "cost": 0.032645,
+        "durationMs": 17266
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

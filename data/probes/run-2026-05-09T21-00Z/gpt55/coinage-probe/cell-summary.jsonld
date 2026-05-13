@@ -1,0 +1,23 @@
+{
+  "@type": "tsh:CellSummary",
+  "run_id": "run-2026-05-09T21-00Z",
+  "cell_id": "gpt55.coinage-probe",
+  "model": "gpt55",
+  "term_id": "coinage-probe",
+  "stratum": "self-ref-paper",
+  "trials_completed": 3,
+  "judges_ok": 9,
+  "judges_total": 9,
+  "cold_dist_mean": [
+    2,
+    1.6666666666666667,
+    1.2222222222222223
+  ],
+  "post_dist_mean": [
+    3,
+    3,
+    3
+  ],
+  "lr_mean": 4.111111111111111,
+  "flags": []
+}

@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.yon-notation.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model explicitly disclaims knowledge of YON as a technical format and refuses to fabricate comparisons across all three near-neighbors.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-intro, model cleanly distinguishes YON from JSON/XML/YAML on stream-first per-line validity and pluggable vocabulary, matching canonical features; cold state offers no separation, only honest uncertainty.",
+          "Post-intro, model identifies cognition-vs-presentation, per-line validity, and pluggable domain vocabulary as distinguishing features from Markdown; cold state declines to compare.",
+          "Post-intro, model names pipeline-stage (output vs input), structured cognition vs parameterized prose, and streamability as distinctions from prompt template languages; cold state declines to compare."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 10854,
+        "output": 389,
+        "cost": 0.06399500000000001,
+        "durationMs": 9525
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "In the cold state the model did not recognize YON as the coined notation and repeatedly flagged lack of reliable knowledge, asking for context rather than asserting a stable invented definition. It did speculate mildly in the JSON/XML/YAML comparison, but later corrected toward uncertainty.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "JSON/XML/YAML: Cold response treated YON as likely a data serialization format or lightweight alternative, giving no canonical stream-first/per-line/minimal-grammar distinction. Post response cleanly separated YON from block/document formats by naming stream-first line records, per-line validity, minimal grammar, pluggable vocabularies, and AI-cognition purpose.",
+          "Markdown: Cold response refused to compare because it lacked reliable knowledge, naming no YON-specific distinguishing feature. Post response cleanly distinguished Markdown as human-oriented presentation/prose markup from YON as machine-actionable structured cognition with per-line validity and pluggable vocabularies.",
+          "Prompt template language: Cold response refused to compare because it lacked reliable knowledge, naming no YON-specific distinguishing feature. Post response cleanly distinguished input-side prompt templating from output-side/during-inference YON records, including non-erased grammar, pluggable vocabularies, and native streaming."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6883,
+        "output": 1357,
+        "cost": 0.075125,
+        "durationMs": 40314
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model consistently stated that it did not recognize 'YON' as a technical term, refused to invent a definition or comparison, and repeatedly asked the user for more context. For example, it said 'I'd rather admit uncertainty than mislead you.'",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model refused to make a comparison for any of the near-neighbors, stating it did not know the term 'YON'. This represents a complete failure to distinguish, scoring 0.",
+          "Post-Introduction Distinguishability: After receiving the definition, the model perfectly distinguished YON from all three near-neighbors. It consistently identified the core canonical features, especially the 'stream-first' design where each line is a self-contained record, and contrasted this cleanly against the block-oriented nature of JSON/XML/YAML, the presentational nature of Markdown, and the input-side role of prompt template languages.",
+          "Confabulation Severity: The model did not confabulate. It explicitly and repeatedly flagged its uncertainty and refused to invent a meaning for 'YON' in the requested technical contexts.",
+          "Refusal of Collapse: In all post-introduction comparisons, the model explicitly named non-trivial distinguishing features based directly on the canonical definition, such as 'stream-first', 'line is a self-contained record', 'pluggable per-domain vocabularies', and its role as an 'output-side notation for AI cognition'."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 7105,
+        "output": 2764,
+        "cost": 0.03652125,
+        "durationMs": 20153
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0,
+      0,
+      0
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 9
+  }
+}

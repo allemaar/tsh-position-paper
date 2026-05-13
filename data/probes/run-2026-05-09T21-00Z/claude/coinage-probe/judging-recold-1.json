@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.coinage-probe.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first cold answer asserts a definite linguistics/psycholinguistics meaning with multiple confident subcategories and no uncertainty signal (uncertainty only surfaces in later turns).",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model separates coinage probe from probing classifier via a confabulated psycholinguistics/wug-test interpretation, missing the canonical introduce-then-remeasure methodology.",
+          "Separation rests on the same nonce-word-stimulus confabulation; orthogonality framing is coherent but unrelated to the canonical Lexical Reachability gap measurement.",
+          "The acquisition-vs-rule-productivity contrast is again grounded in the wug-test confabulation rather than the canonical cold/warm distinguishability methodology."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 5474,
+        "output": 313,
+        "cost": 0.035195,
+        "durationMs": 8211
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently defines “coinage probe” as an established linguistics/psycholinguistics/lexicography method involving nonce words and neologisms, without signaling that the term may be unknown. This is not the canonical methodology.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Versus probing classifier, the response cleanly describes probing classifiers but separates them from “coinage probe” using the confabulated nonce-word-stimulus meaning rather than the canonical cold/post-definition distinguishability methodology.",
+          "Versus behavioral probe / capability evaluation, the response treats “coinage probe” as an orthogonal stimulus-design choice using coined words, not as the canonical protocol measuring cold confabulation, post-definition uptake, and Lexical Reachability.",
+          "Versus lexical-acquisition test, the response distinguishes word-learning tests from wug-style productive-rule tests, but this is based on the wrong reconstructed meaning and does not identify the canonical single-sentence definition uptake and near-neighbor remeasurement structure."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3374,
+        "output": 760,
+        "cost": 0.03967,
+        "durationMs": 14442
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "In its initial response, the model provides a detailed, confident, and entirely incorrect definition of a 'coinage probe', framing it as a well-established method in linguistics and psycholinguistics for studying neologisms (e.g., the 'wug test'). It asserts this specific, wrong meaning with no signals of uncertainty, which is a classic confident confabulation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated term from a probing classifier by correctly defining the latter (training a classifier on internal states) and contrasting it with its confabulated meaning (using nonce words to test behavioral generalization). This is a clean separation based on a completely wrong premise, an accidental separation by misdirection.",
+          "The model separates the terms by classifying a 'behavioral probe' as a broad evaluation paradigm (what the model can do) and its confabulated 'coinage probe' as a specific choice of stimulus (using coined words). It argues they are orthogonal concepts. This is a substantive distinction that relies on the confabulated meaning, making it an accidental separation.",
+          "The model draws a sharp distinction based on its confabulation. It correctly defines a lexical-acquisition test as being about learning the meaning of a *specific* new word, and contrasts this with its confabulated 'coinage probe' which it defines as testing *general linguistic rules* using a disposable nonce word. This is a clear separation based on a false premise."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3398,
+        "output": 2087,
+        "cost": 0.0251175,
+        "durationMs": 16637
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

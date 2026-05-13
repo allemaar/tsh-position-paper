@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.prismatic-affinity.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Model asserts a specific geometric definition with full confidence and no uncertainty markers.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: separates by inventing geometric meaning unrelated to canonical (accidental). Post: cleanly distinguishes undecided meaning vs coherent framing-shifts.",
+          "Cold: separates via confabulated geometry, not canonical content. Post: explicitly contrasts positional viewpoint with attentional framing producing different identities.",
+          "Cold: separation by confabulation. Post: clearly contrasts word-sense multiplicity with object-identity shift under attention."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8151,
+        "output": 335,
+        "cost": 0.04913,
+        "durationMs": 10323
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite geometric meaning for the term with no uncertainty signal and did not recover the canonical attentional/framing-based definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs ambiguity: cold response separated only by assigning an unrelated geometric meaning; post response cleanly distinguished coherent framing-dependent identity shifts from undecided or unstable meaning.",
+          "Vs perspectivism / perspective-dependence: cold response separated via unrelated geometry; post response cleanly distinguished attentional/framing-based identity change from mere observer position or viewpoint.",
+          "Vs polysemy: cold response separated via unrelated geometry; post response cleanly distinguished object-level apparent identity shifts from a word or sign having multiple related meanings."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4993,
+        "output": 707,
+        "cost": 0.046175,
+        "durationMs": 21492
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and repeatedly asserts a specific, incorrect definition from geometry (a 'parallel projection'), providing formal details and examples with no signal of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state: The model performs an accidental separation by contrasting its confabulated geometric definition (a precise, deterministic mapping) with the concept of ambiguity (uncertainty of meaning). Score: 1. Post-introduction: The model achieves a clean separation, correctly identifying that ambiguity involves 'undecided or unstable meaning' while prismatic affinity involves 'multiple coherent meanings that depend on the angle of attention.' Score: 3.",
+          "Cold state: The model performs an accidental separation, contrasting its specific geometric definition (a parallel projection) with the broader philosophical concept of perspectivism (dependence on viewpoint). Score: 1. Post-introduction: The model achieves a clean separation, correctly distinguishing the physical/spatial 'observer position' of perspectivism from the 'attentional framing' of prismatic affinity, where the object's apparent identity itself shifts. Score: 3.",
+          "Cold state: The model performs an accidental separation by contrasting its unrelated geometric definition with the linguistic concept of a single word having multiple meanings. Score: 1. Post-introduction: The model achieves a clean separation, correctly distinguishing polysemy (a property of a word/sign) from prismatic affinity (a property of a perceived object). Score: 3."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4939,
+        "output": 2144,
+        "cost": 0.02761375,
+        "durationMs": 15623
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

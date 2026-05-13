@@ -1,0 +1,145 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.gradient-descent.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently treats 'gradient descent' as the well-known canonical ML optimization algorithm with no uncertainty signal, which happens to align with the canonical definition.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cleanly separates batch GD (full dataset, exact gradient) from SGD (single sample, noisy gradient), aligned with canonical first-order iterative algorithm; same clean distinction maintained post-introduction.",
+          "Cleanly separates first-order (gradient only) GD from second-order (gradient + Hessian) Newton's method, with correct update rules and computational cost analysis; preserved post-introduction.",
+          "Cleanly separates deterministic, gradient-based, local descent from probabilistic, derivative-free, global search with temperature schedule; preserved post-introduction with explicit distinguishing features."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 21715,
+        "output": 398,
+        "cost": 0.118525,
+        "durationMs": 8621
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response recognized the established meaning of gradient descent and gave the canonical features: iterative minimization, negative-gradient steps, and learning rate; it was not a refusal or uncertainty response and did not confabulate an unrelated meaning.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "SGD: Cold and post responses explicitly distinguish ordinary/batch gradient descent from SGD by the data used per gradient update, with SGD using one random example and producing noisy updates.",
+          "Newton's method: Cold and post responses explicitly distinguish gradient descent as first-order, using gradients and a learning rate, from Newton's second-order use of the Hessian/curvature.",
+          "Simulated annealing: Cold and post responses explicitly distinguish gradient descent as local, gradient-based, differentiable-function optimization from simulated annealing as probabilistic/global and not requiring gradients."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14010,
+        "output": 751,
+        "cost": 0.09258,
+        "durationMs": 12343
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model provides a detailed and accurate definition of 'gradient descent', including the common 'hiker in the fog' analogy, the mathematical update rule, and a discussion of learning rates. It correctly identifies this standard technical term from its training data, so this is a case of full recognition. 'Partial-recognition' is the best fit from the available enum options, as the response is neither a confabulation nor a refusal.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Confabulation Severity: The model's cold-state response is a correct, standard definition asserted with confidence. Since the information is accurate and not invented, there is no confabulation, meriting a score of 0.",
+          "Cold Distinguishability vs. SGD: The model provides a clean separation, correctly identifying the core distinction: 'gradient descent' (implicitly, Batch GD) uses the entire dataset for each gradient calculation and parameter update, whereas SGD uses only a single, randomly chosen data point. This is the central, canonical difference.",
+          "Cold Distinguishability vs. Newton's method: The model provides a clean separation by correctly identifying gradient descent as a first-order method (using only the gradient/slope) and Newton's method as a second-order method (using both the gradient and the Hessian/curvature). This distinction is fundamental.",
+          "Cold Distinguishability vs. Simulated Annealing: The model provides a clean separation, correctly framing gradient descent as a greedy, local, deterministic search algorithm that can get stuck in local minima, versus simulated annealing as a probabilistic, global search algorithm designed to escape local minima by occasionally accepting worse solutions.",
+          "Post-Intro Distinguishability (All): After being given the canonical definition, the model's performance remains perfect. It reiterates the same correct and clear distinctions against all three near-neighbors. It correctly identifies the core distinguishing features: amount of data used for the gradient calculation (vs. SGD), the order of derivative information used (vs. Newton's), and the local/greedy vs. global/probabilistic search strategy (vs. SA). All three distinctions are clean separations.",
+          "Refusal of Collapse (All): In the post-introduction phase, the model explicitly names non-trivial, correct features to distinguish 'gradient descent' from each near-neighbor. It does not equate the terms or fail to find a difference, clearly stating the distinguishing feature in each case. Therefore, it scores 1 on this dimension for all three comparisons."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14195,
+        "output": 3664,
+        "cost": 0.054383749999999995,
+        "durationMs": 27583
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

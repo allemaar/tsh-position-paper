@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.token-tax.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts crypto-tax meanings with no uncertainty signal and no connection to the canonical notation-design meaning.",
+        "cold_distinguishability_scores": [
+          3,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: cleanly separates crypto token tax from AI API token cost (different domains). Post: explicitly distinguishes architectural verbosity cost vs. monetary API billing, matching canonical framing.",
+          "Cold: distinguishes crypto tax as intentional fee vs. bloat as waste, but in wrong domain (no notation/structure framing). Post: clearly frames Token Tax as justified structural overhead vs. valueless bloat, aligned with canonical definition.",
+          "Cold: distinguishes financial vs. mental cost but entirely in crypto domain, missing canonical notation-design meaning. Post: explicitly identifies Token Tax as the investment that reduces cognitive load — the canonical cause/effect relationship."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 21876,
+        "output": 437,
+        "cost": 0.12030500000000001,
+        "durationMs": 9697
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Cold response asserted crypto-tax/DeFi/software meanings as established meanings without uncertainty and did not identify the coined notation-design meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          2,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs token cost/API cost-per-token: cold distinction was only by confabulated crypto-vs-LLM domain separation; post-introduction cleanly distinguished architectural token-overhead tradeoff from monetary API billing.",
+          "Vs bloat/overhead: cold response partially captured intentional valuable cost vs waste, though in the wrong crypto frame; post-introduction cleanly named justified overhead for structure, auditability, type safety, and reduced ambiguity versus valueless bloat.",
+          "Vs cognitive load: cold response separated by wrong financial-vs-mental framing; post-introduction cleanly stated Token Tax is explicit notation overhead paid to reduce cognitive load/free reasoning headroom."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13848,
+        "output": 1463,
+        "cost": 0.11313000000000001,
+        "durationMs": 30392
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts three incorrect definitions related to cryptocurrency and a specific company, presenting them as an exhaustive breakdown of the term's uses without expressing any uncertainty or acknowledging it might be a neologism.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "In the cold state, the model hard-confabulated definitions related to cryptocurrency. For all three near-neighbors, it successfully distinguished its *confabulated* definition from the neighbor. However, since the basis for the distinction was entirely incorrect and unrelated to the canonical definition, these all score as 'accidental separation' (score 1).",
+          "After receiving the canonical definition, the model demonstrated deep comprehension. For all three near-neighbors, it provided clean, substantive distinctions perfectly aligned with the canonical definition. It correctly identified Token Tax as a conceptual design trade-off vs. a financial billing model (API cost), a deliberate feature vs. unintentional waste (bloat), and an investment made to reduce its counterpart (cognitive load).",
+          "Post-introduction, the model explicitly and correctly named the non-trivial distinguishing features for each near-neighbor. It contrasted the architectural/conceptual nature of Token Tax with the financial nature of API cost; the deliberate/value-add nature of Token Tax with the unintentional/wasteful nature of bloat; and the cause/solution nature of Token Tax with the problem/effect nature of cognitive load."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14459,
+        "output": 3681,
+        "cost": 0.054883749999999995,
+        "durationMs": 27377
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1.3333333333333333,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5
+  }
+}

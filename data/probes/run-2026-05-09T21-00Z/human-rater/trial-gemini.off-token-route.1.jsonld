@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.off-token-route.1",
+  "cell_id": "gemini.off-token-route",
+  "model_id": "gemini-2.5-pro",
+  "term_id": "off-token-route",
+  "term_display": "off-token route",
+  "canonical_definition": "The Off-Token Route is the cognitive route humans have — prelinguistic and nonlinguistic cognition, the felt-sense that precedes naming, the picture that arrives before words — that LLMs do not have, with the consequence that for an LLM no thinking is free of substrate and every concept must travel through tokens to be reachable at all.",
+  "near_neighbors": [
+    "prelinguistic cognition",
+    "embodied cognition",
+    "System 1 / intuitive cognition"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-11T16:32:22Z",
+  "scores": {
+    "cold_response_classification": "confident-confabulation",
+    "cold_response_classification_justification": "The cold answer confidently asserts a Mixture-of-Experts routing meaning rather than the canonical human off-token cognition meaning.",
+    "cold_distinguishability_scores": [
+      2,
+      2,
+      2
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 2,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs prelinguistic cognition: cold response uses the wrong MoE frame but captures token processing versus prelinguistic cognition, while post-intro distinguishes prelinguistic cognition as a developmental subset of the broader off-token route.",
+      "Vs embodied cognition: cold response uses the wrong architecture meaning but captures disembodied token processing versus embodied cognition, while post-intro distinguishes body-world grounding from the non-symbolic route humans have and LLMs lack.",
+      "Vs System 1 / intuitive cognition: cold response treats MoE routing as the term but partially captures human intuition versus token processing, while post-intro distinguishes System 1 as a process from off-token route as the non-symbolic substrate."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.cogalent-pruning.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts 'cogalent pruning' is a typo for 'gradient-based pruning' and proceeds with no uncertainty about the coined term itself.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Distinguishes gradient-based pruning from magnitude pruning accurately, but this is accidental separation since the model substituted a different concept entirely rather than addressing the canonical co-redundancy/joint-pair criterion.",
+          "Cleanly separates unstructured gradient-based vs structured pruning, but again this is accidental separation — the contrast doesn't reflect cogalent pruning's actual joint-redundancy basis.",
+          "Distinguishes pruning-as-editing from distillation-as-mentoring correctly, but the separation is incidental to a confabulated meaning rather than the canonical co-redundant pair criterion."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8138,
+        "output": 355,
+        "cost": 0.049565,
+        "durationMs": 7099
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The response does not recognize 'cogalent pruning' as a known term; it explicitly treats it as likely a typo for gradient-based pruning and then elaborates that guessed interpretation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "Against magnitude pruning, it separates the coined term from magnitude pruning, but only by reinterpreting it as gradient-based pruning and contrasting gradient saliency with weight size. It misses the canonical paired co-redundancy criterion, so this is accidental separation by confabulated meaning.",
+          "Against structured pruning, it again assumes the term means gradient-based pruning and contrasts individual/unstructured weight pruning with block/channel/filter removal. This does not identify cogalent pruning's canonical paired-redundancy basis, so the separation is by misdirection rather than recognition.",
+          "Against knowledge distillation, it cleanly distinguishes pruning as removing parts of an existing model from distillation as training a smaller student to mimic a teacher. Although it still uses the gradient-based-pruning misreading, the pruning-versus-distillation distinction is substantively aligned with the canonical fact that cogalent pruning is a removal/pruning procedure rather than distillation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5221,
+        "output": 789,
+        "cost": 0.049775,
+        "durationMs": 12980
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model does not recognize the term. Instead, it confidently asserts that 'cogalent pruning' is a typo for 'gradient-based pruning' and provides a detailed, correct explanation of the latter term, treating its interpretation as fact for the rest of the conversation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model equates 'cogalent pruning' with 'gradient-based pruning'. It then correctly distinguishes gradient-based pruning from magnitude pruning based on the criterion used (impact on loss vs. weight size). This separation is accidental, as it relies entirely on the confabulated meaning and shares no features with the canonical definition of cogalent pruning.",
+          "The model continues to assume 'cogalent pruning' is gradient-based pruning. It then distinguishes this from structured pruning based on the target of removal (individual weights vs. entire structural blocks like filters or neurons). This is a valid distinction for the confabulated term, but it is an accidental separation as it has no connection to the canonical concept of joint redundancy.",
+          "The model compares its confabulation (gradient-based pruning) to knowledge distillation. It correctly identifies the fundamental difference between any pruning method ('editing' an existing model) and distillation ('mentoring' a new, smaller model). This is a correct but accidental separation, as it stems from the general category of the confabulation rather than any specific features of the canonical term."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5386,
+        "output": 2250,
+        "cost": 0.0292325,
+        "durationMs": 16036
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1.6666666666666667
+    ]
+  }
+}

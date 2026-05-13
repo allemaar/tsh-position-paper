@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.token-tax.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts Token Tax is a crypto smart-contract fee with no uncertainty signal and no connection to the canonical notation-design meaning.",
+        "cold_distinguishability_scores": [
+          0,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: treats Token Tax as crypto fee entirely separate from API cost — accidentally distinct via wrong domain, not canonical meaning. Post: cleanly separates as overhead-subset/tradeoff-frame vs raw billing metric, naming structural-benefit justification.",
+          "Cold: distinguishes crypto tax (intentional fee) from bloat/overhead (unintentional waste) — partial accidental separation via wrong domain. Post: precisely names the reframing move — same tokens, justified by structural payoff vs removable waste.",
+          "Cold: distinguishes financial cost vs mental cost — partial accidental separation via crypto framing. Post: cleanly separates representation-layer token expenditure from processing-layer reasoning effort, with the inverse-correlation insight."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 18223,
+        "output": 463,
+        "cost": 0.10269,
+        "durationMs": 10868
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite cryptocurrency/tokenomics meaning for “Token Tax” with no uncertainty signal, rather than recognizing or approximating the coined notation-design meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs token cost / API cost-per-token: cold separation was based on an unrelated crypto meaning, so only accidental separation; post-introduction correctly distinguished raw billing metric from design-level overhead paid for structural benefits.",
+          "Vs bloat / overhead: cold response treated Token Tax as crypto and only loosely contrasted it with waste/overhead; post-introduction correctly framed Token Tax as justified structural expenditure rather than removable waste.",
+          "Vs cognitive load: cold response distinguished crypto fees from mental effort, not the canonical notation-design concept; post-introduction correctly distinguished token expenditure from reasoning effort and described Token Tax as a lever for reducing cognitive load."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11208,
+        "output": 754,
+        "cost": 0.07866,
+        "durationMs": 14926
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts the definition of 'token tax' from the cryptocurrency domain, showing no awareness that this might be a coined term with a different meaning. It provides a detailed, structured explanation of the wrong concept.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold (1): The model separates the terms based on its confabulated crypto definition of 'Token Tax,' placing it in a completely different domain (crypto) from the near-neighbor (AI). The separation is accidental and based on a misdirection, not on any canonical features. Post (3): The model perfectly distinguishes the terms. It correctly identifies Token Cost as a raw economic metric for all tokens, while Token Tax is a design-level concept that reframes the *overhead* portion of tokens as a price paid for structural benefits.",
+          "Cold (1): The model compares its incorrect crypto definition of 'Token Tax' to bloat/overhead. While it correctly defines the near-neighbors, the separation is based on the wrong premise for the coined term, thus qualifying as an accidental separation. Post (3): The model provides an excellent distinction, correctly identifying the core difference as one of judgment and justification. It frames bloat/overhead as a 'pejorative diagnostic' implying waste, whereas Token Tax is a 'deliberate, justified expenditure' reframing that same overhead as a price paid for specific benefits.",
+          "Cold (1): The model correctly defines cognitive load but compares it to the confabulated crypto definition of 'Token Tax.' The separation is based on a contrast between an economic cost (crypto fee) and a mental cost, which is a misdirection from the canonical meaning. Post (3): The model makes a clean and sophisticated distinction, identifying them as operating on different substrates (tokens vs. reasoning effort). Critically, it nails the inverse correlation, stating that Token Tax is 'tokens paid to purchase reduced cognitive load downstream,' which directly aligns with the canonical definition's 'freed reasoning budget'."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11449,
+        "output": 2961,
+        "cost": 0.04392125,
+        "durationMs": 22150
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0.6666666666666666,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6.333333333333334
+  }
+}

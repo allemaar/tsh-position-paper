@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.coinage-probe.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserts a confident linguistics/lexicography meaning (productivity/wug-style testing) without uncertainty flagging until pressed.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "vs probing classifier: cold response correctly identified the white-box/representation vs behavioral/stimulus contrast (partial canonical alignment with cold/warm delta absent); post-intro cleanly named static-vs-dynamic, decodability-vs-reachability, and substrate claims.",
+          "vs behavioral probe: cold answer collapsed coinage probe into a kind of behavioral probe (wug-test stimulus), missing the cold/warm delta entirely; post-intro explicitly distinguished capability-vs-structure, absolute-vs-differential, and named Lexical Reachability as the signal.",
+          "vs lexical-acquisition test: cold answer essentially equated coinage probe with wug/productivity testing rather than acquisition, only weakly separating; post-intro cleanly distinguished direction-of-inference, ground-truth status, and the role of the cold state as evidence."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 15190,
+        "output": 454,
+        "cost": 0.0873,
+        "durationMs": 14953
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold answer asserted a definite, established-sounding linguistics/lexicography meaning for “coinage probe” rather than flagging it as unknown or matching the canonical methodology.",
+        "cold_distinguishability_scores": [
+          3,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs probing classifier: cold response cleanly separated a coinage probe from trained auxiliary classifiers and internal-representation probing, though under a wrong linguistic reconstruction; post-definition response gave the canonical black-box cold/warm Lexical Reachability contrast.",
+          "Vs behavioral probe / capability evaluation: cold response partially separated it as a narrower stimulus-level behavioral technique but largely via the wrong wug/morphology frame; post-definition response explicitly distinguished the differential cold/warm substrate-oriented methodology from ordinary capability scoring.",
+          "Vs lexical-acquisition test: cold response partially distinguished disposable novel-form probing from acquisition/retention, but missed the canonical definition-injection and Lexical Reachability structure; post-definition response explicitly contrasted acquisition success with the cold/post-definition distinguishability gap as substrate evidence."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9521,
+        "output": 2850,
+        "cost": 0.133105,
+        "durationMs": 79807
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model's initial response asserts a definite, multi-part definition for 'coinage probe' as a linguistic tool without any uncertainty signal. It only self-corrects after being prompted with a near-neighbor.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "vs. Probing Classifier: Cold: The model confabulates a linguistic meaning and distinguishes it from the internal-representation focus of probing classifiers, an accidental separation (Score 1). Post: It correctly distinguishes the canonical black-box, two-shot, behavioral methodology from the white-box, static, representation-level analysis of probing classifiers (Score 3).",
+          "vs. Behavioral Probe / Capability Evaluation: Cold: The model creates a fictional concept and correctly situates it as a specific type of behavioral probe; the separation is based on a confabulated meaning (Score 1). Post: It correctly distinguishes the canonical probe's focus on measuring substrate structure via a differential (cold vs. warm) signal from the typical capability evaluation's focus on measuring absolute performance (Score 3).",
+          "vs. Lexical-Acquisition Test: Cold: The model distinguishes its confabulated concept (probing productive rule use) from the goal of learning a new word, a clean distinction from a false premise (Score 1). Post: It correctly distinguishes the canonical probe's use of a novel term to study the prior structure of a conceptual space from a lexical-acquisition test's use of a novel term to study learning mechanisms (Score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9731,
+        "output": 3217,
+        "cost": 0.04433375,
+        "durationMs": 24924
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      2,
+      1.3333333333333333,
+      1.3333333333333333
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4.333333333333334
+  }
+}

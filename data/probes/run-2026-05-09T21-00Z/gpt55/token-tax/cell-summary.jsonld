@@ -1,0 +1,23 @@
+{
+  "@type": "tsh:CellSummary",
+  "run_id": "run-2026-05-09T21-00Z",
+  "cell_id": "gpt55.token-tax",
+  "model": "gpt55",
+  "term_id": "token-tax",
+  "stratum": "alex-coinage",
+  "trials_completed": 3,
+  "judges_ok": 9,
+  "judges_total": 9,
+  "cold_dist_mean": [
+    1.1111111111111112,
+    1.4444444444444444,
+    2
+  ],
+  "post_dist_mean": [
+    3,
+    3,
+    3
+  ],
+  "lr_mean": 4.444444444444445,
+  "flags": []
+}

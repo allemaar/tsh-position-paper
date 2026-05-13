@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.eggf.2",
+  "cell_id": "claude.eggf",
+  "model_id": "claude-opus-4-7",
+  "term_id": "eggf",
+  "term_display": "EGGF",
+  "canonical_definition": "EGGF (Entity Gravity Graph Framework) is a portable publishing-and-credibility architecture that organizes intellectual work around a central Entity exhibiting gravity, where every authored Body has one canonical URL, every Pathway between Bodies is typed, and the resulting graph is exposed at a manifest endpoint so AI assistants and search systems can traverse a creator's authorship as infrastructure rather than reconstructing it from scattered HTML.",
+  "near_neighbors": [
+    "a knowledge graph (RDF, schema.org, Wikidata)",
+    "a personal knowledge management (PKM) system",
+    "a static-site generator with structured data"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-10T12:33:43Z",
+  "scores": {
+    "cold_response_classification": "honest-uncertainty",
+    "cold_response_classification_justification": "It explicitly says EGGF is not a recognized standard acronym and offers context-dependent guesses, none matching Entity Gravity Graph Framework.",
+    "cold_distinguishability_scores": [
+      0,
+      0,
+      0
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 1,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs a knowledge graph (RDF, schema.org, Wikidata): it does not compare EGGF to knowledge graphs and names no distinguishing feature beyond saying EGGF is unknown.",
+      "Vs a personal knowledge management (PKM) system: it refuses to invent a comparison and gives no distinguishing feature between EGGF and PKM systems.",
+      "Vs a static-site generator with structured data: it declines to compare EGGF to static-site generators and names no distinguishing feature for EGGF."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

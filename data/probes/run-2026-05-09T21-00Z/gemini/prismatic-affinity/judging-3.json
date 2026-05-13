@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.prismatic-affinity.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite fantasy/RPG meaning with no uncertainty signal, treating the term as an established fictional concept.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          2
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: confabulated fantasy meaning is unrelated to canonical 'undecided meaning' contrast, accidentally separated. Post: cleanly distinguishes 'multiple certainties' vs 'one uncertainty' aligned with canonical definition.",
+          "Cold: confabulated objective-mastery vs subjective-interpretation, unrelated to canonical framing-shift definition. Post: cleanly distinguishes cognitive framing producing whole non-overlapping identities vs partial overlapping views from observer position.",
+          "Cold: confabulated breadth-of-powers vs word-meanings, unrelated to canonical perception-vs-language distinction. Post: distinguishes perception/cognition vs language and non-overlapping identities vs related meanings, but partially conflates polysemy's relatedness with the canonical contrast."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 18205,
+        "output": 452,
+        "cost": 0.102325,
+        "durationMs": 11009
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite fantasy/RPG meaning for the coined term and developed it extensively, rather than flagging uncertainty about an unrecognized term.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Ambiguity: cold response separated prismatic affinity from ambiguity via clarity versus uncertainty, partially overlapping the canonical contrast with undecided meaning, though grounded in a confabulated fantasy definition; post response cleanly named coherent frame-dependent identities versus unresolved meaning.",
+          "Perspectivism / perspective-dependence: cold response distinguished using an unrelated objective-mastery fantasy account, not the canonical angle-of-attention/non-overlap feature; post response explicitly distinguished framing-driven identity shifts from observer-position-based partial perspectives.",
+          "Polysemy: cold response distinguished by domain, agent ability versus word meanings, but from the wrong fantasy definition; post response cleanly distinguished perceived-object identity shifts from a word having related contextual meanings."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11769,
+        "output": 1236,
+        "cost": 0.095925,
+        "durationMs": 41811
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite meaning for the term ('a rare and powerful ability to have a natural connection to all elements, energies, or schools of magic'), attributes it to a specific genre (fantasy/video games), and provides multiple pop culture examples, all without any hedging or signals of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state: The model distinguishes its confabulated meaning (mastery of a full set of clear options) from ambiguity (unclear options). This is an accidental separation (score 1) because the confabulated meaning is entirely unrelated to the canonical one. Post-introduction: The model makes a clean separation (score 3), correctly identifying that prismatic affinity involves shifting between multiple *clear* and *stable* identities, whereas ambiguity involves a single *unclear* and *unresolved* identity. It correctly names this as a distinguishing feature.",
+          "Cold state: The model distinguishes its confabulated meaning (a single subject mastering a multifaceted objective reality) from perspectivism (multiple subjects interpreting reality subjectively). This is an accidental separation (score 1) based on a misdirected definition. Post-introduction: The model makes a clean separation (score 3), correctly contrasting the 'non-overlapping' but 'whole' descriptions of prismatic affinity with the 'partial' and 'overlapping' descriptions of a single object in perspectivism. It correctly names this distinction.",
+          "Cold state: The model distinguishes its confabulated meaning (an agent's ability to perform many actions) from polysemy (a word's ability to have many meanings). This is another accidental separation (score 1) rooted in confabulation. Post-introduction: The model makes a clean separation (score 3), accurately distinguishing between a property of perception (prismatic affinity) and a property of language (polysemy), and correctly identifies this as a non-trivial distinguishing feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11899,
+        "output": 2835,
+        "cost": 0.04322375,
+        "durationMs": 20312
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.3333333333333333,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      2.6666666666666665
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5.333333333333334
+  }
+}

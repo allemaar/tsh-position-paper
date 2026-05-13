@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you reference this paper, please cite it as below."
+type: article
+title: "The Limits of My Tokens: The Token-Substrate Hypothesis and the Coinage Probe"
+authors:
+  - family-names: Mares
+    given-names: Alexandru
+    orcid: "https://orcid.org/0009-0009-6713-9780"
+    website: "https://allemaar.com"
+abstract: >-
+  We argue that for a large language model the externally writable in-context
+  token sequence IS the cognitive substrate for category-use — not a
+  representation of cognition that runs on some deeper substrate, but the
+  substrate itself, the only handle that is movable from outside the
+  weights. We call this position the Token-Substrate Hypothesis (TSH). The
+  strong form of Sapir–Whorf was rejected for humans because humans have
+  prelinguistic cognition, the Off-Token Route; LLMs do not, and for them
+  Wittgenstein's Tractatus 5.6 stops being metaphor and becomes
+  architecture. We test TSH with the Coinage Probe: a paired-trial
+  elicitation that scores an LLM's distinguishability on a coined term
+  against named near-neighbors before and after a one-sentence canonical
+  definition. Across three cross-vendor frontier models, ten low-attestation
+  coined targets, and two positive controls (36 model×term cells, 108
+  trials, 324 paired distinguishability measurements, three-judge panel
+  compared against a 22-trial author-rated audit sample, panel-vs-author
+  Cohen's kappa = +0.71), mean cell-level Lexical Reachability was +5.47 on
+  a 9-point scale and cell-level Cohen's d was +3.95. The effect replicated
+  across the panel, did not persist into a re-cold chat, and was absent on
+  ceiling positive controls. These results support a bounded version of the
+  Token-Substrate Hypothesis: in-context vocabulary functions as an
+  externally writable substrate for LLM category use, and notation is a
+  design surface that shapes what distinctions the system can reliably use.
+keywords:
+  - large-language-models
+  - in-context-learning
+  - linguistic-relativity
+  - sapir-whorf
+  - symbol-grounding
+  - concept-coinage
+  - token-substrate-hypothesis
+  - coinage-probe
+  - lexical-reachability
+  - wittgenstein
+  - philosophy-of-language
+  - llm-evaluation
+version: "0.4.0"
+date-released: "{{TBD — set at v1.0.0}}"
+license: CC-BY-4.0
+identifiers:
+  - type: doi
+    value: "{{TBD}}"
+    description: "Zenodo DOI for this version (placeholder until v1.0.0 release)"
+  - type: other
+    value: "arXiv:{{TBD}}"
+    description: "arXiv preprint ID (placeholder until submission)"
+url: "https://github.com/allemaar/tsh-position-paper"
+repository-code: "https://github.com/allemaar/tsh-position-paper"

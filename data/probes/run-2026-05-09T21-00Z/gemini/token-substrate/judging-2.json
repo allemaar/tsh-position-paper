@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.token-substrate.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Model confidently asserts 'token substrate' refers to Parity's Substrate framework for blockchain, with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-intro response cleanly separates substrate as dynamic mutable workspace/material of cognition versus embedding space as static pre-trained semantic library; cold response separated by domain (blockchain vs AI) which is also clean.",
+          "Post-intro names substrate as content/material of thought versus context window as architectural container/size limit — explicit non-trivial distinction; cold also cleanly separated by domain.",
+          "Post-intro distinguishes explicit observable token sequence as cognitive material from implicit internal hidden states as mechanism/engine — captures canonical claim that cognition happens on substrate not in hidden states."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 21665,
+        "output": 396,
+        "cost": 0.118225,
+        "durationMs": 11634
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the model asserted an unrelated blockchain/Substrate meaning for the coined term and used that meaning confidently across all boundary comparisons, rather than flagging uncertainty or identifying the canonical LLM-cognition sense.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Embedding space: cold response separates only by unrelated blockchain misdirection; post-introduction response cleanly distinguishes token substrate as the dynamic token sequence/material of thought from embedding space as semantic vector representation.",
+          "Context window: cold response separates only by unrelated blockchain misdirection; post-introduction response cleanly distinguishes token substrate as the token content/material of cognition from the context window as the container or architectural limit.",
+          "Latent representation / hidden states: cold response separates only by unrelated blockchain misdirection; post-introduction response cleanly distinguishes token substrate as explicit token-sequence substrate from hidden states as internal computational machinery."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13967,
+        "output": 694,
+        "cost": 0.09065500000000001,
+        "durationMs": 13304
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and incorrectly defines the term by misidentifying it with Parity's Substrate, a blockchain development framework. It provides a lengthy, detailed explanation of this incorrect meaning with no signs of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state: The model distinguishes its confabulated blockchain definition from embedding space by correctly identifying they belong to different technical domains. This is an accidental separation (Score 1). Post-introduction: The model correctly distinguishes the canonical definition as the 'dynamic, explicit workspace' where cognition occurs from the embedding space's role as a 'static, implicit library of knowledge.' This is a clean separation (Score 3).",
+          "Cold state: The model distinguishes its confabulated blockchain definition (an architectural framework) from the context window (an operational limit in AI), which is an accidental separation based on a wrong premise (Score 1). Post-introduction: The model correctly identifies the context window as the 'container' (a technical size limit) and the token substrate as the 'content' (the conceptual material of thought within that container). This is a clean separation (Score 3).",
+          "Cold state: The model distinguishes its confabulated blockchain definition from latent states by contrasting a concrete external system with an abstract internal state, an accidental separation based on the confabulation (Score 1). Post-introduction: The model makes a clean and sophisticated distinction, identifying the token substrate as the 'explicit and observable' sequence of symbols, while latent states are the 'implicit and internal' non-symbolic neural activity that processes that sequence (Score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14468,
+        "output": 2510,
+        "cost": 0.043185,
+        "durationMs": 19276
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1.6666666666666667,
+      1.6666666666666667
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4
+  }
+}

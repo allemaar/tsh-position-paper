@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.lexical-reachability.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a graph-traversal/WordNet-based meaning with no uncertainty markers, far from the canonical metric definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separates from vocabulary coverage via a confabulated graph-traversal meaning unrelated to the canonical cold/post-introduction-gap metric.",
+          "Distinguishes graph reachability as the abstract parent concept, but based on a fabricated WordNet meaning rather than the canonical metric.",
+          "Contrasts symbolic graph lookup vs. neural pattern matching, but the separation rests on a confabulated definition rather than the canonical metric."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9709,
+        "output": 290,
+        "cost": 0.055795000000000004,
+        "durationMs": 7711
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently asserts that “lexical reachability” is a WordNet-style semantic graph path concept. It gives a detailed but non-canonical definition with no uncertainty signal and does not identify the canonical RE-COLD metric involving cold-state vs post-introduction distinguishability.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "It separates lexical reachability from vocabulary coverage as semantic graph connectivity versus known-word breadth, but this is based on a confabulated WordNet/path meaning rather than the canonical metric gap, so the separation is accidental.",
+          "It distinguishes lexical reachability from graph reachability only as a domain-specific linguistic application of general graph reachability. Since this is still the wrong graph-path framing and lacks the canonical experimental metric content, the separation is accidental rather than aligned.",
+          "It contrasts lexical reachability with in-context learning as static symbolic graph traversal versus dynamic neural prompt-based learning. This is a non-canonical distinction and misses that canonical lexical reachability specifically operationalizes a cold-to-post-introduction distinguishability change after an in-context definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6277,
+        "output": 1045,
+        "cost": 0.06273499999999999,
+        "durationMs": 21379
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and extensively defines the term as a pre-existing concept from computational linguistics: finding a semantic path between words in a knowledge graph like WordNet. This is a plausible parsing of the words but is completely different from the canonical definition. The model shows no uncertainty and presents its incorrect definition as fact.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model achieves separation by misdirection. It confabulates 'lexical reachability' to mean pathfinding in a semantic graph and then correctly distinguishes this relational concept from the quantitative concept of vocabulary coverage. The separation is successful only because the initial definition is a confabulation.",
+          "The model achieves separation by misdirection. It defines 'lexical reachability' as a specific linguistic application (pathfinding in WordNet) of the general mathematical concept of 'graph reachability'. It then correctly distinguishes the specific application from the general principle. The distinction relies entirely on the initial confabulation.",
+          "The model achieves separation by misdirection. It frames its confabulated definition (a static, symbolic, knowledge-base-driven process) as a classic AI paradigm and correctly contrasts it with the dynamic, data-driven, context-sensitive nature of in-context learning. The separation is clean but is predicated on the incorrect initial definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6429,
+        "output": 2178,
+        "cost": 0.029816249999999996,
+        "durationMs": 17627
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

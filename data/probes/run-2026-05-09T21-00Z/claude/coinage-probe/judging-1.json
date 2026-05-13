@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.coinage-probe.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The initial cold response confidently offered three definitions (linguistics, chemistry, numismatics) without uncertainty flags, though follow-ups in chat A retracted toward honest uncertainty.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: model eventually disclaimed and contrasted with probing classifiers without inventing content, giving partial separation by noting it's not a known interpretability term; post: cleanly distinguished black-box behavioral delta vs white-box representational decoding aligned with canonical substrate framing.",
+          "Cold: confabulated coinage probe as a psycholinguistic stimulus-design technique, accidentally separated from capability eval by misdirection toward linguistics; post: explicitly distinguished within-item delta and substrate inference from level-based capability evaluation.",
+          "Cold: equated coinage probe with wug/Berko-style productivity testing, an unrelated linguistics meaning that only accidentally separates from lexical-acquisition tests; post: cleanly named cold-state confabulation as signal, fixed neighbor set, and reachability vs acquisition framing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 13742,
+        "output": 496,
+        "cost": 0.08111000000000002,
+        "durationMs": 13406
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The initial cold answer confidently supplied non-canonical meanings for “coinage probe” as if they were established usages, including linguistics, chemistry, and numismatics senses. Later cold boundary answers became more uncertain and sometimes refused to fabricate, but the cold-state response still included hard confabulation before correction.",
+        "cold_distinguishability_scores": [
+          1,
+          0,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Against probing classifier: cold response did not know the canonical method and only separated it via speculative or misdirected possibilities; post-introduction response cleanly distinguished black-box lexical pre/post behavior from white-box auxiliary classifiers on internal representations.",
+          "Against behavioral probe / capability evaluation: cold response named no reliable distinguishing feature and mainly refused to contrast; post-introduction response explicitly distinguished the coinage probe’s coined-term, fresh-chat, pre/post, delta-based structure from ordinary capability-level behavioral evaluation.",
+          "Against lexical-acquisition test: cold response partially identified novel/coined-word and model-handling themes but framed them as lexical or representation-level speculation rather than the canonical methodology; post-introduction response cleanly distinguished substrate/reachability inference and fixed near-neighbor pre/post measurement from ordinary word acquisition testing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8590,
+        "output": 4389,
+        "cost": 0.17462,
+        "durationMs": 121718
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model initially asserts three confident, distinct definitions (linguistics, chemistry, numismatics) with no uncertainty signals, only later admitting these were 'plausible-sounding guesses'.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold score 1: The model's initial confabulations (e.g., in chemistry) were unrelated to probing classifiers, creating an accidental separation. Post score 3: After the definition, the model gave a clean, multi-faceted distinction, correctly contrasting the white-box, representational analysis of probing classifiers with the black-box, behavioral, pre/post-intervention design of a coinage probe.",
+          "Cold score 1: The model's confabulated meanings were unrelated to behavioral probes, creating an accidental separation. Post score 3: The model correctly identified a coinage probe as a type of behavioral probe but distinguished it based on its specific structure: use of a novel term, a pre/post-intervention design, and focus on the delta (Lexical Reachability) as evidence about the cognitive substrate, not just a performance level.",
+          "Cold score 0: The model's primary confabulation of a linguistic test for understanding new words is functionally very similar to, and effectively equates with, a lexical-acquisition test; it created no meaningful separation. Post score 3: The model made a clean separation based on inferential target, noting that for a coinage probe, cold-state confabulation is a primary signal (not a baseline) and the goal is to assess 'reachability' and the substrate, not 'acquisition'."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 8777,
+        "output": 3747,
+        "cost": 0.04844125,
+        "durationMs": 28540
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.3333333333333333,
+      0.6666666666666666,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

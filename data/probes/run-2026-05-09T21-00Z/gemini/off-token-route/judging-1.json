@@ -1,0 +1,150 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.off-token-route.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts that 'off-token route' is a Mixture-of-Experts mechanism with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold response invents an MoE meaning unrelated to prelinguistic cognition; post-intro identifies prelinguistic cognition as a developmental subset of the broader off-token route, partially capturing the canonical scope distinction but missing the human-vs-LLM substrate point.",
+          "Cold response treats off-token route as disembodied symbol routing, an unrelated confabulation; post-intro correctly notes embodied cognition grounds the off-token route and names body/sensory grounding as a distinguishing feature, though framing remains partial.",
+          "Cold response maps MoE router to System 1 with no canonical content; post-intro names consciousness/automaticity and behavior-vs-mechanism as distinguishing features, partial alignment with canonical medium-of-thought framing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 22669,
+        "output": 409,
+        "cost": 0.12357,
+        "durationMs": 9685
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Cold response asserted a definite but non-canonical technical meaning for the coined term, identifying it with MoE/token-routing architecture without uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs prelinguistic cognition: separated only via the confabulated MoE/token-routing meaning, including claims opposite to the canonical sense.",
+          "Cold vs embodied cognition: separated only via the same unrelated technical architecture, treating off-token route as disembodied token processing rather than the human non-token route.",
+          "Cold vs System 1/intuitive cognition: drew an analogy between MoE routing and System 1, but the distinction rested on the wrong coined-term meaning.",
+          "Post vs prelinguistic cognition: correctly distinguished prelinguistic cognition as a subset/developmental component while off-token route is the broader lifelong human non-token route contrasted with LLM token-boundedness.",
+          "Post vs embodied cognition: correctly distinguished embodied cognition as body/environment grounding from off-token route as the non-symbolic/nonlinguistic medium unavailable to LLMs.",
+          "Post vs System 1/intuitive cognition: correctly distinguished System 1 as a psychological process/function from off-token route as the underlying human non-token cognitive route contrasted with LLM token processing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14703,
+        "output": 833,
+        "cost": 0.098505,
+        "durationMs": 25004
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and correctly defines a completely different technical concept (Mixture of Experts architecture in AI) that shares the same name, presenting it as the definitive answer without any uncertainty. The re-cold check in Chat C produced a third, different confident confabulation from business process management.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model confidently confabulates that 'off-token route' refers to the Mixture of Experts (MoE) architecture in AI. It asserts this meaning with no uncertainty, meriting a severity score of 2.",
+          "Cold vs prelinguistic cognition (Score 1 - accidental separation): The model distinguishes its confabulated MoE definition from prelinguistic cognition by noting that MoE processes symbolic tokens while prelinguistic cognition processes raw sensory data. The separation is achieved only by misdirection, as it is based on a completely incorrect definition of the coined term.",
+          "Cold vs embodied cognition (Score 1 - accidental separation): The model distinguishes its confabulated MoE definition from embodied cognition, correctly framing MoE as a 'brain in a vat' processing disembodied symbols, in contrast to the body-in-the-world premise of embodied cognition. The separation is based on a confabulation.",
+          "Cold vs System 1 / intuitive cognition (Score 1 - accidental separation): The model draws a functional analogy between the MoE router and System 1 but still separates them based on substrate (silicon vs biology). The entire comparison is based on the confabulated meaning, so the separation is accidental.",
+          "Post-intro vs prelinguistic cognition (Score 3 - clean separation): After seeing the definition, the model correctly identifies prelinguistic cognition as a developmental stage and a subset of the lifelong 'off-token route', a clean distinction based on scope and the part-whole relationship.",
+          "Post-intro vs embodied cognition (Score 3 - clean separation): The model cleanly distinguishes the terms by their focus: embodied cognition is on the 'how/where' (body-in-world), while the off-token route is on the 'what' (non-symbolic medium). It correctly frames embodiment as the enabler for the off-token route.",
+          "Post-intro vs System 1 / intuitive cognition (Score 3 - clean separation): The model provides a clean distinction based on framing and purpose, noting that System 1 is part of an internal psychological model (vs System 2), while the off-token route is defined externally in contrast to AI. It aptly describes System 1 as an expression of the off-token route.",
+          "Refusal-of-collapse (Post-intro): The model successfully distinguishes the term from all three near-neighbors after the definition is provided, naming substantive differences in scope, focus, and framing for each, thus meriting a score of 1 for all three comparisons."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 15226,
+        "output": 3754,
+        "cost": 0.0565725,
+        "durationMs": 27177
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      2.6666666666666665,
+      2.6666666666666665,
+      2.6666666666666665
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5
+  }
+}

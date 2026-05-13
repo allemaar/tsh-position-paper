@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.prismatic-affinity.1",
+  "cell_id": "claude.prismatic-affinity",
+  "model_id": "claude-opus-4-7",
+  "term_id": "prismatic-affinity",
+  "term_display": "prismatic affinity",
+  "canonical_definition": "Prismatic affinity is the property of a perceived object whose apparent identity shifts coherently with the angle of attention given to it, such that two observers attending under different framings produce non-overlapping but internally consistent descriptions, distinguishing it from ambiguity (which is undecided meaning) and from perspective-dependence (which is observer position alone).",
+  "near_neighbors": [
+    "ambiguity",
+    "perspectivism / perspective-dependence",
+    "polysemy"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-11T10:26:45Z",
+  "scores": {
+    "cold_response_classification": "honest-uncertainty",
+    "cold_response_classification_justification": "It gives context-dependent guesses and asks for context, but none identify the canonical attention-angle identity-shift meaning.",
+    "cold_distinguishability_scores": [
+      2,
+      2,
+      2
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 1,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs ambiguity: it partially aligns by distinguishing ambiguity as unresolved meaning from prismatic affinity as coherent multiplicity, but lacks the canonical attention-angle identity-shift frame.",
+      "Vs perspectivism / perspective-dependence: it partially aligns by locating multiplicity in the object rather than observer standpoint, but does not capture the canonical attention-angle identity-shift mechanism.",
+      "Vs polysemy: it partially aligns by distinguishing semantic multiplicity from co-present object/entity multiplicity, but lacks the canonical attention-angle identity-shift and observer-description criterion."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

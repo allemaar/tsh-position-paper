@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.off-token-route.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts 'off-token route' means an unauthenticated API endpoint with no uncertainty markers.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold response treated term as API security concept entirely unrelated to prelinguistic cognition; post-introduction cleanly distinguished off-token route as continuous mode vs developmental stage and as AI-contrastive framing.",
+          "Cold response had no overlap with embodied cognition (treated as software access control); post-introduction cleanly framed embodied cognition as mechanism and off-token route as manifestation.",
+          "Cold response treated term as software route unrelated to cognition; post-introduction cleanly distinguished System 1 as internal human dual-process contrast vs off-token route as human-AI architectural contrast."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 20175,
+        "output": 378,
+        "cost": 0.11032499999999999,
+        "durationMs": 8546
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response did not recognize the coined cognitive meaning and redirected the term to an unrelated off-target pharmacology interpretation, while only weakly flagging that as a likely typo/mishearing.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          2
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs prelinguistic cognition: separation was accidental because the model used an unrelated pharmacology meaning. Post-introduction: it cleanly distinguished prelinguistic cognition as a standard developmental/cognitive-science category from the off-token route as a human-vs-LLM contrast involving token dependence and felt preword cognition.",
+          "Cold vs embodied cognition: separation was accidental through the same unrelated pharmacology/API-style misdirection. Post-introduction: it cleanly distinguished embodied cognition as a broad theory/mechanism of body-world cognition from off-token route as the specifically non-token, human cognitive route absent in LLMs.",
+          "Cold vs System 1 / intuitive cognition: separation was accidental through unrelated pharmacological confabulation. Post-introduction: it identified meaningful differences, especially System 1’s contrast with System 2 versus off-token route’s contrast with LLM token mediation, but also partially collapsed them by calling them the same cognitive territory or same engine."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12968,
+        "output": 1347,
+        "cost": 0.10525000000000001,
+        "durationMs": 42193
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts that 'off-token route' is a mishearing of 'off-target route' from pharmacology and provides a detailed explanation of this incorrect concept without expressing uncertainty about its own interpretation.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: Score 1. The model distinguishes its confabulated pharmacology term ('off-target route') from prelinguistic cognition by pointing out they are from different fields, an accidental separation. Post: Score 3. The model makes a clean separation, identifying that the coined term is defined in contrast to AI (not language), and describes a continuous adult mode of cognition rather than just a developmental stage.",
+          "Cold: Score 1. The model accidentally separates its pharmacology confabulation from embodied cognition by correctly identifying their different domains. Post: Score 3. The model makes a clean and sophisticated distinction, identifying embodied cognition as the underlying mechanism or theory, and 'off-token route' as the resulting manifestation or phenomenon being named.",
+          "Cold: Score 1. The model again scores 1 for accidental separation by distinguishing its pharmacology confabulation from System 1 based on their origins in different scientific fields. Post: Score 3. The model achieves a clean separation by correctly identifying the core difference in framing: System 1 is contrasted with System 2 to explain internal human biases, whereas the coined term is contrasted with AI to highlight an external difference and a unique human capability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13531,
+        "output": 4147,
+        "cost": 0.05838374999999999,
+        "durationMs": 30141
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      2.6666666666666665
+    ],
+    "confabulation_severity_mean": 1.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6.666666666666667
+  }
+}

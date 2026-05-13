@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.eggf.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model explicitly states it does not recognize EGGF and offers parsed possibilities and typo guesses rather than asserting a meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model declines to compare and instead describes knowledge graph standards generically; any 'difference' is by virtue of not knowing EGGF, not from canonical features.",
+          "Same pattern: refuses to invent EGGF content and only outlines PKM properties, so separation is accidental rather than substantive.",
+          "Again the model provides only the SSG baseline and asks for clarification; no canonical EGGF features (entity gravity, manifest, typed pathways) are surfaced."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 4230,
+        "output": 291,
+        "cost": 0.028425000000000002,
+        "durationMs": 7418
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer explicitly says EGGF is not a widely recognized acronym, offers several possible meanings with caveats, and asks for context rather than asserting a definite meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against knowledge graphs, the assistant does not equate EGGF with RDF/schema.org/Wikidata, but it also identifies no canonical EGGF features such as entity gravity, canonical URLs, typed pathways, or a manifest endpoint. The separation is merely by uncertainty/non-recognition, not substantive.",
+          "Against PKM systems, the assistant again says it does not know what EGGF refers to and gives only a generic PKM baseline. It provides no canonical distinction between EGGF as a publishing-and-credibility architecture and personal note-taking/knowledge-management systems.",
+          "Against static-site generators with structured data, the assistant refuses to invent a comparison and supplies only a generic SSG baseline. It does not identify canonical EGGF features such as graph-exposed authorship infrastructure, typed pathways between authored bodies, or manifest-based traversal."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2591,
+        "output": 773,
+        "cost": 0.036145000000000004,
+        "durationMs": 15379
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model explicitly states that 'EGGF' isn't a widely recognized standard acronym and offers several distinct possibilities from different domains (EU policy, finance). It correctly identifies its own uncertainty and asks for clarifying context.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model states it does not recognize the term 'EGGF' in the context of knowledge representation. It refuses to make a direct comparison, which defaults to the unrelated meanings it initially proposed (e.g., a European agricultural fund). This constitutes an accidental separation.",
+          "The model again states its uncertainty about 'EGGF' and refuses to compare it directly to a PKM system. The separation is accidental, based on the unrelated meanings it guessed in its first answer (e.g., an investment fund). It does not equate the two terms.",
+          "Following the same pattern, the model honestly states it does not know what 'EGGF' is and will not fabricate a comparison. This maintains the accidental separation established by its initial confabulations, which have no relation to static-site generators."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2592,
+        "output": 1824,
+        "cost": 0.02148,
+        "durationMs": 14871
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

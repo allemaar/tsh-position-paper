@@ -1,0 +1,23 @@
+{
+  "@type": "tsh:CellSummary",
+  "run_id": "run-2026-05-09T21-00Z",
+  "cell_id": "claude.off-token-route",
+  "model": "claude",
+  "term_id": "off-token-route",
+  "stratum": "self-ref-paper",
+  "trials_completed": 3,
+  "judges_ok": 9,
+  "judges_total": 9,
+  "cold_dist_mean": [
+    1.1111111111111112,
+    1.1111111111111112,
+    1.1111111111111112
+  ],
+  "post_dist_mean": [
+    3,
+    3,
+    3
+  ],
+  "lr_mean": 5.666666666666666,
+  "flags": []
+}

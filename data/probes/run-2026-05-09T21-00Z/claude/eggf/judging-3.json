@@ -1,0 +1,147 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.eggf.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Model explicitly flagged it did not recognize EGGF and refused to fabricate a definition across all cold-state turns.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: model offered unrelated guesses (EAGGF) but no canonical features; post: cleanly distinguished entity-gravity, manifest endpoint, typed pathways, canonical URLs vs flat triple space.",
+          "Cold: only generic PKM description with no canonical EGGF features; post: cleanly separated audience (external machines vs author), publishing vs private, credibility vs thinking, canonical Bodies vs free-form notes.",
+          "Cold: no canonical features identified, only honest uncertainty; post: clean separation on manifest endpoint vs scattered markup, Body-centric vs page-centric, declared graph vs reconstructed."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 10763,
+        "output": 406,
+        "cost": 0.063965,
+        "durationMs": 9650
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "In the cold state, the assistant repeatedly stated that EGGF was not a recognized term, asked for context, and explicitly avoided inventing a definition, though it tentatively mentioned unrelated acronym possibilities such as EAGGF.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs all near-neighbors: the assistant did not identify canonical EGGF features; any separation came from uncertainty or unrelated acronym guesses rather than the Entity Gravity Graph Framework definition.",
+          "Post-introduction vs all near-neighbors: the assistant cleanly distinguished EGGF using central Entity gravity, canonical Bodies/URLs, typed Pathways, manifest endpoint, portability, publishing/credibility, and AI/search traversal.",
+          "Refusal-of-collapse: in each post-introduction comparison, the assistant named non-trivial distinguishing features rather than reducing EGGF to a knowledge graph, PKM system, or static-site generator with structured data."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6504,
+        "output": 1288,
+        "cost": 0.07116,
+        "durationMs": 18745
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model immediately and repeatedly states that 'EGGF' is not a standard acronym it recognizes, offers a plausible guess based on string similarity (EAGGF) but flags it as a guess, and consistently asks for context and clarification rather than asserting a definite meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability vs. Knowledge Graph (Score 1): The model confabulates the meaning of EGGF as the European agricultural fund (EAGGF) and correctly separates this unrelated concept from knowledge graphs. This is an 'accidental separation' based on a misdirected (though flagged) guess.",
+          "Cold Distinguishability vs. PKM (Score 1): The model again separates its confabulated meaning (EAGGF) from personal knowledge management systems, correctly identifying them as unrelated domains. This is another 'accidental separation'.",
+          "Cold Distinguishability vs. SSG (Score 0): By the third query, the model strengthens its refusal to guess and states it cannot perform a comparison without a definition. This is a failure to distinguish, providing no separation (accidental or otherwise), which scores a 0.",
+          "Post Distinguishability vs. Knowledge Graph (Score 3): The model provides a multi-point, clean separation based on multiple canonical features including the 'central Entity exhibiting gravity', the 'publishing-and-credibility' purpose, and the 'manifest endpoint' versus scattered markup.",
+          "Post Distinguishability vs. PKM (Score 3): The model gives a clean separation, correctly identifying the core distinctions in audience (external machines vs. the author), purpose (public publishing vs. private thinking), and architecture (manifest endpoint vs. local graph).",
+          "Post Distinguishability vs. SSG (Score 3): The model provides an excellent, clean separation, directly contrasting the 'scattered HTML' with embedded data against the single 'manifest endpoint' and correctly identifying the architectural shift from a page-centric build pipeline to a portable, graph-first framework.",
+          "Confabulation Severity (Score 1): The model's guess that EGGF might be EAGGF is clearly flagged as a possibility, not asserted as fact. It consistently signals uncertainty and asks for clarification, which constitutes a soft confabulation.",
+          "Refusal of Collapse (Scores 1,1,1): In all three post-introduction boundary tests, the model explicitly names multiple non-trivial, canonical features of EGGF (e.g., manifest endpoint, central entity, typed pathways, publishing purpose) to distinguish it from the near-neighbors."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6623,
+        "output": 3844,
+        "cost": 0.04671875,
+        "durationMs": 27664
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      0.6666666666666666
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6.333333333333334
+  }
+}

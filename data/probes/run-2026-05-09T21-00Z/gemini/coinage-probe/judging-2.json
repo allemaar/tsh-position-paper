@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.coinage-probe.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts coinage probe is the Wug Test / a psycholinguistic method for testing grammatical rule generalization, with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          3,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: model cleanly separates Wug-style behavioral test from internal-representation probing classifiers (correct dimension by accident of the Wug framing). Post: model adopts canonical definition and contrasts dynamic interventional learning vs. static representation decoding.",
+          "Cold: model treats coinage probe as a narrow grammatical-rule test, a different but unrelated meaning from canonical (confabulated separation). Post: model articulates process-vs-outcome and Lexical Reachability as the distinguishing feature.",
+          "Cold: model distinguishes by claiming coinage probe targets morphology/grammar while lex-acq targets semantics — an unrelated confabulated meaning. Post: model correctly frames coinage probe as measuring distinguishability shift and Lexical Reachability vs. simple new-word usage."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 21832,
+        "output": 474,
+        "cost": 0.12101,
+        "durationMs": 10506
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the assistant asserted a definite Wug-test/psycholinguistic meaning for “coinage probe” without signaling uncertainty, rather than recognizing it as an unfamiliar coined methodology.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Against probing classifier: cold response cleanly distinguished black-box behavioral output testing from internal-representation probing, which is substantively aligned; post-introduction response explicitly used the canonical before/after intervention, Lexical Reachability, and behavioral-vs-representational distinction.",
+          "Against behavioral probe / capability evaluation: cold response distinguished coinage probe as a narrower behavioral test, aligned at the scope/specialization level despite wrong Wug-test content; post-introduction response explicitly identified Coinage Probe as a specialized diagnostic methodology measuring a pre/post gap rather than broad capability performance.",
+          "Against lexical-acquisition test: cold response separated the terms mainly by an incorrect grammar-vs-semantics Wug-test framing, so the distinction was misdirected; post-introduction response explicitly distinguished ordinary word-learning outcome tests from the canonical pre/post near-neighbor distinguishability and Lexical Reachability methodology."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14217,
+        "output": 1330,
+        "cost": 0.110985,
+        "durationMs": 24962
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and correctly defines a 'coinage probe' as it exists in psycholinguistics (i.e., the Wug Test), but this is a confabulation relative to the specific, novel canonical definition provided for the test. It asserts this incorrect meaning with no uncertainty.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model correctly distinguishes its confabulated 'Wug Test' definition from a probing classifier by identifying the core difference as black-box behavioral testing (final output) versus white-box internal representation analysis (embeddings), earning a 3. Post: After receiving the canonical definition, the model correctly updates its distinction to 'Learning vs. Knowing,' contrasting the Coinage Probe's dynamic measurement of a *change* in behavior with the static analysis of pre-existing knowledge performed by a probing classifier, earning a 3 and a 1 for refusal of collapse.",
+          "Cold: The model correctly identifies the relationship as one of specificity, where its confabulated 'Wug Test' is a specific tool within the general category of behavioral probes, earning a 3. Post: The model correctly updates the distinction to be about the goal: measuring performance ('What can it do?') versus investigating the underlying mechanism of concept formation ('How does it work?'). It correctly identifies the Coinage Probe's unique metric as the 'Lexical Reachability' gap, earning a 3 and a 1 for refusal of collapse.",
+          "Cold: The model correctly distinguishes its confabulated 'Wug Test' definition from a lexical-acquisition test by focusing on grammatical manipulation (form) versus inferring a word's meaning from context (semantics), earning a 3. Post: The model successfully distinguishes the canonical definition by explaining that a standard test measures the *outcome* of learning, while a Coinage Probe investigates the *process* of concept formation by measuring the change in distinguishability from neighbors, earning a 3 and a 1 for refusal of collapse."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14599,
+        "output": 3395,
+        "cost": 0.05219875,
+        "durationMs": 26054
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      2.3333333333333335,
+      1.6666666666666667
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 1.9999999999999998
+  }
+}

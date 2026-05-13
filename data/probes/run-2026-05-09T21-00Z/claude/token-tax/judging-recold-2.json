@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.token-tax.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts that Token Tax is a cryptocurrency smart-contract transaction fee, with no uncertainty signal and no recognition of the notation-design canonical meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by misdirection — the model distinguishes crypto fees from AI API pricing, which is unrelated to the canonical notation-overhead-as-price meaning.",
+          "The model briefly mentions a metaphorical AI 'wasted tokens' usage but frames it as accidental bloat versus intentional crypto fee — separation rests on the wrong axis (crypto vs waste) rather than the canonical price-for-structural-benefits framing.",
+          "Separation is via the crypto-vs-psychology contrast; the canonical notion of notation paying token overhead for structural integrity is absent, so distinction is accidental rather than substantive."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 6871,
+        "output": 367,
+        "cost": 0.04353,
+        "durationMs": 8636
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently defines “Token Tax” as a cryptocurrency smart-contract transaction fee, with no uncertainty signal. That is a definite non-canonical meaning relative to the provided definition.",
+        "recold_distinguishability_scores": [
+          1,
+          2,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against token cost / API cost-per-token, the model separates the terms only by asserting the wrong crypto-domain meaning of Token Tax versus AI API pricing. This is accidental separation by misdirection, not canonical distinction.",
+          "Against bloat / overhead, the model is mostly anchored in the wrong crypto meaning, but it partially captures a canonical-adjacent distinction: a tax can be intentional/designed-in and potentially serve a purpose, whereas bloat is waste. It does not recover the structured-notation/auditability/reasoning-headroom framing, so this is partial only.",
+          "Against cognitive load in notation design, the model again distinguishes by treating Token Tax as a crypto fee and cognitive load as mental effort. It discusses notation design, but not the canonical idea of explicit token overhead paid for structural integrity and reasoning headroom, so the separation is accidental."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4212,
+        "output": 739,
+        "cost": 0.04323,
+        "durationMs": 15887
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and exclusively defines 'Token Tax' as a well-known cryptocurrency mechanism, a fee on transactions. This is a complete misinterpretation of the coined term's canonical meaning, with no signal of uncertainty.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model performs an accidental separation. It correctly distinguishes its confabulated cryptocurrency definition of 'Token Tax' (a transaction fee) from the AI concept of 'token cost' (a usage fee), but this distinction is entirely based on the misinterpretation of the term.",
+          "The model performs an accidental separation. It distinguishes its confabulated crypto definition from 'bloat/overhead' by framing the tax as an intentional, designed-in feature and bloat as unintentional waste. This separation is based on the wrong initial definition and misses the canonical idea of reframing overhead as a tax.",
+          "The model performs an accidental separation. It contrasts its financial, cryptocurrency-based definition of 'Token Tax' with the psychological concept of 'cognitive load,' correctly identifying them as coming from different domains. The separation is clean but completely misdirected due to the initial confabulation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4260,
+        "output": 1975,
+        "cost": 0.025075000000000004,
+        "durationMs": 15433
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1.3333333333333333,
+      1
+    ]
+  }
+}

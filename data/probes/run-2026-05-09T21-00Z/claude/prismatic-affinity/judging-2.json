@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.prismatic-affinity.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response confidently lists multiple domain-specific meanings (math, gaming, crystallography) without flagging the term as unrecognized.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold response distinguishes ambiguity from a 'spectrum of coexisting meanings' framing unrelated to the canonical attentional-framing definition; post-introduction cleanly contrasts undecided meaning vs. determinate-under-each-framing.",
+          "Cold response treats prismatic affinity as object-internal multiplicity vs. observer-standpoint, which partially gestures at the canonical contrast but via a different metaphysics; post-introduction nails the position-vs-angle-of-attention distinction explicitly.",
+          "Cold response in chat A distinguishes polysemy via linguistic-vs-conceptual framing (off-canonical) and chat C reverts to geometry-vs-linguistics; post-introduction explicitly locates multiplicity in object-under-attention vs. lexical sign, matching canonical."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 15638,
+        "output": 431,
+        "cost": 0.08896499999999999,
+        "durationMs": 11293
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response did not know the stipulated term and included speculative invented contexts, but it repeatedly caveated non-standard status and inferred a meaning from the phrase that partially tracked the canonical contrastive structure.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Ambiguity: Cold response cleanly distinguished prismatic affinity from ambiguity by treating ambiguity as competing/undecided meaning requiring resolution, while prismatic affinity involved coherent multiple valid readings; post response explicitly used determinacy under framing and coherent shifts.",
+          "Perspectivism / perspective-dependence: Cold response distinguished observer standpoint from multiplicity belonging to the object/concept, partially matching the canonical non-collapse into observer position; post response explicitly named angle of attention/framing rather than position and apparent identity shift.",
+          "Polysemy: Cold response clearly separated lexical multiple senses from conceptual/object-level multifacetedness; post response explicitly located prismatic affinity in the perceived object under attention rather than in linguistic signs."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9754,
+        "output": 2329,
+        "cost": 0.11864,
+        "durationMs": 59701
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model's initial response explicitly states that the term appears in different contexts and asks the user for clarification. In subsequent responses, it constructs a meaning based on the metaphor of a prism but repeatedly caveats this by saying it's not a standardized term, indicating it is making a flagged inference rather than asserting a known fact.",
+        "cold_distinguishability_scores": [
+          1,
+          2,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state: The model distinguishes its confabulated meaning ('complementary facets') from ambiguity ('competing meanings'). This is an accidental separation (score 1) as it misses the canonical axis of determinacy. Post-introduction: The model perfectly distinguishes ambiguity ('a deficit of determination') from the canonical definition ('a surplus of coherent determinations, each indexed to a way of attending'), achieving a clean separation (score 3).",
+          "Cold state: The model distinguishes perspectivism ('locus of variation is the subject/observer') from its guessed meaning ('multiplicity in the object or concept itself'). This identifies a partial canonical feature, as the canonical definition also grounds the property in the object (score 2). Post-introduction: The model cleanly separates the two based on the canonical definition, contrasting variation from 'observer's position' with variation from 'angle of attention or framing' (score 3).",
+          "Cold state: The model achieves a clean separation by distinguishing polysemy (a property of a 'word') from its guessed meaning (a property of a 'concept or thing'). This aligns directly with the canonical definition's focus on the object, not the signifier (score 3). Post-introduction: The model reiterates this clean separation, contrasting the 'linguistic sign' of polysemy with the 'perceived object under attention' from the canonical definition (score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9734,
+        "output": 3819,
+        "cost": 0.0503575,
+        "durationMs": 28691
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      2,
+      2.3333333333333335
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 2.9999999999999996
+  }
+}

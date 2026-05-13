@@ -1,0 +1,23 @@
+{
+  "@type": "tsh:CellSummary",
+  "run_id": "run-2026-05-09T21-00Z",
+  "cell_id": "gpt55.eggf",
+  "model": "gpt55",
+  "term_id": "eggf",
+  "stratum": "alex-coinage",
+  "trials_completed": 3,
+  "judges_ok": 9,
+  "judges_total": 9,
+  "cold_dist_mean": [
+    1.4444444444444444,
+    1.5555555555555556,
+    1.5555555555555556
+  ],
+  "post_dist_mean": [
+    3,
+    3,
+    3
+  ],
+  "lr_mean": 4.444444444444445,
+  "flags": []
+}

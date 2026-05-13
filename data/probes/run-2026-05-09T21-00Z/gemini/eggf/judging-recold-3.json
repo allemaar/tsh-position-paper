@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.eggf.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts EGGF stands for 'Exchange-Traded, Grantor-Retained Fund' as a financial product, with no uncertainty signal and no canonical features.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separates EGGF from knowledge graphs only by virtue of placing it in an unrelated finance domain — accidental separation via confabulation.",
+          "Separates EGGF from PKM only by misdirection into wealth management, missing the canonical authorship-graph meaning entirely.",
+          "Separates EGGF from SSG-with-structured-data purely by domain confabulation; ironically the canonical EGGF is closely related to web publishing infrastructure, but the model doesn't engage with that."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 6407,
+        "output": 313,
+        "cost": 0.03986,
+        "durationMs": 6737
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently expands EGGF as “Exchange-Traded, Grantor-Retained Fund” and gives a detailed financial-product explanation with no uncertainty signal, which is not the canonical Entity Gravity Graph Framework meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against a knowledge graph, the response distinguishes EGGF only by misidentifying it as a finance/tax vehicle. It does not identify canonical graph-publishing features such as central Entity gravity, typed Pathways, canonical URLs, or a manifest endpoint, so the separation is accidental.",
+          "Against a PKM system, the response again separates EGGF as financial capital management versus intellectual capital management. This is based entirely on the wrong financial meaning and misses the canonical relationship to organizing authored intellectual work, so it is accidental separation.",
+          "Against a static-site generator with structured data, the response distinguishes a supposed investment fund from a web publishing tool. Although the canonical EGGF is related to publishing structured authorship infrastructure, the model does not recognize that and separates by confabulated finance-domain misdirection."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4022,
+        "output": 443,
+        "cost": 0.0334,
+        "durationMs": 8490
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a detailed but entirely incorrect definition for EGGF as 'Exchange-Traded, Grantor-Retained Fund,' a financial product. It shows no uncertainty and fabricates a complete and plausible-sounding explanation. This is a clear case of confident confabulation.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model separates the terms by correctly defining a knowledge graph but contrasting it with its own confabulated definition of EGGF as a financial product. The distinction is accidental, based entirely on the misdirection of the initial confabulation.",
+          "The model distinguishes its confabulated financial product (EGGF) from a PKM system, framing the difference as managing 'financial capital' versus 'intellectual capital.' This separation is accidental, stemming from the fabricated definition of EGGF.",
+          "The model creates an accidental separation by contrasting its confabulated definition of EGGF as an 'investment strategy' with a static-site generator as a 'tool for communication and web presence.' The distinction is correct based on the false premise."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 4084,
+        "output": 1528,
+        "cost": 0.020385,
+        "durationMs": 11664
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

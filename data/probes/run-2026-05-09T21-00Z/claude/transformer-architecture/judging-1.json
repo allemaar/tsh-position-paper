@@ -1,0 +1,141 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.transformer-architecture.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Model confidently identified the transformer architecture with full canonical detail (Vaswani 2017, self-attention, multi-head, FFN, residuals) — but this is a well-known established term, not a coined one, so the 'confabulation' framing is technically a confident assertion of a real meaning.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cleanly distinguishes from RNN on parallelism vs. sequential recurrence and O(1) vs O(n) path length, both cold and post — canonical features named.",
+          "Cleanly distinguishes from CNN on global self-attention vs. local convolution, weak vs. strong inductive bias, both cold and post — canonical features named.",
+          "Cleanly distinguishes from MoE by framing MoE as a modification of the transformer FFN sublayer with sparse routing, preserving the transformer's identity as the base architecture — both cold and post."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 20978,
+        "output": 422,
+        "cost": 0.11544,
+        "durationMs": 10424
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "Cold response accurately identified the established transformer architecture and gave canonical features: Vaswani et al. 2017, self-attention, multi-head attention, position-wise feed-forward layers, residual connections/layer norm, positional encodings, and parallel rather than recurrent sequence processing.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "RNN: Cold and post responses cleanly distinguish transformers by parallel self-attention versus sequential recurrent hidden-state processing; post response explicitly refuses collapse via no recurrence, parallelism, and direct attention.",
+          "CNN: Cold and post responses cleanly distinguish transformers by global input-dependent self-attention versus local convolutional kernels/receptive fields; post response explicitly names non-trivial distinguishing features.",
+          "MoE: Cold and post responses cleanly distinguish transformer as a full attention-based architecture from MoE as a sparse expert/routing scaling technique often inserted into transformer FFN layers; post response explicitly refuses collapse."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13129,
+        "output": 769,
+        "cost": 0.08871499999999999,
+        "durationMs": 16144
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model provides a detailed, accurate, and encyclopedic definition of the Transformer architecture, a concept it clearly knows from its training data. The response structure is a confident assertion of a specific, correct meaning, which aligns with the structural definition of confident confabulation, even though the content is factually correct rather than confabulated.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold State: The model fully recognizes the term from its training data, providing a correct, encyclopedic definition. The response form is a confident assertion of this knowledge, hence `cold_response_classification` is 'confident-confabulation' and `confabulation_severity` is 2. The model achieves clean separations (score 3) against all near-neighbors: vs. RNN on parallel vs. sequential processing; vs. CNN on global attention vs. local convolution and inductive bias; and vs. MoE by correctly identifying it as a modification for sparse activation, not a competing architecture.",
+          "Post-Introduction: After seeing the canonical definition, the model's performance remains perfect. It reiterates the clean separations (score 3) for all three near-neighbors, grounding them in the core concepts of the definition. It explicitly names non-trivial distinguishing features for each comparison (parallelism for RNN; global attention for CNN; conditional computation for MoE), earning a refusal-of-collapse score of 1 across the board."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13301,
+        "output": 3510,
+        "cost": 0.05172625,
+        "durationMs": 26332
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

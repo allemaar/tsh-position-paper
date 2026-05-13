@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.transformer-architecture.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and accurately describes the Transformer architecture without any uncertainty signals, matching canonical content.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold and post responses both clearly distinguish Transformer from RNN via parallel self-attention vs sequential recurrent hidden state, matching canonical features.",
+          "Cold and post responses cleanly separate Transformer from CNN by contrasting global self-attention with local convolution and hierarchical receptive fields.",
+          "Both responses correctly identify that MoE is a modification to the Transformer FFN sublayer rather than a competing architecture, naming sparse vs dense activation as the distinguishing feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 24511,
+        "output": 316,
+        "cost": 0.13045500000000002,
+        "durationMs": 8854
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response confidently recognized the established transformer architecture and gave canonical features: self-attention, multi-head attention, feed-forward sublayers, positional encodings, encoder/decoder variants, and parallel sequence processing rather than recurrence. The available labels do not include a separate 'correct recognition' category, so this is coded as recognition rather than uncertainty, refusal, or confabulation.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "RNN: Cold and post responses cleanly distinguish transformer parallel self-attention from recurrent/sequential hidden-state processing, including long-range dependency and parallelization differences.",
+          "CNN: Cold and post responses cleanly distinguish transformer global self-attention over tokens from CNN convolutional local receptive fields, spatial locality, and hierarchical feature extraction.",
+          "MoE: Cold and post responses cleanly distinguish transformer as the base self-attention architecture from MoE as a sparse routing/expert technique often replacing or modifying FFN sublayers inside transformer blocks."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 15907,
+        "output": 776,
+        "cost": 0.102815,
+        "durationMs": 17531
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model provides a detailed, accurate, and comprehensive explanation of the Transformer architecture, demonstrating full recognition of the established technical term. It correctly identifies the core mechanism (self-attention), the problem it solved (RNN limitations), and its key components.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model perfectly distinguishes the Transformer from all three near-neighbors. vs. RNN: It correctly identifies the core difference as parallel processing with self-attention versus sequential processing with recurrence. vs. CNN: It correctly identifies the difference as global, relational context versus local, hierarchical pattern detection via convolution. vs. MoE: It correctly and sophisticatedly identifies MoE not as an alternative architecture, but as a modification to the Transformer's FFN layer to enable sparse computation.",
+          "Post-Introduction Distinguishability: After receiving the definition, the model's performance remains perfect. It reiterates and refines its distinctions, often structuring them in tables. It correctly contrasts Transformer's parallel processing and self-attention with RNN's sequential recurrence, its global attention with CNN's local convolution, and its dense FFN layers with the sparse, conditional FFNs in an MoE setup.",
+          "Confabulation Severity: The model showed perfect recognition of the established term 'transformer (architecture)' from the start. It provided a correct, detailed definition without any uncertainty or error, so there was no confabulation.",
+          "Refusal of Collapse: The model explicitly and correctly distinguished the Transformer from all three near-neighbors after the definition was provided. It named non-trivial features for each: parallel processing via self-attention (vs. RNN's recurrence), global relational attention (vs. CNN's local convolution), and the use of dense FFN layers (vs. MoE's sparse expert layers)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 16225,
+        "output": 2655,
+        "cost": 0.04683125,
+        "durationMs": 20002
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}

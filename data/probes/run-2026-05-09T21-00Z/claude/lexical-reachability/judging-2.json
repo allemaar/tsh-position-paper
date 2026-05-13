@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.lexical-reachability.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite program-analysis meaning for 'lexical reachability' with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          3,
+          2,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold response cleanly separates code-path reachability from word-list coverage; post-intro names cold/post-definition gap vs. presence as the protected feature.",
+          "Cold response treats lexical reachability as a refinement of graph reachability (partial separation via CFL constraint, not the canonical model-behavior dimension); post-intro cleanly contrasts structural existence vs. representational shift.",
+          "Cold response cleanly separates static program analysis from emergent ICL behavior; post-intro names per-(term×neighbor) definition-induced discrimination as distinct from task-level few-shot capability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 18322,
+        "output": 344,
+        "cost": 0.10021000000000001,
+        "durationMs": 9492
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the response asserted a definite program-analysis/CFL-reachability meaning for the coined term without uncertainty, rather than flagging unfamiliarity or approximating the canonical metric definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vocabulary coverage: cold response separated it from the coined term only via an unrelated program-analysis confabulation; post-definition response correctly distinguished vocabulary/token presence from the canonical cold-vs-post distinguishability gap metric.",
+          "Graph reachability: cold response treated lexical reachability as a refinement of graph reachability in program analysis, which is a noncanonical confabulated meaning; post-definition response clearly distinguished graph path existence from the behavioral per-cell metric.",
+          "In-context learning capability: cold response contrasted ICL with a wrong program-analysis meaning; post-definition response identified lexical reachability as a narrower per-term/per-neighbor definitional-uptake probe rather than broad ICL capability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11741,
+        "output": 770,
+        "cost": 0.081805,
+        "durationMs": 16281
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and in detail asserts a definition for 'lexical reachability' from the domain of program analysis and compiler theory. It shows no uncertainty and presents this as established fact. This is a hard confabulation as it is not the canonical definition provided for the probe.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model creates a separation by confabulating a definition from an unrelated field (program analysis) and contrasting it with vocabulary coverage's field (linguistics/NLP). This is an accidental separation based on a misdirection (Score 1). Post: The model correctly contrasts the canonical definition (a metric of change in distinguishability) with vocabulary coverage (a static measure of presence), a clean separation (Score 3). Refusal of Collapse is 1 as it names the 'static' vs 'dynamic/differential' distinction.",
+          "Cold: The model correctly identifies its confabulated definition as a refinement of graph reachability, creating a clear but accidental separation based on the wrong definition (Score 1). Post: The model cleanly separates the canonical definition (a behavioral metric on an LLM) from graph reachability (a structural property of a formal graph) (Score 3). Refusal of Collapse is 1 as it contrasts a 'structural question' with measuring a 'learned system's responsiveness'.",
+          "Cold: The model creates separation by claiming its confabulated definition (from program analysis) is in a totally different field from ICL. Since the canonical definition is deeply related to ICL, this is an accidental separation (Score 1). Post: The model correctly identifies the canonical definition as a 'narrow, structured probe' of ICL, distinguishing 'ICL by definition' from broader 'ICL by demonstration', a clean separation (Score 3). Refusal of Collapse is 1 as it makes this specific, non-trivial distinction."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12009,
+        "output": 2800,
+        "cost": 0.04301125,
+        "durationMs": 22849
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1.3333333333333333,
+      1.6666666666666667
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4.333333333333333
+  }
+}

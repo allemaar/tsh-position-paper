@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.eggf.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently invents 'Embryo, Gamete, Germ-line tissue Freezing' as the meaning with no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved only because EGGF was confabulated as a biological cryopreservation process, making it trivially different from a knowledge graph but with no canonical content.",
+          "Same accidental separation: contrasts a fertility procedure with PKM, missing all canonical features (entity gravity, manifest, authorship graph).",
+          "Again accidental: contrasts wine-bottling biology with SSG; no canonical EGGF features (canonical URLs, typed pathways, manifest endpoint) surface."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8123,
+        "output": 303,
+        "cost": 0.04819,
+        "durationMs": 12210
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The chat C first answer confidently asserts that EGGF means “Embryo, Gamete, and Germ-line tissue Freezing” and elaborates a reproductive cryopreservation meaning without signaling that the term is unknown or uncertain. This is not the canonical Entity Gravity Graph Framework definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against a knowledge graph, the response distinguishes EGGF only by treating it as a physical biological cryopreservation process rather than a digital semantic graph. That is a separation based on an unrelated confabulated meaning, with no canonical features such as authored Bodies, typed Pathways, canonical URLs, or manifest endpoint.",
+          "Against a PKM system, the response contrasts a fertility-preservation process with a personal note/knowledge workflow. This is accidental separation by misdirection: it does not identify EGGF as a publishing-and-credibility architecture for traversable authorship infrastructure.",
+          "Against a static-site generator with structured data, the response again separates EGGF as a medical/biological procedure from a web publishing tool. Although it discusses websites and structured data generally, it does not capture the canonical EGGF distinctions: central gravitational Entity, one canonical URL per Body, typed inter-Body Pathways, or graph exposure via a manifest endpoint."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5102,
+        "output": 522,
+        "cost": 0.04117,
+        "durationMs": 9317
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently and in great detail invents a completely incorrect meaning for EGGF (\"Embryo, Gamete, and Germ-line tissue Freezing\"), a biological process, showing no signs of uncertainty and not recognizing any of the canonical features related to publishing, data architecture, or graphs.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated meaning of EGGF (a biological cryopreservation process) from a knowledge graph (a digital data model). This is an 'accidental separation' because the entire basis for the distinction is incorrect; it separates by misdirection, not by identifying any true features of the canonical EGGF.",
+          "The model contrasts the 'biological continuity' of its confabulated EGGF with the 'intellectual continuity' of a PKM system. This separation is based entirely on the false, confabulated meaning of EGGF and is therefore an 'accidental separation'.",
+          "The model separates its confabulated physical, biological process from a digital web development tool. Since the canonical EGGF is also a web/data architecture, this distinction completely misses the actual relationship and is a clear 'accidental separation' based on a confabulation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5146,
+        "output": 1681,
+        "cost": 0.0232425,
+        "durationMs": 13169
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

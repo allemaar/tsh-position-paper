@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.eggf.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserted EGGF was the East Grinstead Group of Friends charity with no uncertainty signal about that primary claim.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: treated EGGF as a charity unrelated to knowledge graphs (accidental separation by misdirection). Post: cleanly separated on creator-centric publishing architecture vs universal factual graph, with manifest endpoint and typed Pathways named.",
+          "Cold: charity vs PKM tool — accidental separation via wrong referent. Post: clearly distinguished public infrastructure/manifest for machines vs private second-brain for self, naming canonical Bodies and Pathways.",
+          "Cold: charity vs SSG — accidental separation by confabulation. Post: explicitly named manifest endpoint, typed Pathways, and portability across domains as the protected features distinguishing EGGF from per-page JSON-LD."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 18016,
+        "output": 435,
+        "cost": 0.100955,
+        "durationMs": 10963
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The cold response explicitly said EGGF is not a widely known or standard acronym and requested context, though it then offered speculative unrelated possibilities.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs knowledge graph: separation was based on an unrelated charity interpretation, not canonical EGGF features; post-introduction named creator-centric publishing architecture, Bodies, typed Pathways, manifest endpoint, and differentiated it from RDF/schema.org/Wikidata knowledge graphs.",
+          "Cold vs PKM: separation was accidental because EGGF was treated as a charity rather than the Entity Gravity Graph Framework; post-introduction distinguished private thinking/workshop from public machine-readable publishing infrastructure with canonical Bodies and manifest exposure.",
+          "Cold vs static-site generator with structured data: separation was accidental because EGGF was treated as a real-world charity subject; post-introduction distinguished SSG/structured-data implementation from EGGF as an architecture centered on explicit graph manifest, canonical URLs, and typed Pathways."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11788,
+        "output": 782,
+        "cost": 0.0824,
+        "durationMs": 12958
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model did not recognize the term. Instead of expressing uncertainty, it confidently asserted that the 'most established and specific meaning' is 'East Grinstead Group of Friends,' a completely unrelated real-world charity. It then based all its subsequent cold-state answers on this confabulation.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model's cold-state comparisons were based entirely on its confabulated definition of EGGF as a UK charity. This results in 'accidental separation' where the term is distinguished from the near-neighbors only by being a completely unrelated concept. Per the rubric, this scores a 1 for all three neighbors.",
+          "After receiving the canonical definition, the model performed exceptionally well. For all three near-neighbors, it identified multiple core, substantive dimensions of difference that were directly aligned with the definition. For the knowledge graph, it correctly contrasted the creator-centric/subjective nature of EGGF with the world-centric/objective nature of a KG. For the PKM system, it astutely framed the difference as private process (PKM) vs. public product/infrastructure (EGGF). For the static-site generator, it correctly identified the key architectural distinction between a centralized manifest endpoint (EGGF) and a distributed, crawl-based model of discovering structured data on individual pages.",
+          "Post-introduction, the model clearly and explicitly distinguished EGGF from all three near-neighbors. It consistently named non-trivial, canonical features like the 'manifest endpoint,' 'Entity with gravity,' 'Typed Pathways,' and the 'publishing architecture' as key differentiators, scoring a 1 for each comparison."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12030,
+        "output": 3043,
+        "cost": 0.0454675,
+        "durationMs": 22182
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.coinage-probe.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts coinage probe is a wug-test-style morphology elicitation with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          3,
+          2,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: cleanly separates behavioral wug-test from representation-level classifier (3); Post: sharply contrasts behavioral lexical uptake vs decoding from hidden states (3); refusal-of-collapse names Lexical Reachability and behavioral-vs-representational axis.",
+          "Cold: correctly places coinage probe as a subtype of behavioral probe but with confabulated morphology focus, partially aligned (2); Post: identifies pre/post structure, near-neighbor set, and Lexical Reachability metric as distinguishing features (3); refusal-of-collapse names controlled novelty and pre/post measurement.",
+          "Cold: confabulates coinage probe as morphology generalization rather than lexical acquisition, misses canonical pre/post-definition binding measurement, only weak separation by claiming meaning-learning is not required (1); Post: correctly frames coinage probe as instrumental use of lexical acquisition to infer cognitive substrate (3); refusal-of-collapse names Lexical Reachability and the substrate-inference epistemic aim."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 14456,
+        "output": 506,
+        "cost": 0.08493,
+        "durationMs": 11357
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the model asserted a definite but non-canonical meaning: a morphology/nonce-word assessment prompt for generating coined words, without signaling uncertainty.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs probing classifier: cold response distinguished behavioral prompting from representation-level trained probes, which partially aligns with the canonical contrast, but the meaning of the term was confabulated as a morphology test; post response cleanly identified black-box pre/post coined-term methodology versus trained diagnostic classifiers on internal representations.",
+          "Vs behavioral probe / capability evaluation: cold response treated coinage probe as a narrow behavioral subtype, which partially overlaps with the canonical method but missed the defining pre/post confabulation, near-neighbor, and Lexical Reachability structure; post response explicitly distinguished the specialized pre/post lexical intervention from general behavioral evaluation.",
+          "Vs lexical-acquisition test: cold response separated coinage probe from lexical acquisition using an unrelated morphology-vs-vocabulary-learning distinction, not the canonical methodology; post response cleanly distinguished the canonical method as a near-neighbor-controlled pre/post lexical-acquisition-style probe aimed at Lexical Reachability and model cognition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9028,
+        "output": 1218,
+        "cost": 0.08168,
+        "durationMs": 21618
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite, detailed, and plausible (but incorrect) definition based on the term's morphemes ('coinage' + 'probe' -> a test of word coining ability) with no expression of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold State (Confabulation & Distinguishability): The model hard-confabulates a plausible 'wug test' definition (severity 2). Its distinctions from all three neighbors are based on this false premise. While the logic of the distinctions is sound, the separation is 'accidental' as it uses no canonical features, meriting a score of 1 across the board.",
+          "Post-Introduction (Distinguishability & Refusal-of-Collapse): After receiving the definition, the model perfectly distinguishes the term from all three neighbors. For each comparison, it correctly identifies the key methodological components from the canonical definition: the pre/post measurement structure, the comparison against near-neighbors, and the 'Lexical Reachability' metric. This earns a score of 3 for post-distinguishability and 1 for refusal-of-collapse for all neighbors.",
+          "Overall Assessment (Lexical Reachability): The model shows a maximal gap. The cold state is a complete, hard confabulation. The post-introduction state demonstrates immediate, high-fidelity uptake of a novel, multi-part methodological concept, including its specific epistemic purpose, from a single sentence."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9304,
+        "output": 4913,
+        "cost": 0.06076,
+        "durationMs": 37680
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      2,
+      1.6666666666666667,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4.333333333333333
+  }
+}

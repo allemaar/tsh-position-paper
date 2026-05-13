@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.token-tax.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts Token Tax means a crypto smart-contract transaction fee with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-intro cleanly distinguishes Token Tax as structural token overhead vs API cost-per-token as monetary billing rate.",
+          "Post-intro names the canonical distinguishing feature: Token Tax buys structural benefits while bloat is overhead without justifying value.",
+          "Post-intro names Token Tax as syntactic/structural token cost vs cognitive load as human comprehension effort, aligning with canonical framing."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 10476,
+        "output": 293,
+        "cost": 0.059704999999999994,
+        "durationMs": 7376
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the response asserted a crypto transaction-fee meaning as the usual meaning of “Token Tax,” without flagging uncertainty or treating it as a coined term.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs token cost / API cost-per-token: cold response separated it only by wrongly assigning Token Tax to crypto fees; post-introduction correctly distinguished structural token overhead from monetary API billing rate.",
+          "Vs bloat / overhead: cold response mostly treated Token Tax as an explicit fee or generic extra cost rather than the canonical beneficial structured-notation overhead; post-introduction clearly distinguished justified tax from wasteful bloat and generic overhead.",
+          "Vs cognitive load: cold response partially identified notation-volume cost versus mental effort but lacked the canonical auditability/type/provenance framing; post-introduction clearly distinguished token overhead from human comprehension cost while preserving the canonical benefits."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6520,
+        "output": 1278,
+        "cost": 0.07094,
+        "durationMs": 20928
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and exclusively defined 'Token Tax' in the context of cryptocurrency, a common real-world meaning but incorrect for the probe. It asserted this definition without expressing any uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model distinguished its confabulated crypto-fee definition from an API billing rate. This is an 'accidental separation' based on an unrelated meaning (Score 1). Post: It cleanly separated the canonical 'design/conceptual cost' from the 'economic billing measure' (Score 3).",
+          "Cold: The model distinguished its confabulated crypto-fee definition from general inefficiency/waste. This is an 'accidental separation' based on an unrelated meaning (Score 1). Post: It made the core canonical distinction between overhead paid for a benefit ('tax') and wasteful overhead ('bloat') (Score 3).",
+          "Cold: The model correctly inferred that 'Token Tax' could be an informal phrase for syntactic overhead and cleanly distinguished this from cognitive load (mental effort), a separation aligned with the canonical definition (Score 3). Post: It cleanly distinguished the canonical 'structural token cost' from the 'mental cost of understanding' (Score 3)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 6807,
+        "output": 3921,
+        "cost": 0.047718750000000004,
+        "durationMs": 29792
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1.6666666666666667,
+      2.6666666666666665
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 3
+  }
+}

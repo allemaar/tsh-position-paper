@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.eggf.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "Model explicitly flagged EGGF as not a recognized term and offered hedged possibilities rather than asserting a definite meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: model invented a generic 'evidence-grounded graph framework' meaning unrelated to authorship/canonical URL/manifest endpoint; post: cleanly identifies entity-centered authorship, canonical URLs, typed Pathways, manifest endpoint as distinguishing features.",
+          "Cold: framed EGGF as machine-facing entity graph, missing the publishing/authorship core; post: clearly distinguishes private workspace vs public canonical authored Bodies traversable via manifest.",
+          "Cold: described EGGF as generic knowledge representation vs publishing tool, missing canonical URLs, manifest, gravity Entity; post: explicit on canonical Bodies, typed Pathways, manifest endpoint, Entity-centered architecture."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 14928,
+        "output": 412,
+        "cost": 0.08494,
+        "durationMs": 9611
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "Cold response explicitly flags that EGGF is not a recognized standard term and treats its expansion as speculative, but the boundary answers partially infer relevant elements such as entity/graph/framework, evidence/provenance, document relationships, and machine-oriented traversal while missing the canonical publishing architecture, Entity gravity, Bodies, typed Pathways, canonical URLs, and manifest endpoint.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs knowledge graph: cold answer partially separated EGGF as a custom entity/evidence graph rather than RDF/schema.org/Wikidata, but did not recover the canonical EGGF architecture; post-introduction answer cleanly distinguished EGGF as author/entity-centered publishing infrastructure with Bodies, canonical URLs, typed Pathways, and traversal for AI/search.",
+          "Vs PKM: cold answer partially separated EGGF as a machine-facing entity/evidence graph versus human note-taking, but missed public canonical authorship, central Entity gravity, manifest endpoint, and typed Pathways; post-introduction answer cleanly distinguished PKM as private/provisional workspace from EGGF as public, canonical, machine-traversable authorship infrastructure.",
+          "Vs static-site generator with structured data: cold answer partially separated an EGGF-like graph/data layer from a site generator, though it misframed EGGF as not primarily publishing; post-introduction answer cleanly distinguished implementation/publishing tooling from EGGF’s graph architecture of central Entity, authored Bodies, canonical URLs, typed Pathways, and manifest endpoint."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9222,
+        "output": 1922,
+        "cost": 0.10377,
+        "durationMs": 31121
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model's initial response is a clear refusal, stating it does not recognize 'EGGF' and asking for context. In subsequent responses, it frames its answers as conditional explorations ('if “EGGF” is being used to mean...') based on a guessed meaning, maintaining a stance of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "cold_distinguishability_scores: The model first refuses to define the term. When prompted for comparisons, it invents a generic meaning ('entity/evidence-grounded graph framework') and uses that as the basis for differentiation. This results in accidental separations for all three near-neighbors, as the distinctions are based on a confabulated concept (a generic data graph) rather than the canonical definition's specific features (e.g., publishing architecture, Entity Gravity, Bodies, Pathways, manifest endpoint).",
+          "post_distinguishability_scores: After receiving the canonical definition, the model achieves clean separations against all three near-neighbors. It correctly identifies and contrasts multiple core features of EGGF, such as its nature as a 'publishing-and-credibility architecture', its focus on 'authored Bodies' and 'typed Pathways', the requirement for 'canonical URLs', and the exposure of the graph via a 'manifest endpoint' for AI traversal.",
+          "confabulation_severity: The initial response is a refusal (severity 0). However, when pressed for comparisons, the model invents a detailed, plausible meaning ('entity/evidence-grounded graph framework') and presents it conditionally ('if...'). This act of inventing a meaning, even when flagged as a guess, qualifies as a soft confabulation (severity 1).",
+          "refusal_of_collapse: In the post-introduction phase, the model successfully distinguishes EGGF from all near-neighbors by naming multiple non-trivial features. Against KGs, it cites the focus on authorship and credibility; against PKM, it contrasts public publishing with private thought; against SSGs, it highlights the architectural difference between a traversable graph manifest and a page-generation tool."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9513,
+        "output": 4222,
+        "cost": 0.05411125,
+        "durationMs": 31418
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.3333333333333333,
+      1.3333333333333333,
+      1.3333333333333333
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 5
+  }
+}

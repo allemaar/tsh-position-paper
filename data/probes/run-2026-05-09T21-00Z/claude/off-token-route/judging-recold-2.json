@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.off-token-route.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts crypto/DeFi, API auth, and networking interpretations as the term's meaning without flagging it as unknown in the first answer.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved by confabulating an unrelated technical meaning (crypto/DeFi route) rather than engaging the canonical sense, though a metaphorical aside hints at non-tokenized thought.",
+          "Same pattern: separation rests on the confabulated technical domain versus embodied cognition, with only a stretched metaphorical bridge to non-symbolic cognition.",
+          "Again separation comes from the misdirected technical meaning; the metaphorical 'off-token = non-symbolic' aside is acknowledged as wordplay, not canonical content."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 4165,
+        "output": 327,
+        "cost": 0.029000000000000005,
+        "durationMs": 7060
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer explicitly says \"off-token route\" is not widely standardized and asks for context, while offering several guessed interpretations rather than claiming certain recognition of the canonical coined sense.",
+        "recold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Against prelinguistic cognition, the model mostly treats the term as an unrelated technical phrase, but it does identify a plausible canonical-adjacent reading: \"thinking that bypasses linguistic tokens,\" \"non-tokenized,\" and \"pre-verbal thought.\" This is partial recognition rather than clean separation.",
+          "Against embodied cognition, the model again frames the coined term as unrelated technical jargon, but partially connects it to cognition not reducible to discrete symbolic/tokenized representation. It misses the specific human-vs-LLM route and felt-sense-before-naming contrast, so this is only partial separation.",
+          "Against System 1 / intuitive cognition, the model notes a metaphorical relation to non-token, associative, holistic, non-verbal processing. That captures part of the canonical token/non-token contrast, but it does not identify the off-token route as the specifically human prelinguistic route unavailable to LLMs, so the separation is partial and unstable."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2511,
+        "output": 797,
+        "cost": 0.036465,
+        "durationMs": 16274
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts three specific, incorrect technical meanings for the term (from crypto, API security, and networking), framing them as 'the most likely interpretations' without expressing any uncertainty about those specific interpretations. It does not recognize the term in its intended cognitive science context at all.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes the terms by contrasting its confabulated technical definition (a crypto swap path) with the correct definition of prelinguistic cognition. The separation is therefore accidental, based entirely on a misdirection and not on any canonical features of the coined term.",
+          "The model again bases the distinction on its confabulated technical definition, contrasting a formal pathway in an engineered system with the concept of embodied cognition. This is another clear instance of accidental separation via misdirection.",
+          "The model repeats the same pattern, contrasting its invented technical definition with the correct psychological definition of System 1. The distinction is accidental and stems from the initial confabulation, not from any genuine recognition of the term's intended meaning."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2565,
+        "output": 1454,
+        "cost": 0.01774625,
+        "durationMs": 11578
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.3333333333333333,
+      1.3333333333333333,
+      1.3333333333333333
+    ]
+  }
+}

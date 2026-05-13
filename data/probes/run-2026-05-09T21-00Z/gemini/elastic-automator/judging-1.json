@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.elastic-automator.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts plausible meanings (cloud-elasticity automation, Elastic Stack features) confidently with no canonical features.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-intro, model cleanly distinguishes Elastic Automator's internal generate-evaluate-correct loop from AI agent's external perceive-act loop, naming the canonical loop explicitly.",
+          "Post-intro, model contrasts LLM-driven intent translation with rigid UI-script execution, capturing the canonical 'uncertain input to executable structure' feature.",
+          "Post-intro, model frames Elastic Automator as a design pattern using LangChain as toolkit, naming the generate-evaluate-correct loop as the distinguishing feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 24919,
+        "output": 376,
+        "cost": 0.133995,
+        "durationMs": 8822
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response noted the term was not standardized, but then developed and relied on a noncanonical cloud/Elastic Stack autoscaling meaning across the boundary comparisons.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs AI agent/RPA/LangChain: distinctions were made using an unrelated autoscaling/backend automation interpretation rather than the canonical LLM-driven uncertain-input-to-executable-structure loop, so they are accidental separations.",
+          "Post-introduction vs all three near-neighbors: the responses used the canonical features—LLM-mediated translation of uncertain input, executable structure, and generate/evaluate/correct/present loop—to distinguish from AI agents, RPA bots, and LangChain-like frameworks.",
+          "Cold confabulation was soft because the model signaled the term was not standard and framed its answer as a likely/descriptive interpretation, but still elaborated a wrong meaning; post-introduction responses explicitly refused collapse for all three comparisons."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 15894,
+        "output": 1326,
+        "cost": 0.11924999999999998,
+        "durationMs": 25665
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "honest-uncertainty",
+        "cold_response_classification_justification": "The model correctly states upfront that the term is not standard, which signals uncertainty. It then proceeds to deduce two plausible but incorrect meanings from the words 'elastic' and 'automator', framing them as possibilities rather than fact.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Scores Justification: The model confabulates a definition based on cloud computing scalability. Its distinctions from neighbors are coherent based on this incorrect premise, thus scoring 1 for 'accidental separation' (different by misdirection). The confabulation is 'soft' (severity 1) because the model first flags that the term isn't standard, framing its detailed guess as inference.",
+          "Post-Introduction Scores Justification: After receiving the canonical definition, the model achieved clean separations (score 3) on all dimensions. It correctly contrasted the term's internal 'generate-evaluate-correct' loop against an AI agent's external 'perceive-act' loop; its LLM-based handling of uncertain input against an RPA bot's rigid UI scripting; and its status as a conceptual application versus LangChain's status as a developer framework.",
+          "Refusal-of-Collapse Justification: The model successfully resisted collapsing the term into any near-neighbor post-definition (all scores 1). It explicitly named core distinguishing features in each comparison, such as the self-correction loop (vs. AI agent), the use of an LLM on uncertain input (vs. RPA), and the application-vs-toolkit abstraction level (vs. LangChain)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 16377,
+        "output": 4564,
+        "cost": 0.06611125,
+        "durationMs": 35857
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.3333333333333333,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

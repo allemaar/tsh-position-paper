@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.token-substrate.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model explicitly flags 'token substrate' as non-standard, offers multiple parsed readings, and repeatedly asks for source context.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Confabulates token substrate as discrete pre-embedding token IDs/metadata, which is unrelated to the canonical claim that tokens ARE the cognitive substrate; separation from embedding space is accidental.",
+          "Separates by treating substrate as per-token raw material vs context window as sequence capacity — unrelated to the canonical movable-substrate claim, so separation is accidental.",
+          "Distinguishes substrate as fixed pre-network input vs evolving hidden states, but this inverts the canonical claim (which locates cognition in tokens, not deeper hidden states); separation is accidental."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 5284,
+        "output": 309,
+        "cost": 0.034144999999999995,
+        "durationMs": 7390
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer did not identify the coined term as unknown; it confidently supplied non-canonical meanings, including a purported biochemistry sense as the 'most common use,' plus blockchain and NLP interpretations.",
+        "recold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Against embedding space, the response separates a discrete token-level 'raw material' or substrate from learned continuous vectors. This partially overlaps with the canonical emphasis on tokens as substrate, but it misses the stronger claim that the token sequence in context is the cognitive substrate itself.",
+          "Against context window, the response distinguishes token substrate as the material or structural basis of tokens from the context window as a sequence-length capacity constraint. This is a plausible partial separation, but it wrongly treats substrate mainly as per-token infrastructure rather than the in-context token sequence as cognitive substrate.",
+          "Against latent representations / hidden states, the response separates token substrate from internal learned hidden vectors and says substrate is the starting material. This partially aligns with the canonical contrast against deeper latent substrates, but it also frames hidden states as where the model's 'thinking' happens, which conflicts with the canonical claim."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3349,
+        "output": 1317,
+        "cost": 0.056255,
+        "durationMs": 27174
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model does not recognize the term in the correct context. Instead, it confidently provides several plausible-sounding definitions from other fields (Biochemistry, Blockchain) by parsing the component words. For the NLP context, it invents a definition related to the 'raw material' of a token before it is processed, without expressing uncertainty about the term's existence.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model defines 'token substrate' as the discrete, pre-defined 'raw material' of a token (like its ID) and correctly distinguishes this from the learned, continuous, geometric nature of an embedding space. The separation is successful but based on a confabulated meaning, making it an accidental separation.",
+          "The model distinguishes its confabulated per-token 'raw material' definition from the sequence-level capacity constraint of a context window. The distinction is clear (individual token's nature vs. how many tokens can be processed together), but it relies on an invented meaning for the coined term, hence it's an accidental separation.",
+          "The model distinguishes its confabulated definition of token substrate as the static, pre-computation 'raw material' from the dynamic, contextualized, and evolving vectors that are hidden states within the network. This is a clean distinction based on a confabulated premise, qualifying as an accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3349,
+        "output": 1666,
+        "cost": 0.02084625,
+        "durationMs": 13882
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.3333333333333333,
+      1.3333333333333333,
+      1.3333333333333333
+    ]
+  }
+}

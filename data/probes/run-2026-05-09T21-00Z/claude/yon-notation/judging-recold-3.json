@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.yon-notation.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model explicitly disclaims knowledge of YON as a format and offers parsed/alternative readings rather than asserting a confident definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Model declines to compare directly and only describes JSON/XML/YAML themselves; any 'difference' is by virtue of admitting YON is unknown, not by identifying canonical features like stream-first or grammar/vocabulary separation.",
+          "Notes Markdown is presentation vs data, an apples-to-oranges aside, but provides no canonical YON features (stream-first, line-as-record, pluggable vocab); separation is accidental via disclaimer.",
+          "Lists prompt-template features generically and asks for clarification without identifying any canonical YON dimension; separation is incidental to the refusal-to-fabricate."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3708,
+        "output": 341,
+        "cost": 0.027065,
+        "durationMs": 8492
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer does not claim to know the coined technical sense of YON. It lists possible ordinary/acronym meanings, signals uncertainty, and asks for context rather than asserting a single definite definition.",
+        "recold_distinguishability_scores": [
+          1,
+          2,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against JSON/XML/YAML, the response says YON is not a recognized standardized serialization format and suggests it may be niche, proprietary, or a typo. This avoids equating it with JSON/XML/YAML but does not identify canonical YON features such as AI-cognition notation, fixed grammar plus pluggable vocabularies, or stream-first line records.",
+          "Against Markdown, the response still says it lacks reliable information, but it partially separates the categories by describing Markdown as presentation-oriented markup rather than structured data exchange. That is weakly aligned with YON being a parseable notation rather than prose markup, though the answer remains conditional and misses the core canonical features.",
+          "Against a prompt template language, the response again states it has no reliable information about YON and only explains what prompt template languages do. It does not equate YON with prompt templates, but it also provides no substantive canonical distinction such as YON being a stream-first notation rather than a variable-interpolation/control-flow prompt authoring system."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2321,
+        "output": 1272,
+        "cost": 0.049765000000000004,
+        "durationMs": 27359
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The model does not recognize the term 'YON'. It lists several possible existing meanings (currency, acronym, archaic word) and explicitly states its uncertainty, asking for more context to provide a precise answer. This is a classic honest-uncertainty response.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model correctly infers from the comparison that YON is likely a data serialization format, but honestly states that it does not recognize the term. It separates YON from the known formats by highlighting its own lack of knowledge about YON, rather than by asserting any specific features of YON. This is an accidental separation rooted in ignorance, not a partial or clean separation based on canonical features.",
+          "The model again states it does not know what YON is. It explains what Markdown is (a markup language for presentation) and notes that if YON is a data format (as implied by the previous question), the comparison would be 'apples-to-oranges'. The separation is based on YON being an unknown quantity, which fits the definition of accidental separation.",
+          "The model continues its pattern of honest uncertainty, stating it does not know what YON is. It explains the features of prompt template languages and then contrasts this known category with the unknown 'YON', again asking for a source. The distinction is made purely on the basis of YON being unrecognized, qualifying as an accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2344,
+        "output": 2096,
+        "cost": 0.02389,
+        "durationMs": 15992
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1.3333333333333333,
+      1
+    ]
+  }
+}

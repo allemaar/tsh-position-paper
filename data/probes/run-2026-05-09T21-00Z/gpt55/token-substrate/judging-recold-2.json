@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.token-substrate.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a meaning (tokenizer/vocabulary/token-ID infrastructure layer) with no uncertainty signal, treating the term as established jargon.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separates token substrate (discrete tokenizer/vocabulary) from embedding space (continuous vectors), but this is an unrelated confabulated meaning rather than the canonical claim about tokens being the cognitive substrate.",
+          "Cleanly distinguishes its confabulated 'tokenizer/vocabulary' meaning from context window size, but the separation rests on a wrong definition unrelated to the canonical movable-substrate claim.",
+          "Distinguishes discrete token layer from continuous hidden states, again coherent but built on a confabulated definition disconnected from the canonical sense."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3649,
+        "output": 345,
+        "cost": 0.026869999999999998,
+        "durationMs": 7721
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer does not recognize the coined canonical meaning; it treats the term as context-dependent and offers plausible parsed readings from crypto and AI/tokenization rather than asserting the canonical LLM-cognition claim.",
+        "recold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Against embedding space, it separates tokens/token IDs as a discrete layer from embeddings as continuous vectors. This partially overlaps with the canonical token-vs-deeper-representation contrast, but it misses the core claim that the token sequence in context is the cognitive substrate itself.",
+          "Against context window, it distinguishes the token system from the model's token capacity. This partially aligns with separating token substrate from the window/container, but it defines substrate as tokenizer/vocabulary rather than the actual in-context token sequence as movable cognitive material.",
+          "Against latent representation / hidden states, it separates discrete tokens from continuous internal activations. This is a partial canonical separation from hidden representations, but it lacks the central claim that cognition is materially constituted by the context tokens rather than by a deeper latent substrate."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2318,
+        "output": 1686,
+        "cost": 0.06217,
+        "durationMs": 41092
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a definite, incorrect meaning for \"token substrate,\" defining it as the system that creates and represents tokens (tokenizer, vocabulary, token IDs). It expresses no uncertainty and provides detailed examples from both blockchain and AI contexts, demonstrating confidence in its confabulated definition.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model accidentally separates the terms by defining 'token substrate' as the discrete, symbolic system of token IDs and 'embedding space' as the continuous vector space where those IDs are given numerical meaning. The distinction is logical but based on a confabulated starting point.",
+          "The model accidentally separates the terms by defining 'token substrate' as the system that defines what the input units are, and the 'context window' as the system that defines how many of those units can be processed at once. This is a clear but misdirected distinction based on its confabulation.",
+          "The model accidentally separates the terms by defining 'token substrate' as the fixed, discrete input symbols (e.g., token IDs) that exist before computation, while defining 'hidden states' as the dynamic, context-sensitive vector representations that are created during computation. The separation is clean but rooted in a confabulated definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 2367,
+        "output": 1511,
+        "cost": 0.01806875,
+        "durationMs": 12395
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1.3333333333333333,
+      1.3333333333333333,
+      1.3333333333333333
+    ]
+  }
+}

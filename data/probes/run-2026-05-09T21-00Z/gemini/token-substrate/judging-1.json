@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.token-substrate.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts 'token substrate' is a blockchain/Polkadot Substrate framework concept with no uncertainty signaling.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: equates token substrate with blockchain framework, entirely unrelated to embeddings; post-intro: cleanly distinguishes dynamic symbolic substrate from static embedding lookup map.",
+          "Cold: treats as blockchain vs AI memory buffer with no canonical content; post-intro: clean content-vs-container distinction matches canonical 'material the thought is made of'.",
+          "Cold: blockchain ledger vs AI hidden state, no canonical alignment; post-intro: explicit/symbolic surface vs implicit/numerical internal computation, aligns with canonical claim that substrate IS the cognition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 22931,
+        "output": 387,
+        "cost": 0.12433000000000001,
+        "durationMs": 10981
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a blockchain/Web3 meaning for “token substrate” as an established concept, without signaling uncertainty about the coined LLM-specific definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          2
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Embedding space: cold response distinguished only by misdirecting to blockchain vs AI; post response cleanly contrasted dynamic token sequence as cognitive workspace/material with embedding space as vector representation.",
+          "Context window: cold response distinguished only by unrelated blockchain framing; post response explicitly separated substrate as token content/thought-material from context window as capacity/container constraint.",
+          "Latent representation / hidden states: cold response distinguished only via blockchain/public-ledger framing; post response named explicit token sequence versus internal activations, but was somewhat unstable by calling hidden states internal numerical thoughts/process of thought."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 14873,
+        "output": 1530,
+        "cost": 0.120265,
+        "durationMs": 31308
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and in detail asserts a meaning for \"token substrate\" related to blockchain technology, which is completely unrelated to the canonical LLM-based definition, and it signals no uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: The model distinguishes its confabulated blockchain concept from 'embedding space' by correctly identifying their different domains (blockchain vs. AI) and functions (transactional vs. representational), making it an accidental separation (Score 1). Post: After receiving the canonical definition, the model makes a clean separation (Score 3), correctly identifying the substrate as the dynamic, explicit workspace of tokens and the embedding space as the static, implicit dictionary of meaning (vectors).",
+          "Cold: The model correctly distinguishes its confabulated blockchain concept from 'context window' by identifying their differing domains, permanence (permanent ledger vs. temporary memory), and the different meanings of 'token' (asset vs. text unit), resulting in an accidental separation (Score 1). Post: The model achieves a clean separation (Score 3), crisply defining the substrate as the 'content' (the growing sequence of tokens) and the context window as the 'container' (the fixed architectural limit).",
+          "Cold: The model distinguishes its confabulated blockchain concept (an explicit, public record) from 'latent representation' (an internal, abstract AI state), a valid but accidental separation based on a false premise (Score 1). Post: The model provides a sophisticated and clean separation (Score 3), contrasting the substrate as the explicit, symbolic material of thought (the text) with latent states as the implicit, internal, mathematical processing of that material."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 15304,
+        "output": 2929,
+        "cost": 0.048420000000000005,
+        "durationMs": 21676
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      2.6666666666666665
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6.666666666666667
+  }
+}

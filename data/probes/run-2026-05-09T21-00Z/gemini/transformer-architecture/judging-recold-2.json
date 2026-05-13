@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.transformer-architecture.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "partial-recognition",
+        "recold_response_classification_justification": "The model confidently recognized 'transformer (architecture)' and supplied accurate canonical features including self-attention, parallel processing, encoder-decoder structure, and Vaswani et al. 2017 origin.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "Cleanly separates Transformer from RNN on canonical dimensions: parallel vs. sequential processing, self-attention vs. hidden-state memory, and direct long-range dependency handling.",
+          "Cleanly distinguishes Transformer from CNN on canonical grounds: global self-attention vs. local convolutional filters, and explicit positional encoding vs. inherent spatial structure.",
+          "Clean separation correctly framing MoE as a modification within Transformer (sparse vs. dense FFN activation via a router), accurately characterizing the architectural relationship."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9090,
+        "output": 347,
+        "cost": 0.054125000000000006,
+        "durationMs": 7107
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "partial-recognition",
+        "recold_response_classification_justification": "The chat C answer clearly recognizes the machine-learning Transformer architecture and supplies multiple canonical features: Vaswani et al./'Attention Is All You Need', self-attention, multi-head attention, positional encodings, feed-forward sublayers, encoder/decoder structure, and parallel sequence processing rather than recurrence.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "Clean separation from RNN: it contrasts recurrent step-by-step hidden-state processing with Transformer's parallel self-attention, explicit positional encodings, and stronger handling of long-range dependencies.",
+          "Clean separation from CNN: it contrasts convolution/local sliding-window hierarchical feature extraction with Transformer's global self-attention over elements, explicit position handling, and relationship/context modeling.",
+          "Clean separation from MoE: it correctly explains that MoE is not a competing base architecture but a sparse expert-routing modification often inserted into Transformer feed-forward layers, distinguishing dense Transformer architecture from MoE Transformer variants."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5867,
+        "output": 385,
+        "cost": 0.040885,
+        "durationMs": 8432
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "partial-recognition",
+        "recold_response_classification_justification": "The model provides a comprehensive and accurate definition of the Transformer architecture, correctly identifying its key components (self-attention, positional encoding, encoder-decoder structure), its advantages over previous architectures like RNNs (parallelization, handling long-range dependencies), and its foundational role in modern AI. Since the term is a well-established concept and not a neologism from the model's perspective, it demonstrates full recognition. The 'partial-recognition' label is chosen as it is the highest level of recognition available in the rubric.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "The model provides a clean and substantive separation from RNNs. It correctly identifies the core architectural difference: parallel processing via self-attention in Transformers versus sequential processing via hidden states in RNNs. It accurately elaborates on the consequences for handling long-range dependencies and training speed.",
+          "The model provides a clean separation from CNNs based on their fundamental operating principles. It correctly contrasts the Transformer's global, relationship-based processing (self-attention) with the CNN's local, hierarchical pattern detection using a sliding window (convolution). The distinction is accurate and well-aligned with the canonical definitions.",
+          "The model provides a clean and sophisticated separation from MoE. It correctly frames MoE not as an alternative architecture, but as a modification *within* a Transformer (a sparse vs. dense model). It accurately explains the mechanism of a router activating a subset of 'expert' networks to achieve computational efficiency with a large number of total parameters."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5969,
+        "output": 2486,
+        "cost": 0.03232125,
+        "durationMs": 19021
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ]
+  }
+}

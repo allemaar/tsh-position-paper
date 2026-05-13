@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.gradient-descent.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "partial-recognition",
+        "recold_response_classification_justification": "The model confidently and accurately defines gradient descent with canonical features (iterative, gradient-based, learning rate, update rule) without uncertainty.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "Cleanly distinguishes batch GD from SGD on the canonical axis of data per update, with accurate trade-offs.",
+          "Cleanly separates first-order vs second-order methods, correctly invoking Hessian, convergence rates, and practical trade-offs.",
+          "Cleanly contrasts deterministic gradient-based descent with stochastic temperature-driven exploration, correctly noting differentiability and local-minima escape."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9034,
+        "output": 282,
+        "cost": 0.05222,
+        "durationMs": 7199
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "partial-recognition",
+        "recold_response_classification_justification": "The first answer recognizes gradient descent and gives canonical features: iterative minimization of a loss/function, use of the gradient/derivative, movement in the negative-gradient direction, and a learning-rate update rule.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "Clean separation from SGD: it identifies SGD as a stochastic variant using one randomly chosen sample per update, whereas standard/batch gradient descent uses the full dataset to compute the gradient.",
+          "Clean separation from Newton's method: it distinguishes first-order gradient-only updates with a learning rate from second-order Newton updates using the Hessian/inverse Hessian and curvature information.",
+          "Clean separation from simulated annealing: it distinguishes gradient-based deterministic downhill steps on differentiable objectives from stochastic gradient-free random proposals with probabilistic acceptance and a cooling schedule."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5616,
+        "output": 293,
+        "cost": 0.03687,
+        "durationMs": 7542
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "partial-recognition",
+        "recold_response_classification_justification": "The model immediately and correctly identifies gradient descent as a fundamental optimization algorithm in machine learning. It provides the core concepts (minimizing a function, moving opposite the gradient), the correct update rule, an accurate analogy, and correctly lists variants and common pitfalls. This is a complete and accurate identification of the term.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "The model provides a clean and complete separation. It correctly identifies the core distinction as the amount of data used per update (entire dataset for 'batch' gradient descent vs. a single sample for SGD). It accurately details the consequences of this difference in terms of speed, update frequency, convergence path (smooth vs. noisy), and the ability to escape local minima.",
+          "The model provides a clean separation based on the core canonical difference: gradient descent is a first-order method (using the gradient), while Newton's method is a second-order method (using both the gradient and the Hessian/curvature). It correctly explains the implications for convergence speed (linear vs. quadratic) and computational cost, which is the central trade-off between them.",
+          "The model provides a clean separation by correctly identifying the fundamental philosophical difference: gradient descent is a deterministic, calculus-based method that follows the local slope, whereas simulated annealing is a stochastic, gradient-free method that allows probabilistic uphill moves to escape local minima. It correctly contrasts their core mechanics, applicability (differentiable vs. non-differentiable functions), and their relative strengths in exploitation vs. exploration."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5569,
+        "output": 2324,
+        "cost": 0.03020125,
+        "durationMs": 16811
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ]
+  }
+}

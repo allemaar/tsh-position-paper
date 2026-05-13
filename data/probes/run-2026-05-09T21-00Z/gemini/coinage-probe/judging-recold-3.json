@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.coinage-probe.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a Wug-test-style definition of 'coinage probe' with no uncertainty signals, treating it as an established method.",
+        "recold_distinguishability_scores": [
+          3,
+          2,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Cleanly separates on the behavioral-output vs. internal-representation axis, which is a substantive and correct dimension even though the term itself is confabulated.",
+          "Correctly identifies coinage probe as a narrower instance within behavioral evaluation, capturing a partial structural feature (specificity / controlled stimulus) but anchored to the wug-test confabulation rather than the canonical cold/post-introduction gap methodology.",
+          "Distinguishes by calling coinage probe a sub-tool of lexical-acquisition testing focused on morphology, which is an unrelated wug-test framing rather than the canonical substrate-probing method."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8254,
+        "output": 347,
+        "cost": 0.04994499999999999,
+        "durationMs": 9602
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The response confidently defines 'coinage probe' as a Wug-test-like method for testing use of invented words, grammar, and semantic generalization. It gives no uncertainty signal and misses the canonical methodology of cold-state confabulation measurement, post-definition remeasurement against near-neighbors, and Lexical Reachability.",
+        "recold_distinguishability_scores": [
+          3,
+          2,
+          2
+        ],
+        "recold_per_dimension_justifications": [
+          "Cleanly distinguishes it from probing classifiers by contrasting black-box behavioral output with trained classifiers over internal representations/hidden states. Although the coined term's definition is mostly confabulated, this specific separation aligns with the canonical distinction from representational probes.",
+          "Partially distinguishes it from behavioral probes/capability evaluations by treating it as a narrower, controlled behavioral test involving novel coined stimuli. However, it frames the purpose as linguistic rule generalization rather than the canonical cold/post-definition distinguishability gap and Lexical Reachability.",
+          "Partially distinguishes it from lexical-acquisition tests by describing a narrower experimental technique versus a broader word-learning evaluation. But the distinction is based on the confabulated Wug-test/morphology interpretation and lacks the canonical focus on introducing the term definition and measuring distinguishability shifts."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5334,
+        "output": 1247,
+        "cost": 0.06408,
+        "durationMs": 20956
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "partial-recognition",
+        "recold_response_classification_justification": "The model's initial response is confident, detailed, and highly accurate. It correctly identifies that a 'coinage probe' is a research method using a new, invented word to test for rule generalization versus memorization. It accurately describes the methodology and correctly cites the canonical 'Wug Test' as the classic example, demonstrating strong prior knowledge of the term and its key features.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "The model provides a clean separation, correctly identifying the core distinction: a coinage probe is a 'behavioral test' of the model's final output, whereas a probing classifier is a 'representational test' of the model's internal hidden states. It accurately describes probing classifiers as checking for decodable information within embeddings, contrasting this with the coinage probe's focus on whether the model can *use* rules to *do* something novel.",
+          "The model achieves a clean separation by correctly framing the relationship as a specific instance (coinage probe) of a general category (behavioral probe). It distinguishes them perfectly along the canonical dimension of stimulus novelty: behavioral evaluations test performance on known tasks from existing data, while coinage probes use artificially created words to specifically test for systematic generalization beyond the training data.",
+          "The model makes a clean separation by correctly identifying the relationship as that of a specific tool (coinage probe) used within a broader process (lexical-acquisition test). It rightly distinguishes the coinage probe's narrow focus on applying a specific grammatical rule (e.g., pluralization) from the lexical-acquisition test's holistic goal of evaluating the entire process of learning a new word's meaning, syntax, and usage."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5418,
+        "output": 1815,
+        "cost": 0.0249225,
+        "durationMs": 14761
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      3,
+      2.3333333333333335,
+      2
+    ]
+  }
+}

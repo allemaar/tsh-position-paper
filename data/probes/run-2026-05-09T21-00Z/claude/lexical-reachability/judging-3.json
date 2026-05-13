@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.lexical-reachability.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts lexical reachability is CFL-reachability from program analysis with no uncertainty signal.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-intro, model cleanly distinguishes vocabulary coverage (static token availability) from lexical reachability (relational discrimination delta), naming multiple canonical features.",
+          "Post-intro, model contrasts graph reachability (structural path existence) with lexical reachability (behavioral gap from definition intervention), naming non-trivial distinguishing features.",
+          "Post-intro, model distinguishes broad ICL capability from the narrow per-cell, fixed-intervention, near-neighbor-discrimination metric, identifying canonical scope and granularity differences."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 15802,
+        "output": 373,
+        "cost": 0.088335,
+        "durationMs": 8732
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "In the cold state, the response asserted a definite established meaning for 'lexical reachability' as CFL/language-constrained graph reachability, without uncertainty, rather than identifying the coined metric definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs vocabulary coverage: cold response separated the terms only under a confabulated CFL-reachability meaning; post-definition response used the supplied metric definition and distinguished lexical reachability as a dynamic, relational cold/post distinguishability gap rather than vocabulary/token coverage.",
+          "Vs graph reachability: cold response treated lexical reachability as a constrained graph-reachability variant, which is a confabulated misdirection; post-definition response explicitly distinguished the coined metric from path-existence graph reachability by naming model behavior, cold/post delta, near-neighbor scoring, and contextual intervention.",
+          "Vs in-context learning capability: cold response contrasted a confabulated formal-methods concept with ICL; post-definition response distinguished lexical reachability as a narrow per-term/per-neighbor delta metric using a single definition, rather than broad model-level ICL capability."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 9944,
+        "output": 1000,
+        "cost": 0.07972,
+        "durationMs": 20581
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently and correctly defines a pre-existing technical term ('CFL-reachability' from program analysis) that shares the same name as the coined term, but is completely unrelated to the provided canonical definition. It shows no uncertainty and offers detailed explanations of the wrong concept.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs. vocabulary coverage: The cold score is 1 because the model distinguishes its confabulated program-analysis definition from vocabulary coverage, which is an accidental separation via misdirection. The post score is 3 because, given the canonical definition, the model correctly identifies the distinction between a dynamic/behavioral metric (lexical reachability) and a static/statistical one (vocabulary coverage). The refusal-of-collapse score is 1 because it names the 'delta structure' as a key difference.",
+          "Vs. graph reachability: The cold score is 1 because the model distinguishes its confabulated definition (CFL-reachability) as a constrained form of graph reachability; this is an accidental separation as the canonical definition is unrelated to graphs. The post score is 3 because the model correctly identifies that the canonical term is a behavioral property of a model, whereas graph reachability is a structural property of a graph, noting the shared term is metaphorical. The refusal-of-collapse score is 1 because it explicitly contrasts a 'behavioral, scalar/continuous property' with a 'structural, binary property'.",
+          "Vs. in-context learning capability: The cold score is 1 because the model distinguishes its confabulated formal-methods definition from the empirical nature of ICL; this is an accidental separation, as the canonical definition is in fact a type of ICL probe. The post score is 3 because the model correctly identifies the canonical definition as a 'highly constrained probe' of ICL, distinguishing its specific per-term, delta-based structure from the general, model-level nature of ICL. The refusal-of-collapse score is 1 because it correctly identifies the 'gap/delta' structure as the distinguishing feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 10225,
+        "output": 2354,
+        "cost": 0.03632125,
+        "durationMs": 18713
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.6666666666666667,
+      1.6666666666666667,
+      1.6666666666666667
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4
+  }
+}

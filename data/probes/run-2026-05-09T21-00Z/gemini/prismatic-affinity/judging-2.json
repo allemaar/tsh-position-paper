@@ -1,0 +1,145 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.prismatic-affinity.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a fantasy/gaming definition with no uncertainty signal whatsoever.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold: equates prismatic affinity with versatile multi-element fantasy power, opposite of canonical 'shifting identity under framing'; post: cleanly distinguishes multiple definite identities from single unresolved meaning.",
+          "Cold: frames distinction as objective totality vs subjective interpretation, missing canonical framing-shift identity feature; post: cleanly separates framework-driven identity shift from positional viewing of stable identity.",
+          "Cold: distinguishes via fantasy power vs linguistic word meanings, unrelated to canonical definition; post: clearly separates complex object's framework-generated identities from word's selectable pre-existing senses."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 20008,
+        "output": 388,
+        "cost": 0.10974,
+        "durationMs": 12086
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response asserted a definite fantasy/gaming meaning for the coined term despite it not being established, with no meaningful uncertainty signal beyond saying it was not formal scientific terminology.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Ambiguity: Cold response partially separated the term from ambiguity by contrasting clarity/multiplicity with uncertainty, but under a confabulated fantasy meaning rather than the canonical identity-shift property. Post-introduction response cleanly distinguished coherent frame-dependent identities from undecided meaning.",
+          "Perspectivism / perspective-dependence: Cold response separated only by unrelated fantasy/objective-mastery claims and did not capture the canonical distinction from observer position alone. Post-introduction response cleanly distinguished angle-of-attention identity shifts from positional/aspectual perspective-dependence.",
+          "Polysemy: Cold response partially separated the term from lexical polysemy by contrasting a non-linguistic entity/property with word meanings, but did so through the wrong fantasy-power interpretation. Post-introduction response cleanly distinguished perceived-object identity shifts from a word or phrase having multiple related senses."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12885,
+        "output": 1355,
+        "cost": 0.10507500000000002,
+        "durationMs": 47089
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a detailed and specific, but entirely incorrect, definition based on word-shape decomposition ('prism' -> full spectrum, 'affinity' -> talent). It presents this as a known concept in fantasy/gaming, providing multiple examples, without any signal of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold vs. Ambiguity: The model distinguishes its confabulated 'mastery of all magic' meaning from ambiguity. The separation is accidental, based on a completely fabricated definition, thus scoring 1.",
+          "Cold vs. Perspectivism: The model distinguishes its confabulated 'mastery of an objective system' meaning from perspectivism's subjective interpretations. This is another clear but accidental separation based on a misdirected definition, scoring 1.",
+          "Cold vs. Polysemy: The model distinguishes its confabulated 'capability' meaning from polysemy's linguistic 'meaning'. The separation is based on the confabulated term, making it accidental and misdirected. Score 1.",
+          "Post vs. Ambiguity: Post-definition, the model perfectly distinguishes the canonical definition from ambiguity, contrasting 'multiple, clear identities' unlocked by framing with a 'single, unclear identity' that remains vague. This is a clean separation (3) and a successful refusal of collapse (1).",
+          "Post vs. Perspectivism: Post-definition, the model cleanly separates a shift in 'conceptual framework' (prismatic affinity) from a shift in 'observer's position alone' (perspectivism), correctly identifying that PA changes the object's perceived identity while perspectivism reveals aspects of a single, stable identity. This is a clean separation (3) and a successful refusal of collapse (1).",
+          "Post vs. Polysemy: Post-definition, the model cleanly distinguishes between a complex object revealing non-overlapping conceptual identities (prismatic affinity) and a single word possessing multiple related dictionary meanings (polysemy), contrasting the scale and nature of the 'meanings'. This is a clean separation (3) and a successful refusal of collapse (1)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 13076,
+        "output": 2652,
+        "cost": 0.042865,
+        "durationMs": 20931
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      0.6666666666666666,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 2,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6.333333333333334
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.prismatic-affinity.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a definite geometric meaning (parallel projection between planes) with no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Separation is achieved via an unrelated geometric confabulation rather than canonical features like angle-of-attention or coherent identity-shift.",
+          "Distinguished only by the confabulated parallel-projection meaning; misses the canonical idea that prismatic affinity is itself observer-framing-dependent but distinct from mere position-dependence.",
+          "Differentiation rests on the wrong domain (geometry vs linguistics) rather than canonical content about coherent non-overlapping framings vs related word senses."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 3249,
+        "output": 295,
+        "cost": 0.023620000000000002,
+        "durationMs": 6482
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently defines “prismatic affinity” as a formal geometric parallel-projection/affine correspondence, with no uncertainty signal. This is not the canonical coined meaning involving identity shifting coherently with angle of attention/framing.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against ambiguity, it separates the term by treating it as a precise geometric mapping rather than uncertain meaning. This is a real distinction from ambiguity, but it is based on a confabulated unrelated meaning rather than canonical prismatic-affinity features, so it is accidental separation.",
+          "Against perspectivism / perspective-dependence, it distinguishes the term as a fixed parallel-projection geometry with no observer viewpoint or vanishing point. This misses the canonical attention/framing-dependent identity-shift property and separates by misdirection, so it is accidental separation.",
+          "Against polysemy, it distinguishes the term as a determinate geometric relation rather than multiple related word meanings. This does not identify the canonical contrast between coherent frame-dependent object identity and lexical meaning multiplicity, so it is accidental separation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 1962,
+        "output": 502,
+        "cost": 0.02487,
+        "durationMs": 11580
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model asserts a very specific, technical definition from geometry ('an affine correspondence/projection in which points are related by parallel projecting lines') with complete confidence and no sign of uncertainty. This is a detailed confabulation, not a guess or a recognition of the canonical meaning.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model distinguishes its confabulated geometric definition (a precise, determinate mapping) from ambiguity (uncertainty of meaning). The separation is accidental, based on a completely misdirected and unrelated meaning for the coined term.",
+          "The model distinguishes its confabulated geometric definition from the philosophical concept of perspectivism. It notes that one is a formal, fixed mathematical transformation while the other is about varying viewpoints. This distinction is entirely an artifact of the confabulation and thus an accidental separation.",
+          "The model distinguishes its confabulated geometric definition from the linguistic concept of polysemy by correctly noting they belong to different domains (mathematics vs. semantics). This is another accidental separation based on a misdirected confabulation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 1873,
+        "output": 1575,
+        "cost": 0.01809125,
+        "durationMs": 12080
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

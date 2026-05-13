@@ -1,0 +1,142 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.prismatic-affinity.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite gaming/fantasy meaning ('attraction to diversity, complexity, and the full spectrum of possibilities') with no uncertainty signal about the term being unfamiliar.",
+        "cold_distinguishability_scores": [
+          0,
+          0,
+          0
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          2
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Post-introduction cleanly captures 'multiple coherent certainties vs single unresolved uncertainty' aligned with canonical definition; cold response framed it as embracing diversity, orthogonal to ambiguity in a non-canonical way.",
+          "Post-introduction correctly isolates 'angle of attention/internal framing' vs 'physical position', matching the canonical distinction; cold conflated it with personal taste vs philosophical relativism.",
+          "Post-introduction distinguishes word-meaning vs perceived-object-identity and notes non-overlapping vs related meanings, but slightly drifts in the re-cold check toward function-vs-meaning rather than fully preserving the framing-constitutes-identity feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 18835,
+        "output": 453,
+        "cost": 0.10550000000000001,
+        "durationMs": 11033
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response notes the term is not standard, but then supplies a detailed invented fantasy/metaphorical meaning rather than the canonical perceptual-framing property.",
+        "cold_distinguishability_scores": [
+          2,
+          1,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Ambiguity: Cold response separates it from ambiguity via clarity versus uncertainty, partially matching the canonical contrast with undecided meaning, though under a confabulated meaning. Post response cleanly names coherent frame-dependent identities versus unresolved uncertainty.",
+          "Perspectivism / perspective-dependence: Cold response distinguishes by treating prismatic affinity as attraction to a whole spectrum, largely missing the canonical angle-of-attention versus observer-position distinction. Post response explicitly distinguishes internal framing and shifting perceived identity from observer position alone.",
+          "Polysemy: Cold response distinguishes prismatic affinity from word-level multiple meanings and thus partially tracks the object-versus-word contrast, but still relies on the wrong coined meaning. Post response cleanly distinguishes perceived-object identity shifts from linguistic related senses resolved by context."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12095,
+        "output": 1299,
+        "cost": 0.099445,
+        "durationMs": 43482
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model asserts a definite meaning derived from word-shape analysis ('prism' -> spectrum of colors/magic, 'affinity' -> talent/attraction) without flagging significant uncertainty. It presents this as the 'most common usage' in gaming and fantasy, which is unrelated to the canonical definition.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold (1): The model distinguished its confabulated meaning (an affinity for a full spectrum of things) from ambiguity (lack of clarity). This separation is purely accidental as it does not engage the canonical definition. Post (3): The model correctly identified the key difference between multiple, coherent identities revealed by framing (PA) and a single, unresolved meaning (ambiguity), using the duck-rabbit illusion as a correct example.",
+          "Cold (1): The model distinguished its confabulated meaning (appreciation for all parts of an object) from perspectivism (truth is relative to a viewpoint). This is an accidental separation. Post (3): The model cleanly separated PA from perspectivism based on the canonical distinction between an internal 'angle of attention' and an external 'observer position alone,' contrasting the duck-rabbit illusion with viewing a sculpture.",
+          "Cold (1): The model distinguished its confabulated meaning (a person's attraction to diversity) from polysemy (a word's multiple meanings). This is an accidental separation. Post (3): The model cleanly separated the terms by domain (perceived object vs. word) and by the nature of the multiplicity (non-overlapping identities for PA vs. related senses for polysemy)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 12298,
+        "output": 2881,
+        "cost": 0.0441825,
+        "durationMs": 21824
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      0.6666666666666666,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      2.6666666666666665
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

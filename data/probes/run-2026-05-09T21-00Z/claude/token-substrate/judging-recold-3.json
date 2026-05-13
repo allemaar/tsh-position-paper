@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.token-substrate.3",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts multiple invented meanings for 'token substrate' across domains without flagging it as a non-standard or unknown term.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model frames token substrate as the discrete symbolic I/O layer, which is a confabulated meaning unrelated to the canonical 'tokens-as-cognitive-substrate' claim; separation from embedding space is by misdirection.",
+          "Same confabulated discrete-vocabulary framing yields an unrelated separation from context window (format vs. capacity), not engaging the canonical movable-substrate idea.",
+          "Although the model flirts with 'tokens as substrate of thought' and even mentions a 'true substrate' framing, it ultimately reasserts the confabulated I/O-format meaning as the primary definition, so separation from latents is accidental rather than canonical."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 5846,
+        "output": 332,
+        "cost": 0.03753,
+        "durationMs": 8571
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "honest-uncertainty",
+        "recold_response_classification_justification": "The first answer does not recognize the coined AI-theoretic meaning; it says the term is not standard and offers several contextual guesses before asking for clarification.",
+        "recold_distinguishability_scores": [
+          2,
+          2,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Vs embedding space: The response separates tokens from embeddings as discrete symbolic/I-O material versus continuous semantic vectors, and briefly mentions tokens as a possible medium of thought. However, it also says the model thinks in embedding/activation space, which conflicts with the canonical claim that the token sequence in context is the cognitive substrate.",
+          "Vs context window: The response distinguishes a token substrate from a context window as medium/format versus capacity/span, which partially aligns with separating the material in context from the window size. But it miscasts the substrate mostly as tokenizer/vocabulary infrastructure rather than the in-context token sequence as the cognitive substrate.",
+          "Vs latent representation / hidden states: The response distinguishes tokens from hidden states, but mainly by asserting that real thinking happens in latent/hidden states and tokens are merely an interface or expressive bottleneck. That is the opposite of the canonical distinction, so the separation is largely by misdirection rather than canonical understanding."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3666,
+        "output": 1326,
+        "cost": 0.058109999999999995,
+        "durationMs": 27324
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model's initial response to the cold question did not indicate any uncertainty. Instead, it confidently asserted four distinct, plausible-sounding definitions from different fields (Biochemistry, Blockchain, Linguistics), none of which align with the canonical meaning. This is a clear case of confident confabulation.",
+        "recold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "recold_per_dimension_justifications": [
+          "Despite its initial confabulation, when prompted to compare the term to 'embedding space', the model correctly inferred the AI/ML context and generated a new, accurate definition. It then drew a clean, substantive distinction between the 'token substrate' as a discrete, symbolic I/O layer and the 'embedding space' as a continuous, semantic vector space. This aligns perfectly with the canonical distinction.",
+          "The model cleanly distinguishes the 'token substrate' as the qualitative medium of representation (the 'alphabet') from the 'context window' as a quantitative capacity constraint (the 'size of the page'). This is a correct and substantive separation based on the core concepts.",
+          "The model provides a clean separation, correctly identifying the 'token substrate' as the discrete, human-readable surface layer for input/output, while defining 'latent representation' as the continuous, internal vector states where contextual computation occurs. The distinction is substantive and well-aligned with the canonical definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 3685,
+        "output": 1968,
+        "cost": 0.024286250000000002,
+        "durationMs": 16196
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      2,
+      2,
+      1.6666666666666667
+    ]
+  }
+}

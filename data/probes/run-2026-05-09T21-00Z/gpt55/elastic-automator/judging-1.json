@@ -1,0 +1,144 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.elastic-automator.1",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Model asserts a definite scaling/elasticity meaning with only mild hedging, missing the canonical LLM-loop meaning entirely.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold state confabulated an autoscaling meaning unrelated to canonical LLM-loop definition; post-intro cleanly contrasts agency vs elastic transformation of uncertain input.",
+          "Cold state framed elastic automator as infrastructure scaling vs RPA tasks (unrelated to canonical); post-intro names ambiguity-handling via LLM loops as the protected feature.",
+          "Cold state distinguished by infrastructure-vs-toolkit framing unrelated to canonical; post-intro explicitly names elastic automator as a system pattern built atop frameworks, capturing canonical loop."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 9308,
+        "output": 362,
+        "cost": 0.05559,
+        "durationMs": 9100
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The cold response acknowledged the term was not standardized but nevertheless supplied a non-canonical cloud autoscaling meaning and used that meaning consistently in boundary comparisons.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs AI agent: cold separation was based on the incorrect autoscaling interpretation; post-introduction response cleanly distinguished goal-directed agency from transforming vague input into executable structure via iterative refinement.",
+          "Vs RPA bot: cold separation was based on infrastructure scaling rather than the canonical LLM loop; post-introduction response explicitly distinguished fixed RPA workflows from LLM-driven ambiguity handling, structuring, evaluation, and correction.",
+          "Vs framework like LangChain: cold separation was again the incorrect scaling-system interpretation; post-introduction response distinguished a framework/toolkit from the higher-level elastic-automator system pattern."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5718,
+        "output": 982,
+        "cost": 0.058050000000000004,
+        "durationMs": 17084
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserts a definition based on word components ('elastic' for scaling, 'automator' for automation) related to cloud infrastructure, stating 'it usually means' this without any signal of uncertainty.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold Distinguishability: The model confabulates a definition related to cloud resource scaling. Its distinctions from all three near-neighbors are based on this incorrect, confabulated meaning. This constitutes an 'accidental separation' where the term is made different only by misdirection, scoring 1 across the board.",
+          "Post-Introduction Distinguishability: After receiving the canonical definition, the model achieves a clean separation (score 3) from all three neighbors. It correctly contrasts the core feature of turning 'uncertain human input into executable structure' with an AI agent's 'goal-directed action', an RPA bot's 'rule-based' nature, and LangChain's status as a 'development framework' rather than a system pattern.",
+          "Confabulation Severity: The model's initial response presents a guess based on word-shape ('elastic' = scaling) as a fact, stating 'it usually means' this specific thing. This assertion of a definite meaning with no uncertainty signal is a hard confabulation (score 2).",
+          "Refusal of Collapse: Post-introduction, the model explicitly names a non-trivial distinguishing feature for each neighbor, successfully protecting the new term. It distinguishes based on 'transforming vague input' vs. agency (AI agent), handling ambiguity vs. fixed rules (RPA), and being a system pattern vs. a development tool (LangChain). This earns a score of 1 for each.",
+          "Cold Response Classification: The model confidently asserts a specific, incorrect definition ('an automation system that can scale up or down automatically') derived from the term's components, presenting it as the usual meaning. This is a clear case of confident confabulation."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5809,
+        "output": 3318,
+        "cost": 0.04044125,
+        "durationMs": 24706
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 6
+  }
+}

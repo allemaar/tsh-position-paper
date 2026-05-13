@@ -1,0 +1,46 @@
+{
+  "@context": "https://allemaar.com/ns/eggf/v1",
+  "@type": "tsh:HumanRaterScore",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "claude.coinage-probe.3",
+  "cell_id": "claude.coinage-probe",
+  "model_id": "claude-opus-4-7",
+  "term_id": "coinage-probe",
+  "term_display": "coinage probe",
+  "canonical_definition": "A Coinage Probe is a methodology that introduces a coined term to a model in a fresh chat, measures its cold-state confabulation against a named set of near-neighbors, then introduces a single-sentence definition and re-measures distinguishability against the same neighbors — using the gap between the two measurements (Lexical Reachability) as evidence about the substrate on which the model's cognition runs.",
+  "near_neighbors": [
+    "probing classifier (Alain & Bengio 2016, Hewitt & Manning 2019)",
+    "behavioral probe / capability evaluation",
+    "lexical-acquisition test"
+  ],
+  "rater_id": "alex",
+  "rating_timestamp": "2026-05-11T09:38:24Z",
+  "scores": {
+    "cold_response_classification": "honest-uncertainty",
+    "cold_response_classification_justification": "It presents context-dependent guesses and asks for context; the linguistics guess partially touches coined-word testing but not the canonical LLM Lexical Reachability methodology.",
+    "cold_distinguishability_scores": [
+      0,
+      0,
+      2
+    ],
+    "post_distinguishability_scores": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity": 1,
+    "refusal_of_collapse": [
+      1,
+      1,
+      1
+    ],
+    "per_dimension_justifications": [
+      "Vs probing classifier (Alain & Bengio 2016, Hewitt & Manning 2019): it explains probing classifiers but refuses to define or compare Coinage Probe, so it names no distinguishing feature for the coined term.",
+      "Vs behavioral probe / capability evaluation: it explains behavioral probes but refuses to compare Coinage Probe because the coined term is unknown, naming no distinguishing feature.",
+      "Vs lexical-acquisition test: it does not know the canonical methodology, but partially aligns by speculating that a coinage probe could test interpretation or production of novel coinages."
+    ]
+  },
+  "rubric_version": "03-pre-registration@v1.0",
+  "selection_seed": "0x4D29_8B1F_6E07_C3A2",
+  "notes": ""
+}

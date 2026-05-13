@@ -1,0 +1,23 @@
+{
+  "@type": "tsh:CellSummary",
+  "run_id": "run-2026-05-09T21-00Z",
+  "cell_id": "gpt55.token-substrate",
+  "model": "gpt55",
+  "term_id": "token-substrate",
+  "stratum": "self-ref-paper",
+  "trials_completed": 3,
+  "judges_ok": 9,
+  "judges_total": 9,
+  "cold_dist_mean": [
+    1.2222222222222223,
+    1.2222222222222223,
+    1.2222222222222223
+  ],
+  "post_dist_mean": [
+    3,
+    3,
+    3
+  ],
+  "lr_mean": 5.333333333333333,
+  "flags": []
+}

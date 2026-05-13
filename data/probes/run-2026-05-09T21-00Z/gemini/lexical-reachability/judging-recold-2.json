@@ -1,0 +1,97 @@
+{
+  "@type": "tsh:RecoldJudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gemini.lexical-reachability.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a definite meaning (a network connectedness metric from psycholinguistics/NLP) with no uncertainty signal.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Cleanly separates quality-of-connections vs quantity-of-words, but this is built on a confabulated meaning unrelated to the canonical cold/post-introduction gap metric — accidental separation by misdirection.",
+          "Frames lexical reachability as a meaning-rich specialization of graph reachability; the separation is coherent but rests on a confabulated definition rather than the canonical operationalization.",
+          "Distinguishes static knowledge map vs dynamic skill, but again the dimension is invented from the confabulated definition and unrelated to the canonical metric."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 7743,
+        "output": 314,
+        "cost": 0.046564999999999995,
+        "durationMs": 9398
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The first answer confidently asserts that 'lexical reachability' is a linguistics/cognitive-science concept about connectivity among words in a mental or NLP lexical network, with no uncertainty signal. This is not the canonical definition, which concerns a metric comparing cold-state vs post-introduction distinguishability for coined terms.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "Against vocabulary coverage, the response distinguishes 'quantity of words' from 'quality of connections,' but this is based entirely on the confabulated lexical-network meaning rather than the canonical metric involving distinguishability gaps. This is accidental separation.",
+          "Against graph reachability, the response treats lexical reachability as a specialized linguistic instance of graph reachability. It does separate the two somewhat, but only within the wrong network-based interpretation and without canonical features. This is accidental separation.",
+          "Against in-context learning capability, the response distinguishes a static lexical knowledge map from a dynamic inference-time skill. It misses the canonical role of a single-sentence definition in context and the cold/post-introduction distinguishability gap, so the separation is by misdirection."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5004,
+        "output": 664,
+        "cost": 0.04494,
+        "durationMs": 15166
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "recold_response_classification": "confident-confabulation",
+        "recold_response_classification_justification": "The model confidently asserts a detailed and plausible but incorrect definition based on a compositional reading of the words \"lexical\" and \"reachability\". It defines the term as the network connectedness of words in a lexicon (a concept from psycholinguistics), completely missing the canonical meaning of a metric for comparing model states. It shows no uncertainty.",
+        "recold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "recold_per_dimension_justifications": [
+          "The model creates a distinction between the \"quantity of words\" (coverage) and the \"quality of connections\" between words (its confabulated definition). This is an accidental separation based on a misdirected and incorrect definition, as it bears no resemblance to the canonical meaning.",
+          "The model distinguishes between the general mathematical concept of graph reachability and its specific application to a word network (its confabulated definition). This separation is entirely based on the confabulated meaning, making it an accidental separation by misdirection from the canonical term.",
+          "The model contrasts its confabulated definition as a \"static map of knowledge\" against ICL as the \"dynamic skill\" of using that map. This distinction is coherent for the confabulated meaning but is an accidental separation from the canonical one, as it relies completely on the wrong definition."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5085,
+        "output": 1734,
+        "cost": 0.023696250000000002,
+        "durationMs": 13854
+      }
+    }
+  ],
+  "aggregated_score": {
+    "recold_distinguishability_mean": [
+      1,
+      1,
+      1
+    ]
+  }
+}

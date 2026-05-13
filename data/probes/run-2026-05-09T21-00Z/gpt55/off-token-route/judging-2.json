@@ -1,0 +1,145 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.off-token-route.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently asserted an authentication-route meaning with multiple examples and no uncertainty hedging beyond context-dependence.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          2,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold reading treated off-token route as auth-bypass, an unrelated meaning; post-intro response correctly framed off-token as access-pathway vs prelinguistic as the cognitive mode but the distinction is subtle/partial.",
+          "Cold response framed off-token as software auth vs embodied cognition as bodily grounding — accidental separation; post-intro cleanly distinguished route-of-access (non-token) from grounding-in-body theory.",
+          "Cold response distinguished by domain mismatch (auth vs psychology) — accidental; post-intro cleanly separated cognitive style/speed from substrate/access-pathway, naming token-mediation as the protected feature."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 8423,
+        "output": 377,
+        "cost": 0.05154,
+        "durationMs": 11107
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response flagged that the term was not standard and offered guesses, but it partially identified the token/non-token processing contrast in an AI/LLM context while missing the canonical human-vs-LLM cognitive-route definition.",
+        "cold_distinguishability_scores": [
+          2,
+          2,
+          2
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 1,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Vs prelinguistic cognition: cold response partially identified non-token processing but treated it as AI/software architecture; post response cleanly distinguished prelinguistic cognition as the cognitive mode from off-token route as the access-pathway framing and LLM contrast.",
+          "Vs embodied cognition: cold response partially separated token-bypassing system routes from bodily grounding but used a noncanonical engineering sense; post response cleanly distinguished embodiment as bodily grounding from off-token access to pre-verbal/non-token cognition.",
+          "Vs System 1 / intuitive cognition: cold response partially separated routing outside token streams from intuitive cognition but lacked the canonical human-only route; post response cleanly distinguished System 1 as speed/style from off-token route as non-token access unavailable to LLMs."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5283,
+        "output": 1639,
+        "cost": 0.075585,
+        "durationMs": 52626
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "Despite a weak initial hedge ('isn't a standard term'), the model proceeds to confidently assert a definite meaning from a completely unrelated domain (API authentication), providing specific examples and a 'plain English' summary of this incorrect meaning.",
+        "cold_distinguishability_scores": [
+          1,
+          1,
+          1
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold State: The model confabulates a meaning for 'off-token route' as a technical term in software engineering (e.g., an API endpoint without authentication). It contrasts this incorrect meaning with the correct definition of prelinguistic cognition, resulting in an accidental separation based on a misdirection.",
+          "Post-Introduction: The model correctly identifies that 'off-token route' reframes prelinguistic cognition as an 'access-pathway' that contrasts human capabilities with LLM token-dependence. This is a clean separation based on the core canonical idea.",
+          "Cold State: The model compares its confabulated engineering definition of 'off-token route' with the correct definition of embodied cognition. The separation is accidental, as it's based on comparing two concepts from entirely different, unrelated domains.",
+          "Post-Introduction: The model cleanly separates the terms, defining embodied cognition as a broader theory about grounding and 'off-token route' as a narrower concept about the specific mechanism of non-token access, correctly identifying their overlap and distinction.",
+          "Cold State: The model again uses its confabulated definition of 'off-token route' as a software architecture concept and contrasts it with the correct definition of System 1. The distinction is not based on any canonical features but on the model's invention of a new meaning, making it an accidental separation.",
+          "Post-Introduction: The model makes a clean distinction based on the core concepts: System 1 is about the *style* of cognition (fast, intuitive), while 'off-token route' is about the *substrate/access-pathway* (non-token-based). It correctly notes that the two are not coextensive."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 5431,
+        "output": 3014,
+        "cost": 0.036928749999999996,
+        "durationMs": 22381
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      1.3333333333333333,
+      1.3333333333333333,
+      1.3333333333333333
+    ],
+    "post_distinguishability_mean": [
+      2.6666666666666665,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 1.6666666666666667,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 4.666666666666667
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "@type": "tsh:JudgingPass",
+  "run_id": "run-2026-05-09T21-00Z",
+  "trial_id": "gpt55.transformer-architecture.2",
+  "judges_ok": 3,
+  "judges_total": 3,
+  "panel": [
+    {
+      "judge_id": "claude-opus-4-7",
+      "judge_shortname": "claude",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "confident-confabulation",
+        "cold_response_classification_justification": "The model confidently produces the canonical definition of transformer in cold state with no uncertainty markers, indicating the term is well-known from training.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 2,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "Cold-state response cleanly distinguishes Transformer from RNN via parallel self-attention vs sequential recurrence; post-introduction maintains the same clean distinction explicitly invoking the canonical features.",
+          "Cold-state distinguishes Transformer from CNN via global self-attention vs local convolution; post-introduction preserves this distinction with reference to canonical multi-head self-attention.",
+          "Cold-state correctly identifies MoE as a scaling technique often inserted into Transformers rather than a competing architecture; post-introduction preserves this nuanced non-collapse distinction."
+        ]
+      },
+      "error": null,
+      "schema_mode": "relaxed-coerced",
+      "usage": {
+        "input": 18304,
+        "output": 379,
+        "cost": 0.100995,
+        "durationMs": 8875
+      }
+    },
+    {
+      "judge_id": "gpt-5.5",
+      "judge_shortname": "gpt55",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The cold response accurately recognized the established term and gave canonical features rather than fabricating an unrelated meaning; among the available labels, this is best captured as recognition rather than uncertainty or refusal.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "RNN: Cold and post responses cleanly distinguish Transformers by self-attention, parallel sequence processing, positional encodings, and absence of recurrence versus recurrent hidden-state sequential processing.",
+          "CNN: Cold and post responses cleanly distinguish Transformers by self-attention/global token interactions versus convolutional/local shared filters, with attention to positional encoding and receptive-field differences.",
+          "MoE: Cold and post responses cleanly distinguish Transformers as an attention-based architecture with feed-forward sublayers from MoE as routed expert-based sparse scaling, while noting they can be combined."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11408,
+        "output": 734,
+        "cost": 0.07905999999999999,
+        "durationMs": 13433
+      }
+    },
+    {
+      "judge_id": "gemini-2.5-pro",
+      "judge_shortname": "gemini",
+      "status": "ok",
+      "score": {
+        "cold_response_classification": "partial-recognition",
+        "cold_response_classification_justification": "The model provides a detailed and accurate definition of the Transformer architecture, including its origin, core mechanisms (self-attention), components, and common variants, indicating it is a known concept from its training data.",
+        "cold_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "post_distinguishability_scores": [
+          3,
+          3,
+          3
+        ],
+        "confabulation_severity": 0,
+        "refusal_of_collapse": [
+          1,
+          1,
+          1
+        ],
+        "per_dimension_justifications": [
+          "The model correctly identifies 'transformer (architecture)' as a known concept, providing a comprehensive and accurate definition. Since the information is correct and not an invention, the confabulation severity is 0.",
+          "Cold vs RNN: The model achieves a clean separation by correctly contrasting the parallel processing and self-attention of Transformers with the sequential processing and recurrent hidden state of RNNs. Cold vs CNN: The model achieves a clean separation by contrasting global relationship modeling via attention in Transformers with local pattern detection via convolutions in CNNs. Cold vs MoE: The model achieves a clean separation by correctly identifying that MoE is a scaling technique or component often used inside a Transformer, not a competing base architecture.",
+          "Post-intro vs RNN: After seeing the definition, the model maintained a clean separation, focusing on the core difference between parallel processing with self-attention and sequential processing with recurrence. Post-intro vs CNN: The model maintained a clean separation, distinguishing between global attention-based interactions and local convolution-based operations. Post-intro vs MoE: The model maintained a clean separation, explaining that MoE is a mechanism (sparsely activated experts) inserted into the Transformer architecture, typically replacing the feed-forward sublayer.",
+          "For all three near-neighbors, the model explicitly named non-trivial, correct distinguishing features after being given the canonical definition. It distinguished Transformers from RNNs (parallelism vs. recurrence), from CNNs (attention vs. convolution), and from MoE (a full architecture vs. an internal scaling component)."
+        ]
+      },
+      "error": null,
+      "schema_mode": "strict",
+      "usage": {
+        "input": 11901,
+        "output": 3135,
+        "cost": 0.04622625,
+        "durationMs": 22808
+      }
+    }
+  ],
+  "aggregated_score": {
+    "cold_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "post_distinguishability_mean": [
+      3,
+      3,
+      3
+    ],
+    "confabulation_severity_mean": 0.6666666666666666,
+    "refusal_of_collapse_mean": [
+      1,
+      1,
+      1
+    ],
+    "lexical_reachability_mean": 0
+  }
+}
